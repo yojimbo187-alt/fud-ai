@@ -38,7 +38,7 @@ Snap, speak, or type a meal. AI logs the calories. Open source.
 ```
 Fud AI makes calorie tracking effortless with AI-powered food recognition. Snap a photo, scan a barcode, speak it, or type it — get instant nutrition: calories, protein, carbs, fats, vitamins, minerals, and more.
 
-NEW in v7.1: Weekly Challenge places, Discord help, Join Beta, and in-app language. Also includes steps, Walk/Run, custom exercises, meal time, and 18 languages.
+NEW in v7.1: Weekly Challenge places, Discord help, and in-app language. Also includes steps, Walk/Run, custom exercises, meal time, and 18 languages.
 
 Nutrition adds custom goals plus caffeine, creatine, and other performance compounds. Optional fasting adds timers, editable history, goals, alerts, and Coach context. Android includes a daily calorie summary and clearer Health Connect guidance.
 
@@ -106,18 +106,15 @@ English-only on Play Console — non-English Play Store browsers (ar, az-AZ, cs-
 
 ---
 
-## 4. What's New (v7.1 / versionCode 38 — not submitted)
+## 4. What's New (v7.1.1 / versionCode 39 — being released)
 
-**500 char hard cap per language.** Paste only the `<en-US>` block for the 7.1 release. The other language blocks below are still the 7.0.1 notes and must not be submitted as 7.1 release notes.
+**500 char hard cap per language.** Paste only the `<en-US>` block for the 7.1.1 release. The other language blocks below are still the 7.0.1 notes and must not be submitted as 7.1.1 release notes.
 
 ```
 <en-US>
-Fud AI 7.1
-• Weekly Challenge places: podium, your own rank, 20 places per page.
-• How points work explains why matching scores are not a tie.
-• Help & Feedback on GitHub or Discord. Join Beta is in Settings.
-• Pick the app language in Settings. Onboarding names your AI provider.
-• Logs, goals, and Health data stay on the device.
+Fud AI 7.1.1
+• Removed the beta signup from Settings.
+• Weekly Challenge places, the language picker, and Help & Feedback from 7.1 are included.
 </en-US>
 
 <ar>

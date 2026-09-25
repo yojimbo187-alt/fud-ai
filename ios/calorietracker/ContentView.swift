@@ -424,47 +424,12 @@ private struct AboutSettingsSections: View {
             switch category {
             case .appUpdates:
                 Section {
-                updateRow
-
-                    Link(destination: URL(string: "https://github.com/apoorvdarshan/fud-ai")!) {
-                        Label {
-                            Text("Open Source (MIT)")
-                        } icon: {
-                            Image(systemName: "chevron.left.forwardslash.chevron.right")
-                                .foregroundStyle(AppColors.calorie)
-                        }
+                    HStack {
+                        Label("App Version", systemImage: "info.circle.fill")
+                        Spacer()
+                        Text(AppUpdateChecker.currentVersionDisplay)
+                            .foregroundStyle(.secondary)
                     }
-                    .tint(.primary)
-
-                    Link(destination: URL(string: "https://www.bestpractices.dev/projects/14553")!) {
-                        Label {
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text("OpenSSF Best Practices")
-                                Text("Passing · project 14553")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                        } icon: {
-                            Image(systemName: "checkmark.seal.fill")
-                                .foregroundStyle(AppColors.calorie)
-                        }
-                    }
-                    .tint(.primary)
-
-                    Link(destination: URL(string: "https://scorecard.dev/viewer/?uri=github.com/apoorvdarshan/fud-ai")!) {
-                        Label {
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text("OpenSSF Scorecard")
-                                Text("Security health score")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                        } icon: {
-                            Image(systemName: "shield.checkered")
-                                .foregroundStyle(AppColors.calorie)
-                        }
-                    }
-                    .tint(.primary)
                 }
                 .listRowBackground(AppColors.appCard)
 
