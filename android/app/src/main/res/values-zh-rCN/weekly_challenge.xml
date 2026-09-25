@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">尚未更新</string>
     <string name="challenge_intro_title">一起养成健康习惯</string>
     <string name="challenge_intro_body">可自愿加入，比较每周活动、营养、坚持和饮水目标。即使不加入，也可以继续使用私密的进度页面。</string>
-    <string name="challenge_privacy_disclosure">Fud AI 在您的设备上完成所有计算。仅上传周开始日期、总分、达到要求的活动、营养、坚持和饮水天数，以及活动总卡路里。绝不会上传食物名称、餐食、体重、锻炼详情或 Health Connect 记录。</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni 在您的设备上完成所有计算。仅上传周开始日期、总分、达到要求的活动、营养、坚持和饮水天数，以及活动总卡路里。绝不会上传食物名称、餐食、体重、锻炼详情或 Health Connect 记录。</string>
     <string name="challenge_public_profile_disclosure">参与者只能看到您的显示名称，以及可选的一个 X 或 Instagram 用户名。体重和减重情况绝不会用于排名。</string>
     <string name="challenge_points_title">积分计算方式</string>
     <string name="challenge_points_explanation" formatted="false">活动：记录了正数锻炼消耗的日期。营养：每日卡路里在目标的 85–115% 以内。坚持：当天记录了任何食物。饮水：启用跟踪时达到饮水目标。综合：四项天数之和，最高 28 分。</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">下一页</string>
     <string name="challenge_join_action">加入挑战</string>
     <string name="challenge_pending_delete_title">连接后将删除</string>
-    <string name="challenge_pending_delete_message">此设备上已隐藏您的挑战个人资料。联网后，Fud AI 将再次尝试删除远程个人资料和每周得分。</string>
+    <string name="challenge_pending_delete_message">此设备上已隐藏您的挑战个人资料。联网后，Ruoka + Treeni 将再次尝试删除远程个人资料和每周得分。</string>
     <string name="challenge_retry_deletion">重试删除</string>
     <string name="challenge_category_overall">综合</string>
     <string name="challenge_category_activity">活动</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">请使用 1–30 个英文字母、数字、句点或下划线；句点不能连续或位于末尾。</string>
     <string name="challenge_rules_consent">我接受社区规则，并会使用尊重他人且不冒充他人的个人资料。</string>
     <string name="challenge_read_community_rules">阅读社区规则</string>
-    <string name="challenge_age_consent">我确认已年满 18 岁。Fud AI 不会访问或上传我的出生日期。</string>
+    <string name="challenge_age_consent">我确认已年满 18 岁。Ruoka + Treeni 不会访问或上传我的出生日期。</string>
     <string name="challenge_leave_title">退出挑战？</string>
     <string name="challenge_leave_message">这将删除您的远程挑战个人资料和所有每周得分。您的私密食物、体重、锻炼和 Health Connect 数据仍保留在设备上。</string>
     <string name="challenge_leave_confirm">退出并删除</string>

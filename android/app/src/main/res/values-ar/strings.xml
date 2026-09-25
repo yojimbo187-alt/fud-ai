@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI السعرات الحرارية</string>
+    <string name="widget_calorie_label">Ruoka + Treeni السعرات الحرارية</string>
     <string name="widget_calorie_description">اطّلع على سعراتك الحرارية وعناصرك الكبرى لليوم في لمحة.</string>
-    <string name="widget_protein_label">Fud AI البروتين</string>
+    <string name="widget_protein_label">Ruoka + Treeni البروتين</string>
     <string name="widget_protein_description">اطّلع على تقدم البروتين اليوم في لمحة.</string>
     <string name="widget_today">اليوم</string>
     <string name="widget_protein">البروتين</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">رجوع</string>
-    <string name="onboarding_logo_description">شعار Fud AI</string>
+    <string name="onboarding_logo_description">شعار Ruoka + Treeni</string>
     <string name="onboarding_welcome_line1">تناول بذكاء،</string>
     <string name="onboarding_welcome_line2">عش أفضل</string>
     <string name="onboarding_welcome_subtitle">فقط التقط، تتبّع، وازدهر.\nتغذيتك، مبسطة.</string>
@@ -261,7 +261,7 @@
     <string name="onboarding_health_connect">ربط</string>
 
     <string name="onboarding_ai_choice_title">إعداد الذكاء الاصطناعي الخاص بك</string>
-    <string name="onboarding_ai_choice_subtitle">اختر كيف تريد تشغيل الذكاء الاصطناعي في Fud AI. التطبيق يبقى مجانيًا في كلتا الحالتين.</string>
+    <string name="onboarding_ai_choice_subtitle">اختر كيف تريد تشغيل الذكاء الاصطناعي في Ruoka + Treeni. التطبيق يبقى مجانيًا في كلتا الحالتين.</string>
     <string name="onboarding_ai_byok_subtitle">أضف مفتاح مزود الذكاء الاصطناعي الخاص بك — Gemini وOpenAI وGroq والمزيد مدعومة.</string>
     <string name="onboarding_ai_byok_card_title">أحضر مفتاحك الخاص</string>
     <string name="onboarding_ai_byok_card_subtitle">مجاني للأبد — غير محدود على مفتاحك. Gemini وOpenAI وGroq والمزيد.</string>
@@ -539,7 +539,7 @@
     <string name="settings_week_sunday">الأحد</string>
     <string name="settings_notifications">الإشعارات</string>
     <string name="settings_battery_opt">تحسين البطارية</string>
-    <string name="settings_battery_opt_value">إضافة Fud AI للقائمة البيضاء</string>
+    <string name="settings_battery_opt_value">إضافة Ruoka + Treeni للقائمة البيضاء</string>
 
     <string name="settings_ai_provider">المزود</string>
     <string name="settings_ai_model">النموذج</string>
@@ -571,7 +571,7 @@
     <string name="settings_invalid_goal_gain">يحتاج هدف الزيادة إلى وزن أعلى من وزنك الحالي.</string>
     <string name="settings_permission_title">الإذن مطلوب</string>
 
-    <string name="settings_notifications_denied">تم رفض إذن الإشعارات. فعّله من إعدادات النظام ← التطبيقات ← Fud AI ← الإشعارات لتلقي التذكيرات.</string>
+    <string name="settings_notifications_denied">تم رفض إذن الإشعارات. فعّله من إعدادات النظام ← التطبيقات ← Ruoka + Treeni ← الإشعارات لتلقي التذكيرات.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">حان وقت الوزن</string>
@@ -617,9 +617,7 @@
     <string name="about_share">شارك التطبيق</string>
     <string name="about_open_source">مفتوح المصدر (MIT)</string>
     <string name="about_star_github">ضع نجمة على GitHub</string>
-    <string name="about_vote_ph">صوّت على Product Hunt</string>
-    <string name="about_leave_tip_kofi">اترك إكرامية على Ko-fi</string>
-    <string name="about_report_issue">الإبلاغ عن مشكلة على GitHub</string>
+    <string name="about_vote_ph">صوّت على Product Hunt</string>    <string name="about_report_issue">الإبلاغ عن مشكلة على GitHub</string>
     <string name="about_report_issue_discord">الإبلاغ عن مشكلة على Discord</string>
     <string name="about_request_feature">طلب ميزة على GitHub</string>
     <string name="about_request_feature_discord">طلب ميزة على Discord</string>
@@ -631,18 +629,15 @@
     <string name="about_privacy">سياسة الخصوصية</string>
     <string name="about_terms">شروط الخدمة</string>
     <string name="about_category_app_updates">التطبيق والتحديثات</string>
-    <string name="about_category_support">دعم Fud AI</string>
+    <string name="about_category_support">دعم Ruoka + Treeni</string>
     <string name="about_category_help_feedback">المساعدة والملاحظات</string>
     <string name="about_category_community">المجتمع</string>
     <string name="about_category_legal">القانونية</string>
     <string name="about_category_join_beta">انضم إلى النسخة التجريبية</string>
-    <string name="about_beta_intro">جرّب تغييرات Fud AI قبل وصولها إلى متجر Play. قد تكون نسخ التجربة غير مكتملة.</string>
-    <string name="about_beta_steps">انضم إلى Discord الخاص بـ Fud AI وافتح #beta-android. عند نشر رابط اختبار Play، اشترك وحدّث Fud AI من متجر Play. إذا تعطل شيء، استخدم /bug واذكر الإصدار من الإعدادات.</string>
-    <string name="about_beta_not_open">اختبار Play غير مفتوح بعد. سيُنشر الرابط في #beta-android.</string>
-    <string name="about_made_by">صنع بواسطة Apoorv Darshan</string>
-    <string name="about_with_care">بعناية، للجميع</string>
-    <string name="about_share_message">أتتبّع وجباتي مع Fud AI — التقط صورة أو تحدّث أو اكتب، والذكاء الاصطناعي يسجّل السعرات الحرارية. التطبيق مجاني ومفتوح المصدر، وتبقى بياناتك على جهازك.\n\nنزّله: https://fud-ai.app</string>
-    <string name="about_share_chooser">شارك Fud AI</string>
+    <string name="about_beta_intro">جرّب تغييرات Ruoka + Treeni قبل وصولها إلى متجر Play. قد تكون نسخ التجربة غير مكتملة.</string>
+    <string name="about_beta_steps">انضم إلى Discord الخاص بـ Ruoka + Treeni وافتح #beta-android. عند نشر رابط اختبار Play، اشترك وحدّث Ruoka + Treeni من متجر Play. إذا تعطل شيء، استخدم /bug واذكر الإصدار من الإعدادات.</string>
+    <string name="about_beta_not_open">اختبار Play غير مفتوح بعد. سيُنشر الرابط في #beta-android.</string>    <string name="about_share_message">أتتبّع وجباتي مع Ruoka + Treeni — التقط صورة أو تحدّث أو اكتب، والذكاء الاصطناعي يسجّل السعرات الحرارية. التطبيق مجاني ومفتوح المصدر، وتبقى بياناتك على جهازك.\n\nنزّله: https://fud-ai.app</string>
+    <string name="about_share_chooser">شارك Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">تذكير السلسلة</string>
@@ -677,7 +672,7 @@
         <item quantity="other">%1$d عملية حرق محسوبة · اضغط للعرض أو الحذف</item>
     </plurals>
     <string name="progress_workout_delete_title">حذف حرق التمرين؟</string>
-    <string name="progress_workout_delete_message">يؤدي هذا إلى إزالة الحرق المحسوب من Fud AI وHealth Connect. ستظل خطة يوميات التمرين محفوظة.</string>
+    <string name="progress_workout_delete_message">يؤدي هذا إلى إزالة الحرق المحسوب من Ruoka + Treeni وHealth Connect. ستظل خطة يوميات التمرين محفوظة.</string>
     <string name="progress_workout_section">نشاط التمارين</string>
     <string name="progress_workout_stat_workouts">التمارين</string>
     <string name="progress_workout_stat_total">إجمالي الحرق</string>
@@ -701,11 +696,11 @@
     <string name="settings_section_fallback">المزود الاحتياطي</string>
     <string name="settings_enable_fallback">تفعيل الاحتياطي</string>
     <string name="settings_fallback_footer">إذا فشل المزود الأساسي (تحميل زائد، تجاوز الحد، خطأ في الشبكة)، يُعيد التطبيق المحاولة تلقائياً باستخدام هذا الاحتياطي. يُسمح بنفس المزود الأساسي — فقط اختر طرازاً مختلفاً.</string>
-    <string name="widget_all_metrics_label">Fud AI اليوم</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni اليوم</string>
     <string name="widget_all_metrics_description">شاهد سعرات اليوم والبروتين والكربوهيدرات والدهون في أداة واحدة.</string>
     <string name="settings_needs_health_connect">يتطلب Health Connect</string>
-    <string name="settings_energy_goals_info">عند التفعيل، يستخدم Fud AI نافذة بيانات الطاقة المقاسة الحديثة من Health Connect كمرجع لسعرات الحفاظ عند حساب الأهداف بدلًا من تقدير المعادلة: إجمالي الطاقة المقاس عند توفر أيام كافية، وإلا فمتوسط الطاقة النشطة المقاسة + BMR المحسوب بالمعادلة. لا يُستخدم الذكاء الاصطناعي لقراءة بيانات الحرق. يتطلب Health Connect. يعمل مع زر إعادة الحساب ومع Adaptive Goals.</string>
-    <string name="settings_adaptive_goals_info">مرة واحدة تقريبًا في الأسبوع عند فتح التطبيق، يعيد Fud AI تلقائيًا تشغيل حساب الأهداف الكامل — وهو نفس الحساب الذي يستخدمه زر إعادة الحساب — استنادًا إلى ملفك الشخصي والطعام المسجّل مؤخرًا واتجاه وزنك. إذا كان Energy Burn مفعّلًا، يُستخدم حرقك المقاس كمرجع لسعرات الثبات. إذا لم يكن الذكاء الاصطناعي متاحًا، يتم التخطي بصمت. عند إيقاف هذه الميزة تُستعاد الأهداف التي كانت قبل أول تغيير أجرته. هذه ليست نصيحة طبية.</string>
+    <string name="settings_energy_goals_info">عند التفعيل، يستخدم Ruoka + Treeni نافذة بيانات الطاقة المقاسة الحديثة من Health Connect كمرجع لسعرات الحفاظ عند حساب الأهداف بدلًا من تقدير المعادلة: إجمالي الطاقة المقاس عند توفر أيام كافية، وإلا فمتوسط الطاقة النشطة المقاسة + BMR المحسوب بالمعادلة. لا يُستخدم الذكاء الاصطناعي لقراءة بيانات الحرق. يتطلب Health Connect. يعمل مع زر إعادة الحساب ومع Adaptive Goals.</string>
+    <string name="settings_adaptive_goals_info">مرة واحدة تقريبًا في الأسبوع عند فتح التطبيق، يعيد Ruoka + Treeni تلقائيًا تشغيل حساب الأهداف الكامل — وهو نفس الحساب الذي يستخدمه زر إعادة الحساب — استنادًا إلى ملفك الشخصي والطعام المسجّل مؤخرًا واتجاه وزنك. إذا كان Energy Burn مفعّلًا، يُستخدم حرقك المقاس كمرجع لسعرات الثبات. إذا لم يكن الذكاء الاصطناعي متاحًا، يتم التخطي بصمت. عند إيقاف هذه الميزة تُستعاد الأهداف التي كانت قبل أول تغيير أجرته. هذه ليست نصيحة طبية.</string>
     <string name="ad_label">إعلان</string>
     <string name="onboarding_plan_adaptive_note">تتعدّل خطتك تلقائيًا كل أسبوع حسب تسجيلاتك — أوقف Adaptive Goals من الإعدادات لإبقائها ثابتة.</string>
     <string name="onboarding_feature_snap">التقط صورة — والذكاء الاصطناعي يسجّلها</string>
@@ -715,7 +710,7 @@
     <string name="whats_new_v30_workouts">علامة تبويب تمارين جديدة — تصفّح 873 تمرينًا مع الصور وفلاتر العضلات والمعدات والبحث وصفحات التفاصيل.</string>
     <string name="whats_new_v30_home">تصميم جديد للرئيسية: عدّاد سرعة للسعرات، وأشرطة ماكرو عمودية، وأربع بطاقات مغذّيات، وزر إضافة عائم.</string>
     <string name="whats_new_v30_coach_voice">اسأل المدرب صوتيًا عبر المسجّل المدمج الجديد.</string>
-    <string name="whats_new_v30_share">شارك أي وجبة كرابط يفتح مباشرة في Fud AI — على iPhone أو Android.</string>
+    <string name="whats_new_v30_share">شارك أي وجبة كرابط يفتح مباشرة في Ruoka + Treeni — على iPhone أو Android.</string>
     <string name="whats_new_v30_export">صدّر يوميات طعامك بصيغة JSON أو Markdown أو CSV من الإعدادات.</string>
     <string name="whats_new_v30_reprocess">أعد معالجة وجبة مسجلة بالذكاء الاصطناعي — عدّل الاسم أو الكمية أو الملاحظة ثم أعد التحليل.</string>
     <string name="whats_new_v30_camera">كاميرا + كاميرا تحتفظ باللقطتين معًا جنبًا إلى جنب.</string>
@@ -764,7 +759,7 @@
     <string name="settings_calc_maintenance">الحفاظ على الوزن وتعديل الهدف</string>
     <string name="settings_calc_macro_split">تقسيم المغذيات الكبرى</string>
     <string name="settings_calc_micro_values">قيم المغذيات الدقيقة</string>
-    <string name="settings_calc_intro">يحدد الذكاء الاصطناعي أهدافك اليومية للسعرات الحرارية والمغذيات الكبرى. عند الضغط على «إعادة حساب الأهداف» — أو تلقائيًا مرة كل أسبوع تقريبًا إذا كانت الأهداف التكيفية مفعّلة — يرسل Fud AI إلى مزوّد الذكاء الاصطناعي ملفك الشخصي، والمعادلات المرجعية أدناه، وإجماليات التغذية اليومية المجمّعة بطريقة تحمي الخصوصية، وقياسات الوزن ونسبة دهون الجسم ومحيطات الجسم الدقيقة والمؤرخة، وإجماليات التمارين من حيث العدد والمدة والمجموعات والتكرارات، وبيانات الطاقة الاختيارية من Health Connect. لا تُرسل أسماء الأطعمة أو الملاحظات أو الصور أو المكوّنات أو أسماء التمارين لهذا الحساب. يبدأ الذكاء الاصطناعي بهذه المعادلات التي راجعها الأقران، ثم يعدّلها وفق بياناتك الفعلية لتقدير سعرات الحفاظ الفعلية وأهدافك.</string>
+    <string name="settings_calc_intro">يحدد الذكاء الاصطناعي أهدافك اليومية للسعرات الحرارية والمغذيات الكبرى. عند الضغط على «إعادة حساب الأهداف» — أو تلقائيًا مرة كل أسبوع تقريبًا إذا كانت الأهداف التكيفية مفعّلة — يرسل Ruoka + Treeni إلى مزوّد الذكاء الاصطناعي ملفك الشخصي، والمعادلات المرجعية أدناه، وإجماليات التغذية اليومية المجمّعة بطريقة تحمي الخصوصية، وقياسات الوزن ونسبة دهون الجسم ومحيطات الجسم الدقيقة والمؤرخة، وإجماليات التمارين من حيث العدد والمدة والمجموعات والتكرارات، وبيانات الطاقة الاختيارية من Health Connect. لا تُرسل أسماء الأطعمة أو الملاحظات أو الصور أو المكوّنات أو أسماء التمارين لهذا الحساب. يبدأ الذكاء الاصطناعي بهذه المعادلات التي راجعها الأقران، ثم يعدّلها وفق بياناتك الفعلية لتقدير سعرات الحفاظ الفعلية وأهدافك.</string>
     <string name="settings_calc_sec_bmr">معدل الأيض الأساسي (BMR)</string>
     <string name="settings_calc_sec_tdee">إجمالي الإنفاق اليومي للطاقة (TDEE)</string>
     <string name="settings_calc_mifflin_name">معادلة ميفلين–سانت جيور</string>
@@ -815,7 +810,7 @@
     <string name="about_whisper_notices_load_error">تعذّر تحميل إشعارات الجهات الخارجية لـ Whisper Base.</string>
     <string name="cd_remove_image">إزالة الصورة</string>
     <string name="cd_save_photo">حفظ الصورة</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">تم حفظ الصورة</string>
     <string name="photo_save_failed">تعذر حفظ الصورة</string>
     <string name="photo_save_permission_denied">تم رفض الوصول إلى الصور</string>

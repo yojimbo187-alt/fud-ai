@@ -156,9 +156,9 @@ object CloudBackupArchive {
         }
         val raw = payload ?: error("Backup is missing backup.json")
         val document = json.decodeFromString<CloudBackupDocument>(raw.toString(Charsets.UTF_8))
-        require(document.format == CloudBackupPolicy.FORMAT) { "Not a Fud AI backup" }
+        require(document.format == CloudBackupPolicy.FORMAT) { "Not a Ruoka + Treeni backup" }
         require(document.format_version <= CloudBackupPolicy.VERSION) {
-            "This backup needs a newer Fud AI"
+            "This backup needs a newer Ruoka + Treeni"
         }
         return CloudBackupUnpack(document, photos)
     }

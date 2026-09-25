@@ -6,7 +6,7 @@ import androidx.glance.GlanceId
 import androidx.glance.appwidget.GlanceAppWidget
 import com.apoorvdarshan.calorietracker.R
 
-/** Shared error handling for every Fud AI home-screen widget. */
+/** Shared error handling for every Ruoka + Treeni home-screen widget. */
 abstract class FudGlanceAppWidget : GlanceAppWidget(R.layout.widget_initial_fallback) {
     override fun onCompositionError(
         context: Context,

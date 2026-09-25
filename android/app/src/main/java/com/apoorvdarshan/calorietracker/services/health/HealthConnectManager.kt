@@ -49,7 +49,7 @@ import kotlin.math.roundToInt
  *   so encoding the date keeps a selected diary day stable across time zones and
  *   after a reinstall.
  * - Nutrition records include macros plus every optional nutrient Health Connect
- *   can represent from Fud AI's food model.
+ *   can represent from Ruoka + Treeni's food model.
  * - The "typesVersion" integer bumps when we add new record types so existing
  *   users get a re-authorization prompt.
  */
@@ -123,7 +123,7 @@ class HealthConnectManager(
 
     /**
      * Health Connect rejects every secondary Android profile on Android 14+, including Work
-     * Profile and Private Space. The system permission screen can still show Fud AI as approved,
+     * Profile and Private Space. The system permission screen can still show Ruoka + Treeni as approved,
      * so preserve that reason instead of misreporting the framework service as uninstalled.
      */
     fun availability(): HealthConnectAvailability {
@@ -227,7 +227,7 @@ class HealthConnectManager(
         else -> if (nutritionWrite in g) NutritionWriteGate.ALLOWED else NutritionWriteGate.DENIED
     }
 
-    /** The "connected" state: at least one Fud AI permission granted. Partial grants
+    /** The "connected" state: at least one Ruoka + Treeni permission granted. Partial grants
      *  are valid — a read-only user still syncs the read direction. */
     suspend fun hasAnyPermission(): Boolean = granted().any { it in permissions }
 
@@ -261,7 +261,7 @@ class HealthConnectManager(
         )
     }
 
-    /** True for records Fud AI itself wrote, so read-sync can tell them apart from
+    /** True for records Ruoka + Treeni itself wrote, so read-sync can tell them apart from
      *  external sources (change-token consumers skip them; the restore path keeps them). */
     fun isOwnRecord(clientRecordId: String?): Boolean =
         clientRecordId?.startsWith(CLIENT_PREFIX) == true
@@ -500,7 +500,7 @@ class HealthConnectManager(
         }
     }
 
-    /** All NutritionRecords in the range, mapped back to Fud AI's units (the exact
+    /** All NutritionRecords in the range, mapped back to Ruoka + Treeni's units (the exact
      *  inverse of [writeNutrition]). Powers the food-log restore after a reinstall
      *  or new phone, where Health Connect data survives but app storage doesn't.
      *  Returns null when any page read fails (rate limit, binder error) so the
@@ -626,7 +626,7 @@ class HealthConnectManager(
 
     /**
      * Reads only active-energy records authored by this installed package and
-     * returns only well-formed Fud AI workout-burn samples. Null means the query
+     * returns only well-formed Ruoka + Treeni workout-burn samples. Null means the query
      * failed; an empty list is a successful query with no owned burns.
      */
     suspend fun readOwnedWorkoutBurns(from: Instant, to: Instant): List<HealthWorkoutBurn>? {
@@ -771,7 +771,7 @@ class HealthConnectManager(
             )
         }.getOrNull() ?: return null
 
-        // Fud AI's workout burns are estimates. Keep them in Health Connect,
+        // Ruoka + Treeni's workout burns are estimates. Keep them in Health Connect,
         // but subtract this app's origin so the nightly balance cannot count
         // the same workout once as measured burn and again as an app estimate.
         val ownActiveResult = runCatching {
@@ -944,7 +944,7 @@ class HealthConnectManager(
 internal fun externalActiveCalories(allActive: Double, ownActive: Double): Double =
     maxOf(0.0, allActive - ownActive)
 
-/** Remove Fud AI's app-owned estimated active burn from a reported total as well. Basal is the
+/** Remove Ruoka + Treeni's app-owned estimated active burn from a reported total as well. Basal is the
  *  non-active remainder of Health Connect's raw total; corrected total is basal + external active.
  *  This prevents a workout estimate written by this app from becoming evidence for its own goal. */
 internal fun externalTotalCalories(rawTotal: Double?, allActive: Double, ownActive: Double): Double? {
@@ -975,7 +975,7 @@ data class WorkoutBurnIdentity(
     val diaryDateKey: String
 )
 
-/** A validated active-energy estimate authored by this Fud AI package. */
+/** A validated active-energy estimate authored by this Ruoka + Treeni package. */
 data class HealthWorkoutBurn(
     val sessionId: UUID,
     val diaryDateKey: String,
@@ -987,7 +987,7 @@ data class HealthWorkoutBurn(
     val recordId: String
 )
 
-/** A NutritionRecord read back from Health Connect in Fud AI's own units —
+/** A NutritionRecord read back from Health Connect in Ruoka + Treeni's own units —
  *  kcal for energy, grams/milligrams/micrograms per nutrient, matching
  *  [HealthConnectManager.writeNutrition]. */
 data class ExternalNutrition(
@@ -1060,7 +1060,7 @@ data class HealthDailyEnergy(
 
 data class HealthDatedEnergy(
     val date: LocalDate,
-    /** Active energy after subtracting Fud AI's own estimated-workout data origin. */
+    /** Active energy after subtracting Ruoka + Treeni's own estimated-workout data origin. */
     val activeCalories: Int,
     /** Corrected total (basal + external active), when Health Connect reports a raw total. */
     val totalCalories: Int?

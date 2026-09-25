@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">Aún no se ha actualizado</string>
     <string name="challenge_intro_title">Cread hábitos saludables en compañía</string>
     <string name="challenge_intro_body">Participa voluntariamente para comparar logros semanales de actividad, nutrición, constancia e hidratación. Tu pantalla privada de Progreso seguirá disponible sin participar.</string>
-    <string name="challenge_privacy_disclosure">Fud AI calcula todo en tu dispositivo. Solo sube el inicio de la semana, los puntos totales, los recuentos de días válidos de actividad, nutrición, constancia e hidratación, y las calorías totales de actividad. Nunca se suben nombres de alimentos, comidas, peso, detalles de entrenamientos ni registros de Health Connect.</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni calcula todo en tu dispositivo. Solo sube el inicio de la semana, los puntos totales, los recuentos de días válidos de actividad, nutrición, constancia e hidratación, y las calorías totales de actividad. Nunca se suben nombres de alimentos, comidas, peso, detalles de entrenamientos ni registros de Health Connect.</string>
     <string name="challenge_public_profile_disclosure">Solo los participantes ven tu nombre público y, opcionalmente, un único usuario de X o Instagram. El peso y la pérdida de peso nunca se clasifican.</string>
     <string name="challenge_points_title">Cómo funcionan los puntos</string>
     <string name="challenge_points_explanation" formatted="false">Actividad: un día con calorías de entrenamiento positivas registradas. Nutrición: calorías diarias entre el 85 y el 115 % de tu objetivo. Constancia: cualquier alimento registrado ese día. Hidratación: objetivo de agua cumplido cuando el seguimiento está activo. General: suma de los cuatro recuentos de días, hasta 28.</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">Siguiente</string>
     <string name="challenge_join_action">Unirme al reto</string>
     <string name="challenge_pending_delete_title">El borrado espera una conexión</string>
-    <string name="challenge_pending_delete_message">Tu perfil del reto está oculto en este dispositivo. Fud AI volverá a intentar borrar el perfil remoto y las puntuaciones semanales cuando tengas conexión.</string>
+    <string name="challenge_pending_delete_message">Tu perfil del reto está oculto en este dispositivo. Ruoka + Treeni volverá a intentar borrar el perfil remoto y las puntuaciones semanales cuando tengas conexión.</string>
     <string name="challenge_retry_deletion">Reintentar el borrado</string>
     <string name="challenge_category_overall">General</string>
     <string name="challenge_category_activity">Actividad</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">Usa entre 1 y 30 letras, números, puntos o guiones bajos; sin puntos seguidos ni al final.</string>
     <string name="challenge_rules_consent">Acepto las Normas de la comunidad y usaré un perfil respetuoso que no suplante a nadie.</string>
     <string name="challenge_read_community_rules">Leer las Normas de la comunidad</string>
-    <string name="challenge_age_consent">Confirmo que tengo 18 años o más. Fud AI no accede a mi fecha de nacimiento ni la sube.</string>
+    <string name="challenge_age_consent">Confirmo que tengo 18 años o más. Ruoka + Treeni no accede a mi fecha de nacimiento ni la sube.</string>
     <string name="challenge_leave_title">¿Salir del reto?</string>
     <string name="challenge_leave_message">Esto borra tu perfil remoto del reto y todas las puntuaciones semanales. Tus datos privados de comida, peso, entrenamientos y Health Connect permanecen en tu dispositivo.</string>
     <string name="challenge_leave_confirm">Salir y borrar</string>

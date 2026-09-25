@@ -16,6 +16,7 @@ object AppLanguage {
         "de",
         "es",
         "fr",
+        "fi",
         "hi",
         "it",
         "ja",

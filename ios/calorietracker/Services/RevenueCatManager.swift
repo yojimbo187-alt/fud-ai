@@ -6,7 +6,7 @@
 import Foundation
 import RevenueCat
 
-/// Subscriptions, credit packs, and entitlement state. Tip Jar stays in TipJarView.
+/// Subscriptions, credit packs, and entitlement state.
 @MainActor
 @Observable
 final class RevenueCatManager: NSObject {

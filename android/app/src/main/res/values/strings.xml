@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI Calories</string>
+    <string name="widget_calorie_label">Ruoka + Treeni Calories</string>
     <string name="widget_calorie_description">See today\'s calories and macros at a glance.</string>
-    <string name="widget_protein_label">Fud AI Protein</string>
+    <string name="widget_protein_label">Ruoka + Treeni Protein</string>
     <string name="widget_protein_description">See today\'s protein progress at a glance.</string>
-    <string name="widget_water_label">Fud AI Water</string>
+    <string name="widget_water_label">Ruoka + Treeni Water</string>
     <string name="widget_water_description">See today\'s water progress at a glance.</string>
-    <string name="widget_water_disabled">Enable Water Tracking in Fud AI</string>
+    <string name="widget_water_disabled">Enable Water Tracking in Ruoka + Treeni</string>
     <string name="widget_open_to_refresh">Open app to refresh</string>
-    <string name="widget_refresh_needed_description">Fud AI widget needs a refresh. Open Fud AI.</string>
+    <string name="widget_refresh_needed_description">Ruoka + Treeni widget needs a refresh. Open Ruoka + Treeni.</string>
     <string name="widget_today">Today</string>
     <string name="widget_protein">Protein</string>
     <string name="widget_calories">Calories</string>
@@ -226,7 +226,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Back</string>
-    <string name="onboarding_logo_description">Fud AI logo</string>
+    <string name="onboarding_logo_description">Ruoka + Treeni logo</string>
     <string name="onboarding_welcome_line1">Eat Smart,</string>
     <string name="onboarding_welcome_line2">Live Better</string>
     <string name="onboarding_welcome_subtitle">Just snap, track, and thrive.\nYour nutrition, simplified.</string>
@@ -308,7 +308,7 @@
     <string name="onboarding_health_connect">Connect</string>
 
     <string name="onboarding_ai_choice_title">Set Up Your AI</string>
-    <string name="onboarding_ai_choice_subtitle">Choose how you want to power AI in Fud AI. The app stays free either way.</string>
+    <string name="onboarding_ai_choice_subtitle">Choose how you want to power AI in Ruoka + Treeni. The app stays free either way.</string>
     <string name="onboarding_ai_byok_subtitle">Add your own AI provider key — Gemini, OpenAI, Groq, and more are supported.</string>
     <string name="onboarding_ai_byok_card_title">Bring Your Own Key</string>
     <string name="onboarding_ai_byok_card_subtitle">Free forever — unlimited on your key. Gemini, OpenAI, Groq &amp; more.</string>
@@ -557,7 +557,7 @@
         <item quantity="other">%1$d calculated burns · tap to view or delete</item>
     </plurals>
     <string name="progress_workout_delete_title">Delete workout burn?</string>
-    <string name="progress_workout_delete_message">This removes the calculated burn from Fud AI and Health Connect. Your workout diary plan stays saved.</string>
+    <string name="progress_workout_delete_message">This removes the calculated burn from Ruoka + Treeni and Health Connect. Your workout diary plan stays saved.</string>
     <plurals name="progress_history_count_format">
         <item quantity="one">%1$d entry · tap to view or delete</item>
         <item quantity="other">%1$d entries · tap to view or delete</item>
@@ -778,7 +778,7 @@
     <string name="home_menu_reuse_meal">Reuse Meal</string>
     <string name="settings_notif_water_reminder">Water Reminder</string>
     <string name="settings_battery_opt">Battery Optimization</string>
-    <string name="settings_battery_opt_value">Whitelist Fud AI</string>
+    <string name="settings_battery_opt_value">Whitelist Ruoka + Treeni</string>
 
     <string name="settings_ai_provider">Provider</string>
     <string name="settings_ai_model">Model</string>
@@ -808,9 +808,9 @@
     <string name="settings_permissions">Permissions</string>
     <string name="settings_energy_goals">Energy Burn Goals</string>
     <string name="settings_needs_health_connect">Needs Health Connect</string>
-    <string name="settings_energy_goals_info">When on, Fud AI uses Health Connect\'s recent measured-energy window as your maintenance anchor when calculating goals instead of the formula estimate: measured total energy when enough days are available; otherwise, average measured active energy + formula BMR. No AI is used to read your burn. Requires Health Connect. Works with the Recalculate button and with Adaptive Goals.</string>
+    <string name="settings_energy_goals_info">When on, Ruoka + Treeni uses Health Connect\'s recent measured-energy window as your maintenance anchor when calculating goals instead of the formula estimate: measured total energy when enough days are available; otherwise, average measured active energy + formula BMR. No AI is used to read your burn. Requires Health Connect. Works with the Recalculate button and with Adaptive Goals.</string>
     <string name="settings_adaptive_goals">Adaptive Goals</string>
-    <string name="settings_adaptive_goals_info">About once a week when you open the app, Fud AI automatically re-runs the full goal calculation — the same one the Recalculate button uses — from your profile, recent logged food, and weight trend. If Energy Burn is on, it uses your measured burn as the maintenance anchor. It skips silently if the AI is unavailable. Turning this off restores the targets from before Adaptive Goals first changed them. This is not medical advice.</string>
+    <string name="settings_adaptive_goals_info">About once a week when you open the app, Ruoka + Treeni automatically re-runs the full goal calculation — the same one the Recalculate button uses — from your profile, recent logged food, and weight trend. If Energy Burn is on, it uses your measured burn as the maintenance anchor. It skips silently if the AI is unavailable. Turning this off restores the targets from before Adaptive Goals first changed them. This is not medical advice.</string>
     <string name="settings_refresh_energy_goals">Refresh Energy Burn Goals</string>
     <string name="settings_clear_food_log">Clear Food Log</string>
     <string name="settings_delete_all_data">Delete All Data</string>
@@ -827,7 +827,7 @@
     <string name="settings_rebalance_blocked_title">Can\'t Rebalance</string>
     <string name="settings_rebalance_blocked_message">Calories is locked and both other macros are locked, so there\'s nothing left to absorb this change. Unlock calories or another macro, then try again.</string>
     <string name="settings_adaptive_locks_title">Adaptive Goals Is On</string>
-    <string name="settings_adaptive_locks_message">Turn off Adaptive Goals to lock or set your own calories and macros. While it\'s on, Fud AI recalculates them for you each week.</string>
+    <string name="settings_adaptive_locks_message">Turn off Adaptive Goals to lock or set your own calories and macros. While it\'s on, Ruoka + Treeni recalculates them for you each week.</string>
     <string name="settings_recalc_title">Recalculate goals?</string>
     <string name="settings_recalc_message">Resets calories and macros to formula defaults from your height/weight/activity/goal. Any pinned macros are cleared.</string>
     <string name="settings_recalc_confirm">Recalculate</string>
@@ -836,16 +836,16 @@
     <string name="settings_invalid_goal_gain">A Gain goal needs a target above your current weight.</string>
     <string name="settings_permission_title">Permission needed</string>
 
-    <string name="settings_notifications_denied">Notifications permission denied. Enable it in System Settings → Apps → Fud AI → Notifications to receive reminders.</string>
+    <string name="settings_notifications_denied">Notifications permission denied. Enable it in System Settings → Apps → Ruoka + Treeni → Notifications to receive reminders.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Time to weigh in</string>
     <string name="notif_weight_log_text">Log today\'s weight to keep your progress chart accurate.</string>
     <string name="notif_body_fat_log_title">Body fat check-in</string>
     <string name="notif_body_fat_log_text">Log today\'s body fat % to track your composition trend.</string>
-    <string name="settings_health_denied">Health Connect did not grant access. Open Health Connect and allow the data types you want Fud AI to sync. Energy-based goals require both Active and Total Calories.</string>
+    <string name="settings_health_denied">Health Connect did not grant access. Open Health Connect and allow the data types you want Ruoka + Treeni to sync. Energy-based goals require both Active and Total Calories.</string>
     <string name="settings_health_unavailable">Install or update Health Connect from the Play Store, then re-tap the toggle.</string>
-    <string name="settings_health_profile_unsupported">Health Connect can show Fud AI as approved, but Android does not allow Health Connect from a Work Profile, Private Space, or cloned app profile. Install and open Fud AI in your phone\'s main profile.</string>
+    <string name="settings_health_profile_unsupported">Health Connect can show Ruoka + Treeni as approved, but Android does not allow Health Connect from a Work Profile, Private Space, or cloned app profile. Install and open Ruoka + Treeni in your phone\'s main profile.</string>
     <string name="settings_health_system_unavailable">Health Connect\'s system service is unavailable. It requires Android 9 or newer; on a newer phone, install Android and Google Play system updates, restart, then try again.</string>
     <string name="settings_get_health_connect">Get Health Connect</string>
 
@@ -926,9 +926,7 @@
     <string name="about_ace">ACE Certified</string>
     <string name="about_ace_desc">Personal Trainer · NCCA-accredited</string>
     <string name="about_star_github">Star on GitHub</string>
-    <string name="about_vote_ph">Vote on Product Hunt</string>
-    <string name="about_leave_tip_kofi">Leave a Tip on Ko-fi</string>
-    <string name="about_report_issue">Report an Issue on GitHub</string>
+    <string name="about_vote_ph">Vote on Product Hunt</string>    <string name="about_report_issue">Report an Issue on GitHub</string>
     <string name="about_report_issue_discord">Report an Issue on Discord</string>
     <string name="about_request_feature">Request a Feature on GitHub</string>
     <string name="about_request_feature_discord">Request a Feature on Discord</string>
@@ -941,19 +939,16 @@
     <string name="about_terms">Terms of Service</string>
     <string name="about_litert_notices">LiteRT-LM third-party notices</string>
     <string name="about_litert_notices_load_error">Could not load the LiteRT-LM third-party notices.</string>
-    <string name="about_category_app_updates">App &amp; Updates</string>
-    <string name="about_category_support">Support Fud AI</string>
+    <string name="about_category_app_updates">About</string>
+    <string name="about_category_support">Support Ruoka + Treeni</string>
     <string name="about_category_help_feedback">Help &amp; Feedback</string>
     <string name="about_category_community">Community</string>
     <string name="about_category_join_beta">Join Beta</string>
     <string name="about_category_legal">Legal</string>
-    <string name="about_beta_intro">Try new Fud AI changes before they reach the Play Store. Beta builds can be unfinished.</string>
-    <string name="about_beta_steps">Join the Fud AI Discord and open #beta-android. When a Play testing link is posted there, opt in and update Fud AI from the Play Store. If something breaks, use /bug and include the version from Settings.</string>
-    <string name="about_beta_not_open">Play testing is not open yet. The link will be posted in #beta-android.</string>
-    <string name="about_made_by">Made by Apoorv Darshan</string>
-    <string name="about_with_care">with care, for everyone</string>
-    <string name="about_share_message">I\'ve been tracking my meals with Fud AI — snap a photo, speak it, or type it, and the AI logs the calories. It\'s free, open source, and your data stays on your device.\n\nDownload: https://fud-ai.app</string>
-    <string name="about_share_chooser">Share Fud AI</string>
+    <string name="about_beta_intro">Try new Ruoka + Treeni changes before they reach the Play Store. Beta builds can be unfinished.</string>
+    <string name="about_beta_steps">Join the Ruoka + Treeni Discord and open #beta-android. When a Play testing link is posted there, opt in and update Ruoka + Treeni from the Play Store. If something breaks, use /bug and include the version from Settings.</string>
+    <string name="about_beta_not_open">Play testing is not open yet. The link will be posted in #beta-android.</string>    <string name="about_share_message">I\'ve been tracking my meals with Ruoka + Treeni — snap a photo, speak it, or type it, and the AI logs the calories. It\'s free, open source, and your data stays on your device.\n\nDownload: https://fud-ai.app</string>
+    <string name="about_share_chooser">Share Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Streak Reminder</string>
@@ -970,11 +965,40 @@
     <string name="notif_summary_surplus">%1$d kcal eaten · %2$d burned · %3$d kcal estimated surplus</string>
     <string name="notif_summary_balanced">%1$d kcal eaten · %2$d burned · estimated balance</string>
 
-    <string name="widget_all_metrics_label">Fud AI Today</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Today</string>
     <string name="widget_all_metrics_description">See today\'s calories, protein, carbs, and fat in one widget.</string>
 
     <!-- Workouts tab (exercise library ported from Delts) -->
-    <string name="nav_workouts">Workouts</string>
+    <string name="nav_workouts">Programs</string>
+    <string name="training_programs_title">Training Programs</string>
+    <string name="training_programs_subtitle">Choose a plan that fits your week. Your calorie and macro targets adapt automatically.</string>
+    <string name="training_program_pplul">Push, Pull, Legs, Upper, Lower</string>
+    <string name="training_program_upper_lower">Upper / Lower</string>
+    <string name="training_program_full_body">Full Body</string>
+    <string name="training_program_active_recovery">Active Recovery</string>
+    <string name="training_summary_pplul">Five training days for balanced strength and hypertrophy.</string>
+    <string name="training_summary_upper_lower">Four training days with two upper- and two lower-body sessions.</string>
+    <string name="training_summary_full_body">Three full-body sessions with recovery days between them.</string>
+    <string name="training_summary_active_recovery">Two light sessions for mobility, technique, and recovery.</string>
+    <string name="training_days_format">%1$d training days</string>
+    <string name="training_days_per_week">%1$d days/week</string>
+    <string name="training_recommended">Recommended</string>
+    <string name="training_active_program">Active program</string>
+    <string name="training_day_push">Push</string>
+    <string name="training_day_pull">Pull</string>
+    <string name="training_day_legs">Legs</string>
+    <string name="training_day_upper">Upper</string>
+    <string name="training_day_lower">Lower</string>
+    <string name="training_day_upper_a">Upper A</string>
+    <string name="training_day_lower_a">Lower A</string>
+    <string name="training_day_upper_b">Upper B</string>
+    <string name="training_day_lower_b">Lower B</string>
+    <string name="training_day_full_a">Full Body A</string>
+    <string name="training_day_full_b">Full Body B</string>
+    <string name="training_day_full_c">Full Body C</string>
+    <string name="training_day_mobility">Mobility</string>
+    <string name="training_day_technique">Technique</string>
+    <string name="speech_language_finnish">Finnish</string>
     <string name="back">Back</string>
     <string name="clear_search">Clear search</string>
     <string name="empty_subtitle">Try a different muscle, equipment, or search — or reset the filters above.</string>
@@ -986,7 +1010,7 @@
     <string name="hide_details">Hide details</string>
     <string name="instructions">Instructions</string>
     <string name="watch_on_youtube">Watch on YouTube</string>
-    <string name="watch_on_youtube_hint">Opens YouTube search — not an official Fud AI video</string>
+    <string name="watch_on_youtube_hint">Opens YouTube search — not an official Ruoka + Treeni video</string>
     <string name="label_category">Category</string>
     <string name="label_equipment">Equipment</string>
     <string name="label_force">Force</string>
@@ -1012,7 +1036,7 @@
     <string name="whats_new_v30_workouts">New Workouts tab — browse 873 exercises with photos, muscle and equipment filters, search, and detail pages.</string>
     <string name="whats_new_v30_home">Home redesign: speedometer calorie gauge, vertical macro bars, four nutrient cards, and a floating add button.</string>
     <string name="whats_new_v30_coach_voice">Ask Coach by voice with the new inline recorder.</string>
-    <string name="whats_new_v30_share">Share any meal as a link that opens straight in Fud AI on iPhone or Android.</string>
+    <string name="whats_new_v30_share">Share any meal as a link that opens straight in Ruoka + Treeni on iPhone or Android.</string>
     <string name="whats_new_v30_export">Export your food diary as JSON, Markdown, or CSV from Settings.</string>
     <string name="whats_new_v30_reprocess">Reprocess a logged meal with AI — adjust its name, serving, or note and re-analyze.</string>
     <string name="whats_new_v30_camera">Camera + Camera keeps both shots, stitched side by side.</string>
@@ -1032,7 +1056,7 @@
     <string name="cloud_backup_now">Back up now</string>
     <string name="cloud_backup_restore_now">Restore now</string>
     <string name="cloud_backup_delete">Delete cloud backup</string>
-    <string name="cloud_backup_delete_message">Removes the Fud AI file from your Google Drive. This phone is unchanged.</string>
+    <string name="cloud_backup_delete_message">Removes the Ruoka + Treeni file from your Google Drive. This phone is unchanged.</string>
     <string name="cloud_backup_last">Last backup: %1$s</string>
     <string name="cloud_backup_signed_in">Signed in as %1$s</string>
     <string name="cloud_backup_sign_out">Sign out</string>
@@ -1095,7 +1119,7 @@
     <string name="cd_open_camera">Open camera</string>
     <string name="cd_close_camera">Close camera</string>
     <string name="cd_save_photo">Save photo</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">Photo saved</string>
     <string name="photo_save_failed">Couldn\u2019t save photo</string>
     <string name="photo_save_permission_denied">Photo access denied</string>
@@ -1176,7 +1200,7 @@
     <string name="settings_macro_auto_label_format">%1$s (auto)</string>
     <string name="vm_health_connect_needed">Health Connect Needed</string>
     <string name="vm_not_enough_energy">Not Enough Energy Data</string>
-    <string name="vm_adaptive_on_message">Adaptive Goals is on. Fud AI will check once per week after enough food and weight data exists.</string>
+    <string name="vm_adaptive_on_message">Adaptive Goals is on. Ruoka + Treeni will check once per week after enough food and weight data exists.</string>
     <string name="vm_goals_recalculated">Goals Recalculated</string>
     <plurals name="import_add_meals_title">
         <item quantity="one">Add shared meal</item>
@@ -1212,11 +1236,11 @@
     <string name="notif_channel_body_fat">Body Fat Log Reminder</string>
     <string name="notif_channel_body_fat_desc">Daily reminder to log a body-fat reading.</string>
     <string name="notif_channel_updates">App Updates</string>
-    <string name="notif_channel_updates_desc">A new version of Fud AI is available on the Play Store.</string>
+    <string name="notif_channel_updates_desc">A new version of Ruoka + Treeni is available on the Play Store.</string>
     <string name="notif_channel_water">Water Reminder</string>
     <string name="notif_channel_water_desc">Daily reminder to drink and log water.</string>
     <string name="notif_water_title">Time to Hydrate</string>
-    <string name="notif_water_text">Have some water and log it in Fud AI.</string>
+    <string name="notif_water_text">Have some water and log it in Ruoka + Treeni.</string>
     <string name="notif_channel_fasting">Fasting</string>
     <string name="notif_channel_fasting_desc">Alerts when an active fast reaches its goal.</string>
     <string name="notif_fasting_goal_title">Fasting Goal Reached</string>
@@ -1239,27 +1263,27 @@
     <string name="water_progress">%1$d / %2$d ml</string>
     <string name="unit_ml">ml</string>
     <string name="notif_update_title">Update available</string>
-    <string name="notif_update_text">A new version of Fud AI is ready. Tap to update.</string>
+    <string name="notif_update_text">A new version of Ruoka + Treeni is ready. Tap to update.</string>
     <string name="notif_channel_announcements">Announcements</string>
-    <string name="notif_channel_announcements_desc">Occasional one-time news from Fud AI, like the Product Hunt launch.</string>
-    <string name="notif_product_hunt_title">Fud AI is live on Product Hunt 🚀</string>
-    <string name="notif_product_hunt_text">We just launched! Tap to vote and help more people find Fud AI.</string>
+    <string name="notif_channel_announcements_desc">Occasional one-time news from Ruoka + Treeni, like the Product Hunt launch.</string>
+    <string name="notif_product_hunt_title">Ruoka + Treeni is live on Product Hunt 🚀</string>
+    <string name="notif_product_hunt_text">We just launched! Tap to vote and help more people find Ruoka + Treeni.</string>
 
     <!-- One-time post-update prompts (existing users only) -->
     <string name="post_update_hosted_title">Optional: let us handle the AI keys</string>
-    <string name="post_update_hosted_body">Fud AI is free with your own API keys (BYOK) — and always will be. If juggling keys feels confusing, Plus and Pro plans run the AI for you with no keys to manage. Totally optional, nothing changes unless you switch.</string>
+    <string name="post_update_hosted_body">Ruoka + Treeni is free with your own API keys (BYOK) — and always will be. If juggling keys feels confusing, Plus and Pro plans run the AI for you with no keys to manage. Totally optional, nothing changes unless you switch.</string>
     <string name="post_update_hosted_cta">Learn more</string>
     <string name="post_update_hosted_keep_byok">Keep BYOK (free)</string>
     <string name="post_update_hosted_android_title">Hosted AI is coming to Android</string>
     <string name="post_update_hosted_android_body">Plus and Pro hosted plans are live on iPhone first; Android is next. Until then nothing changes here — BYOK stays free forever, and you can keep using your own keys exactly as you do today.</string>
     <string name="post_update_hosted_android_got_it">Got it</string>
-    <string name="post_update_product_hunt_title">Fud AI is live on Product Hunt</string>
-    <string name="post_update_product_hunt_body">We just launched. A vote helps more people find Fud AI.</string>
+    <string name="post_update_product_hunt_title">Ruoka + Treeni is live on Product Hunt</string>
+    <string name="post_update_product_hunt_body">We just launched. A vote helps more people find Ruoka + Treeni.</string>
     <string name="post_update_product_hunt_not_now">Not now</string>
     <string name="post_update_meet_dev_title">Meet the developer</string>
     <string name="post_update_meet_dev_greeting">Hi, I\'m Apoorv 👋</string>
-    <string name="post_update_meet_dev_body">I build Fud AI on my own, in the open. Come say hi, share feedback, or just follow along — it genuinely helps.</string>
-    <string name="settings_calc_intro">Your daily calorie and macro targets are set by AI. When you tap Recalculate Goals — or automatically about once a week if Adaptive Goals is on — Fud AI sends your profile, the reference equations below, privacy-safe daily nutrition totals, exact dated weight, body-fat, and tape measurements, aggregate workout counts, duration, sets, and reps, and optional Health Connect energy to your AI provider. Food names, notes, photos, ingredients, and exercise names are not sent for this calculation. It starts from these peer-reviewed formulas, then adjusts them to your real data to estimate your true maintenance and targets.</string>
+    <string name="post_update_meet_dev_body">I build Ruoka + Treeni on my own, in the open. Come say hi, share feedback, or just follow along — it genuinely helps.</string>
+    <string name="settings_calc_intro">Your daily calorie and macro targets are set by AI. When you tap Recalculate Goals — or automatically about once a week if Adaptive Goals is on — Ruoka + Treeni sends your profile, the reference equations below, privacy-safe daily nutrition totals, exact dated weight, body-fat, and tape measurements, aggregate workout counts, duration, sets, and reps, and optional Health Connect energy to your AI provider. Food names, notes, photos, ingredients, and exercise names are not sent for this calculation. It starts from these peer-reviewed formulas, then adjusts them to your real data to estimate your true maintenance and targets.</string>
     <string name="settings_calc_sec_bmr">Resting metabolism (BMR)</string>
     <string name="settings_calc_sec_tdee">Daily energy expenditure (TDEE)</string>
     <string name="settings_calc_mifflin_name">Mifflin-St Jeor equation</string>
@@ -1286,7 +1310,7 @@
     <string name="settings_calc_split_citation">Morton RW, et al. (2018). “A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength.” Br J Sports Med 52(6):376–384.</string>
     <string name="settings_calc_micro_citation">Estimates rely on the underlying AI model\'s training data (USDA FoodData Central, manufacturer panels, scientific literature). Accuracy varies by food, portion-size visibility, and provider model. Always cross-check labels for foods you log frequently.</string>
     <string name="settings_not_medical_title">Not medical advice</string>
-    <string name="settings_not_medical_body">Fud AI is an estimation tool, not a clinical instrument. Predictive equations carry inherent error (typically ±10%% for BMR). Consult a registered dietitian, physician, or sports medicine professional before significant diet changes — especially if you have a medical condition, are pregnant or breastfeeding, are under 18, or are managing an eating disorder.</string>
+    <string name="settings_not_medical_body">Ruoka + Treeni is an estimation tool, not a clinical instrument. Predictive equations carry inherent error (typically ±10%% for BMR). Consult a registered dietitian, physician, or sports medicine professional before significant diet changes — especially if you have a medical condition, are pregnant or breastfeeding, are under 18, or are managing an eating disorder.</string>
     <string name="settings_waist_cm_format">Waist %1$.0f cm</string>
     <string name="settings_waist_in_format">Waist %1$.0f in</string>
     <string name="export_range_today">Today</string>
@@ -1294,8 +1318,8 @@
     <string name="export_range_month">This month</string>
     <string name="export_range_all">All time</string>
     <string name="export_range_custom">Custom</string>
-    <string name="vm_health_connect_needed_msg">Allow Fud AI to read your Active and Total Calories in Health Connect, then turn Energy Burn on again.</string>
-    <string name="vm_not_enough_energy_msg">Fud AI needs at least 3 recent days of Health Connect energy data before it can use your measured burn.</string>
+    <string name="vm_health_connect_needed_msg">Allow Ruoka + Treeni to read your Active and Total Calories in Health Connect, then turn Energy Burn on again.</string>
+    <string name="vm_not_enough_energy_msg">Ruoka + Treeni needs at least 3 recent days of Health Connect energy data before it can use your measured burn.</string>
     <string name="nutrient_short_sat_fat">Sat Fat</string>
     <string name="nutrient_short_vit_a">Vit A</string>
     <string name="nutrient_short_vit_c">Vit C</string>
@@ -1321,7 +1345,7 @@
     <string name="progressive_meal_title">Progressive Meal</string>
     <string name="progressive_meal_description">Photo 1 → 2 → 3 follows each ingredient added to the same plate. Visible scale differences become ingredient weights.</string>
     <string name="progressive_meal_info_title">How Progressive Meal works</string>
-    <string name="progressive_meal_info_body">Use this when every photo shows the same plate after another ingredient is added. Keep the photos in order and make the scale display visible. Fud AI uses the difference between consecutive scale totals to estimate each new ingredient. Leave this off when the photos are only different angles of the same meal.</string>
+    <string name="progressive_meal_info_body">Use this when every photo shows the same plate after another ingredient is added. Keep the photos in order and make the scale display visible. Ruoka + Treeni uses the difference between consecutive scale totals to estimate each new ingredient. Leave this off when the photos are only different angles of the same meal.</string>
     <string name="settings_add_menu_title">+ Menu</string>
     <string name="settings_add_menu_food_section">Food Add Menu</string>
     <string name="settings_add_menu_groups">Groups</string>
@@ -1336,7 +1360,7 @@
     <string name="settings_quick_actions">Quick Actions</string>
     <string name="settings_app_icon_shortcuts">App Icon Shortcuts</string>
     <string name="settings_quick_action_number">Quick Action %1$d</string>
-    <string name="settings_quick_actions_footer">Hold the Fud AI app icon to use these shortcuts. Each slot opens its selected action directly.</string>
+    <string name="settings_quick_actions_footer">Hold the Ruoka + Treeni app icon to use these shortcuts. Each slot opens its selected action directly.</string>
     <string name="about_whisper_notices">Whisper Base third-party notices</string>
     <string name="about_whisper_notices_load_error">Could not load the Whisper Base third-party notices.</string>
     <string name="import_water_entries">Water entries</string>

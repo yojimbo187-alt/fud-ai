@@ -1359,7 +1359,7 @@ class SettingsViewModel(val container: AppContainer) : ViewModel() {
                 _ui.value = _ui.value.copy(
                     recalculatingGoals = false,
                     adaptiveGoalAlertTitle = "Couldn't Recalculate",
-                    adaptiveGoalAlertMessage = "Fud AI couldn't reach your AI provider, so your goals are unchanged. Check your AI provider and API key in Settings, then try again. (${e.localizedMessage ?: "no response"})"
+                    adaptiveGoalAlertMessage = "Ruoka + Treeni couldn't reach your AI provider, so your goals are unchanged. Check your AI provider and API key in Settings, then try again. (${e.localizedMessage ?: "no response"})"
                 )
                 return@launch
             }

@@ -51,6 +51,7 @@ import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -58,6 +59,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -88,14 +90,416 @@ import com.apoorvdarshan.calorietracker.data.ExerciseSort
 import com.apoorvdarshan.calorietracker.data.ExerciseVisual
 import com.apoorvdarshan.calorietracker.models.WorkoutTabMode
 import com.apoorvdarshan.calorietracker.models.WorkoutWeightUnit
+import com.apoorvdarshan.calorietracker.models.TrainingDayDefinition
+import com.apoorvdarshan.calorietracker.models.TrainingExerciseSlot
+import com.apoorvdarshan.calorietracker.models.TrainingProgram
+import com.apoorvdarshan.calorietracker.models.TrainingProgramCatalog
+import com.apoorvdarshan.calorietracker.models.TrainingText
+import com.apoorvdarshan.calorietracker.models.UserProfile
 import com.apoorvdarshan.calorietracker.ui.components.FudGlassSurface
 import com.apoorvdarshan.calorietracker.ui.navigation.BottomNavScrollPadding
 import com.apoorvdarshan.calorietracker.ui.theme.AppColors
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 @Composable
 fun WorkoutsScreen(container: AppContainer, modifier: Modifier = Modifier) {
+    val profile by container.profileRepository.profile.collectAsState(initial = null)
+    val currentProfile = profile ?: UserProfile()
+    val active = currentProfile.activeTrainingProgram
+    val scope = rememberCoroutineScope()
+    var selectedDayIndex by remember(active) { mutableStateOf(0) }
+
+    LazyColumn(
+        modifier = modifier
+            .fillMaxSize()
+            .background(workoutsColors().background)
+            .statusBarsPadding(),
+        contentPadding = PaddingValues(start = 20.dp, top = 18.dp, end = 20.dp, bottom = BottomNavScrollPadding),
+        verticalArrangement = Arrangement.spacedBy(14.dp)
+    ) {
+        item {
+            Column(verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                Text(
+                    stringResource(R.string.training_programs_title),
+                    style = MaterialTheme.typography.headlineLarge,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    stringResource(R.string.training_programs_subtitle),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.65f)
+                )
+            }
+        }
+
+        items(TrainingProgram.values().toList(), key = { it.name }) { program ->
+            val selected = program == active
+            FudGlassSurface(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable(enabled = !selected) {
+                        scope.launch {
+                            val latestProfile = container.profileRepository.current() ?: return@launch
+                            container.profileRepository.save(
+                                latestProfile.copy(
+                                    trainingProgramId = program.name,
+                                    customCalories = null,
+                                    customProtein = null,
+                                    customCarbs = null,
+                                    customFat = null,
+                                    autoBalanceMacro = null,
+                                    caloriesLocked = false,
+                                    lockedMacros = emptySet()
+                                )
+                            )
+                        }
+                    },
+                cornerRadius = 20.dp,
+                padding = 16.dp
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(14.dp)
+                ) {
+                    Icon(
+                        imageVector = if (selected) Icons.Filled.Check else Icons.Filled.FitnessCenter,
+                        contentDescription = null,
+                        tint = if (selected) AppColors.Calorie else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                        modifier = Modifier.size(24.dp)
+                    )
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                        Text(
+                            trainingProgramTitle(program),
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.SemiBold
+                        )
+                        Text(
+                            stringResource(R.string.training_days_format, program.weeklyTrainingDays),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                        )
+                    }
+                    if (program == TrainingProgram.PRIORITY) {
+                        Text(
+                            stringResource(R.string.training_recommended),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = AppColors.Calorie,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+        }
+
+        item {
+            FudGlassSurface(
+                modifier = Modifier.fillMaxWidth(),
+                cornerRadius = 24.dp,
+                padding = 18.dp
+            ) {
+                Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f)) {
+                            Text(
+                                stringResource(R.string.training_active_program),
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                            )
+                            Text(
+                                trainingProgramTitle(active),
+                                style = MaterialTheme.typography.titleLarge,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                        Text(
+                            stringResource(R.string.training_days_per_week, active.weeklyTrainingDays),
+                            style = MaterialTheme.typography.labelMedium,
+                            color = AppColors.Calorie,
+                            fontWeight = FontWeight.SemiBold
+                        )
+                    }
+                    Text(
+                        trainingProgramSummary(active),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f)
+                    )
+                    HorizontalDivider(color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.08f))
+                    trainingProgramDays(active).forEachIndexed { index, day ->
+                        Row(
+                            Modifier
+                                .fillMaxWidth()
+                                .clip(RoundedCornerShape(14.dp))
+                                .clickable { selectedDayIndex = index }
+                                .background(
+                                    if (selectedDayIndex == index) AppColors.Calorie.copy(alpha = 0.10f)
+                                    else Color.Transparent
+                                )
+                                .padding(horizontal = 8.dp, vertical = 8.dp),
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(14.dp)
+                        ) {
+                            Box(
+                                Modifier.size(34.dp).clip(CircleShape).background(AppColors.Calorie),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Text("${index + 1}", color = Color.White, fontWeight = FontWeight.Bold)
+                            }
+                            Text(day, modifier = Modifier.weight(1f), fontWeight = FontWeight.SemiBold)
+                            Icon(
+                                Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                                contentDescription = null,
+                                tint = if (selectedDayIndex == index) AppColors.Calorie
+                                else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.35f)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        item(key = "training-day-${active.name}-$selectedDayIndex") {
+            TrainingDayDetails(
+                program = active,
+                definition = TrainingProgramCatalog.day(active, selectedDayIndex)
+            )
+        }
+    }
+}
+
+@Composable
+private fun TrainingDayDetails(program: TrainingProgram, definition: TrainingDayDefinition?) {
+    if (definition == null) return
+    val context = LocalContext.current
+    val prefs = remember(context) { context.getSharedPreferences("training_programs", android.content.Context.MODE_PRIVATE) }
+    var currentWeek by remember { mutableStateOf(prefs.getInt("current_week", 1).coerceIn(1, TrainingProgramCatalog.BLOCK_LENGTH)) }
+    var weekMenuExpanded by remember { mutableStateOf(false) }
+    var expandedExerciseId by remember(definition.id) { mutableStateOf<String?>(null) }
+    var rankRevision by remember(definition.id) { mutableStateOf(0) }
+    val sets = TrainingProgramCatalog.workingSets(currentWeek)
+    val rir = TrainingProgramCatalog.targetRir(currentWeek)
+
+    Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+        FudGlassSurface(Modifier.fillMaxWidth(), cornerRadius = 20.dp, padding = 16.dp) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                    Text(
+                        TrainingText("16-week advanced block", "16 viikon edistyneiden harjoitusjakso").localized(),
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.60f)
+                    )
+                    Text(
+                        if (currentWeek % 4 == 0) TrainingText("Deload · 2 sets · 4 RIR", "Kevennys · 2 sarjaa · 4 RIR").localized()
+                        else "$sets × ${TrainingText("working sets", "työsarjaa").localized()} · $rir RIR",
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+                Box {
+                    Text(
+                        "${TrainingText("Week", "Viikko").localized()} $currentWeek",
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(12.dp))
+                            .clickable { weekMenuExpanded = true }
+                            .padding(10.dp),
+                        color = AppColors.Calorie,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    DropdownMenu(expanded = weekMenuExpanded, onDismissRequest = { weekMenuExpanded = false }) {
+                        (1..TrainingProgramCatalog.BLOCK_LENGTH).forEach { week ->
+                            DropdownMenuItem(
+                                text = { Text("${TrainingText("Week", "Viikko").localized()} $week") },
+                                onClick = {
+                                    currentWeek = week
+                                    prefs.edit().putInt("current_week", week).apply()
+                                    weekMenuExpanded = false
+                                },
+                                leadingIcon = if (week == currentWeek) ({ Icon(Icons.Filled.Check, contentDescription = null) }) else null
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        FudGlassSurface(Modifier.fillMaxWidth(), cornerRadius = 20.dp, padding = 16.dp) {
+            Text(
+                TrainingProgramCatalog.scienceNote.localized(),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f)
+            )
+        }
+
+        Text(
+            definition.name.localized(),
+            style = MaterialTheme.typography.headlineSmall,
+            fontWeight = FontWeight.Bold
+        )
+
+        definition.exercises.forEachIndexed { index, exercise ->
+            val rankKey = "rank.${program.name}.${definition.id}.${exercise.id}"
+            @Suppress("UNUSED_VARIABLE") val revision = rankRevision
+            val selectedRank = prefs.getInt(rankKey, 0).coerceIn(0, exercise.options.lastIndex)
+            TrainingExerciseCard(
+                exercise = exercise,
+                position = index + 1,
+                selectedRank = selectedRank,
+                sets = sets,
+                rir = rir,
+                expanded = expandedExerciseId == exercise.id,
+                onToggleAlternatives = {
+                    expandedExerciseId = if (expandedExerciseId == exercise.id) null else exercise.id
+                },
+                onSelectRank = { newRank ->
+                    prefs.edit().putInt(rankKey, newRank).apply()
+                    rankRevision += 1
+                    expandedExerciseId = null
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun TrainingExerciseCard(
+    exercise: TrainingExerciseSlot,
+    position: Int,
+    selectedRank: Int,
+    sets: Int,
+    rir: Int,
+    expanded: Boolean,
+    onToggleAlternatives: () -> Unit,
+    onSelectRank: (Int) -> Unit
+) {
+    val choice = exercise.options[selectedRank]
+    FudGlassSurface(Modifier.fillMaxWidth(), cornerRadius = 20.dp, padding = 16.dp) {
+        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Row(verticalAlignment = Alignment.Top, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                Box(
+                    Modifier.size(34.dp).clip(CircleShape).background(AppColors.Calorie),
+                    contentAlignment = Alignment.Center
+                ) { Text("$position", color = Color.White, fontWeight = FontWeight.Bold) }
+                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                    Text(choice.name.localized(), style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                    Text(
+                        exercise.role.localized(),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.60f)
+                    )
+                }
+                Text("#${selectedRank + 1}", color = AppColors.Calorie, fontWeight = FontWeight.Bold)
+            }
+
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                TrainingMetric("$sets × ${exercise.minimumReps}–${exercise.maximumReps}")
+                TrainingMetric("$rir RIR")
+                TrainingMetric(trainingRestLabel(exercise.recommendedRestSeconds))
+            }
+
+            Row(
+                Modifier
+                    .clip(RoundedCornerShape(12.dp))
+                    .clickable(onClick = onToggleAlternatives)
+                    .padding(vertical = 6.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Icon(Icons.Filled.SwapVert, contentDescription = null, tint = AppColors.Calorie)
+                Text(
+                    TrainingText("Ranked alternatives", "Järjestetyt vaihtoehdot").localized(),
+                    color = AppColors.Calorie,
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Icon(Icons.Filled.KeyboardArrowDown, contentDescription = null, tint = AppColors.Calorie)
+            }
+
+            if (expanded) {
+                exercise.options.forEachIndexed { rank, option ->
+                    Row(
+                        Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(12.dp))
+                            .clickable { onSelectRank(rank) }
+                            .background(if (rank == selectedRank) AppColors.Calorie.copy(alpha = 0.10f) else Color.Transparent)
+                            .padding(10.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(10.dp)
+                    ) {
+                        Text("#${rank + 1}", color = AppColors.Calorie, fontWeight = FontWeight.Bold)
+                        Text(option.name.localized(), modifier = Modifier.weight(1f))
+                        if (rank == selectedRank) Icon(Icons.Filled.Check, contentDescription = null, tint = AppColors.Calorie)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun TrainingMetric(value: String) {
+    Text(
+        value,
+        modifier = Modifier
+            .clip(RoundedCornerShape(50))
+            .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.70f))
+            .padding(horizontal = 9.dp, vertical = 6.dp),
+        style = MaterialTheme.typography.labelSmall,
+        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f),
+        fontWeight = FontWeight.SemiBold
+    )
+}
+
+private fun trainingRestLabel(seconds: Int): String = when (seconds) {
+    210 -> TrainingText("3–4 min rest", "3–4 min lepo").localized()
+    105 -> TrainingText("1.5–2 min rest", "1,5–2 min lepo").localized()
+    else -> "${seconds / 60} min ${TrainingText("rest", "lepo").localized()}"
+}
+
+@Composable
+private fun trainingProgramTitle(program: TrainingProgram): String = stringResource(
+    when (program) {
+        TrainingProgram.PUSH_PULL_LEGS_UPPER_LOWER -> R.string.training_program_pplul
+        TrainingProgram.UPPER_LOWER -> R.string.training_program_upper_lower
+        TrainingProgram.FULL_BODY -> R.string.training_program_full_body
+        TrainingProgram.ACTIVE_RECOVERY -> R.string.training_program_active_recovery
+    }
+)
+
+@Composable
+private fun trainingProgramSummary(program: TrainingProgram): String = stringResource(
+    when (program) {
+        TrainingProgram.PUSH_PULL_LEGS_UPPER_LOWER -> R.string.training_summary_pplul
+        TrainingProgram.UPPER_LOWER -> R.string.training_summary_upper_lower
+        TrainingProgram.FULL_BODY -> R.string.training_summary_full_body
+        TrainingProgram.ACTIVE_RECOVERY -> R.string.training_summary_active_recovery
+    }
+)
+
+@Composable
+private fun trainingProgramDays(program: TrainingProgram): List<String> = when (program) {
+    TrainingProgram.PUSH_PULL_LEGS_UPPER_LOWER -> listOf(
+        stringResource(R.string.training_day_push), stringResource(R.string.training_day_pull),
+        stringResource(R.string.training_day_legs), stringResource(R.string.training_day_upper),
+        stringResource(R.string.training_day_lower)
+    )
+    TrainingProgram.UPPER_LOWER -> listOf(
+        stringResource(R.string.training_day_upper_a), stringResource(R.string.training_day_lower_a),
+        stringResource(R.string.training_day_upper_b), stringResource(R.string.training_day_lower_b)
+    )
+    TrainingProgram.FULL_BODY -> listOf(
+        stringResource(R.string.training_day_full_a), stringResource(R.string.training_day_full_b),
+        stringResource(R.string.training_day_full_c)
+    )
+    TrainingProgram.ACTIVE_RECOVERY -> listOf(
+        stringResource(R.string.training_day_mobility), stringResource(R.string.training_day_technique)
+    )
+}
+
+@Composable
+private fun LegacyWorkoutsScreen(container: AppContainer, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     var catalog by remember { mutableStateOf(ExerciseRepository.peek()) }
     LaunchedEffect(Unit) {
@@ -304,7 +708,7 @@ private fun WorkoutLibraryScreen(
         if (listState.isScrollInProgress) dismissKeyboard()
     }
 
-    // Fud AI's tab bar floats over content (no Scaffold inset like Delts), so the
+    // Ruoka + Treeni's tab bar floats over content (no Scaffold inset like Delts), so the
     // screen paints its own background and the list keeps its tail clear of the
     // floating bar. The status-bar inset is absorbed by the ad strip above this
     // screen (TabWithBanner). Search, filter chips, and the results header stay

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="workout_text_title">Kuvaile treeniä</string>
+    <string name="workout_text_intro">Kuvaile mitä teit. Tarkista tiedot ennen kuin lisäät ne harjoituspäiväkirjaasi.</string>
+    <string name="workout_text_description">Harjoituksen kuvaus</string>
+    <string name="workout_text_example">20 minuuttia naruhyppyä, sitten 3 sarjaa 10 penkkipunnertusta 40 kg:lla</string>
+    <string name="workout_text_voice">Ääni</string>
+    <string name="workout_text_preparing">Etsitään liikkeitä…</string>
+    <string name="workout_text_preview">Analysoida</string>
+    <string name="workout_text_retry">Yritä uudelleen</string>
+    <string name="workout_text_review">Tarkista harjoitus</string>
+    <string name="workout_text_date">Päivämäärä (VVVV-KK-PP)</string>
+    <string name="workout_text_custom">Mukautettu ajastettu harjoitus · kaloriarvio käyttää yleistä aktiivisuustasoa</string>
+    <string name="workout_text_minutes">Minuutit</string>
+    <string name="workout_text_reps">Toistot</string>
+    <string name="workout_text_remove">Poista liike</string>
+    <string name="workout_text_calories_note">Kalorit ovat arvioita. Käytä päiväkirjan Laske-toimintoa treenin lisäämisen jälkeen.</string>
+    <string name="workout_text_edit">Muokkaa kuvausta</string>
+    <string name="workout_text_adding">Lisätään…</string>
+    <string name="workout_text_add">Lisää päiväkirjaan</string>
+    <string name="workout_text_menu">Teksti</string>
+    <string name="workout_text_set_weight">Sarja %1$d · %2$s</string>
+    <string name="workout_text_estimate">Arvioitu kulutus: %1$d kcal</string>
+    <string name="workout_text_effort">Rasitustaso (oletuksena kohtalainen)</string>
+    <string name="workout_text_light">Kevyt</string>
+    <string name="workout_text_moderate">Kohtalainen</string>
+    <string name="workout_text_vigorous">Raskas</string>
+    <string name="workout_text_rpe">RPE 1–10</string>
+</resources>

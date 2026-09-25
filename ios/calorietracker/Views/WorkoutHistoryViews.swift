@@ -240,7 +240,7 @@ struct ImportedHealthWorkoutHistoryLink: View {
     }
 }
 
-/// Read-only history for Apple Watch / Health workouts imported into Fud AI.
+/// Read-only history for Apple Watch / Health workouts imported into Ruoka + Treeni.
 struct ImportedHealthWorkoutHistoryView: View {
     let workouts: [ImportedHealthWorkout]
 

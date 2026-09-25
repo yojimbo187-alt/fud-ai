@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_error_no_key">API-avainta ei ole määritetty. Lisää avaimesi kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_image_conversion">Kuvan käsittely epäonnistui. Kokeile toista kuvaa.</string>
+    <string name="ai_error_invalid_response">Tekoälyn vastausta ei voitu ymmärtää. Yritä uudelleen.</string>
+    <string name="ai_error_invalid_url">Virheellinen API-URL-osoite. Tarkista palveluntarjoajan asetukset.</string>
+    <string name="ai_error_offline">Näytät olevan offline-tilassa. Tarkista yhteys ja yritä uudelleen.</string>
+    <string name="ai_error_connection">Ei voitu muodostaa yhteyttä AI-palveluntarjoajaan. Tarkista yhteytesi ja palveluntarjoajan URL-osoite ja yritä sitten uudelleen.</string>
+    <string name="ai_error_timeout">AI kesti liian kauan vastata. Yritä uudelleen tai nosta pyynnön aikakatkaisua kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_credits">Tekoälytilisi saldo on lopussa. Lataa tai vaihda palveluntarjoajaa kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_daily_quota">Tekoälytilisi päiväkiintiö on käytetty. Yritä huomenna uudelleen tai vaihda palveluntarjoajaa kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_quota">Tekoälytilisi käyttökiintiö ylitettiin. Tarkista palveluntarjoajasi rajat tai vaihda palveluntarjoajaa kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_model">Valittu malli tai API-päätepiste ei ole käytettävissä. Tarkista malli ja API URL kohdasta Asetukset → AI Provider.</string>
+    <string name="ai_error_rate_limit">Rate-raja osui API-avaimellesi. Odota hetki tai vaihda palveluntarjoajaa kohdassa Asetukset → AI Provider. Jos käytät ilmaista tasoa, tarkista, onko sen päivittäinen kiintiö käytetty.</string>
+    <string name="ai_error_key_rejected">API-avaimesi hylättiin. Avaa Asetukset → AI Provider ja liitä kelvollinen avain uudelleen.</string>
+    <string name="ai_error_overloaded">AI-palveluntarjoaja on tällä hetkellä ylikuormitettu. Yritimme uudelleen muutaman kerran – yritä uudelleen hetken kuluttua tai vaihda palveluntarjoajaa/mallia kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_generic">AI-pyyntö epäonnistui. Yritä uudelleen tai vaihda palveluntarjoajaa kohdassa Asetukset → AI Provider.</string>
+    <string name="ai_error_local_unavailable">Laitteen tekoälyn suoritusaika ei ole käytettävissä. Tarkista ladattu malli kohdasta Asetukset → AI Provider.</string>
+    <string name="ai_error_truncated">AI-vastaus katkaistiin kahdesti. Kokeile lyhyempää tuloa tai toista mallia.</string>
+    <string name="ai_error_both_failed">Sekä %1$s että vara-%2$s epäonnistuivat. %3$s</string>
+</resources>

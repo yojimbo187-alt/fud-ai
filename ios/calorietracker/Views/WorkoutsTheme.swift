@@ -4,12 +4,12 @@ import UIKit
 // MARK: - Workouts theme bridge
 // The Workouts exercise library is ported from Delts (github.com/apoorvdarshan/delts).
 // Delts styles its views through a small set of `delts*` palette tokens and view
-// modifiers; this file re-implements that exact surface on top of Fud AI's theme
+// modifiers; this file re-implements that exact surface on top of Ruoka + Treeni's theme
 // (AppColors + the user-selectable AppThemeColor accent), so the ported views render
-// with Fud AI's default look while keeping their code byte-for-byte close to Delts.
+// with Ruoka + Treeni's default look while keeping their code byte-for-byte close to Delts.
 
 extension Color {
-    /// Screen background — Fud AI's warm cream in light, near-black in dark.
+    /// Screen background — Ruoka + Treeni's warm cream in light, near-black in dark.
     static var workoutBackground: Color { AppColors.appBackground }
 
     /// Card surface behind rows and hero imagery.
@@ -24,7 +24,7 @@ extension Color {
         })
     }
 
-    /// Hairline strokes — matches Fud AI's divider tones.
+    /// Hairline strokes — matches Ruoka + Treeni's divider tones.
     static var workoutHairline: Color {
         Color(uiColor: UIColor { traits in
             traits.userInterfaceStyle == .dark
@@ -33,7 +33,7 @@ extension Color {
         })
     }
 
-    /// Primary accent — the user's Fud AI theme color (default Fud Pink).
+    /// Primary accent — the user's Ruoka + Treeni theme color (default Fud Pink).
     static var workoutAccent: Color { AppColors.calorie }
 
     /// Softer companion accent — the gradient end of the theme color.

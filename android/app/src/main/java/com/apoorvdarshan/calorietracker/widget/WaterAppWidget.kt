@@ -128,7 +128,7 @@ private fun WaterDisabledContent() {
             )
             Spacer(modifier = GlanceModifier.height(4.dp))
             Text(
-                text = "Enable in Fud AI",
+                text = "Enable in Ruoka + Treeni",
                 style = TextStyle(color = WidgetTheme.secondaryTextProvider, fontSize = 12.sp)
             )
         }

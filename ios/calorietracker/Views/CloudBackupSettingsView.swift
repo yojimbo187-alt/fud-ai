@@ -67,7 +67,7 @@ struct CloudBackupSettingsSection: View {
             }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Removes the Fud AI file from iCloud. This iPhone is unchanged.")
+            Text("Removes the Ruoka + Treeni file from iCloud. This iPhone is unchanged.")
         }
         .alert("iCloud Backup", isPresented: Binding(
             get: { errorMessage != nil },

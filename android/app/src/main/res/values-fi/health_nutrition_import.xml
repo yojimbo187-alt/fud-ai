@@ -1,0 +1,21 @@
+<resources>
+    <string name="health_import_title">Tuo ravitsemushistoria</string>
+    <string name="health_import_action">Tuoda</string>
+    <string name="health_import_description">Tuo päiväkirjaasi ruokatietueita toisesta sovelluksesta. Esikatsele saatavilla olevia tietueita ja valitse sitten yksi lähdesovellus, jotta jaettuja tietueita ei lasketa kahdesti.</string>
+    <string name="health_import_from">Alkaen (VVVV-KK-PP)</string>
+    <string name="health_import_to">Läpi (VVVV-KK-PP)</string>
+    <string name="health_import_history_hint">Valitse päivämäärät viimeisen 30 päivän ajalta ilman historian käyttöoikeutta. Vanhemmat tietueet vaativat historian käyttöoikeuden tuetulla laitteella.</string>
+    <string name="health_import_grant">Myönnä pääsy ravintoon ja historiaan</string>
+    <string name="health_import_access_result">Pääsyasetukset päivitetty. Esikatsele uudelleen tarkistaaksesi käytettävissä olevat tietueet.</string>
+    <string name="health_import_access_needed">Salli ravinnon lukuoikeus Health Connectissa ja esikatsele sitten uudelleen.</string>
+    <string name="health_import_invalid_dates">Anna kelvolliset päivämäärät muodossa VVVV-KK-PP. Päättymispäivän on oltava aloituspäivämääränä tai sen jälkeen ja viimeistään tänään.</string>
+    <string name="health_import_history_needed">Tämä alue tarvitsee pääsyn historiaan. Myönnä käyttöoikeus tuetulle laitteelle tai valitse päivämäärät viimeisten 30 päivän sisällä.</string>
+    <string name="health_import_preview">Esikatsele saatavilla olevia tietueita</string>
+    <string name="health_import_failed">Tuontia ei voitu suorittaa loppuun. Tarkista Health Connectin käyttöoikeus ja yritä uudelleen.</string>
+    <string name="health_import_empty">Tältä alueelta ei löytynyt uusia ravitsemustietoja muista sovelluksista. Tarkista, että lähdesovelluksesi on jakanut ravinnon Health Connectin kanssa. Aiemmin tuodut tietueet ohitetaan, mukaan lukien päiväkirjasta poistetut.</string>
+    <string name="health_import_count">%1$d uudet ennätykset · %2$d kcal</string>
+    <string name="health_import_unnamed">Tuotu ateria</string>
+    <string name="health_import_local_only">Nämä ovat paikallisia kopioita. Muokkaukset ja poistot säilyvät Ruoka + Treenissä. Tuonnin toistaminen ohittaa aiemmin tuodut tietueet; se ei päivitä niitä.</string>
+    <string name="health_import_done">Tuotu %1$d-tietueet päiväkirjaasi.</string>
+    <string name="health_import_close">Lähellä</string>
+</resources>

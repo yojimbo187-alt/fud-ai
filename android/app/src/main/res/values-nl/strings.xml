@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI Calorieën</string>
+    <string name="widget_calorie_label">Ruoka + Treeni Calorieën</string>
     <string name="widget_calorie_description">Bekijk in één oogopslag de calorieën en macro\'s van vandaag.</string>
-    <string name="widget_protein_label">Fud AI Eiwit</string>
+    <string name="widget_protein_label">Ruoka + Treeni Eiwit</string>
     <string name="widget_protein_description">Bekijk in één oogopslag je eiwitvoortgang van vandaag.</string>
     <string name="widget_today">Vandaag</string>
     <string name="widget_protein">Eiwit</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Terug</string>
-    <string name="onboarding_logo_description">Fud AI-logo</string>
+    <string name="onboarding_logo_description">Ruoka + Treeni-logo</string>
     <string name="onboarding_welcome_line1">Eet slim,</string>
     <string name="onboarding_welcome_line2">Leef beter</string>
     <string name="onboarding_welcome_subtitle">Snap, registreer en bloei op.\nJouw voeding, vereenvoudigd.</string>
@@ -257,7 +257,7 @@
     <string name="onboarding_health_connect">Verbinden</string>
 
     <string name="onboarding_ai_choice_title">Stel je AI in</string>
-    <string name="onboarding_ai_choice_subtitle">Kies hoe je AI in Fud AI wilt gebruiken. De app blijft in beide gevallen gratis.</string>
+    <string name="onboarding_ai_choice_subtitle">Kies hoe je AI in Ruoka + Treeni wilt gebruiken. De app blijft in beide gevallen gratis.</string>
     <string name="onboarding_ai_byok_subtitle">Voeg je eigen AI-providersleutel toe — Gemini, OpenAI, Groq en meer worden ondersteund.</string>
     <string name="onboarding_ai_byok_card_title">Breng je eigen sleutel</string>
     <string name="onboarding_ai_byok_card_subtitle">Voor altijd gratis — onbeperkt op jouw sleutel. Gemini, OpenAI, Groq &amp; meer.</string>
@@ -527,7 +527,7 @@
     <string name="settings_week_sunday">Zondag</string>
     <string name="settings_notifications">Meldingen</string>
     <string name="settings_battery_opt">Batterijoptimalisatie</string>
-    <string name="settings_battery_opt_value">Fud AI op witte lijst</string>
+    <string name="settings_battery_opt_value">Ruoka + Treeni op witte lijst</string>
 
     <string name="settings_ai_provider">Provider</string>
     <string name="settings_ai_model">Model</string>
@@ -559,7 +559,7 @@
     <string name="settings_invalid_goal_gain">Een doel om aan te komen vereist een streefgewicht boven je huidige gewicht.</string>
     <string name="settings_permission_title">Permissie nodig</string>
 
-    <string name="settings_notifications_denied">Meldingenpermissie geweigerd. Schakel deze in via Systeeminstellingen → Apps → Fud AI → Meldingen om herinneringen te ontvangen.</string>
+    <string name="settings_notifications_denied">Meldingenpermissie geweigerd. Schakel deze in via Systeeminstellingen → Apps → Ruoka + Treeni → Meldingen om herinneringen te ontvangen.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Tijd om te wegen</string>
@@ -605,9 +605,7 @@
     <string name="about_share">App delen</string>
     <string name="about_open_source">Open source (MIT)</string>
     <string name="about_star_github">Ster op GitHub</string>
-    <string name="about_vote_ph">Stem op Product Hunt</string>
-    <string name="about_leave_tip_kofi">Geef een fooi via Ko-fi</string>
-    <string name="about_report_issue">Probleem melden op GitHub</string>
+    <string name="about_vote_ph">Stem op Product Hunt</string>    <string name="about_report_issue">Probleem melden op GitHub</string>
     <string name="about_report_issue_discord">Probleem melden op Discord</string>
     <string name="about_request_feature">Functie aanvragen op GitHub</string>
     <string name="about_request_feature_discord">Functie aanvragen op Discord</string>
@@ -619,18 +617,15 @@
     <string name="about_privacy">Privacybeleid</string>
     <string name="about_terms">Servicevoorwaarden</string>
     <string name="about_category_app_updates">App &amp; updates</string>
-    <string name="about_category_support">Steun Fud AI</string>
+    <string name="about_category_support">Steun Ruoka + Treeni</string>
     <string name="about_category_help_feedback">Hulp &amp; feedback</string>
     <string name="about_category_community">Community</string>
     <string name="about_category_legal">Juridisch</string>
     <string name="about_category_join_beta">Doe mee aan de bèta</string>
-    <string name="about_beta_intro">Probeer nieuwe Fud AI-wijzigingen voordat ze in de Play Store staan. Bètaversies kunnen onaf zijn.</string>
-    <string name="about_beta_steps">Word lid van de Fud AI-Discord en open #beta-android. Als daar een Play-testlink staat, doe mee en werk Fud AI bij via de Play Store. Gaat er iets mis, gebruik /bug en noem de versie uit Instellingen.</string>
-    <string name="about_beta_not_open">De Play-test is nog niet open. De link komt in #beta-android.</string>
-    <string name="about_made_by">Gemaakt door Apoorv Darshan</string>
-    <string name="about_with_care">met zorg, voor iedereen</string>
-    <string name="about_share_message">Ik houd mijn maaltijden bij met Fud AI — maak een foto, spreek het in of typ het, en de AI logt de calorieën. Het is gratis, open source, en je gegevens blijven op je apparaat.\n\nDownload: https://fud-ai.app</string>
-    <string name="about_share_chooser">Fud AI delen</string>
+    <string name="about_beta_intro">Probeer nieuwe Ruoka + Treeni-wijzigingen voordat ze in de Play Store staan. Bètaversies kunnen onaf zijn.</string>
+    <string name="about_beta_steps">Word lid van de Ruoka + Treeni-Discord en open #beta-android. Als daar een Play-testlink staat, doe mee en werk Ruoka + Treeni bij via de Play Store. Gaat er iets mis, gebruik /bug en noem de versie uit Instellingen.</string>
+    <string name="about_beta_not_open">De Play-test is nog niet open. De link komt in #beta-android.</string>    <string name="about_share_message">Ik houd mijn maaltijden bij met Ruoka + Treeni — maak een foto, spreek het in of typ het, en de AI logt de calorieën. Het is gratis, open source, en je gegevens blijven op je apparaat.\n\nDownload: https://fud-ai.app</string>
+    <string name="about_share_chooser">Ruoka + Treeni delen</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Streak-herinnering</string>
@@ -661,7 +656,7 @@
         <item quantity="other">%1$d berekende verbrandingen · tik om te bekijken of verwijderen</item>
     </plurals>
     <string name="progress_workout_delete_title">Work-outverbranding verwijderen?</string>
-    <string name="progress_workout_delete_message">Dit verwijdert de berekende verbranding uit Fud AI en Health Connect. Je work-outplan blijft bewaard.</string>
+    <string name="progress_workout_delete_message">Dit verwijdert de berekende verbranding uit Ruoka + Treeni en Health Connect. Je work-outplan blijft bewaard.</string>
     <string name="progress_workout_section">Work-outactiviteit</string>
     <string name="progress_workout_stat_workouts">Work-outs</string>
     <string name="progress_workout_stat_total">Totaal verbrand</string>
@@ -685,11 +680,11 @@
     <string name="settings_section_fallback">Reserveprovider</string>
     <string name="settings_enable_fallback">Reserve inschakelen</string>
     <string name="settings_fallback_footer">Als je primaire provider faalt (overbelasting, snelheidslimiet, netwerkfout), probeert de app automatisch opnieuw met deze reserve. Dezelfde provider als de primaire is toegestaan — kies gewoon een ander model.</string>
-    <string name="widget_all_metrics_label">Fud AI Vandaag</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Vandaag</string>
     <string name="widget_all_metrics_description">Bekijk de calorieën, eiwitten, koolhydraten en vetten van vandaag in één widget.</string>
     <string name="settings_needs_health_connect">Vereist Health Connect</string>
-    <string name="settings_energy_goals_info">Wanneer ingeschakeld gebruikt Fud AI het recente meetvenster voor energie uit Health Connect als onderhoudsbasis bij het berekenen van doelen, in plaats van de formuleschatting: gemeten totale energie wanneer er genoeg dagen beschikbaar zijn; anders de gemiddelde gemeten actieve energie + de formule-BMR. Er wordt geen AI gebruikt om je verbruik te lezen. Vereist Health Connect. Werkt met de knop Opnieuw berekenen en met Adaptive Goals.</string>
-    <string name="settings_adaptive_goals_info">Ongeveer één keer per week, wanneer je de app opent, voert Fud AI automatisch de volledige doelberekening opnieuw uit — dezelfde als de knop Opnieuw berekenen — op basis van je profiel, recent gelogde voeding en je gewichtstrend. Als Energy Burn aanstaat, wordt je gemeten verbruik gebruikt als onderhoudsanker. Als de AI niet beschikbaar is, wordt de run stilletjes overgeslagen. Bij uitschakelen worden de doelen hersteld van vóór de eerste wijziging door deze functie. Dit is geen medisch advies.</string>
+    <string name="settings_energy_goals_info">Wanneer ingeschakeld gebruikt Ruoka + Treeni het recente meetvenster voor energie uit Health Connect als onderhoudsbasis bij het berekenen van doelen, in plaats van de formuleschatting: gemeten totale energie wanneer er genoeg dagen beschikbaar zijn; anders de gemiddelde gemeten actieve energie + de formule-BMR. Er wordt geen AI gebruikt om je verbruik te lezen. Vereist Health Connect. Werkt met de knop Opnieuw berekenen en met Adaptive Goals.</string>
+    <string name="settings_adaptive_goals_info">Ongeveer één keer per week, wanneer je de app opent, voert Ruoka + Treeni automatisch de volledige doelberekening opnieuw uit — dezelfde als de knop Opnieuw berekenen — op basis van je profiel, recent gelogde voeding en je gewichtstrend. Als Energy Burn aanstaat, wordt je gemeten verbruik gebruikt als onderhoudsanker. Als de AI niet beschikbaar is, wordt de run stilletjes overgeslagen. Bij uitschakelen worden de doelen hersteld van vóór de eerste wijziging door deze functie. Dit is geen medisch advies.</string>
     <string name="ad_label">Advertentie</string>
     <string name="onboarding_plan_adaptive_note">Je plan past zich wekelijks aan op basis van je logs — zet Adaptive Goals uit in Instellingen om het vast te houden.</string>
     <string name="onboarding_feature_snap">Maak een foto — de AI logt het</string>
@@ -699,7 +694,7 @@
     <string name="whats_new_v30_workouts">Nieuw Workouts-tabblad — blader door 873 oefeningen met foto\'s, spier- en materiaalfilters, zoeken en detailpagina\'s.</string>
     <string name="whats_new_v30_home">Home vernieuwd: snelheidsmeter voor calorieën, verticale macrobalken, vier voedingskaarten en een zwevende toevoegknop.</string>
     <string name="whats_new_v30_coach_voice">Stel de Coach een vraag met je stem via de nieuwe ingebouwde recorder.</string>
-    <string name="whats_new_v30_share">Deel elke maaltijd als een link die direct in Fud AI opent — op iPhone of Android.</string>
+    <string name="whats_new_v30_share">Deel elke maaltijd als een link die direct in Ruoka + Treeni opent — op iPhone of Android.</string>
     <string name="whats_new_v30_export">Exporteer je eetdagboek als JSON, Markdown of CSV via Instellingen.</string>
     <string name="whats_new_v30_reprocess">Verwerk een gelogde maaltijd opnieuw met AI — pas naam, portie of notitie aan en analyseer opnieuw.</string>
     <string name="whats_new_v30_camera">Camera + Camera bewaart beide foto\'s, zij aan zij samengevoegd.</string>
@@ -748,7 +743,7 @@
     <string name="settings_calc_maintenance">Onderhoud en doelaanpassing</string>
     <string name="settings_calc_macro_split">Macronutriëntenverdeling</string>
     <string name="settings_calc_micro_values">Micronutriëntwaarden</string>
-    <string name="settings_calc_intro">Je dagelijkse calorie- en macrodoelen worden door AI bepaald. Wanneer je op ‘Doelen herberekenen’ tikt — of automatisch ongeveer één keer per week als Adaptieve doelen aanstaat — stuurt Fud AI je profiel, de onderstaande referentieformules, geaggregeerde privacyvriendelijke dagelijkse voedingstotalen, nauwkeurige gedateerde metingen van gewicht, lichaamsvet en lichaamsomtrek, geaggregeerde aantallen trainingen, duur, sets en herhalingen, en optionele energiegegevens uit Health Connect naar je AI-provider. Namen van voedingsmiddelen, notities, foto’s, ingrediënten en namen van oefeningen worden niet voor deze berekening verstuurd. De AI begint bij deze wetenschappelijk onderbouwde formules en past ze aan je echte gegevens aan om je werkelijke onderhoudsbehoefte en doelen te schatten.</string>
+    <string name="settings_calc_intro">Je dagelijkse calorie- en macrodoelen worden door AI bepaald. Wanneer je op ‘Doelen herberekenen’ tikt — of automatisch ongeveer één keer per week als Adaptieve doelen aanstaat — stuurt Ruoka + Treeni je profiel, de onderstaande referentieformules, geaggregeerde privacyvriendelijke dagelijkse voedingstotalen, nauwkeurige gedateerde metingen van gewicht, lichaamsvet en lichaamsomtrek, geaggregeerde aantallen trainingen, duur, sets en herhalingen, en optionele energiegegevens uit Health Connect naar je AI-provider. Namen van voedingsmiddelen, notities, foto’s, ingrediënten en namen van oefeningen worden niet voor deze berekening verstuurd. De AI begint bij deze wetenschappelijk onderbouwde formules en past ze aan je echte gegevens aan om je werkelijke onderhoudsbehoefte en doelen te schatten.</string>
     <string name="settings_calc_sec_bmr">Ruststofwisseling (BMR)</string>
     <string name="settings_calc_sec_tdee">Dagelijks energieverbruik (TDEE)</string>
     <string name="settings_calc_mifflin_name">Mifflin-St Jeor-vergelijking</string>
@@ -799,7 +794,7 @@
     <string name="about_whisper_notices_load_error">De kennisgevingen van derden voor Whisper Base konden niet worden geladen.</string>
     <string name="cd_remove_image">Afbeelding verwijderen</string>
     <string name="cd_save_photo">Foto opslaan</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">Foto opgeslagen</string>
     <string name="photo_save_failed">Kon foto niet opslaan</string>
     <string name="photo_save_permission_denied">Fototoegang geweigerd</string>

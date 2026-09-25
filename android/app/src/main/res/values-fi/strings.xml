@@ -1,0 +1,1374 @@
+<resources>
+    <string name="app_name">Ruoka + Treeni</string>
+
+    <!-- Widgets -->
+    <string name="widget_calorie_label">Ruoka + Treeni -kalorit</string>
+    <string name="widget_calorie_description">Katso tämän päivän kalorit ja makrot yhdellä silmäyksellä.</string>
+    <string name="widget_protein_label">Ruoka + Treeni -proteiini</string>
+    <string name="widget_protein_description">Katso tämän päivän proteiinien kehitys yhdellä silmäyksellä.</string>
+    <string name="widget_water_label">Ruoka + Treeni -vesi</string>
+    <string name="widget_water_description">Katso tämän päivän vesitilanne yhdellä silmäyksellä.</string>
+    <string name="widget_water_disabled">Ota veden seuranta käyttöön Ruoka + Treenissä</string>
+    <string name="widget_open_to_refresh">Avaa sovellus päivittääksesi</string>
+    <string name="widget_refresh_needed_description">Ruoka + Treeni -widget tarvitsee päivityksen. Avaa Ruoka + Treeni.</string>
+    <string name="widget_today">Tänään</string>
+    <string name="widget_protein">Proteiini</string>
+    <string name="widget_calories">Kalorit</string>
+    <string name="widget_carbs">Hiilihydraatteja</string>
+    <string name="widget_fat">Lihava</string>
+    <string name="widget_water">Vesi</string>
+    <string name="widget_kcal_left_format">%1$d kcal jäljellä</string>
+    <string name="widget_g_left_format">%1$dg jäljellä</string>
+    <string name="widget_kcal">kcal</string>
+    <string name="widget_protein_g">proteiini g</string>
+    <string name="widget_value_unit_format">%1$d%2$s / %3$d%4$s</string>
+    <string name="widget_center_small_format">/ %1$d</string>
+    <string name="widget_center_small_g_format">/ %1$dg</string>
+    <string name="widget_center_large_g_format">%1$dg</string>
+
+    <!-- Common buttons / actions -->
+    <string name="action_save">Tallenna</string>
+    <string name="action_cancel">Peruuta</string>
+    <string name="action_retry">Yritä uudelleen</string>
+    <string name="action_scan_label">Skannaa etiketti</string>
+    <string name="action_done">Valmis</string>
+    <string name="action_ok">OK</string>
+    <string name="action_info">Tiedot</string>
+    <string name="action_clear">Selkeä</string>
+    <string name="action_delete">Poista</string>
+    <string name="action_remove">Poistaa</string>
+    <string name="action_download">Lataa</string>
+    <string name="action_continue">Jatkaa</string>
+    <string name="action_get_started">Aloita</string>
+    <string name="action_log">Loki</string>
+    <string name="action_what_if">Mitä jos?</string>
+    <string name="action_analyze">Analysoida</string>
+    <string name="action_discard">Hävitä</string>
+    <string name="action_reset">Nollaa</string>
+    <string name="action_keep_going">Jatka</string>
+    <string name="action_send">Lähetä</string>
+    <string name="action_pin">Pin</string>
+
+    <!-- Generic units / labels -->
+    <string name="unit_kcal">kcal</string>
+    <string name="unit_g">g</string>
+    <string name="unit_mg">mg</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_lbs">lbs</string>
+    <string name="unit_ft">ft</string>
+    <string name="unit_in">sisään</string>
+    <string name="unit_ft_in">ft / tuumaa</string>
+    <string name="kcal_value_format">%1$,d kcal</string>
+    <string name="grams_value_format">%1$dg</string>
+    <string name="grams_value_decimal_format">%1$.1fg</string>
+    <string name="kg_value_format">%1$.1f kg</string>
+    <string name="lbs_value_format">%1$.1f lbs</string>
+    <string name="kg_per_week_format">%1$.2f kg/vko</string>
+    <string name="lbs_per_week_format">%1$.2f lbs/vko</string>
+    <string name="height_cm_format">%1$d cm</string>
+    <string name="feet_inches_format">%1$d\' %2$d\"</string>
+    <string name="value_unit_format">%1$d %2$s</string>
+    <string name="ft_label_format">%1$d ft</string>
+    <string name="in_label_format">%1$d tuumaa</string>
+    <string name="bullet">·</string>
+
+    <!-- Open Food Facts product metadata -->
+    <string name="product_information">Tuotetiedot</string>
+    <string name="product_barcode">Viivakoodi</string>
+    <string name="product_package">Paketti</string>
+    <string name="product_nutri_score">Nutri-pisteet</string>
+    <string name="product_nova_group">NOVA ryhmä</string>
+    <string name="product_eco_score">Eco-pisteet</string>
+    <string name="product_allergens">Allergeenit</string>
+    <string name="product_may_contain">Saattaa sisältää</string>
+    <string name="product_allergen_check">Allergeenin tarkistus</string>
+    <string name="product_labels">Tarrat</string>
+    <string name="product_categories">Luokat</string>
+    <string name="product_ingredient_label">Ainesosien etiketti</string>
+
+    <!-- Macros / Goal labels -->
+    <string name="macro_protein">Proteiini</string>
+    <string name="macro_carbs">Hiilihydraatteja</string>
+    <string name="macro_fat">Lihava</string>
+    <string name="macro_calories">Kalorit</string>
+
+    <!-- Gender -->
+    <string name="gender_male">Uros</string>
+    <string name="gender_female">Naaras</string>
+    <string name="gender_other">muu</string>
+
+    <!-- Activity Level -->
+    <string name="activity_sedentary">Istuva</string>
+    <string name="activity_light">Kevyt</string>
+    <string name="activity_moderate">Kohtalainen</string>
+    <string name="activity_active">Aktiivinen</string>
+    <string name="activity_very_active">Erittäin aktiivinen</string>
+    <string name="activity_extra_active">Erittäin aktiivinen</string>
+    <string name="activity_sedentary_subtitle">Useimmiten istuvat töissä ja kotona; vähän tai ei ollenkaan suunniteltua harjoittelua.\nAn. askelopas: alle 5000 askelta/päivä.</string>
+    <string name="activity_light_subtitle">Enimmäkseen istuva; kevyt liikunta tai vapaa-ajan toiminta 1–3 päivää/viikko.\nAn. askelopas: 5 000–7 499 askelta päivässä.</string>
+    <string name="activity_moderate_subtitle">Säännöllinen kuntosali, kardio, kiipeily, pyöräily tai urheilu 3–5 päivää viikossa.\nAn. askelopas: 7 500–9 999 askelta päivässä.</string>
+    <string name="activity_active_subtitle">Harjoittelu useimpina päivinä tai työ, jossa seisoo, liikkuu tai nostetaan huomattavasti.\nAn. askelopas: 10 000–12 499 askelta/päivä.</string>
+    <string name="activity_very_active_subtitle">Kova harjoittelu 6–7 päivää/viikko, kestävyysharjoittelu tai vaativa fyysinen työ.\nAn. askelopas: 12 500–14 999 askelta/päivä.</string>
+    <string name="activity_extra_active_subtitle">Kilpaileva/suuren volyymin urheilija, harjoittelu kahdesti päivässä tai raskas manuaalinen työ sekä toistuva harjoittelu.\nAn. askelopas: 15 000+ askelta päivässä.</string>
+
+    <!-- Weight Goal -->
+    <string name="goal_lose">Laihduttaa / Leikkaaminen</string>
+    <string name="goal_maintain">Ylläpidä / Recomp</string>
+    <string name="goal_gain">Lihoa / lisää painoa</string>
+
+    <!-- Meal Type -->
+    <string name="meal_breakfast">Aamiainen</string>
+    <string name="meal_lunch">Lounas</string>
+    <string name="meal_dinner">Illallinen</string>
+    <string name="meal_snack">Välipala</string>
+    <string name="meal_other">muu</string>
+
+    <!-- AutoBalance Macro -->
+    <string name="autobalance_protein">Proteiini</string>
+    <string name="autobalance_carbs">Hiilihydraatteja</string>
+    <string name="autobalance_fat">Lihava</string>
+
+    <!-- AI Provider names -->
+    <string name="ai_provider_gemini">Google Gemini</string>
+    <string name="ai_provider_openai">OpenAI</string>
+    <string name="ai_provider_anthropic">Antrooppinen Claude</string>
+    <string name="ai_provider_xai">xAI Grok</string>
+    <string name="ai_provider_openrouter">OpenRouter</string>
+    <string name="ai_provider_together">Yhdessä AI</string>
+    <string name="ai_provider_groq">Groq</string>
+    <string name="ai_provider_huggingface">Halaavat kasvot</string>
+    <string name="ai_provider_fireworks">Ilotulitus AI</string>
+    <string name="ai_provider_deepinfra">DeepInfra</string>
+    <string name="ai_provider_mistral">Mistral</string>
+    <string name="ai_provider_deepseek">DeepSeek</string>
+    <string name="ai_provider_cerebras">Aivot</string>
+    <string name="ai_provider_local_gemma">Gemma 4 E2B (laitteessa)</string>
+    <string name="ai_provider_ollama">Ollama (paikallinen)</string>
+    <string name="ai_provider_custom">Mukautettu (OpenAI-yhteensopiva)</string>
+
+    <!-- AI Provider API key placeholders -->
+    <string name="ai_key_placeholder_gemini">Liitä Gemini API-avain</string>
+    <string name="ai_key_placeholder_openai">Liitä OpenAI API-avain</string>
+    <string name="ai_key_placeholder_anthropic">Liitä Claude API-avain</string>
+    <string name="ai_key_placeholder_xai">Liitä Grok API-avain</string>
+    <string name="ai_key_placeholder_openrouter">Liitä OpenRouter API-avain</string>
+    <string name="ai_key_placeholder_together">Liitä yhdessä AI API -avain</string>
+    <string name="ai_key_placeholder_groq">Liitä Groq API-avain</string>
+    <string name="ai_key_placeholder_huggingface">Liitä Hugging Face API-avain</string>
+    <string name="ai_key_placeholder_fireworks">Liitä Fireworks API -avain</string>
+    <string name="ai_key_placeholder_deepinfra">Liitä DeepInfra API-avain</string>
+    <string name="ai_key_placeholder_mistral">Liitä Mistral API-avain</string>
+    <string name="ai_key_placeholder_deepseek">Liitä DeepSeek API-avain</string>
+    <string name="ai_key_placeholder_cerebras">Liitä Cerebras API-avain</string>
+    <string name="ai_key_placeholder_local">Avainta ei tarvita</string>
+    <string name="ai_key_placeholder_ollama">Avainta ei tarvita</string>
+    <string name="ai_key_placeholder_custom">API-avain (tai mikä tahansa, jos päätepiste ei sitä tarvitse)</string>
+
+    <!-- Speech Provider -->
+    <string name="speech_provider_native">Natiivi (laitteessa)</string>
+    <string name="speech_provider_local_whisper">Whisper Base (laitteessa)</string>
+    <string name="speech_provider_gemini">Gemini Audio</string>
+    <string name="speech_provider_openai">OpenAI GPT-Transcribe</string>
+    <string name="speech_provider_groq">Groq (kuiskaus)</string>
+    <string name="speech_provider_mistral">Mistral Voxtral</string>
+    <string name="speech_provider_deepgram">Deepgram</string>
+    <string name="speech_provider_assemblyai">AssemblyAI</string>
+
+    <string name="speech_key_placeholder_native">Ei tarvita</string>
+    <string name="speech_key_placeholder_local">Ei tarvita</string>
+    <string name="speech_key_placeholder_gemini">Liitä Gemini API-avain</string>
+    <string name="speech_key_placeholder_openai">Liitä API-avain</string>
+    <string name="speech_key_placeholder_groq">Liitä API-avain</string>
+    <string name="speech_key_placeholder_mistral">Mistral API -avaimesi</string>
+    <string name="speech_key_placeholder_deepgram">Token your-deepgram-avaimesi</string>
+    <string name="speech_key_placeholder_assemblyai">AssemblyAI-avaimesi</string>
+
+    <string name="speech_description_native">Androidin puheentunnistus laitteella. Ilmainen, toimii offline-tilassa useimmissa puhelimissa, reaaliaikaiset osittaiset tulokset. Suositeltu oletus.</string>
+    <string name="speech_description_local_whisper">Ladattu monikielinen Whisper Base. Ääni pysyy tällä laitteella, eikä API-avainta tarvita.</string>
+    <string name="speech_description_gemini">Gemini 3.5 Transcribe takaa tarkan erätranskription ja automaattisen kielentunnistuksen.</string>
+    <string name="speech_description_openai">OpenAI GPT-Transcribe, nykyinen korkean tarkkuuden malli tallennetulle äänelle.</string>
+    <string name="speech_description_groq">Groqin isännöimä Whisper Large v3. Erittäin nopea päättely, siinä on ilmainen taso.</string>
+    <string name="speech_description_mistral">Voxtral Mini Transcribe 2 takaa tarkan monikielisen erätranskription.</string>
+    <string name="speech_description_deepgram">Deepgram Nova. Reaaliaikainen ja erätila, nopea ja tarkka.</string>
+    <string name="speech_description_assemblyai">AssemblyAI Universal malli. Vahva tarkkuus, ilmainen taso saatavilla.</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Koti</string>
+    <string name="nav_progress">Edistyminen</string>
+    <string name="nav_coach">Valmentaja</string>
+    <string name="nav_settings">Asetukset</string>
+    <string name="nav_about">Noin</string>
+
+    <!-- Day-of-week narrow letters (for week strip) -->
+    <string name="dow_narrow_monday">M</string>
+    <string name="dow_narrow_tuesday">T</string>
+    <string name="dow_narrow_wednesday">W</string>
+    <string name="dow_narrow_thursday">T</string>
+    <string name="dow_narrow_friday">F</string>
+    <string name="dow_narrow_saturday">S</string>
+    <string name="dow_narrow_sunday">S</string>
+
+    <!-- Months (full) -->
+    <string name="month_january">tammikuu</string>
+    <string name="month_february">helmikuu</string>
+    <string name="month_march">maaliskuuta</string>
+    <string name="month_april">huhtikuu</string>
+    <string name="month_may">toukokuuta</string>
+    <string name="month_june">kesäkuuta</string>
+    <string name="month_july">heinäkuu</string>
+    <string name="month_august">elokuu</string>
+    <string name="month_september">syyskuu</string>
+    <string name="month_october">lokakuu</string>
+    <string name="month_november">marraskuu</string>
+    <string name="month_december">joulukuu</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_back">Takaisin</string>
+    <string name="onboarding_logo_description">Ruoka + Treeni -logo</string>
+    <string name="onboarding_welcome_line1">Syö älykkäästi,</string>
+    <string name="onboarding_welcome_line2">Elä Paremmin</string>
+    <string name="onboarding_welcome_subtitle">Napsauta, seuraa ja kukoistaa.\nRuntoosi yksinkertaistettuna.</string>
+
+    <string name="onboarding_gender_title">Mikä on sukupuolesi?</string>
+    <string name="onboarding_gender_subtitle">Tämä auttaa meitä laskemaan aineenvaihduntasi</string>
+
+    <string name="onboarding_birthday_title">Milloin on syntymäpäiväsi?</string>
+    <string name="onboarding_birthday_subtitle">Käytetään päivittäisten tarpeidesi laskemiseen</string>
+
+    <string name="onboarding_height_weight_title">Korkeus &amp; Paino</string>
+    <string name="onboarding_height_weight_subtitle">Pidämme tämän yksityisenä</string>
+    <string name="onboarding_imperial">Keisarillinen</string>
+    <string name="onboarding_metric">Metrinen</string>
+    <string name="onboarding_height">Korkeus</string>
+    <string name="onboarding_weight">Paino</string>
+    <string name="onboarding_feet">Jalat</string>
+    <string name="onboarding_inches">Tuumaa</string>
+
+    <string name="onboarding_activity_title">Kuinka aktiivinen olet?</string>
+    <string name="onboarding_activity_subtitle">Valitse keskimääräisen viikkosi perusteella, mukaan lukien työ ja liikunta.</string>
+
+    <string name="onboarding_goal_title">Mikä on tavoitteesi?</string>
+    <string name="onboarding_goal_subtitle">Voit muuttaa tätä milloin tahansa</string>
+
+    <string name="onboarding_desired_weight_title">Mikä on \nhaluttu painosi?</string>
+
+    <string name="onboarding_body_fat_title">Tiedätkö \nkehon rasvaprosenttisi?</string>
+    <string name="onboarding_body_fat_subtitle">Auttaa meitä laskemaan aineenvaihduntasi tarkemmin</string>
+    <string name="onboarding_yes">Kyllä</string>
+    <string name="onboarding_no">Ei</string>
+    <string name="onboarding_body_fat_ranges">Yleiset vaihteluvälit: Miehet 10–25%, Women 18–35 %</string>
+    <string name="onboarding_body_fat_no_worries">Ei hätää! Käytämme vakiokaavaa\n pituutesi, painosi ja ikäsi perusteella.</string>
+    <string name="onboarding_goal_optional">Tavoite (valinnainen)</string>
+    <string name="onboarding_goal_set_later">Voit määrittää tämän myöhemmin asetuksista.</string>
+    <string name="progress_metric_weight">Paino</string>
+    <string name="progress_metric_body_fat">Kehon rasvaa</string>
+    <string name="progress_metric_workouts">Harjoitukset</string>
+    <string name="progress_log_body_fat">Log Body Fat</string>
+    <string name="progress_log_first_body_fat">Kirjaa ensimmäinen kehon rasva-arvosi (%) nähdäksesi trendit</string>
+    <string name="progress_log_body_fat_title">Log Body Fat</string>
+    <string name="saved_meals_search_placeholder">Etsi tallennettuja ruokia</string>
+    <string name="saved_meals_no_match">Ei vastaavia ruokia</string>
+
+    <string name="onboarding_pace_title_maintain">Sinun vauhtisi</string>
+    <string name="onboarding_pace_subtitle_maintain">Teemme tasapainoisen suunnitelman</string>
+    <string name="onboarding_pace_title_change">Kuinka nopeasti haluat\n saavuttavan tavoitteesi?</string>
+    <string name="onboarding_pace_subtitle_lose">Painonpudotusnopeus viikossa</string>
+    <string name="onboarding_pace_subtitle_gain">Painonnousu nopeus viikossa</string>
+    <string name="onboarding_pace_balanced_set">Tasapainoinen tahti asetettu</string>
+    <string name="onboarding_pace_balanced_subtitle">Pidämme kalorit tasaisina\n nykyisen painosi ylläpitämiseksi.</string>
+    <string name="onboarding_pace_per_week">viikossa</string>
+    <string name="onboarding_pace_slow">Hidas</string>
+    <string name="onboarding_pace_recommended">Suositeltava</string>
+    <string name="onboarding_pace_fast">Nopeasti</string>
+    <string name="onboarding_pace_reach_prefix">Saavutat tavoitteesi sisään</string>
+    <plurals name="onboarding_pace_days_format">
+        <item quantity="one">%1$d päivä</item>
+        <item quantity="other">%1$d päivää</item>
+    </plurals>
+    <string name="onboarding_pace_caption_slow">Hellävarainen ja kestävä. Erinomainen pitkäaikaisiin tottumuksiin.</string>
+    <string name="onboarding_pace_caption_fast">Aggressiivinen mutta toteutettavissa. Vaatii vahvaa kurinalaisuutta.</string>
+    <string name="onboarding_pace_caption_recommended">Tasapainoisin vauhti, motivoiva ja kestävä.</string>
+
+    <string name="onboarding_notifications_title">Muista \nlog-ateriat</string>
+    <string name="onboarding_notifications_subtitle">Saat lempeitä muistutuksia ruokailuaikoina\njotta et koskaan unohda seurata.</string>
+    <string name="onboarding_notifications_enabled">Muistutukset käytössä</string>
+    <string name="onboarding_notifications_allow">Salli ilmoitukset</string>
+    <string name="onboarding_notifications_change_anytime">Voit muuttaa tätä milloin tahansa asetuksista.</string>
+
+    <string name="onboarding_health_title">Yhdistä \nHealth Connectiin</string>
+    <string name="onboarding_health_subtitle">Pidä ravitsemus, askeleet ja kehosi\n-mittaukset synkronoituina automaattisesti.</string>
+    <string name="onboarding_health_feature_nutrition">Ravintotiedot</string>
+    <string name="onboarding_health_feature_weight">Painon synkronointi</string>
+    <string name="onboarding_health_feature_body">Kehon mitat</string>
+    <string name="onboarding_health_feature_steps">Päivittäiset askeleet</string>
+    <string name="onboarding_health_unavailable">Health Connect ei ole käytettävissä</string>
+    <string name="onboarding_health_connected">Yhdistetty</string>
+    <string name="onboarding_health_connect">Yhdistä</string>
+
+    <string name="onboarding_ai_choice_title">Määritä tekoäly</string>
+    <string name="onboarding_ai_choice_subtitle">Valitse Ruoka + Treenissä, miten haluat käyttää tekoälyä. Sovellus on ilmainen joka tapauksessa.</string>
+    <string name="onboarding_ai_byok_subtitle">Lisää oma AI-palveluntarjoajaavain – Gemini, OpenAI, Groq ja monet muut ovat tuettuja.</string>
+    <string name="onboarding_ai_byok_card_title">Tuo oma avaimesi</string>
+    <string name="onboarding_ai_byok_card_subtitle">Ilmainen ikuisesti – rajattomasti avaimellasi. Gemini, OpenAI, Groq &amp; lisää.</string>
+    <string name="onboarding_ai_byok_badge">Suositeltava</string>
+    <string name="onboarding_ai_hosted_card_title">Isännöi AI</string>
+    <string name="onboarding_ai_hosted_card_subtitle">Plus- tai Pro-suunnitelmat päivittäisillä AI-hyvityksellä – API-avainta ei tarvita.</string>
+    <string name="onboarding_ai_hosted_badge">Tulossa pian</string>
+    <string name="onboarding_provider_title">Määritä tekoäly</string>
+    <string name="onboarding_provider_subtitle">Lisää oma AI-palveluntarjoajaavain – sovellus pysyy maksuttomana.</string>
+    <string name="onboarding_provider_recommended_title">Suositus: Google Gemini</string>
+    <string name="onboarding_provider_recommended_subtitle">Ilmainen taso saatavilla, nopea &amp; tarkka</string>
+    <string name="onboarding_provider_step_1">Hanki ilmainen avain osoitteessa aistudio.google.com/apikey</string>
+    <string name="onboarding_provider_step_2">Valitse palveluntarjoaja ja liitä avaimesi alle</string>
+    <string name="onboarding_provider_step_3">Liitä avaimesi – valmis</string>
+    <string name="onboarding_provider_footer">13 palveluntarjoajaa tuettu. Avaimesi pysyy\ntässä laitteessa salattuna.</string>
+    <string name="onboarding_paste_api_key_helper">Liitä %1$s API-avain yllä olevaan kenttään. Vihjeteksti ei ole avain.</string>
+    <string name="onboarding_missing_api_key_title">Liitä %1$s API-avain</string>
+    <string name="onboarding_missing_api_key_message">Continue tarvitsee oikean avaimen API Key -kenttään. Vihjeteksti ei ole avain – liitä %1$s-avain.</string>
+    <string name="onboarding_ai_notice_analysis_title">AI-analyysi</string>
+    <string name="onboarding_ai_notice_analysis_body">Ruokakuvat, äänikopiot ja kirjoitetut ateriat lähetetään suoraan valitsemallesi tekoälypalveluntarjoajalle.</string>
+    <string name="onboarding_ai_notice_local_title">Paikalliset tiedot</string>
+    <string name="onboarding_ai_notice_local_body">Ruokalokisi, painohistoriasi, kehon rasvahistoriasi ja BYOK API -avaimesi pysyvät tällä laitteella.</string>
+    <string name="onboarding_ai_terms_checkbox">Hyväksyn käyttöehdot ja tietosuojakäytännön, mukaan lukien edellä kuvattu tekoälyn tarjoajan tietojen jakaminen.</string>
+    <string name="onboarding_ai_terms_and">ja</string>
+
+    <string name="onboarding_building_calories">Kalorit</string>
+    <string name="onboarding_building_carbs">Hiilihydraatteja</string>
+    <string name="onboarding_building_protein">Proteiini</string>
+    <string name="onboarding_building_fats">Rasvat</string>
+    <string name="onboarding_building_health_score">Terveyspisteet</string>
+    <string name="onboarding_building_percent_format">%1$d%%</string>
+    <string name="onboarding_building_setting_up">Asetamme kaiken\nup puolestasi</string>
+    <string name="onboarding_building_finalizing">Viimeistellään tuloksia…</string>
+    <string name="onboarding_building_recommendation">Päivittäinen suositus</string>
+    <string name="onboarding_building_bullet">•</string>
+
+    <string name="onboarding_plan_title">Sinun suunnitelmasi</string>
+    <string name="onboarding_plan_subtitle">Napauta mitä tahansa arvoa muokataksesi</string>
+    <string name="onboarding_plan_daily_calories">päivittäiset kalorit</string>
+    <string name="onboarding_plan_doctor_title">Ota yhteyttä lääkäriin</string>
+    <string name="onboarding_plan_doctor_message">Vähimmäissuositus on 1200 kaloria päivässä.</string>
+
+    <string name="onboarding_plan_field_calories">Päivittäiset kalorit</string>
+    <string name="onboarding_plan_field_protein">Proteiini</string>
+    <string name="onboarding_plan_field_carbs">Hiilihydraatteja</string>
+    <string name="onboarding_plan_field_fat">Lihava</string>
+
+
+    <!-- Home -->
+    <plurals name="home_daily_steps">
+        <item quantity="one">%1$s askel</item>
+        <item quantity="other">%1$s portaat</item>
+    </plurals>
+
+    <string name="home_add_food">Lisää ruokaa</string>
+    <string name="home_menu_camera">Kamera</string>
+    <string name="home_menu_barcode">Viivakoodi</string>
+    <string name="home_menu_camera_note">Kamera + huomautus</string>
+    <string name="home_menu_nutrition_label">Ravintomerkki</string>
+    <string name="home_menu_from_photos">Valokuvista</string>
+    <string name="home_menu_text_input">Tekstinsyöttö</string>
+    <string name="home_menu_voice">Ääni</string>
+    <string name="home_menu_manual_entry">Manuaalinen syöttö</string>
+    <string name="home_menu_saved_meals">Tallennetut ateriat</string>
+    <string name="home_kcal_of_format">%1$s kcal</string>
+    <string name="home_kcal_left_format">%1$s jäljellä</string>
+    <string name="home_view_more">Näytä lisää</string>
+    <string name="home_burn_deficit">%1$s palanut · %2$s alijäämä</string>
+    <string name="home_burn_surplus">%1$s palanut · %2$s ylijäämä</string>
+    <string name="home_burn_balanced">%1$s palanut · tasapainotettu</string>
+    <string name="home_todays_food">Päivän Ruoka</string>
+    <string name="home_no_foods_logged">Ei kirjattuja ruokia</string>
+    <string name="home_swipe_delete">Poistaa</string>
+    <string name="home_swipe_favorite">Suosikki</string>
+    <string name="home_swipe_unfavorite">Ei suosikkeja</string>
+    <string name="home_favorited">Suosikkiin</string>
+    <string name="home_macro_chip_format">%1$s %2$dg</string>
+    <string name="home_analyzing_food">Analysoi ruokaasi…</string>
+    <string name="home_looking_up_nutrition">Ravintoa tutkimassa…</string>
+    <string name="home_fiber_format">Kuitu: %1$.1fg</string>
+    <string name="home_sugar_format">Sokeri: %1$.1fg</string>
+    <string name="home_sat_fat_format">Istuinrasva: %1$.1fg</string>
+    <string name="home_sodium_format">Natrium: %1$.1fmg</string>
+    <string name="home_potassium_format">Kalium: %1$.1fmg</string>
+    <string name="home_cholesterol_format">Kolesteroli: %1$.1fmg</string>
+    <string name="home_serving_format">Tarjoilu: ~%1$dg</string>
+    <string name="home_protein_value">Proteiini: %1$dg</string>
+    <string name="home_carbs_value">Hiilihydraatit: %1$dg</string>
+    <string name="home_fat_value">Rasva: %1$dg</string>
+
+    <string name="text_input_placeholder_1">2 kananmunaa, paahtoleipää voin kanssa ja kahvi</string>
+    <string name="text_input_placeholder_2">Chipotle burrito kulho kanaa ja riisiä</string>
+    <string name="text_input_placeholder_3">Dominon pepperonipizza, 2 viipaletta</string>
+    <string name="text_input_placeholder_4">Kreikkalainen jogurtti granolalla ja mustikoilla</string>
+
+    <string name="manual_title">Manuaalinen syöttö</string>
+    <string name="manual_name">Nimi</string>
+    <string name="manual_name_placeholder">esim. Kotitekoinen salaatti</string>
+    <string name="manual_calories">Kalorit</string>
+    <string name="manual_protein">Proteiini (g)</string>
+    <string name="manual_carbs">Hiilihydraatit (g)</string>
+    <string name="manual_fat">rasva (g)</string>
+    <string name="manual_zero_placeholder">0</string>
+    <string name="manual_meal_type">Ateriatyyppi</string>
+
+    <string name="error_title">Jotain meni pieleen</string>
+    <string name="error_barcode_title">Tätä viivakoodia ei voitu käyttää</string>
+
+    <!-- Food sheets shared primitives -->
+    <string name="sheet_food_details">Ruoan tiedot</string>
+    <string name="sheet_serving">Tarjoilu</string>
+    <string name="sheet_nutrition">Ravitsemus</string>
+    <string name="sheet_meal">Ateria</string>
+    <string name="sheet_more_nutrition">Lisää ravintoa</string>
+    <string name="sheet_name">Nimi</string>
+    <string name="sheet_quantity">Määrä</string>
+    <string name="sheet_meal_type">Ateriatyyppi</string>
+    <string name="sheet_review_food">Arvostele Food</string>
+    <string name="sheet_edit_food">Muokkaa ruokaa</string>
+    <string name="what_if_title">Mitä jos?</string>
+    <string name="what_if_subtitle">Katso, miten tämä ateria muuttuu tänään, ennen kuin kirjaat sen.</string>
+    <string name="what_if_ai_suggestion">AI ehdotus</string>
+    <string name="what_if_loading">Tarkistetaan vaikutusta…</string>
+    <string name="what_if_no_suggestion">Ei ehdotusta saatavilla.</string>
+    <string name="nutrition_unlock_editing">Avaa ravitsemusmuokkaus</string>
+    <string name="nutrition_lock_editing">Lukitse ravitsemusmuokkaus</string>
+
+    <string name="sheet_micro_sugar">Sokeri</string>
+    <string name="sheet_micro_added_sugar">Lisätty Sokeri</string>
+    <string name="sheet_micro_fiber">Kuitu</string>
+    <string name="sheet_micro_saturated_fat">Tyydytetty rasva</string>
+    <string name="sheet_micro_mono_fat">Mono Fat</string>
+    <string name="sheet_micro_poly_fat">Poly Fat</string>
+    <string name="sheet_micro_cholesterol">Kolesteroli</string>
+    <string name="sheet_micro_sodium">Natrium</string>
+    <string name="sheet_micro_potassium">kalium</string>
+
+    <!-- Context note sheet -->
+    <string name="context_note_title">Lisää huomautus</string>
+    <string name="context_note_section">Lisää muistiinpano (valinnainen)</string>
+    <string name="context_note_placeholder">esim. ei öljyä, ylimääräistä juustoa, suuri annos</string>
+
+    <!-- Voice input sheet -->
+    <string name="voice_listening">Kuuntelee…</string>
+    <string name="voice_tap_to_start">Aloita napauttamalla mikrofonia</string>
+    <string name="voice_recording_saved">Tallenne tallennettu. Literoi se jatkaaksesi.</string>
+    <string name="voice_transcribe">Literoi</string>
+    <string name="voice_transcribing_format">Litteroidaan kautta %1$s…</string>
+    <string name="voice_mic_permission_denied">Mikrofonilupa evätty.</string>
+    <string name="voice_mic_start_failed">Mikrofonia ei voitu käynnistää. Tarkista käyttöoikeudet.</string>
+    <string name="voice_transcription_failed">Transkriptio epäonnistui</string>
+    <string name="voice_stop">Stop</string>
+    <string name="voice_record">Tallentaa</string>
+
+    <!-- Saved Meals sheet -->
+    <string name="saved_meals_title">Tallennetut ateriat</string>
+    <string name="saved_meals_tab_recents">Viimeaikaiset</string>
+    <string name="saved_meals_tab_frequent">Usein</string>
+    <string name="saved_meals_tab_favorites">Suosikit</string>
+    <string name="saved_meals_no_logs">Ruokia ei ole vielä kirjattu</string>
+    <string name="saved_meals_no_favorites">Ei vielä suosikkeja\nPyyhkäise vasemmalle minkä tahansa ruoan kohdalla lisätäksesi sen</string>
+    <string name="saved_meals_count_format">%1$d× kirjattu</string>
+    <string name="saved_meals_log_action">Loki</string>
+    <string name="saved_meals_remove_favorite">Poista suosikki</string>
+    <string name="saved_meals_move_up">Siirrä ylös</string>
+    <string name="saved_meals_move_down">Siirry alas</string>
+
+    <!-- Nutrition detail sheet -->
+    <string name="nutrition_details_title">Ravitsemustiedot</string>
+    <string name="nutrition_section_macros">Makrot</string>
+    <string name="nutrition_section_detailed">Yksityiskohtainen ravitsemus</string>
+    <string name="nutrition_label_calories">Kalorit</string>
+    <string name="nutrition_label_protein">Proteiini</string>
+    <string name="nutrition_label_carbs">Hiilihydraatteja</string>
+    <string name="nutrition_label_fat">Lihava</string>
+    <string name="nutrition_label_sugar">Sokeri</string>
+    <string name="nutrition_label_added_sugar">Lisätty Sokeri</string>
+    <string name="nutrition_label_fiber">Kuitu</string>
+    <string name="nutrition_label_saturated_fat">Tyydytetty rasva</string>
+    <string name="nutrition_label_mono_fat">Mono Unsat. Lihava</string>
+    <string name="nutrition_label_poly_fat">Poly Unsat. Lihava</string>
+    <string name="nutrition_label_cholesterol">Kolesteroli</string>
+    <string name="nutrition_label_caffeine">Kofeiini</string>
+    <string name="nutrition_label_creatine">Kreatiini</string>
+    <string name="nutrition_label_beta_alanine">Beta-alaniini</string>
+    <string name="nutrition_label_l_citrulline">L-sitrulliini</string>
+    <string name="nutrition_label_l_carnitine">L-karnitiini</string>
+    <string name="nutrition_label_l_arginine">L-arginiini</string>
+    <string name="nutrition_label_taurine">Tauriini</string>
+    <string name="nutrition_label_betaine">Betaiini</string>
+    <string name="nutrition_label_hmb">HMB</string>
+    <string name="nutrition_label_sodium">Natrium</string>
+    <string name="nutrition_label_potassium">kalium</string>
+    <string name="nutrition_em_dash">—</string>
+
+    <!-- Coach -->
+    <string name="coach_title">Valmentaja</string>
+    <string name="coach_reset_chat_a11y">Nollaa chat</string>
+    <string name="coach_send_a11y">Lähetä</string>
+    <string name="coach_input_voice_a11y">Äänisyöttö</string>
+    <string name="coach_input_placeholder">Kysy valmentajalta…</string>
+    <string name="coach_empty_title">Kysy valmentajaltasi</string>
+    <string name="coach_empty_subtitle">Valmentajasi voi nähdä painohistoriasi, kalorilokisi ja tavoitteesi. Kysy odotetusta painosta, mitä syödä tai kuinka saavuttaa tavoite.</string>
+    <string name="coach_reset_dialog_title">Nollaa chat</string>
+    <string name="coach_reset_dialog_message">Poistetaanko kaikki viestit ja aloitetaanko alusta? Tätä ei voi kumota.</string>
+    <string name="coach_reset_confirm">Nollaa</string>
+    <string name="coach_no_profile_error">Ei vielä profiilia. Suorita käyttöönotto ensin.</string>
+    <string name="coach_chat_failed">Chat epäonnistui</string>
+
+    <string name="coach_chip_predict_30_days">Mikä on odotettu painoni 30 päivän kuluttua?</string>
+    <string name="coach_chip_lose_faster">Kuinka laihdun nopeammin turvallisesti?</string>
+    <string name="coach_chip_eating_too_much">Syönkö liikaa?</string>
+    <string name="coach_chip_what_dinner">Mitä minun pitäisi syödä illalliseksi?</string>
+    <string name="coach_chip_gain_healthy">Miten laihdun terveellisesti?</string>
+    <string name="coach_chip_eating_enough">syönkö tarpeeksi?</string>
+    <string name="coach_chip_high_protein">Voin lisätä proteiinipitoisia ruokia?</string>
+    <string name="coach_chip_holding_weight">Pidänkö painoni?</string>
+    <string name="coach_chip_average_intake">Mikä on keskimääräinen saantini?</string>
+    <string name="coach_chip_macro_suggestions">Makroehdotuksia?</string>
+    <string name="coach_chip_trend">Millainen on trendini?</string>
+    <string name="coach_chip_doing_this_week">Miten minulla menee tällä viikolla?</string>
+    <string name="coach_chip_log_advice">Onko neuvoja lokini perusteella?</string>
+    <string name="coach_chip_training" translatable="false">Millainen on viimeaikainen treenini?</string>
+
+    <!-- Progress -->
+    <string name="progress_range_week">1W</string>
+    <string name="progress_range_month">1 milj</string>
+    <string name="progress_range_3m">3M</string>
+    <string name="progress_range_6m">6 milj</string>
+    <string name="progress_range_year">1V</string>
+    <string name="progress_range_all">Kaikki</string>
+
+    <string name="progress_weight_section">Paino</string>
+    <string name="progress_log_weight">Tukin paino</string>
+    <string name="progress_stat_current">Nykyinen</string>
+    <string name="progress_stat_goal">Maali</string>
+    <string name="progress_stat_net_change">Nettomuutos</string>
+    <string name="progress_stat_average">Keskimäärin</string>
+    <string name="progress_log_first_weight">Kirjaa ensimmäinen painosi nähdäksesi trendit</string>
+
+    <string name="progress_weight_history">Painon historia</string>
+    <string name="progress_body_fat_history">Kehon rasvahistoria</string>
+    <string name="progress_workout_history">Harjoitushistoria</string>
+    <plurals name="progress_workout_history_count_format">
+        <item quantity="one">%1$d laskettu poltto · napauta nähdäksesi tai poistaaksesi</item>
+        <item quantity="other">%1$d lasketut palovammat · Näytä tai poista napauttamalla</item>
+    </plurals>
+    <string name="progress_workout_delete_title">Poistetaanko harjoituspoltto?</string>
+    <string name="progress_workout_delete_message">Tämä poistaa lasketun palovamman Ruoka + Treenistä ja Health Connectista. Harjoituspäiväkirjasuunnitelmasi säilyy tallessa.</string>
+    <plurals name="progress_history_count_format">
+        <item quantity="one">%1$d -merkintä · napauta nähdäksesi tai poistaaksesi</item>
+        <item quantity="other">%1$d-merkinnät · Napauta nähdäksesi tai poistaaksesi</item>
+    </plurals>
+
+    <string name="progress_workout_section">Harjoitustoiminta</string>
+    <string name="progress_workout_stat_workouts">Harjoitukset</string>
+    <string name="progress_workout_stat_total">Total Burn</string>
+    <string name="progress_workout_stat_average">Keskim. palaminen</string>
+    <string name="progress_workout_stat_latest">Viimeisin</string>
+    <string name="progress_workout_stat_days">päivää</string>
+    <string name="progress_workout_no_range">Tällä alueella ei laskelmia harjoituspalovammoja</string>
+    <string name="progress_workout_chart_description">Harjoituksen polttokaavio %1$s:stä %2$s:ään. Yhteensä %3$d kilokalorit; uusimmat %4$d kilokalorit.</string>
+
+
+    <string name="progress_calories_section">Kalorit</string>
+    <string name="progress_avg_format">Keskim.: %1$,d kcal</string>
+    <string name="progress_no_food">Ruokaa ei ole vielä kirjattu</string>
+
+    <string name="progress_macro_averages">Makrokeskiarvot</string>
+    <string name="progress_nutrient_averages">Ravinteiden keskiarvot</string>
+    <string name="progress_loading_nutrition">Ladataan ravintoa…</string>
+    <string name="progress_macro_progress_format">%1$dg / %2$dg</string>
+
+    <string name="progress_log_weight_title">Tukin paino</string>
+
+    <string name="progress_goal_reached_title">Onnittelut! 🎉</string>
+    <string name="progress_goal_reached_message">Olet saavuttanut tavoitepainosi! Siirry asetuksiin vaihtaaksesi tavoitettasi ja napauta Laske tavoitteet uudelleen päivittääksesi tavoitteesi.</string>
+
+    <!-- Settings -->
+    <string name="settings_section_personal">Henkilötiedot</string>
+    <string name="settings_allergen_sensitivities">Allergeenien herkkyys</string>
+    <string name="settings_allergen_add_placeholder">Kirjoita allergeeni</string>
+    <string name="settings_allergen_add_section">Lisää herkkyyttä</string>
+    <string name="settings_allergen_add_hint">Lisää painamalla Valmis. Poista pyyhkäisemällä rivillä vasemmalle. Muutokset tallentuvat automaattisesti.</string>
+    <string name="settings_allergen_empty">Ei lisätty herkkyyttä</string>
+    <string name="settings_allergen_remove_title">Poistetaanko allergeeni?</string>
+    <string name="settings_allergen_remove_message">Poistetaanko \"%1$s\" herkkyydestäsi?</string>
+    <string name="settings_allergen_disclaimer">Käytetään paikallisiin tarratarkistuksiin. Tulokset eivät koskaan osoita, että ruoka on turvallista.</string>
+    <string name="settings_allergen_import_section">Laboratorioraportti</string>
+    <string name="settings_allergen_import_button">Tuo laboratorioraportista</string>
+    <string name="settings_allergen_import_disclaimer">Poimii mahdolliset herkistymiset ISAC/ALEX-tyyppisestä allergiaveritestiraportista vain paikallisia tarkastuksia varten. Ei lääketieteellinen diagnoosi – vahvista jokainen nimi ennen lisäämistä.</string>
+    <string name="settings_allergen_import_source_message">Valitse valokuva tai PDF allergiatestiraportistasi.</string>
+    <string name="settings_allergen_import_choose_photo">Valitse Valokuva</string>
+    <string name="settings_allergen_import_choose_file">Valitse Tiedosto</string>
+    <string name="settings_allergen_import_loading">Luetaan laboratorioraporttia…</string>
+    <string name="settings_allergen_import_confirm_title">Vahvista allergeenit</string>
+    <string name="settings_allergen_import_confirm_message">Vahvista lisättävät nimet. Tämä ei ole lääketieteellinen diagnoosi, eikä se koskaan tarkoita, että ruoka on turvallista.</string>
+    <string name="settings_allergen_import_select_all">Valitse Kaikki</string>
+    <string name="settings_allergen_import_deselect_all">Poista kaikki valinta</string>
+    <string name="settings_allergen_import_add_selected">Lisää valitut</string>
+    <string name="settings_allergen_import_error_title">Tuonti ei onnistu</string>
+    <string name="settings_allergen_import_none_found">Tässä raportissa ei havaittu selvästi positiivisia tai kohonneita herkistymiä.</string>
+    <string name="settings_allergen_import_failed">Laboratorioraporttia ei voitu lukea.</string>
+    <string name="settings_allergen_import_read_failed">Valittua tiedostoa ei voitu lukea.</string>
+    <string name="settings_section_goals">Tavoitteet ja ravinto</string>
+    <string name="settings_section_daily_targets">Päivittäiset tavoitteet</string>
+    <string name="settings_section_app">Sovellusasetukset</string>
+    <string name="settings_section_tracking_reminders">&amp;-muistutusten seuranta</string>
+    <string name="settings_category_ai_providers">AI-palveluntarjoajat ja varavaihtoehdot</string>
+    <string name="settings_section_ai_voice">AI &amp; Voice</string>
+    <string name="settings_section_ai">Ensisijainen AI</string>
+    <string name="settings_on_device_models">Laitteessa olevat mallit</string>
+    <string name="settings_on_device_models_info">Mallit latautuvat yksityiseen sovellusten tallennustilaan ja toimivat lähettämättä kuvia, kehotteita tai ääntä palvelimelle. Latauksen koko- ja mallilisenssiehdot ovat voimassa.</string>
+    <string name="settings_local_model_not_downloaded_format">%1$s · Ei ladattu</string>
+    <string name="settings_local_model_downloading_format">Ladataan · %1$d%%</string>
+    <string name="settings_local_model_installed">Asennettu · Valmis offline-tilaan</string>
+    <string name="settings_view_model_license">Katso mallilisenssi</string>
+    <string name="settings_model_source">Mallin lähde</string>
+    <string name="settings_model_license_format">%1$s-lisenssi</string>
+    <string name="settings_model_requires_8gb">Vaatii 8 Gt RAM-laitteen</string>
+    <string name="settings_model_low_ram_unsupported">Ei tueta laitteissa, joissa on vähän RAM-muistia</string>
+    <string name="settings_model_processor_unsupported">Tämän laitteen prosessoria ei tueta</string>
+    <string name="settings_section_text_ai">Teksti AI</string>
+    <string name="settings_info_about_format" translatable="false">Tietoja %1$s:stä</string>
+    <string name="settings_info_primary_ai" translatable="false">Käsittelee kaikki valokuvan sisältävät pyynnöt. Se käsittelee myös vain teksti -pyyntöjä, kun Use Separate Teksti Provider on pois päältä. Kun tämä kytkin on päällä, Teksti AI käsittelee sen sijaan vain tekstiä.</string>
+    <string name="settings_info_text_ai" translatable="false">Valinnainen palveluntarjoaja pyyntöihin ilman kuvia, mukaan lukien kirjoitettu ruoka, valmentaja-chat, äänikopiot, tavoitteet ja neuvot. Kun Use Separate Teksti Provider on pois päältä, ensisijainen tekoäly käsittelee nämä pyynnöt.</string>
+    <string name="settings_info_text_fallback" translatable="false">Yrittää epäonnistuneen tekstipyynnön uudelleen kerran. Se varmuuskopioi tekstiälyä, kun erillinen palveluntarjoaja on käytössä; muuten se varmuuskopioi ensisijaisen AI:n vain tekstiä varten. Se ei koskaan vastaanota valokuvia.</string>
+    <string name="settings_info_image_fallback" translatable="false">Yrittää uudelleen epäonnistuneen pyynnön, joka sisältää yhden tai useamman valokuvan. Ensimmäinen yritys käyttää aina ensisijaista tekoälyä. Tätä varavaihtoehtoa ei koskaan käytetä vain tekstiä koskeviin pyyntöihin. Voit käyttää samaa palveluntarjoajaa eri mallilla.</string>
+    <string name="settings_info_speech_to_text" translatable="false">Muuntaa mikrofonin äänen vain tekstiksi. Transkriptio seuraa sitten normaalia tekstireittiä: Teksti AI, kun se on käytössä, muuten ensisijainen AI. Vastaavia palveluntarjoajan API-avaimia käytetään uudelleen, ellet tallenna erillistä STT-avainta.</string>
+    <string name="settings_info_speech_fallback">Yrittää transkription uudelleen, kun valitun äänitallenteen STT-palveluntarjoaja epäonnistuu. Se tuottaa vain transkription; tämä transkriptio noudattaa edelleen normaalia tekstiälyn reittiä. Android-puheella on jo oma tunnistuksen palautus.</string>
+    <string name="settings_use_separate_text_provider">Käytä erillistä tekstintoimittajaa</string>
+    <string name="settings_text_provider_footer">Kun tämä on käytössä, pyynnöt ilman kuvia – mukaan lukien kirjoitetut ruoat, puhetranskriptit, valmentajan chat, tavoitteet ja neuvot – käyttävät tätä palveluntarjoajaa. Valokuvapyynnöt käyttävät yllä olevaa tekoälyn tarjoajaa. API-avaimet jaetaan tarjoajakohtaisesti.</string>
+    <string name="settings_section_text_fallback">Lähetä tekstiä AI Fallback</string>
+    <string name="settings_text_fallback_footer">Used only when a text-only AI request fails. Se ei koskaan käsittele valokuvia.</string>
+    <string name="settings_section_speech">Puhe tekstiksi</string>
+    <string name="settings_section_speech_fallback">STT:n varmistus</string>
+    <string name="settings_speech_fallback_footer">Käytetään vain, kun valitun äänitetyn puheen tarjoaja epäonnistuu. Natiivipuhe yrittää jo uudelleen laitteen ja online-tunnistustilat.</string>
+    <string name="settings_native_speech_fallback_footer">Natiivipuhe palautuu jo automaattisesti Androidin laitteissa, online-tilassa ja automaattisissa tunnistustiloissa. Valitse yllä oleva etäpuheentarjoaja määrittääksesi erillisen palveluntarjoajan varavaihtoehdon.</string>
+    <string name="settings_section_workout">Harjoittelu</string>
+    <string name="settings_training_split" translatable="false">Koulutus Split</string>
+    <string name="settings_rpe_scale" translatable="false">RPE-asteikko</string>
+    <string name="settings_rpe_guide" translatable="false">Vahvuus 1–10: 1 on erittäin helppoa ja 10 maksimiponnistusta.\nCR10 0–10: havaittu rasitus desimaaleilla sallittu.\nBorg 6–20: klassinen kokonaislukuinen rasitusasteikko.</string>
+    <string name="settings_workout_health_access" translatable="false">Treenikulutuksen synkronointi</string>
+    <string name="settings_grant_permission" translatable="false">Myönnä lupa</string>
+    <string name="settings_section_health">Terveys ja tiedot</string>
+    <string name="settings_section_data_management">Tietojen hallinta</string>
+
+    <string name="settings_gender">Sukupuoli</string>
+    <string name="settings_birthday">Syntymäpäivä</string>
+    <string name="settings_height">Korkeus</string>
+    <string name="settings_weight">Paino</string>
+    <string name="settings_body_fat">Kehon rasvaa</string>
+    <string name="settings_goal_body_fat">Tavoitteena kehon rasva</string>
+    <string name="settings_use_body_fat_bmr">Käytä kehon rasvaa BMR:ään</string>
+    <string name="settings_use_body_fat_bmr_subtitle">Päällä = Katch-McArdle (käyttää laihaa massaa tarkemman BMR:n saamiseksi). Pois = Mifflin-St Jeor (vain pituus/paino/ikä). Sammuta, jos kehon rasvalukemasi on vanhentunut.</string>
+    <string name="settings_not_set">Ei asetettu</string>
+    <string name="settings_birthday_age_format">%1$s (ikä %2$d)</string>
+
+    <string name="settings_weight_goal">Painon tavoite</string>
+    <string name="settings_activity_level">Aktiviteettitaso</string>
+    <string name="settings_weekly_change">Viikoittainen muutos</string>
+    <string name="settings_weekly_default">0,50 kg/vko</string>
+    <string name="settings_goal_weight">Tavoitteen paino</string>
+    <string name="settings_calories">Kalorit</string>
+    <string name="settings_recalculate_goals">Laske tavoitteet uudelleen</string>
+    <string name="settings_macro_pinned_format">%1$dg</string>
+    <string name="settings_macro_auto_format">%1$dg · auto</string>
+    <string name="settings_macro_pinned_a11y">Kiinnitetty</string>
+    <string name="settings_macro_auto_a11y">Auto</string>
+
+    <string name="settings_appearance">Ulkonäkö</string>
+    <string name="settings_appearance_system">Järjestelmä</string>
+    <string name="settings_appearance_light">Kevyt</string>
+    <string name="settings_appearance_dark">Tumma</string>
+    <string name="settings_app_language">Kieli</string>
+    <string name="settings_app_language_system">Järjestelmän oletus</string>
+    <string name="sheet_app_language">Kieli</string>
+    <string name="settings_theme_color">Teeman väri</string>
+    <string name="sheet_theme_color">Teeman väri</string>
+    <string name="sheet_theme_color_footer">Muuttaa välilehtien, painikkeiden, kuvakkeiden, kaavioiden ja edistymisrenkaiden pääsovelluksen väriä.</string>
+    <string name="theme_color_fud_pink">Fud Pinkki</string>
+    <string name="theme_color_red">Punainen</string>
+    <string name="theme_color_orange">Oranssi</string>
+    <string name="theme_color_green">Vihreä</string>
+    <string name="theme_color_mint">Minttu</string>
+    <string name="theme_color_teal">Sinivihreä</string>
+    <string name="theme_color_blue">Sininen</string>
+    <string name="theme_color_purple">Violetti</string>
+    <string name="theme_color_yellow">Keltainen</string>
+    <string name="theme_color_coral">Koralli</string>
+    <string name="theme_color_rose_gold">Ruusukulta</string>
+    <string name="theme_color_mocha_brown">Mokka ruskea</string>
+    <string name="theme_color_indigo">Indigo</string>
+    <string name="theme_color_lavender">Laventeli</string>
+    <string name="theme_color_sky_cyan">Taivas syaani</string>
+    <string name="theme_color_graphite">Grafiitti</string>
+    <string name="theme_color_baby_pink">Vauvan pinkki</string>
+    <string name="theme_color_lime">Lime</string>
+    <string name="settings_metric_units">Metriset yksiköt</string>
+    <string name="settings_height_unit">Korkeusyksikkö</string>
+    <string name="settings_weight_unit">Painoyksikkö</string>
+    <string name="settings_default_to_grams">Oletusarvo on gramma</string>
+    <string name="settings_default_to_grams_info">Uudet ruokaarvostelusivut avautuvat ja grammat on valittu ensin. Voit silti vaihtaa tarjoiluun, viipalointiin, kuppiin tai mihin tahansa muuhun havaittuun yksikköön ennen kirjaamista.</string>
+    <string name="settings_save_photos_to_gallery">Tallenna Kuviin</string>
+    <string name="settings_save_photos_to_gallery_subtitle">Tallenna myös ateriakuvat galleriaasi kirjautuessasi</string>
+    <string name="settings_week_starts">Viikko alkaa</string>
+    <string name="settings_meal_times">Ruokailuajat</string>
+    <string name="settings_meal_times_customize">Mukauta</string>
+    <string name="settings_meal_times_description">Aseta, milloin automaattinen aterianvalinta vaihtaa seuraavaan ateriaan.</string>
+    <string name="settings_breakfast_starts">Aamiainen alkaa</string>
+    <string name="settings_lunch_starts">Lounas alkaa</string>
+    <string name="settings_dinner_starts">Illallinen alkaa</string>
+    <string name="settings_late_snack_starts">Late Snack alkaa</string>
+    <string name="settings_meal_times_help">Jokainen ateria jatkuu, kunnes seuraava alkaa. Late Snack jatkuu yön yli aamiaisen alkamiseen asti. Voit silti vaihtaa aterian manuaalisesti ennen kirjaamista.</string>
+    <string name="settings_restore_default_times">Palauta oletusajat</string>
+    <string name="settings_meal_time_edit_format">Aseta %1$s</string>
+    <string name="settings_week_monday">maanantai</string>
+    <string name="settings_week_sunday">sunnuntai</string>
+    <string name="settings_notifications">Ilmoitukset</string>
+    <string name="settings_water_tracking">Veden seuranta</string>
+    <string name="settings_water_goal">Päivittäinen vesitavoite</string>
+    <string name="settings_water_goal_summary">%1$d ml</string>
+    <string name="settings_water_goal_wheel_help">Vieritä 50 ml:n välein valitaksesi päivittäisen tavoitteen 50–10 000 ml.</string>
+    <string name="settings_water_goal_wheel_help_fl_oz">Vieritä 1 fl ozsin askelin valitaksesi päivätavoitteeksi 2–338 fl unssia.</string>
+    <string name="settings_water_unit">Vesiyksikkö</string>
+    <string name="settings_water_unit_ml">Millilitraa (ml)</string>
+    <string name="settings_water_unit_fl_oz">Neste unssia (fl oz)</string>
+    <string name="settings_fasting_tracking">Paaston seuranta</string>
+    <string name="settings_walk_run_quick_log">Kävele &amp; Juokse</string>
+    <string name="settings_walk_run_quick_log_footer">Oletuksena pois päältä. Kun tämä on käytössä, Kävely ja Juokseminen näkyvät Harjoitukset + -valikossa nopeaa ulkoilukirjausta varten.</string>
+    <string name="outdoor_activity_walking">Kävely</string>
+    <string name="outdoor_activity_running">Juoksemassa</string>
+    <string name="outdoor_activity_how_long">Kuinka kauan?</string>
+    <string name="outdoor_activity_minutes">%1$d min</string>
+    <string name="outdoor_activity_custom_minutes">Mukautetut minuutit</string>
+    <string name="outdoor_activity_min_suffix">min</string>
+    <string name="outdoor_activity_log">Log %1$s</string>
+    <string name="settings_fasting_goal">Oletuspaastotavoite</string>
+    <string name="settings_fasting_goal_value">%1$d tuntia</string>
+    <string name="settings_notif_fasting_goal">Paastotavoite saavutettu</string>
+    <string name="fasting">Paasto</string>
+    <string name="fasting_start">Aloita nopeasti</string>
+    <string name="fasting_end">Lopeta nopeasti</string>
+    <string name="fasting_cancel">Peruuta nopeasti</string>
+    <string name="fasting_in_progress">Nopeasti käynnissä</string>
+    <string name="fasting_completed_format">%1$s nopea</string>
+    <string name="fasting_goal_format">%1$s tavoite</string>
+    <string name="fasting_started_format">Käynnistettiin %1$s</string>
+    <string name="fasting_choose_goal">Valitse paastotavoite</string>
+    <string name="fasting_hours">tuntia</string>
+    <string name="fasting_edit">Muokkaa nopeasti</string>
+    <string name="fasting_active">Aktiivinen nopea</string>
+    <string name="fasting_started">Aloitettu</string>
+    <string name="fasting_ended">Päättyi</string>
+    <string name="fasting_delete">Poista nopeasti</string>
+    <string name="fasting_overlap_title">Nopea menee päällekkäin toisen istunnon kanssa</string>
+    <string name="fasting_overlap_message">Säädä alkamis- tai lopetusaikaa, jotta paasto-istunnot eivät mene päällekkäin.</string>
+    <string name="food_logging_paused">Ruoan kirjaus keskeytetty</string>
+    <string name="food_blocked_by_active_fast">Lopeta tai peruuta aktiivinen paasto ennen ruoan kirjaamista.</string>
+    <string name="fasting_quick_action_disabled_title">Paaston seuranta pois päältä</string>
+    <string name="fasting_quick_action_disabled_message">Ota paastoseuranta käyttöön asetuksissa, jos haluat käyttää tätä pikakuvaketta.</string>
+    <string name="home_todays_diary">Päivän päiväkirja</string>
+    <string name="home_diary">Päiväkirja</string>
+    <string name="home_no_diary_entries">Ei päiväkirjamerkintöjä</string>
+    <string name="home_menu_photo_scan">Valokuva &amp; Scan</string>
+    <string name="home_menu_describe_meal">Kuvaile ateriaa</string>
+    <string name="home_menu_reuse_meal">Käytä ateria uudelleen</string>
+    <string name="settings_notif_water_reminder">Veden muistutus</string>
+    <string name="settings_battery_opt">Akun optimointi</string>
+    <string name="settings_battery_opt_value">Valkoinen lista Ruoka + Treeni</string>
+
+    <string name="settings_ai_provider">Palveluntarjoaja</string>
+    <string name="settings_ai_model">Malli</string>
+    <string name="settings_speech_language">Kieli</string>
+    <string name="settings_ai_model_unset">(aseta yksi alla)</string>
+    <string name="settings_api_key">API-avain</string>
+    <string name="settings_base_url">Perus-URL-osoite</string>
+    <string name="settings_server_url">Palvelimen URL-osoite</string>
+    <string name="settings_tap_to_edit">Muokkaa napauttamalla</string>
+    <string name="settings_custom_url_placeholder">https://your-endpoint.com/v1</string>
+    <string name="settings_custom_url_title">Muokattu perus-URL-osoite</string>
+    <string name="settings_clear_key">Tyhjennä avain</string>
+
+    <!-- Custom AI Instructions + Fallback Provider (v1.0.6) -->
+    <string name="settings_section_custom_instructions">Mukautetut AI-ohjeet</string>
+    <string name="settings_custom_instructions_placeholder">esim. Asun Saksassa, otaksun eurooppalaiset annoskoot, suosin ALDI/REWE-merkkejä. Minulla on kehonrakennusleikkaus.</string>
+    <string name="settings_custom_instructions_footer">Valinnainen konteksti, joka lähetetään jokaisen tekoälypyynnön mukana – alue, ruokavalio, urheilutavoitteet, kaikki, mitä muuten toistaisit joka kerta. Jätä tyhjäksi poistaaksesi käytöstä.</string>
+    <string name="settings_save">Tallentaa</string>
+    <string name="settings_saved">Tallennettu</string>
+
+    <string name="settings_section_fallback">Kuvatekoälyn varavaihtoehto</string>
+    <string name="settings_enable_fallback">Ota varatoimi käyttöön</string>
+    <string name="settings_fallback_footer">Käytetään vain, kun tekoälypyyntö sisältää valokuvan. Sama toimittaja kuin ensisijainen on sallittu – valitse vain eri malli.</string>
+
+    <string name="settings_health_connect">Health Connect</string>
+    <string name="settings_manage_health_access">Hallinnoi Health Connect Accessia</string>
+    <string name="settings_permissions">Käyttöoikeudet</string>
+    <string name="settings_energy_goals">Energianpolttotavoitteet</string>
+    <string name="settings_needs_health_connect">Tarvitsee Health Connectin</string>
+    <string name="settings_energy_goals_info">Käytössä ollessaan Ruoka + Treeni käyttää Health Connectin viimeaikaista mitatun energian ikkunaa ylläpitoankkurina tavoitteita laskettaessa kaavaarvion sijaan: mitattu kokonaisenergia, kun päiviä on riittävästi; muussa tapauksessa keskimääräinen mitattu aktiivinen energia + kaava BMR. Tekoälyä ei käytetä polttamasi lukemiseen. Edellyttää Health Connectia. Toimii Laske uudelleen -painikkeen ja mukautuvien tavoitteiden kanssa.</string>
+    <string name="settings_adaptive_goals">Mukautuvat tavoitteet</string>
+    <string name="settings_adaptive_goals_info">Noin kerran viikossa, kun avaat sovelluksen, Ruoka + Treeni suorittaa automaattisesti uudelleen täyden tavoitteen laskennan – saman, jota Laske uudelleen-painike käyttää – profiilistasi, viimeaikaisista kirjatuista ruoista ja painotrendistä. Jos Energy Burn on päällä, se käyttää mitattua polttoa huoltoankkurina. Se hyppää äänettömästi, jos tekoäly ei ole käytettävissä. Tämän poistaminen käytöstä palauttaa tavoitteet ennen kuin Adaptive Goals muutti niitä. Tämä ei ole lääketieteellinen neuvo.</string>
+    <string name="settings_refresh_energy_goals">Päivitä energianpolttotavoitteet</string>
+    <string name="settings_clear_food_log">Tyhjennä ruokaloki</string>
+    <string name="settings_delete_all_data">Poista kaikki tiedot</string>
+
+    <!-- Settings dialogs -->
+    <string name="settings_clear_food_title">Tyhjennä ruokapäiväkirja?</string>
+    <string name="settings_clear_food_message">Pyyhi kaikki ruokamerkinnät ja valokuvat. Profiili, painot ja asetukset säilyvät.</string>
+    <string name="settings_delete_all_title">Poistetaanko kaikki paikalliset tiedot?</string>
+    <string name="settings_delete_all_message">Pyyhi profiilin, ruokalokin, painohistorian, chatin ja API-avaimet ja vie sinut takaisin käyttöönottoon. Health Connectin tiedot pysyvät ennallaan.</string>
+    <string name="settings_max_pinned_title">Max 2 makroa lukittu</string>
+    <string name="settings_max_pinned_message">Korkeintaan 2 makroa voidaan lukita kerrallaan, joten yksi pysyy vapaana tasapainossa. Avaa ensin toisen makron lukitus (napauta sen lukkokuvaketta).</string>
+    <string name="settings_macro_locked">Lukittu</string>
+    <string name="settings_macro_unlocked">Avattu</string>
+    <string name="settings_rebalance_blocked_title">Ei voi tasapainottaa</string>
+    <string name="settings_rebalance_blocked_message">Kalorit on lukittu ja molemmat muut makrot on lukittu, joten mitään ei ole jäljellä tämän muutoksen absorboimiseksi. Avaa kalorit tai jokin muu makro ja yritä sitten uudelleen.</string>
+    <string name="settings_adaptive_locks_title">Adaptive Goals on päällä</string>
+    <string name="settings_adaptive_locks_message">Lukitse tai aseta omat kalorit ja makrot poistamalla mukautuvat tavoitteet käytöstä. Kun se on päällä, Ruoka + Treeni laskee ne uudelleen puolestasi joka viikko.</string>
+    <string name="settings_recalc_title">Lasketaanko tavoitteet uudelleen?</string>
+    <string name="settings_recalc_message">Palauttaa kalorit ja makrot kaavan oletusarvoihin pituuden/painon/aktiivisuuden/tavoitteen perusteella. Kaikki kiinnitetyt makrot tyhjennetään.</string>
+    <string name="settings_recalc_confirm">Laske uudelleen</string>
+    <string name="settings_invalid_goal_title">Tavoitteen paino ei vastaa tavoitettasi</string>
+    <string name="settings_invalid_goal_lose">Lose-tavoite tarvitsee tavoitteen, joka on alle nykyisen painosi.</string>
+    <string name="settings_invalid_goal_gain">Gain-tavoite vaatii tavoitteen, joka ylittää nykyisen painosi.</string>
+    <string name="settings_permission_title">Lupa tarvitaan</string>
+
+    <string name="settings_notifications_denied">Ilmoituslupa evätty. Ota se käyttöön kohdassa Järjestelmäasetukset → Sovellukset → Ruoka + Treeni → Ilmoitukset saadaksesi muistutuksia.</string>
+
+    <!-- Notification copy -->
+    <string name="notif_weight_log_title">Aika punnita</string>
+    <string name="notif_weight_log_text">Kirjaa päivän paino pitääksesi edistymiskaaviosi tarkana.</string>
+    <string name="notif_body_fat_log_title">Kehon rasvan sisäänkirjautuminen</string>
+    <string name="notif_body_fat_log_text">Kirjaa tämän päivän kehon rasva % too seurata koostumustrendiäsi.</string>
+    <string name="settings_health_denied">Health Connect ei myöntänyt käyttöoikeutta. Avaa Health Connect ja salli tietotyypit, jotka haluat Ruoka + Treenin synkronoitavan. Energiapohjaiset tavoitteet vaativat sekä aktiivisia että kokonaiskaloreita.</string>
+    <string name="settings_health_unavailable">Asenna tai päivitä Health Connect Play Kaupasta ja napauta sitten kytkintä uudelleen.</string>
+    <string name="settings_health_profile_unsupported">Health Connect voi näyttää Ruoka + Treenin hyväksytyksi, mutta Android ei salli Health Connectia työprofiilista, yksityisestä tilasta tai kloonatusta sovellusprofiilista. Asenna ja avaa Ruoka + Treeni puhelimesi pääprofiilissa.</string>
+    <string name="settings_health_system_unavailable">Health Connectin järjestelmäpalvelu ei ole käytettävissä. Se vaatii Android 9:n tai uudemman; asenna Android- ja Google Play -järjestelmäpäivitykset uudempaan puhelimeen, käynnistä uudelleen ja yritä sitten uudelleen.</string>
+    <string name="settings_get_health_connect">Hanki Health Connect</string>
+
+    <!-- Settings sheets / pickers -->
+    <string name="sheet_ai_provider">AI Provider</string>
+    <string name="sheet_model">Malli</string>
+    <string name="sheet_model_footer">Tai kirjoita mikä tahansa mukautettu mallitunnus alle.</string>
+    <string name="sheet_any_model_id">Mikä tahansa mallitunnus</string>
+    <string name="sheet_api_key_format">API-avain – %1$s</string>
+    <string name="sheet_speech_api_key_format">Speech API -avain – %1$s</string>
+    <string name="sheet_speech_engine">Puhemoottori</string>
+    <string name="sheet_gender">Sukupuoli</string>
+    <string name="sheet_activity_level">Aktiviteettitaso</string>
+    <string name="sheet_goal">Maali</string>
+    <string name="sheet_target_weight">Tavoitepaino</string>
+    <string name="sheet_weight">Paino</string>
+    <string name="sheet_birthday">Syntymäpäivä</string>
+    <string name="sheet_appearance">Ulkonäkö</string>
+    <string name="sheet_week_starts">Viikko alkaa</string>
+    <string name="sheet_height">Korkeus</string>
+    <string name="sheet_body_fat_percent">kehon rasva %</string>
+    <string name="sheet_goal_body_fat">Kehon rasvatavoite</string>
+    <string name="sheet_goal_body_fat_currently">Tällä hetkellä %1$d%%</string>
+    <string name="action_remove_goal">Poista tavoite</string>
+    <string name="sheet_weekly_change">Viikoittainen muutos</string>
+    <string name="sheet_weekly_change_format">%1$.1f %2$s/viikko %3$s</string>
+    <string name="sheet_weekly_change_loss">menetys</string>
+    <string name="sheet_weekly_change_gain">saada</string>
+    <string name="sheet_pace_slow">Hidas</string>
+    <string name="sheet_pace_recommended">Suositeltava</string>
+    <string name="sheet_pace_fast">Nopeasti</string>
+    <string name="sheet_selected_a11y">Valittu</string>
+    <string name="sheet_reset_to_auto">Palauta automaattiseen tasapainoon</string>
+
+    <string name="sheet_macros">Makrot</string>
+    <string name="sheet_macros_subtitle">Kiinnitä enintään 2 makroa tarkkoihin grammoihin. Kiinnittämättömät tasapainottavat automaattisesti jäljellä olevista kaloreista.</string>
+    <string name="sheet_macro_pinned">kiinnitetty</string>
+    <string name="sheet_macro_auto">auto</string>
+    <string name="sheet_macro_label_format">%1$s (%2$s)</string>
+    <string name="sheet_speech_language">Puhekieli</string>
+    <string name="speech_language_provider_auto">Palveluntarjoaja Auto</string>
+    <string name="speech_language_provider_auto_subtitle">Anna palveluntarjoajan havaita kieli.</string>
+    <string name="speech_language_device">Käytä laitteen kieltä</string>
+    <string name="speech_language_device_subtitle">Käytä tämän puhelimen nykyistä kieltä.</string>
+    <string name="speech_language_english">englanti</string>
+    <string name="speech_language_german">saksaksi</string>
+    <string name="speech_language_spanish">espanja</string>
+    <string name="speech_language_french">ranskalainen</string>
+    <string name="speech_language_italian">italialainen</string>
+    <string name="speech_language_portuguese">portugali</string>
+    <string name="speech_language_dutch">hollantilainen</string>
+    <string name="speech_language_hindi">hindi</string>
+    <string name="speech_language_japanese">japanilainen</string>
+    <string name="speech_language_chinese">kiinalainen</string>
+    <string name="speech_language_korean">korealainen</string>
+    <string name="speech_language_czech">Tšekki</string>
+
+    <!-- About -->
+    <string name="about_update_checking">Tarkistetaan päivityksiä</string>
+    <string name="about_update_available">Päivitys saatavilla</string>
+    <string name="about_update_details_format">Nykyinen %1$s -&gt; Uusin %2$s</string>
+    <string name="about_update_action">Päivittää</string>
+    <string name="about_check_updates">Tarkista päivitykset</string>
+    <string name="about_app_version">Sovellusversio</string>
+    <string name="about_version_format">Versio %1$s</string>
+    <string name="about_whats_new">Mitä uutta</string>
+    <string name="about_whats_new_version_format">Versio %1$s</string>
+    <string name="about_whats_new_android_summary">Androidin muutokset tässä päivityksessä:</string>
+    <string name="about_rate">Arvioi sovellus</string>
+    <string name="about_share">Jaa sovellus</string>
+    <string name="about_open_source">Avoin lähdekoodi (MIT)</string>
+    <string name="about_openssf_best_practices">OpenSSF:n parhaat käytännöt</string>
+    <string name="about_openssf_best_practices_desc">Hyväksytty · projekti 14553</string>
+    <string name="about_openssf_scorecard">OpenSSF Scorecard</string>
+    <string name="about_openssf_scorecard_desc">Turvallisuuden terveyspisteet</string>
+    <string name="about_udyam">Udyam rekisteröity</string>
+    <string name="about_udyam_desc">UDYAM-DL-06-0225072 · Mikroyritys</string>
+    <string name="about_ace">ACE-sertifioitu</string>
+    <string name="about_ace_desc">Personal Trainer · NCCA-akkreditoitu</string>
+    <string name="about_star_github">Tähti GitHubissa</string>
+    <string name="about_vote_ph">Äänestä Product Huntista</string>    <string name="about_report_issue">Ilmoita ongelmasta GitHubissa</string>
+    <string name="about_report_issue_discord">Ilmoita ongelmasta Discordissa</string>
+    <string name="about_request_feature">Pyydä ominaisuus GitHubissa</string>
+    <string name="about_request_feature_discord">Pyydä ominaisuus Discordissa</string>
+    <string name="about_contact">Ota yhteyttä</string>
+    <string name="about_join_discord">Liity Discordiin</string>
+    <string name="about_follow_x">Seuraa X</string>
+    <string name="about_follow_linkedin">Seuraa LinkedInissä</string>
+    <string name="about_follow_instagram">Seuraa Instagramissa</string>
+    <string name="about_privacy">Tietosuojakäytäntö</string>
+    <string name="about_terms">Palveluehdot</string>
+    <string name="about_litert_notices">LiteRT-LM kolmannen osapuolen ilmoitukset</string>
+    <string name="about_litert_notices_load_error">LiteRT-LM:n kolmannen osapuolen ilmoituksia ei voitu ladata.</string>
+    <string name="about_category_app_updates">Tietoja</string>
+    <string name="about_category_support">Tuki Ruoka + Treeni</string>
+    <string name="about_category_help_feedback">Ohje &amp; Palaute</string>
+    <string name="about_category_community">yhteisössä</string>
+    <string name="about_category_join_beta">Liity Betaan</string>
+    <string name="about_category_legal">Laillinen</string>
+    <string name="about_beta_intro">Kokeile uusia Ruoka + Treeni -muutoksia ennen kuin ne saapuvat Play Kauppaan. Beta-versiot voivat olla keskeneräisiä.</string>
+    <string name="about_beta_steps">Liity Ruoka + Treeni Discordiin ja avaa #beta-android. Kun Play-testauslinkki julkaistaan ​​siellä, ota mukaan ja päivitä Ruoka + Treeni Play Kaupasta. Jos jokin menee rikki, käytä /bug-komentoa ja sisällytä versio asetuksista.</string>
+    <string name="about_beta_not_open">Pelitestaus ei ole vielä auki. Linkki julkaistaan ​​#beta-androidissa.</string>    <string name="about_share_message">Olen seurannut aterioitani Ruoka + Treenillä – ota valokuva, puhu se tai kirjoita se, ja tekoäly kirjaa kalorit. Se on ilmainen, avoimen lähdekoodin, ja tietosi pysyvät laitteellasi.\n\nLataa: https://fud-ai.app</string>
+    <string name="about_share_chooser">Jaa Ruoka + Treeni</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_streak">Viivamuistutus</string>
+    <string name="notif_channel_streak_desc">Päivittäinen muistutus aterian kirjaamisesta ja sarjan säilyttämisestä.</string>
+    <string name="notif_channel_daily">Päivittäinen yhteenveto</string>
+    <string name="notif_channel_daily_desc">Päivän lopun yhteenveto kaloreistasi + makroista.</string>
+    <string name="notif_channel_weight_goal">Painon tavoite</string>
+    <string name="notif_channel_weight_goal_desc">Juhli, kun saavutat tavoitepainosi.</string>
+    <string name="notif_streak_title">Älä unohda kirjata ateriasi</string>
+    <string name="notif_streak_text">Jatka sarjaasi – kirjaa jotain tältä päivältä.</string>
+    <string name="notif_summary_title">Tämän päivän yhteenveto on valmis</string>
+    <string name="notif_summary_text">Napauta nähdäksesi tämän päivän makrot.</string>
+    <string name="notif_summary_deficit">%1$d kcal syöty · %2$d poltettu · %3$d kcal arvioitu vaje</string>
+    <string name="notif_summary_surplus">%1$d kcal syöty · %2$d poltettu · %3$d kcal arvioitu ylijäämä</string>
+    <string name="notif_summary_balanced">%1$d kcal syöty · %2$d poltettu · arvioitu saldo</string>
+
+    <string name="widget_all_metrics_label">Ruoka + Treeni tänään</string>
+    <string name="widget_all_metrics_description">Katso tämän päivän kalorit, proteiinit, hiilihydraatit ja rasvat yhdessä widgetissä.</string>
+
+    <!-- Workouts tab (exercise library ported from Delts) -->
+    <string name="nav_workouts">Ohjelmat</string>
+    <string name="training_programs_title">Treeniohjelmat</string>
+    <string name="training_programs_subtitle">Valitse viikonosi sopiva ohjelma. Kalori- ja makrotavoitteet mukautuvat automaattisesti.</string>
+    <string name="training_program_pplul">Työntävät, vetävät, jalat, ylävartalo, alavartalo</string>
+    <string name="training_program_upper_lower">Ylä- / alavartalo</string>
+    <string name="training_program_full_body">Koko vartalo</string>
+    <string name="training_program_active_recovery">Aktiivinen palautuminen</string>
+    <string name="training_summary_pplul">Viisi treenin tasapainoiseen voima- ja lihaskasvuharjoitteluun.</string>
+    <string name="training_summary_upper_lower">Neljä treenipäivää: kaksi ylä- ja kaksi alavartalotreeniä.</string>
+    <string name="training_summary_full_body">Kolme koko vartalon treeniä ja palautumispäivät niiden välissä.</string>
+    <string name="training_summary_active_recovery">Kaksi kevyttä harjoitusta liikkuvuuteen, tekniikkaan ja palautumiseen.</string>
+    <string name="training_days_format">%1$d treenipäivää</string>
+    <string name="training_days_per_week">%1$d päivää/viikko</string>
+    <string name="training_recommended">Suositeltu</string>
+    <string name="training_active_program">Aktiivinen ohjelma</string>
+    <string name="training_day_push">Työntävät</string>
+    <string name="training_day_pull">Vetävät</string>
+    <string name="training_day_legs">Jalat</string>
+    <string name="training_day_upper">Ylävartalo</string>
+    <string name="training_day_lower">Alavartalo</string>
+    <string name="training_day_upper_a">Ylävartalo A</string>
+    <string name="training_day_lower_a">Alavartalo A</string>
+    <string name="training_day_upper_b">Ylävartalo B</string>
+    <string name="training_day_lower_b">Alavartalo B</string>
+    <string name="training_day_full_a">Koko vartalo A</string>
+    <string name="training_day_full_b">Koko vartalo B</string>
+    <string name="training_day_full_c">Koko vartalo C</string>
+    <string name="training_day_mobility">Liikkuvuus</string>
+    <string name="training_day_technique">Tekniikka</string>
+    <string name="speech_language_finnish">Suomi</string>
+    <string name="back">Takaisin</string>
+    <string name="clear_search">Tyhjennä haku</string>
+    <string name="empty_subtitle">Kokeile toista lihasta, laitetta tai etsi - tai nollaa yllä olevat suodattimet.</string>
+    <string name="empty_title">Mikään harjoitus ei täsmää</string>
+    <string name="workout_empty_subtitle">Kokeile erilaisia ​​suodattimia – tai luo oma harjoitus.</string>
+    <string name="workout_create_exercise">Luo harjoitus</string>
+    <string name="filter_all">Kaikki</string>
+    <string name="filter_all_count">Kaikki %d</string>
+    <string name="hide_details">Piilota tiedot</string>
+    <string name="instructions">Ohjeet</string>
+    <string name="watch_on_youtube">Katso YouTubesta</string>
+    <string name="watch_on_youtube_hint">Avaa YouTube-haun – ei virallinen Ruoka + Treeni -video</string>
+    <string name="label_category">Luokka</string>
+    <string name="label_equipment">Laitteet</string>
+    <string name="label_force">Pakottaa</string>
+    <string name="label_level">Taso</string>
+    <string name="label_mechanic">Mekaanikko</string>
+    <string name="label_name">Nimi</string>
+    <string name="label_primary">Ensisijainen</string>
+    <string name="label_secondary">Toissijainen</string>
+    <string name="reset">Nollaa</string>
+    <string name="search">Haku</string>
+    <string name="show_details">Näytä tiedot</string>
+    <string name="sort">Järjestellä</string>
+    <plurals name="exercises_count">
+        <item quantity="one">%d harjoitus</item>
+        <item quantity="other">%d harjoitukset</item>
+    </plurals>
+    <string name="ad_label">Ilmoitus</string>
+    <string name="onboarding_plan_adaptive_note">Suunnitelmasi mukautuu automaattisesti viikoittain kirjautuessasi – laita mukautuvat tavoitteet pois päältä asetuksista, jotta se pysyy kunnossa.</string>
+    <string name="onboarding_feature_snap">Ota valokuva – tekoäly kirjaa sen lokiin</string>
+    <string name="onboarding_feature_coach">Valmentaja, joka tietää tietosi</string>
+    <string name="onboarding_feature_library">870+ harjoituskirjasto</string>
+    <string name="onboarding_feature_widgets">Aloitusnäytön widgetit</string>
+    <string name="whats_new_v30_workouts">Uusi Harjoitukset-välilehti – selaa 873 harjoitusta valokuvien, lihas- ja laitesuodattimien, haku- ja tietosivujen avulla.</string>
+    <string name="whats_new_v30_home">Kodin uudelleensuunnittelu: nopeusmittarin kalorimittari, pystysuorat makropalkit, neljä ravintokorttia ja kelluva lisäyspainike.</string>
+    <string name="whats_new_v30_coach_voice">Kysy Coachilta puheella uudella sisäänrakennetulla tallentimella.</string>
+    <string name="whats_new_v30_share">Jaa mikä tahansa ateria linkkinä, joka avautuu suoraan Ruoka + Treenissä iPhonella tai Androidilla.</string>
+    <string name="whats_new_v30_export">Vie ruokapäiväkirjasi JSON-, Markdown- tai CSV-muodossa asetuksista.</string>
+    <string name="whats_new_v30_reprocess">Käsittele kirjattu ateria uudelleen tekoälyllä – muuta sen nimeä, annosta tai muistiinpanoa ja analysoi uudelleen.</string>
+    <string name="whats_new_v30_camera">Kamera + Kamera säilyttää molemmat kuvat, ommeltuina vierekkäin.</string>
+    <string name="whats_new_v30_colors">10 uutta teemaväriä, nyt valittuna asetuksista.</string>
+    <string name="whats_new_v30_bodyfat">Kehon rasvahistoria: tarkastele ja poista yksittäisiä merkintöjä, kuten painoa.</string>
+    <string name="whats_new_v30_units">Pituus- ja painoyksiköt voidaan nyt asettaa itsenäisesti.</string>
+    <string name="whats_new_v30_adaptive">Adaptive Goals ja Energy Burn jäivät kokeelliseksi ja ovat oletuksena käytössä uusille asennuksille.</string>
+    <string name="whats_new_v30_widgets">Widgetien uudelleensuunnittelu: Home-nopeusmittarityyli, joka on piirretty kunkin widgetin todelliseen kokoon.</string>
+    <string name="whats_new_v30_restore">Puhelimet on asennettu uudelleen vai vaihdettu? Ruokalokisi, painosi ja kehosi rasva palautuvat nyt automaattisesti Health Connectista.</string>
+    <string name="cloud_backup_title">Google Drive -varmuuskopio</string>
+    <string name="cloud_backup_footer">Pois päältä, kunnes kytket sen päälle. Sisäänkirjautuminen on vain tätä varmuuskopiota varten. API-avaimet pysyvät puhelimessa. Käyttöönotto – Google voi näyttää ylimääräisen varoituksen, kunnes sovellus on vahvistettu.</string>
+    <string name="cloud_backup_enable_message">Lataa päiväkirjasi, harjoitukset, paasto, valokuvat ja asetukset Google Driveen. API-avaimet pysyvät puhelimessa.\n\nGoogle Driven varmuuskopiointi on tulossa. Kirjautuminen voi näyttää ylimääräisen Google-varoituksen, kunnes sovelluksemme on vahvistettu.</string>
+    <string name="cloud_backup_restore_title">Palauta varmuuskopio?</string>
+    <string name="cloud_backup_restore_message">Palauta se tai säilytä tämä puhelin.</string>
+    <string name="cloud_backup_restore">Palauttaa</string>
+    <string name="cloud_backup_keep">Pidä tämä puhelin</string>
+    <string name="cloud_backup_now">Takaisin nyt</string>
+    <string name="cloud_backup_restore_now">Palauta nyt</string>
+    <string name="cloud_backup_delete">Poista pilvivarmuuskopio</string>
+    <string name="cloud_backup_delete_message">Poistaa Ruoka + Treeni -tiedoston Google Drivesta. Tämä puhelin on ennallaan.</string>
+    <string name="cloud_backup_last">Viimeisin varmuuskopio: %1$s</string>
+    <string name="cloud_backup_signed_in">Kirjautunut sisään nimellä %1$s</string>
+    <string name="cloud_backup_sign_out">Kirjaudu ulos</string>
+    <string name="cloud_backup_switch_account">Vaihda Google-tiliä</string>
+    <string name="cloud_backup_turn_on">Kytke päälle</string>
+    <string name="cloud_backup_sign_in_failed">Google-sisäänkirjautumista ei voitu avata.</string>
+    <string name="export_diary_title">Vie ruokapäiväkirja</string>
+    <string name="import_diary_title">Tuo ruokapäiväkirja</string>
+    <string name="import_entries">Ruokamerkinnät</string>
+    <string name="import_date_range">Ajanjakso</string>
+    <string name="import_replace_explanation">Korvaa poistaa olemassa olevat ruokalokit vain tällä vietyllä ajanjaksolla ja luo sitten alueen uudelleen valitusta tiedostosta. Vastaavat merkinnät säilyttävät valokuvansa. Lisää säilyttää nykyisen päiväkirjan ja luo kaksoiskappaleita uusina merkintöinä.</string>
+    <string name="import_replace_action">Korvaa tämä ajanjakso</string>
+    <string name="import_add_action">Lisää uusina merkintöinä</string>
+    <string name="import_success">Tuodut %1$d-ruokamerkinnät.</string>
+    <string name="import_read_failed">Valittua tiedostoa ei voitu lukea.</string>
+    <string name="export_range">Alue</string>
+    <string name="export_format">Muoto</string>
+    <string name="export_action">Viedä</string>
+    <string name="settings_other_nutrients">Muut ravintoaineet</string>
+    <string name="settings_other_nutrient_goals">Muut ravintoainetavoitteet</string>
+    <string name="settings_other_nutrients_note">Erillään kalori-, proteiini-, hiilihydraatti- ja rasvatavoitteista.</string>
+    <string name="settings_reset_defaults">Palauta oletusarvoihin</string>
+    <string name="copy_from">Kopioi kohteesta</string>
+    <string name="macro_protein_format">Proteiini: %1$s</string>
+    <string name="macro_carbs_format">Hiilihydraatit: %1$s</string>
+    <string name="macro_fat_format">Rasva: %1$s</string>
+    <string name="nutrient_fiber_format">Kuitu: %1$sg</string>
+    <string name="nutrient_sugar_format">Sokeri: %1$sg</string>
+    <string name="nutrient_sat_fat_format">Istuinrasva: %1$sg</string>
+    <string name="nutrient_sodium_format">Natrium: %1$smg</string>
+    <string name="nutrient_potassium_format">Kalium: %1$smg</string>
+    <string name="nutrient_cholesterol_format">Kolesteroli: %1$smg</string>
+    <string name="label_date">Päivämäärä</string>
+    <string name="label_time">Aika</string>
+    <string name="share_meal">Jaa ateria</string>
+    <string name="label_total">Kokonais</string>
+    <string name="home_nutrient_cards">Kotiravintokortit</string>
+    <string name="home_nutrients">Kotiravinteet</string>
+    <string name="measurement_history">Mittaushistoria</string>
+    <string name="body_measurements_title">Kehon mitat</string>
+    <string name="label_derived">Johdettu</string>
+    <string name="notif_goal_weight_title">Onnittelut! 🎉</string>
+    <string name="notif_goal_weight_text">Saavutit tavoitepainosi.</string>
+    <string name="cd_selected">Valittu</string>
+    <string name="cd_add_food">Lisää ruokaa</string>
+    <string name="cd_share_meal">Jaa ateria</string>
+    <string name="cd_favorited">Suosikkiin</string>
+    <string name="cd_move_up">Siirrä ylös</string>
+    <string name="cd_move_down">Siirry alas</string>
+    <string name="cd_unfavorite">Ei suosikkeja</string>
+    <string name="cd_log">Loki</string>
+    <string name="cd_close">Lähellä</string>
+    <string name="cd_clear_quantity">Selkeä määrä</string>
+    <string name="cd_hold_to_record">Pidä painettuna tallentaaksesi, napauta lukitaksesi</string>
+    <string name="cd_cancel_recording">Peruuta tallennus</string>
+    <string name="cd_remove_image">Poista kuva</string>
+    <string name="cd_meal_photo">Valokuva %1$d</string>
+    <string name="cd_view_full_photo">Katso koko valokuva</string>
+    <string name="cd_add_image">Lisää kuva</string>
+    <string name="cd_open_camera">Avaa kamera</string>
+    <string name="cd_close_camera">Sulje kamera</string>
+    <string name="cd_save_photo">Tallenna valokuva</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
+    <string name="photo_saved_to_gallery">Kuva tallennettu</string>
+    <string name="photo_save_failed">Kuvaa ei voitu tallentaa</string>
+    <string name="photo_save_permission_denied">Valokuvien käyttö estetty</string>
+
+    <!-- Localization pass: previously hardcoded UI strings -->
+    <string name="unit_mcg">mcg</string>
+    <string name="home_food_log">Ruokapäiväkirja</string>
+    <string name="home_menu_copy_from_day">Kopio päivästä</string>
+    <string name="home_menu_from_photos_note">Valokuvat + Huomautus</string>
+    <string name="copy_all">Kopioi kaikki</string>
+    <string name="section_source">Lähde</string>
+    <string name="copy_no_foods_on_day">Tänä päivänä ei kirjattu yhtään ruokaa</string>
+    <plurals name="copy_foods_to">
+        <item quantity="one">Kopioi %1$d-ruoka kohteeseen %2$s</item>
+        <item quantity="other">Kopioi %1$d-ruoat kohteeseen %2$s</item>
+    </plurals>
+    <string name="home_first_photo_saved">Ensimmäinen kuva tallennettu</string>
+    <string name="home_take_second_shot">Ota toinen laukaus</string>
+    <string name="edit_reprocess_section">Käsittele uudelleen tekoälyllä</string>
+    <string name="edit_reprocess_hint">Lisää huomautus tarkentaaksesi tätä merkintää – esim. iso kulho, ylimääräistä oliiviöljyä – napauta sitten Käsittele uudelleen</string>
+    <string name="edit_reprocess">Käsittele uudelleen</string>
+    <string name="edit_reprocessing">Käsitellään uudelleen…</string>
+    <string name="edit_reprocessing_failed">Uudelleenkäsittely epäonnistui</string>
+    <string name="section_date_time">Päivämäärä &amp; Aika</string>
+    <string name="section_share">Jakaa</string>
+    <string name="placeholder_hour">Tunnin</string>
+    <string name="placeholder_minute">Minuutti</string>
+    <string name="nutrition_label_trans_fat">Transrasva</string>
+    <string name="nutrition_label_calcium">Kalsium</string>
+    <string name="nutrition_label_iron">Rauta</string>
+    <string name="nutrition_label_magnesium">Magnesium</string>
+    <string name="nutrition_label_zinc">Sinkki</string>
+    <string name="nutrition_label_vitamin_a">A-vitamiini</string>
+    <string name="nutrition_label_vitamin_c">C-vitamiini</string>
+    <string name="nutrition_label_vitamin_d">D-vitamiini</string>
+    <string name="nutrition_label_vitamin_b12">B12-vitamiini</string>
+    <string name="nutrition_label_vitamin_e">E-vitamiini</string>
+    <string name="nutrition_label_vitamin_k">K-vitamiini</string>
+    <string name="nutrition_label_folate">Folaatti</string>
+    <string name="nutrition_label_omega3">Omega-3</string>
+    <string name="nutrition_section_home_cards">Kotikortit</string>
+    <string name="home_nutrients_pick_four">Valitse yhdestä neljään ravintoainetta Etusivun yhteenvetoriville.</string>
+    <string name="home_nutrients_pick_three_water">Valitse yhdestä neljään ravintoainetta. Niiden jälkeen näkyy vettä, kun seuranta on käytössä.</string>
+    <string name="home_nutrients_water_fixed">Vesi näkyy valitsemiesi ravintoaineiden jälkeen, kun veden seuranta on käytössä.</string>
+    <string name="home_nutrients_water_fixed_short">Näytetään valittujen ravintoaineiden jälkeen</string>
+    <string name="nutrition_section_water">Vesi</string>
+    <string name="error_analysis_failed">Analyysi epäonnistui</string>
+    <string name="error_barcode_lookup_failed">Viivakoodin haku epäonnistui</string>
+    <string name="error_ai_suggestion">AI-ehdotusta ei voitu ladata.</string>
+    <string name="finish_onboarding_hint">Viimeistele aloitus ensin, jotta voit verrata tätä ateriaa päivittäisiin tavoitteisiisi.</string>
+    <string name="export_from">From</string>
+    <string name="export_to">Vastaanottaja</string>
+    <string name="export_no_meals">Ei kirjattuja aterioita valitulla alueella.</string>
+    <string name="export_failed">Vienti epäonnistui.</string>
+    <string name="settings_tap_to_update">Päivitä napauttamalla</string>
+    <string name="settings_calc_methods">Laskentamenetelmät</string>
+    <string name="settings_max_tokens">Vastaustokenit maksimissaan</string>
+    <string name="settings_request_timeout">Pyydä aikakatkaisua</string>
+    <string name="settings_seconds_format">%1$d sek</string>
+    <string name="settings_notification_types">Ilmoitustyypit</string>
+    <string name="settings_notif_food_reminders">Ruokalokimuistutukset</string>
+    <string name="settings_notif_daily_summary">Päivittäinen yhteenveto</string>
+    <string name="settings_notif_weight_reminder">Painolokimuistutus</string>
+    <string name="settings_notif_body_fat_reminder">Kehon rasvamuistutus</string>
+    <string name="settings_notif_goal_alerts">Tavoite saavutettu -ilmoitukset</string>
+    <string name="settings_notif_app_updates">Sovelluspäivitykset</string>
+    <string name="settings_notif_none_selected">Ilmoitustyyppiä ei ole valittu. Voit jättää ilmoitukset sallituksi ja pitää kaikki sovellusmuistutukset pois päältä.</string>
+    <string name="settings_calc_calorie_target">Tavoitteen kaloritavoite</string>
+    <string name="settings_calc_maintenance">Ylläpito &amp; -tavoitteen säätö</string>
+    <string name="settings_calc_macro_split">Makroravinteiden jakautuminen</string>
+    <string name="settings_calc_micro_values">Mikroravinteiden arvot</string>
+    <string name="settings_not_medical_advice">Ei lääkärin neuvoja</string>
+    <string name="settings_reset_autobalance">Palauta automaattiseen tasapainoon</string>
+    <string name="settings_pace_loss_format">%1$s/viikko tappio</string>
+    <string name="settings_pace_gain_format">%1$s/viikko voitto</string>
+    <string name="settings_macro_pin_hint">Kiinnitä enintään 2 makroa tarkkoihin grammoihin. Kiinnittämättömät tasapainottavat automaattisesti jäljellä olevista kaloreista.</string>
+    <string name="settings_macro_pinned_label_format">%1$s (kiinnitetty)</string>
+    <string name="settings_macro_auto_label_format">%1$s (automaattinen)</string>
+    <string name="vm_health_connect_needed">Health Connect tarvitaan</string>
+    <string name="vm_not_enough_energy">Ei tarpeeksi energiatietoja</string>
+    <string name="vm_adaptive_on_message">Adaptive Goals on käytössä. Ruoka + Treeni tarkistaa kerran viikossa sen jälkeen, kun ruoka- ja painotietoja on riittävästi.</string>
+    <string name="vm_goals_recalculated">Tavoitteet laskettu uudelleen</string>
+    <plurals name="import_add_meals_title">
+        <item quantity="one">Lisää yhteinen ateria</item>
+        <item quantity="other">Lisää %1$d jaetut ateriat</item>
+    </plurals>
+    <string name="import_note">Lisää lokiin lähettäjän tarkat ravintoaineet. Mukana ei ole valokuvaa.</string>
+    <string name="import_add_to_log">Lisää lokiin</string>
+    <string name="import_add_to_log_many_format">Lisää %1$d lokiin · %2$d kcal</string>
+    <string name="voice_release_to_cancel">Peruuta vapauttamalla</string>
+    <string name="voice_slide_to_cancel">‹ peruuta liu\'uttamalla</string>
+    <string name="camera_error_open">Kameraa ei voitu avata</string>
+    <string name="camera_error_save">Kuvaa ei voitu tallentaa</string>
+    <string name="camera_error_capture">Valokuvaa ei voitu ottaa</string>
+    <string name="barcode_hint">Suuntaa kamera viivakoodiin</string>
+    <string name="barcode_off_note">Pakatut ruoat käyttävät Open Food Facts -toimintoa, kun niitä on saatavilla.</string>
+    <string name="measure_neck">Kaula</string>
+    <string name="measure_waist">Vyötärö</string>
+    <string name="measure_hips">Lonkat</string>
+    <string name="measure_chest">Rintakehä</string>
+    <string name="measure_upper_arm">Ylävarsi</string>
+    <string name="measure_thigh">Reiteen</string>
+    <string name="measure_calf">Vasikka</string>
+    <string name="measure_wrist">Ranne</string>
+    <string name="derived_waist_to_hip">Vyötäröstä lantioon asti</string>
+    <string name="derived_waist_to_height">Vyötäröstä korkeuteen</string>
+    <string name="derived_body_fat">Kehon rasvaa</string>
+    <string name="derived_frame">Kehys</string>
+    <string name="frame_small">Pieni</string>
+    <string name="frame_medium">Keskikokoinen</string>
+    <string name="frame_large">Suuri</string>
+    <string name="notif_channel_weight_log">Painolokimuistutus</string>
+    <string name="notif_channel_weight_log_desc">Päivittäinen muistutus punnita ja kirjata painosi.</string>
+    <string name="notif_channel_body_fat">Kehon rasvalokimuistutus</string>
+    <string name="notif_channel_body_fat_desc">Päivittäinen muistutus kehon rasvalukeman kirjaamisesta.</string>
+    <string name="notif_channel_updates">Sovelluspäivitykset</string>
+    <string name="notif_channel_updates_desc">Ruoka + Treenin uusi versio on saatavilla Play Kaupasta.</string>
+    <string name="notif_channel_water">Veden muistutus</string>
+    <string name="notif_channel_water_desc">Päivittäinen muistutus juoda ja kirjata vettä.</string>
+    <string name="notif_water_title">Aika kosteuttaa</string>
+    <string name="notif_water_text">Ota vettä ja kirjaa se Ruoka + Treeniin.</string>
+    <string name="notif_channel_fasting">Paasto</string>
+    <string name="notif_channel_fasting_desc">Hälyttää, kun aktiivinen paasto saavuttaa tavoitteensa.</string>
+    <string name="notif_fasting_goal_title">Paastotavoite saavutettu</string>
+    <string name="notif_fasting_goal_text">Saavutit paastotavoitteesi %1$s. Lopeta paasto, kun olet valmis.</string>
+    <string name="water">Vesi</string>
+    <string name="water_log_title">Log Vesi</string>
+    <string name="water_how_much">Kuinka paljon vettä?</string>
+    <string name="water_one_glass_amount">1 lasi (~250 ml)</string>
+    <string name="water_two_glasses_amount">2 lasia (~500 ml)</string>
+    <string name="water_three_glasses_amount">3 lasia (~750 ml)</string>
+    <string name="water_one_glass_dynamic">1 lasi (~%1$s)</string>
+    <string name="water_two_glasses_dynamic">2 lasia (~%1$s)</string>
+    <string name="water_three_glasses_dynamic">3 lasia (~%1$s)</string>
+    <string name="water_custom_amount">Mukautettu määrä</string>
+    <string name="nutrient_custom_amount">Mukautettu määrä</string>
+    <string name="nutrient_use_preset_wheel">Käytä esiasetettua pyörää</string>
+    <string name="nutrient_custom_invalid">Syötä kokonaisluku väliltä 0 - 999 999.</string>
+    <string name="nutrient_custom_upper_warning">Yleisen aikuisen ylemmän saantitason yläpuolella. Käytä vain, jos terveydenhuollon ammattilainen suosittelee.</string>
+    <string name="water_add">Lisää vettä</string>
+    <string name="water_progress">%1$d / %2$d ml</string>
+    <string name="unit_ml">ml</string>
+    <string name="notif_update_title">Päivitys saatavilla</string>
+    <string name="notif_update_text">Ruoka + Treenin uusi versio on valmis. Päivitä napauttamalla.</string>
+    <string name="notif_channel_announcements">Ilmoitukset</string>
+    <string name="notif_channel_announcements_desc">Satunnaisia ​​kerta-uutisia Ruoka + Treeniltä, ​​kuten Product Hunt -lanseeraus.</string>
+    <string name="notif_product_hunt_title">Ruoka + Treeni on nyt Product Huntissa 🚀</string>
+    <string name="notif_product_hunt_text">Aloitimme juuri! Napauta äänestääksesi ja auta useampia ihmisiä löytämään Ruoka + Treeni.</string>
+
+    <!-- One-time post-update prompts (existing users only) -->
+    <string name="post_update_hosted_title">Valinnainen: anna meidän käsitellä tekoälynäppäimet</string>
+    <string name="post_update_hosted_body">Ruoka + Treeni on ilmainen omilla API-avaimillasi (BYOK) — ja pysyy sellaisena. Jos avainten hallinta tuntuu hankalalta, Plus- ja Pro-paketit hoitavat tekoälyn ilman omia avaimia. Tämä on täysin valinnaista, eikä mikään muutu, ellet vaihda.</string>
+    <string name="post_update_hosted_cta">Lue lisää</string>
+    <string name="post_update_hosted_keep_byok">Säilytä BYOK (ilmainen)</string>
+    <string name="post_update_hosted_android_title">Hosted AI on tulossa Androidille</string>
+    <string name="post_update_hosted_android_body">Plus- ja Pro-isännöidyt suunnitelmat ovat saatavilla ensin iPhonessa; Android on seuraava. Siihen asti mikään ei muutu täällä – BYOK pysyy ilmaiseksi ikuisesti, ja voit jatkaa omien avainten käyttöä täsmälleen samalla tavalla kuin tänään.</string>
+    <string name="post_update_hosted_android_got_it">Selvä</string>
+    <string name="post_update_product_hunt_title">Ruoka + Treeni on nyt Product Huntissa</string>
+    <string name="post_update_product_hunt_body">Aloitimme juuri. Äänestys auttaa useampia ihmisiä löytämään Ruoka + Treenin.</string>
+    <string name="post_update_product_hunt_not_now">Ei nyt</string>
+    <string name="post_update_meet_dev_title">Tapaa kehittäjä</string>
+    <string name="post_update_meet_dev_greeting">Hei, olen Apoorv 👋</string>
+    <string name="post_update_meet_dev_body">Rakennan Ruoka + Treeniä yksin, ulkona. Tule tervehtimään, jaa palautetta tai vain seuraa mukana – se todella auttaa.</string>
+    <string name="settings_calc_intro">Tekoäly asettaa päivittäiset kalori- ja makrotavoitteesi. Kun napautat Laske tavoitteet uudelleen – tai automaattisesti noin kerran viikossa, jos Adaptive Goals on käytössä – Ruoka + Treeni lähettää profiilisi, alla olevat viiteyhtälöt, yksityisyyttä suojaavat päivittäiset ravintoarvot, tarkan päivätyn painon, rasvan määrän ja mittanauhat, yhteenlasketut harjoitusmäärät, keston, sarjat ja toistot sekä valinnaisen Health Connect -energian. Ruokien nimiä, muistiinpanoja, valokuvia, ainesosia ja harjoitusten nimiä ei lähetetä tähän laskelmaan. Se alkaa näistä vertaisarvioiduista kaavoista ja mukauttaa ne sitten todellisiin tietoihisi todellisen ylläpidon ja tavoitteidesi arvioimiseksi.</string>
+    <string name="settings_calc_sec_bmr">Lepoaineenvaihdunta (BMR)</string>
+    <string name="settings_calc_sec_tdee">Päivittäinen energiankulutus (TDEE)</string>
+    <string name="settings_calc_mifflin_name">Mifflin-St Jeor -yhtälö</string>
+    <string name="settings_calc_mifflin_used">Lepotilan aineenvaihdunnan oletuskaava. Käytetään, kun kehon rasvaa ei ole saatavilla.</string>
+    <string name="settings_calc_mifflin_formula">Miehet: 10 × paino (kg) + 6,25 × pituus (cm) − 5 × ikä + 5\n Naiset: 10 × paino (kg) + 6,25 × pituus (cm) − 5 × ikä - 161</string>
+    <string name="settings_calc_katch_name">Katch-McArdle yhtälö</string>
+    <string name="settings_calc_katch_used">Käytetään aina, kun olet syöttänyt kehon rasvan. %. It johtaa BMR:n vähärasvaisesta kehon massasta kokonaispainon sijaan.</string>
+    <string name="settings_calc_katch_formula">BMR = 370 + 21,6 × LBM (kg)\nLBM = paino × (1 − kehon rasva-%)</string>
+    <string name="settings_calc_tdee_name">Aktiivisuuskerroinmenetelmä</string>
+    <string name="settings_calc_tdee_used">TDEE = BMR × aktiivisuuskerroin. Kerroin vastaa valitsemaasi aktiivisuustasoa. Tämä on kaavan ylläpidon perustaso. Kun Energy Burn on päällä, laskennassa käytetään sen sijaan Health Connectin viimeaikaista mitatun energian ikkunaa: mitattu kokonaisenergia, kun päiviä on riittävästi; muussa tapauksessa keskimääräinen mitattu aktiivinen energia + kaava BMR.</string>
+    <string name="settings_calc_tdee_formula">Istuva: 1,2 · Kevyt: 1,375 · Keskinkertainen: 1,465 · Aktiivinen: 1,55 · Erittäin aktiivinen: 1,725 ​​· Erittäin aktiivinen: 1,9</string>
+    <string name="settings_calc_target_name">Ylläpito &amp; -tavoitteen säätö</string>
+    <string name="settings_calc_target_used">Ylläpito alkaa TDEE:stä – tai, kun Energy Burn on päällä, Health Connectin viimeaikaisesta mitatun energian ikkunasta kaavan arvion sijaan: mitattu kokonaisenergia, kun päiviä on riittävästi; muussa tapauksessa keskimääräinen mitattu aktiivinen energia + kaava BMR. Tekoäly tarkentaa ylläpitoa kirjatun saanti- ja painotrendisi mukaan ja soveltaa sitten tavoitettasi: viikoittaisesta painonmuutosnopeudesta tulee päivittäinen kalorivaje (Lose) tai ylijäämä (Gain).</string>
+    <string name="settings_calc_target_formula">1 lb kehon rasvaa ≈ 3 500 kcal · 1 kg ≈ 7 700 kcal\n Viikoittainen määrä ÷ 7 vähennetään (Lose) tai lisätään (Gain) ylläpitoon päivittäisen kaloritavoitteen asettamiseksi.</string>
+    <string name="settings_calc_split_name">Proteiini, hiilihydraatit, rasva tavoitteet</string>
+    <string name="settings_calc_split_used">Tekoäly sovittaa proteiinit, hiilihydraatit ja rasvat kaloritavoitteesi mukaan käyttämällä näitä viitteitä oppaana. Protein käyttää aktiivisuusperusteisia koko kehon painoja; rasva määräytyy kehon painosta; hiilihydraatit täyttävät loput. Voit lukita minkä tahansa arvon tai muokata sitä itse asetuksissa.</string>
+    <string name="settings_calc_split_formula">Proteiini: ~0,8–2,2 g/kg aktiivisuustason mukaan (nousu hieman laihduttaessa)\nRasva: ~0,6 g/kg \nHiilihydraatit: jäljellä olevat kalorit ÷ 4 kcal/g</string>
+    <string name="settings_calc_micro_name">Ateriakohtaiset arviot</string>
+    <string name="settings_calc_micro_used">Kalorit, makrot, kuidut, sokeri, tyydyttyneet rasvat, kolesteroli, kofeiini, natrium, kalium ja muut yksityiskohtaiset ravintoarvot, jotka palautetaan ateriaa kohden, ovat tekoälyn luomia arvioita ruokakuvasta, äänikopiosta tai tekstikuvauksesta käyttämällä valitsemaasi tekoälyn tarjoajaa.</string>
+    <string name="settings_calc_mifflin_citation">Mifflin MD, St Jeor ST, et ai. (1990). "Uusi ennustava yhtälö terveiden yksilöiden lepoenergiankulutukselle." Am J Clin Nutr 51(2):241-247.</string>
+    <string name="settings_calc_katch_citation">McArdle WD, Katch FI, Katch VL. Harjoitusfysiologia: ravitsemus, energia ja ihmisen suorituskyky, 7. painos. Lippincott Williams &amp; Wilkins, 2010.</string>
+    <string name="settings_calc_tdee_citation">Standardi PAL (Physical Activity Level) -kertoimet FAO:n/WHO:n/UNU:n yhteisestä asiantuntijaneuvottelusta ihmisen energiavaatimuksista (2001). Käytetään myös laajasti ACSM:n ja USDA:n ruokavalioohjeissa.</string>
+    <string name="settings_calc_target_citation">Hall KD, et ai. (2011). "Energiaepätasapainon vaikutuksen kvantifiointi ruumiinpainoon." Lancet 378(9793):826-837. Klassinen 3 500 kcal per kilo -sääntö on peräisin julkaisusta Wishnofsky M (1958), Am J Clin Nutr 6:542–546.</string>
+    <string name="settings_calc_split_citation">Morton RW, et ai. (2018). "Systemaattinen katsaus, meta-analyysi ja meta-regressio proteiinilisän vaikutuksesta vastusharjoittelun aiheuttamaan lihasmassan ja -voiman kasvuun." Br J Sports Med 52(6):376–384.</string>
+    <string name="settings_calc_micro_citation">Arviot perustuvat taustalla olevan tekoälymallin harjoitustietoihin (USDA FoodData Central, valmistajapaneelit, tieteellinen kirjallisuus). Tarkkuus vaihtelee ruoan, annoskoon näkyvyyden ja toimittajamallin mukaan. Tarkista aina usein kirjaamiesi elintarvikkeiden etiketit.</string>
+    <string name="settings_not_medical_title">Ei lääkärin neuvoja</string>
+    <string name="settings_not_medical_body">Ruoka + Treeni on arviointityökalu, ei kliininen mittalaite. Ennustekaavoihin liittyy luontainen virhe (BMR:ssä tyypillisesti ±10 %%). Keskustele laillistetun ravitsemusterapeutin, lääkärin tai urheilulääketieteen ammattilaisen kanssa ennen merkittäviä ruokavaliomuutoksia — etenkin jos sinulla on sairaus, olet raskaana tai imetät, olet alle 18-vuotias tai hoidat syömishäiriötä.</string>
+    <string name="settings_waist_cm_format">Vyötärö %1$.0f cm</string>
+    <string name="settings_waist_in_format">Vyötärö %1$.0f sisään</string>
+    <string name="export_range_today">Tänään</string>
+    <string name="export_range_week">Tällä viikolla</string>
+    <string name="export_range_month">Tämä kuukausi</string>
+    <string name="export_range_all">Koko ajan</string>
+    <string name="export_range_custom">Mukautettu</string>
+    <string name="vm_health_connect_needed_msg">Anna Ruoka + Treenin lukea aktiiviset kalorit ja kokonaiskalorit Health Connectissa ja kytke sitten Energy Burn uudelleen päälle.</string>
+    <string name="vm_not_enough_energy_msg">Ruoka + Treeni tarvitsee vähintään kolmen viime päivän Health Connect -energiatiedot ennen mitatun kulutuksen käyttämistä.</string>
+    <string name="nutrient_short_sat_fat">Sat Fat</string>
+    <string name="nutrient_short_vit_a">Vit A</string>
+    <string name="nutrient_short_vit_c">C-vitamiini</string>
+    <string name="nutrient_short_vit_d">D-vitamiini</string>
+    <string name="nutrient_short_b12">B12</string>
+    <string name="nutrient_short_vit_e">Vit E</string>
+    <string name="nutrient_short_vit_k">Vit K</string>
+    <string name="nutrient_short_omega">Omega</string>
+    <string name="sort_standard">Aamiainen → Lounas → Illallinen</string>
+    <string name="sort_latest_first">Viimeisimmät ateriat ensin</string>
+    <string name="copy_meal_format">Kopioi %1$s</string>
+    <string name="ingredients_title">Ainesosat</string>
+    <string name="ingredients_empty">Ei vielä ainesosien erittelyä</string>
+    <string name="ingredients_add">Lisää ainesosa</string>
+    <string name="ingredients_edit">Muokkaa ainesosaa</string>
+    <string name="ingredients_remove">Poistaa</string>
+    <string name="ingredients_weight">Paino</string>
+    <string name="ingredients_footer">Ainesosien muutokset päivittävät aterian kalori- ja makromäärät automaattisesti.</string>
+    <string name="combine_action">Yhdistää</string>
+    <string name="combine_into_meal">Yhdistä ateriaan</string>
+    <string name="combine_selected_count">%1$d valittu</string>
+    <string name="ingredients_add_menu_title">Lisää ainesosa</string>
+    <string name="progressive_meal_title">Progressiivinen ateria</string>
+    <string name="progressive_meal_description">Kuva 1 → 2 → 3 seuraa jokaista samalle lautaselle lisättyä ainesosaa. Näkyvistä mittakaavaeroista tulee ainesosien painoja.</string>
+    <string name="progressive_meal_info_title">Kuinka Progressive Meal toimii</string>
+    <string name="progressive_meal_info_body">Käytä tätä, kun jokaisessa valokuvassa näkyy sama levy toisen ainesosan lisäyksen jälkeen. Pidä valokuvat järjestyksessä ja aseta mittakaava näyttö näkyväksi. Ruoka + Treeni arvioi jokaisen uuden ainesosan peräkkäisten asteikkojen loppusumman erotuksen. Jätä tämä pois päältä, kun kuvat ovat vain eri kulmista samasta ateriasta.</string>
+    <string name="settings_add_menu_title">+ Menu</string>
+    <string name="settings_add_menu_food_section">Ruokalisävalikko</string>
+    <string name="settings_add_menu_groups">Ryhmät</string>
+    <string name="settings_add_menu_flat">Litteä valikko</string>
+    <string name="settings_add_menu_hidden">Piilotetut menetelmät</string>
+    <string name="settings_add_menu_reset">Palauta oletusarvo</string>
+    <string name="settings_add_menu_footer">Mukauta Koti + -painikkeen ruokavalikkoa. Vesi ja paasto pysyvät erillään, kun ne ovat käytössä. Tämä ei muuta sovelluskuvakkeen pikatoimintoja.</string>
+    <string name="settings_add_menu_add_method">Lisää menetelmä</string>
+    <string name="settings_add_menu_restore_a11y">Palauta %1$s</string>
+    <string name="settings_add_menu_group_name">Ryhmän nimi</string>
+    <string name="settings_add_menu_new_group">Uusi ryhmä</string>
+    <string name="settings_quick_actions">Nopeat toiminnot</string>
+    <string name="settings_app_icon_shortcuts">Sovelluskuvakkeen pikakuvakkeet</string>
+    <string name="settings_quick_action_number">Nopea toiminta %1$d</string>
+    <string name="settings_quick_actions_footer">Käytä näitä pikanäppäimiä pitämällä Ruoka + Treeni -sovelluksen kuvaketta painettuna. Jokainen paikka avaa valitun toiminnon suoraan.</string>
+    <string name="about_whisper_notices">Whisper Base kolmannen osapuolen huomautukset</string>
+    <string name="about_whisper_notices_load_error">Whisper Basen kolmannen osapuolen ilmoituksia ei voitu ladata.</string>
+    <string name="import_water_entries">Veden sisääntulot</string>
+    <string name="import_diary_success">Tuodut %1$d päiväkirjamerkinnät.</string>
+    <string name="import_replace_with_water_explanation">Korvaa poistaa ruokalokit vietyltä ajanjaksolta ja palauttaa ne tästä tiedostosta. Tämän alueen vesilokit korvataan myös, kun tiedosto sisältää vesitietoja. Vanhemmat vain ruokaan liittyvät tiedostot jättävät vesilokit ennalleen. Vastaavat ruokamerkinnät säilyttävät valokuvansa. Lisää säilyttää nykyisen päiväkirjan ja luo kaksoiskappaleita uusina merkintöinä.</string>
+    <string name="export_empty_diary">Ei ruokaa tai vettä valitulla alueella.</string>
+    <string name="workout_rpe_label">Vaikutus (RPE)</string>
+    <string name="workout_rpe_help_strength">Valinnainen – kuinka vaikealta tämä sarja tuntui. Vahvuusasteikko: 1 = erittäin helppo; 10 = maksimiponnistus. Desimaalit ovat sallittuja. Jätä tyhjäksi, jos olet epävarma.</string>
+    <string name="workout_rpe_help_cr10">Valinnainen – kuinka vaikealta tämä sarja tuntui. CR10-asteikko: 0 = ei vaivaa; 10 = maksimiponnistus. Desimaalit ovat sallittuja. Jätä tyhjäksi, jos olet epävarma.</string>
+    <string name="workout_rpe_help_borg">Valinnainen – kuinka vaikealta tämä sarja tuntui. Borgin asteikko: 6 = ei rasitusta; 20 = maksimi rasitus. Käytä kokonaislukuja. Jätä tyhjäksi, jos olet epävarma.</string>
+</resources>

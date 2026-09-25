@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Fud AI"
+rootProject.name = "Ruoka + Treeni"
 include(":app")

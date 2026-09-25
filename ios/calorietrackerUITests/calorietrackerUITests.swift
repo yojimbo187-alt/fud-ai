@@ -106,68 +106,29 @@ final class calorietrackerUITests: XCTestCase {
     }
 
     @MainActor
-    func testSettingsHubShowsFiveFocusedAppInfoCategories() throws {
+    func testSettingsHubShowsOnlyAppVersionInAbout() throws {
         let app = XCUIApplication()
         app.launchArguments += ["-AppleLanguages", "(en)"]
         app.launch()
-
-        let categories = [
-            ("appUpdates", "App & Updates", "Open Source (MIT)"),
-            ("support", "Support Fud AI", "Rate the App"),
-            ("helpFeedback", "Help & Feedback", "Report an Issue on GitHub"),
-            ("community", "Community", "Join Discord"),
-            ("joinBeta", "Join Beta", "Join Discord"),
-            ("legal", "Legal", "Privacy Policy"),
-        ]
 
         let settings = app.tabBars.buttons["Settings"]
         XCTAssertTrue(settings.waitForExistence(timeout: 8))
         settings.tap()
 
-        let creatorFooter = app.staticTexts["Made by Apoorv Darshan"]
-        for _ in 0..<12 where !creatorFooter.isHittable {
+        let about = app.buttons["settings.category.appUpdates"]
+        for _ in 0..<12 where !about.isHittable {
             app.swipeUp()
         }
-        XCTAssertTrue(creatorFooter.waitForExistence(timeout: 3), "Missing creator footer on Settings")
-        XCTAssertTrue(creatorFooter.isHittable, "Creator footer is not visible on Settings")
+        XCTAssertTrue(about.waitForExistence(timeout: 3), "Missing About category")
+        about.tap()
 
-        for (identifier, title, expectedAction) in categories {
-            let category = app.buttons["settings.category.\(identifier)"]
-            for _ in 0..<12 where !category.isHittable {
-                app.swipeUp()
-            }
-            XCTAssertTrue(category.waitForExistence(timeout: 3), "Missing Settings category \(identifier)")
-            XCTAssertTrue(category.isHittable, "Settings category \(identifier) is not tappable")
-            category.tap()
-
-            let navigationBar = app.navigationBars[title]
-            XCTAssertTrue(navigationBar.waitForExistence(timeout: 3), "Missing \(title) detail page")
-
-            let action = app.staticTexts[expectedAction]
-            for _ in 0..<6 where !action.exists {
-                app.swipeUp()
-            }
-            XCTAssertTrue(action.waitForExistence(timeout: 3), "Missing \(expectedAction) in \(title)")
-
-            if identifier == "community" {
-                XCTAssertTrue(app.staticTexts["Join Discord"].exists)
-                XCTAssertTrue(app.staticTexts["Follow on X"].exists)
-                XCTAssertTrue(app.staticTexts["Follow on Instagram"].exists)
-                XCTAssertTrue(app.staticTexts["Follow on LinkedIn"].exists)
-            }
-
-            if identifier == "legal" {
-                XCTAssertFalse(
-                    app.staticTexts["Made by Apoorv Darshan"].isHittable,
-                    "Creator footer should live on the main Settings page"
-                )
-            }
-
-            let backButton = navigationBar.buttons.firstMatch
-            XCTAssertTrue(backButton.exists)
-            backButton.tap()
-            XCTAssertTrue(app.buttons["settings.category.\(identifier)"].waitForExistence(timeout: 3))
-        }
+        XCTAssertTrue(app.navigationBars["About"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["App Version"].waitForExistence(timeout: 3))
+        XCTAssertFalse(app.staticTexts["Privacy Policy"].exists)
+        XCTAssertFalse(app.staticTexts["Terms of Service"].exists)
+        XCTAssertFalse(app.staticTexts["Made by Apoorv Darshan"].exists)
+        XCTAssertFalse(app.staticTexts["Rate the App"].exists)
+        XCTAssertFalse(app.staticTexts["Share the App"].exists)
     }
 
     @MainActor

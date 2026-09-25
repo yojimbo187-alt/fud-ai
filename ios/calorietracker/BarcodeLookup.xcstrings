@@ -3,7 +3,8 @@
   "strings": {
     "barcode.lookup.offline": {
       "extractionState": "manual",
-      "localizations" : { "en": {
+      "localizations": {
+        "en": {
           "stringUnit": {
             "state": "translated",
             "value": "You appear to be offline. Check your connection and try scanning again."
@@ -14,12 +15,19 @@
             "state": "translated",
             "value": "Схоже, ви офлайн. Перевірте з'єднання та спробуйте сканувати ще раз."
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytät olevan offline-tilassa. Tarkista yhteys ja yritä skannata uudelleen."
+          }
         }
       }
     },
     "barcode.lookup.timeout": {
       "extractionState": "manual",
-      "localizations" : { "en": {
+      "localizations": {
+        "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Open Food Facts took too long to respond. Try scanning again."
@@ -29,6 +37,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Open Food Facts занадто довго відповідав. Спробуйте сканувати ще раз."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Food Factsin vastaaminen kesti liian kauan. Yritä skannata uudelleen."
           }
         }
       }
@@ -138,6 +152,12 @@
             "state": "translated",
             "value": "无法读取此条形码。请重新扫描。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sitä viivakoodia ei voitu lukea. Yritä skannata se uudelleen."
+          }
         }
       }
     },
@@ -245,6 +265,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Open Food Facts 返回了意外响应。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Food Facts palautti odottamattoman vastauksen."
           }
         }
       }
@@ -354,6 +380,12 @@
             "state": "translated",
             "value": "已找到此条形码，但营养数据不完整。请改为扫描营养成分表。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tämä viivakoodi löytyi, mutta ravitsemustiedot ovat epätäydellisiä. Skannaa sen sijaan ravintoarvomerkintä."
+          }
         }
       }
     },
@@ -461,6 +493,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "条形码查询失败。请检查网络连接后重试。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viivakoodin haku epäonnistui. Tarkista yhteys ja yritä uudelleen."
           }
         }
       }
@@ -570,6 +608,12 @@
             "state": "translated",
             "value": "Open Food Facts 中未找到该产品。请改为扫描营养成分表。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuotetta ei löydy Open Food Factsista. Skannaa sen sijaan ravintoarvomerkintä."
+          }
         }
       }
     },
@@ -677,6 +721,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "条形码查询次数过多。请稍候再试。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liian monta viivakoodihakua. Odota hetki ja yritä uudelleen."
           }
         }
       }
@@ -786,6 +836,12 @@
             "state": "translated",
             "value": "Open Food Facts 暂时不可用。请稍后再试。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Food Facts ei ole tilapäisesti käytettävissä. Yritä myöhemmin uudelleen."
+          }
         }
       }
     },
@@ -893,6 +949,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "条形码 %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viivakoodi %@"
           }
         }
       }

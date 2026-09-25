@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">Nog niet bijgewerkt</string>
     <string name="challenge_intro_title">Bouw samen aan gezonde gewoonten</string>
     <string name="challenge_intro_body">Doe vrijwillig mee en vergelijk wekelijkse mijlpalen voor activiteit, voeding, regelmaat en hydratatie. Je persoonlijke Voortgang blijft beschikbaar zonder deelname.</string>
-    <string name="challenge_privacy_disclosure">Fud AI berekent alles op je apparaat. Alleen het begin van de week, totaalscore, aantallen geldige activiteits-, voedings-, regelmaat- en hydratatiedagen en totale activiteitscalorieën worden geüpload. Namen van voeding, maaltijden, gewicht, trainingsdetails en Health Connect-gegevens worden nooit geüpload.</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni berekent alles op je apparaat. Alleen het begin van de week, totaalscore, aantallen geldige activiteits-, voedings-, regelmaat- en hydratatiedagen en totale activiteitscalorieën worden geüpload. Namen van voeding, maaltijden, gewicht, trainingsdetails en Health Connect-gegevens worden nooit geüpload.</string>
     <string name="challenge_public_profile_disclosure">Alleen je weergavenaam en eventueel één X- of Instagram-gebruikersnaam zijn zichtbaar voor deelnemers. Gewicht en gewichtsverlies krijgen nooit een rang.</string>
     <string name="challenge_points_title">Zo werken punten</string>
     <string name="challenge_points_explanation" formatted="false">Activiteit: een dag met positief geregistreerd trainingsverbruik. Voeding: dagelijkse calorieën binnen 85–115% van je doel. Regelmaat: die dag is voeding geregistreerd. Hydratatie: waterdoel gehaald wanneer bijhouden is ingeschakeld. Totaal: de vier aantallen dagen opgeteld, maximaal 28.</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">Volgende</string>
     <string name="challenge_join_action">Meedoen aan uitdaging</string>
     <string name="challenge_pending_delete_title">Verwijdering wacht op verbinding</string>
-    <string name="challenge_pending_delete_message">Je uitdagingsprofiel is verborgen op dit apparaat. Fud AI probeert het externe profiel en de weekscores opnieuw te verwijderen wanneer je online bent.</string>
+    <string name="challenge_pending_delete_message">Je uitdagingsprofiel is verborgen op dit apparaat. Ruoka + Treeni probeert het externe profiel en de weekscores opnieuw te verwijderen wanneer je online bent.</string>
     <string name="challenge_retry_deletion">Verwijdering opnieuw proberen</string>
     <string name="challenge_category_overall">Totaal</string>
     <string name="challenge_category_activity">Activiteit</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">Gebruik 1–30 letters, cijfers, punten of lage streepjes; geen opeenvolgende of afsluitende punt.</string>
     <string name="challenge_rules_consent">Ik accepteer de Communityregels en gebruik een respectvol profiel waarmee ik me niet als iemand anders voordoe.</string>
     <string name="challenge_read_community_rules">Communityregels lezen</string>
-    <string name="challenge_age_consent">Ik bevestig dat ik 18 jaar of ouder ben. Fud AI opent of uploadt mijn geboortedatum niet.</string>
+    <string name="challenge_age_consent">Ik bevestig dat ik 18 jaar of ouder ben. Ruoka + Treeni opent of uploadt mijn geboortedatum niet.</string>
     <string name="challenge_leave_title">Uitdaging verlaten?</string>
     <string name="challenge_leave_message">Hiermee worden je externe uitdagingsprofiel en alle weekscores verwijderd. Je persoonlijke voedings-, gewichts-, trainings- en Health Connect-gegevens blijven op je apparaat.</string>
     <string name="challenge_leave_confirm">Verlaten en verwijderen</string>

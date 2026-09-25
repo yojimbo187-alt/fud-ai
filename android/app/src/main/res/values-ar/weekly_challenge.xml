@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">لم يتم التحديث بعد</string>
     <string name="challenge_intro_title">ابنوا عادات صحية معًا</string>
     <string name="challenge_intro_body">انضم اختياريًا لمقارنة إنجازات النشاط والتغذية والاستمرارية والترطيب الأسبوعية. تظل شاشة التقدم الخاصة متاحة دون الانضمام.</string>
-    <string name="challenge_privacy_disclosure">يجري Fud AI جميع الحسابات على جهازك. لا يرفع سوى تاريخ بدء الأسبوع وإجمالي النقاط وعدد أيام النشاط والتغذية والاستمرارية والترطيب المؤهلة وإجمالي سعرات النشاط. لا يتم أبدًا رفع أسماء الأطعمة أو الوجبات أو الوزن أو تفاصيل التمارين أو سجلات Health Connect.</string>
+    <string name="challenge_privacy_disclosure">يجري Ruoka + Treeni جميع الحسابات على جهازك. لا يرفع سوى تاريخ بدء الأسبوع وإجمالي النقاط وعدد أيام النشاط والتغذية والاستمرارية والترطيب المؤهلة وإجمالي سعرات النشاط. لا يتم أبدًا رفع أسماء الأطعمة أو الوجبات أو الوزن أو تفاصيل التمارين أو سجلات Health Connect.</string>
     <string name="challenge_public_profile_disclosure">لا يظهر للمشاركين سوى اسم العرض، وحساب واحد اختياري على X أو Instagram. لا يتم ترتيب الوزن أو فقدان الوزن أبدًا.</string>
     <string name="challenge_points_title">طريقة احتساب النقاط</string>
     <string name="challenge_points_explanation" formatted="false">النشاط: يوم تُسجّل فيه سعرات تمرين موجبة. التغذية: سعرات اليوم ضمن 85–115٪ من هدفك. الاستمرارية: تسجيل أي طعام في ذلك اليوم. الترطيب: بلوغ هدف الماء عند تفعيل التتبع. الإجمالي: مجموع أعداد الأيام الأربعة، بحد أقصى 28.</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">التالي</string>
     <string name="challenge_join_action">الانضمام إلى التحدي</string>
     <string name="challenge_pending_delete_title">الحذف بانتظار الاتصال</string>
-    <string name="challenge_pending_delete_message">تم إخفاء ملف التحدي على هذا الجهاز. سيعيد Fud AI محاولة حذف الملف البعيد والنتائج الأسبوعية عند الاتصال بالإنترنت.</string>
+    <string name="challenge_pending_delete_message">تم إخفاء ملف التحدي على هذا الجهاز. سيعيد Ruoka + Treeni محاولة حذف الملف البعيد والنتائج الأسبوعية عند الاتصال بالإنترنت.</string>
     <string name="challenge_retry_deletion">إعادة محاولة الحذف</string>
     <string name="challenge_category_overall">الإجمالي</string>
     <string name="challenge_category_activity">النشاط</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">استخدم من 1 إلى 30 حرفًا إنجليزيًا أو رقمًا أو نقطة أو شرطة سفلية؛ دون نقاط متتالية أو نقطة أخيرة.</string>
     <string name="challenge_rules_consent">أوافق على قواعد المجتمع وسأستخدم ملفًا محترمًا لا ينتحل شخصية أحد.</string>
     <string name="challenge_read_community_rules">قراءة قواعد المجتمع</string>
-    <string name="challenge_age_consent">أؤكد أن عمري 18 عامًا أو أكثر. لا يصل Fud AI إلى تاريخ ميلادي ولا يرفعه.</string>
+    <string name="challenge_age_consent">أؤكد أن عمري 18 عامًا أو أكثر. لا يصل Ruoka + Treeni إلى تاريخ ميلادي ولا يرفعه.</string>
     <string name="challenge_leave_title">مغادرة التحدي؟</string>
     <string name="challenge_leave_message">سيؤدي ذلك إلى حذف ملف التحدي البعيد وجميع النتائج الأسبوعية. تبقى بيانات الطعام والوزن والتمارين وHealth Connect الخاصة على جهازك.</string>
     <string name="challenge_leave_confirm">مغادرة وحذف</string>

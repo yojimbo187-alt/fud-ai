@@ -416,7 +416,7 @@ struct ChatService {
         }
         if provider == .openrouter {
             headers["HTTP-Referer"] = "https://github.com/apoorvdarshan/fud-ai"
-            headers["X-Title"] = "Fud AI"
+            headers["X-Title"] = "Ruoka + Treeni"
         }
 
         let toolsArray = openAIToolsArray(for: tools)

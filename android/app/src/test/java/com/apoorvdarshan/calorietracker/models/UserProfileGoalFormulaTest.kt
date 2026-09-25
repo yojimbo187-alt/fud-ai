@@ -29,8 +29,19 @@ class UserProfileGoalFormulaTest {
         )
         val withoutBodyFat = withBodyFat.copy(bodyFatPercentage = null)
 
-        assertEquals(180, withBodyFat.proteinGoal)
+        assertEquals(195, withBodyFat.proteinGoal)
         assertEquals(withoutBodyFat.proteinGoal, withBodyFat.proteinGoal)
+    }
+
+    @Test
+    fun selectedTrainingProgramChangesTargets() {
+        val recovery = UserProfile(trainingProgramId = TrainingProgram.ACTIVE_RECOVERY.name)
+        val fiveDay = recovery.copy(trainingProgramId = TrainingProgram.PUSH_PULL_LEGS_UPPER_LOWER.name)
+
+        assertTrue(fiveDay.tdee > recovery.tdee)
+        assertTrue(fiveDay.dailyCalories > recovery.dailyCalories)
+        assertTrue(fiveDay.proteinGoal > recovery.proteinGoal)
+        assertTrue(fiveDay.goalInputSignature != recovery.goalInputSignature)
     }
 
     @Test

@@ -1607,7 +1607,7 @@ struct BodyMeasurementsDetailView: View {
             } header: {
                 Text("Measurements")
             } footer: {
-                Text("Optional. Fud AI turns these into waist-to-hip, waist-to-height, body-fat %, and frame size, and reads them when it recalculates your goals and in Coach.")
+                Text("Optional. Ruoka + Treeni turns these into waist-to-hip, waist-to-height, body-fat %, and frame size, and reads them when it recalculates your goals and in Coach.")
             }
             .listRowBackground(AppColors.appCard)
 

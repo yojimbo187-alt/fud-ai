@@ -89,7 +89,7 @@
         </activity>
 
         <!-- Health Connect opens this privacy-policy entry point on Android 13 and below.
-             Without it, the standalone Health Connect app cannot reliably discover Fud AI
+             Without it, the standalone Health Connect app cannot reliably discover Ruoka + Treeni
              as a permission-capable app. -->
         <activity
             android:name=".HealthPermissionsRationaleActivity"

@@ -37,7 +37,7 @@ struct HostedAISettingsView: View {
                     }
                 }
             } footer: {
-                Text("BYOK uses your own provider keys with no limits. Hosted uses Fud AI’s Plus/Pro plan and burns your daily pool, then credit bank.")
+                Text("BYOK uses your own provider keys with no limits. Hosted uses Ruoka + Treeni’s Plus/Pro plan and burns your daily pool, then credit bank.")
             }
 
             if aiMode == .hosted {
@@ -48,7 +48,7 @@ struct HostedAISettingsView: View {
                 } header: {
                     Text("Hosted Plan")
                 } footer: {
-                    Text("Usage is metered by Fud AI’s server per AI call and resets at midnight UTC. Coach replies that need several tool calls use several actions.")
+                    Text("Usage is metered by Ruoka + Treeni’s server per AI call and resets at midnight UTC. Coach replies that need several tool calls use several actions.")
                 }
 
                 Section {
@@ -194,7 +194,7 @@ struct HostedPaywallCatalog {
 
 // MARK: - Paywall
 
-/// Hosted AI paywall: Fud AI logo hero → Plus/Pro plan cards with a
+/// Hosted AI paywall: Ruoka + Treeni logo hero → Plus/Pro plan cards with a
 /// monthly/yearly toggle → pinned subscribe CTA, with credit packs demoted to a
 /// secondary section. Styled like the rest of the app (app card / accent
 /// colour, rounded fonts, minimal chrome). Purchase/restore plumbing is
@@ -301,7 +301,7 @@ struct HostedPaywallView: View {
             VStack(spacing: 4) {
                 Text("Hosted AI")
                     .font(.system(.title2, design: .rounded, weight: .bold))
-                Text("Fud AI runs the models. No API keys, no setup.")
+                Text("Ruoka + Treeni runs the models. No API keys, no setup.")
                     .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)

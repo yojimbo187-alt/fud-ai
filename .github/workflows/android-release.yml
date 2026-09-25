@@ -26,10 +26,10 @@
 # Supply-chain: the AAB/APK attached to the GitHub Release are signed keylessly
 # with Sigstore cosign (a *.sigstore.json bundle per artifact) and carry a
 # GitHub build-provenance attestation. Verify a download with:
-#   cosign verify-blob fudai-vX.Y.apk --bundle fudai-vX.Y.apk.sigstore.json \
-#     --certificate-identity-regexp '^https://github.com/apoorvdarshan/fud-ai/' \
+#   cosign verify-blob ruoka-treeni-android.apk --bundle ruoka-treeni-android.apk.sigstore.json \
+#     --certificate-identity-regexp '^https://github.com/yojimbo187-alt/fud-ai/' \
 #     --certificate-oidc-issuer https://token.actions.githubusercontent.com
-#   gh attestation verify fudai-vX.Y.apk --repo apoorvdarshan/fud-ai
+#   gh attestation verify ruoka-treeni-android.apk --repo yojimbo187-alt/fud-ai
 
 name: Android Release
 
@@ -150,8 +150,8 @@ jobs:
         run: |
           VERSION="${GITHUB_REF_NAME#android-v}"
           mkdir -p "$RUNNER_TEMP/dist"
-          cp android/app/build/outputs/bundle/release/app-release.aab "$RUNNER_TEMP/dist/fudai-v${VERSION}.aab"
-          cp android/app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/dist/fudai-v${VERSION}.apk"
+          cp android/app/build/outputs/bundle/release/app-release.aab "$RUNNER_TEMP/dist/ruoka-treeni-android.aab"
+          cp android/app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/dist/ruoka-treeni-android.apk"
 
       - uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2
 
@@ -212,10 +212,10 @@ jobs:
           gh release create "$GITHUB_REF_NAME" \
             --title "Android ${VERSION} (versionCode ${VCODE})" \
             --notes-file "$RUNNER_TEMP/release-notes.md" --latest \
-            "$RUNNER_TEMP/dist/fudai-v${VERSION}.aab" \
-            "$RUNNER_TEMP/dist/fudai-v${VERSION}.aab.sigstore.json" \
-            "$RUNNER_TEMP/dist/fudai-v${VERSION}.apk" \
-            "$RUNNER_TEMP/dist/fudai-v${VERSION}.apk.sigstore.json"
+            "$RUNNER_TEMP/dist/ruoka-treeni-android.aab" \
+            "$RUNNER_TEMP/dist/ruoka-treeni-android.aab.sigstore.json" \
+            "$RUNNER_TEMP/dist/ruoka-treeni-android.apk" \
+            "$RUNNER_TEMP/dist/ruoka-treeni-android.apk.sigstore.json"
 
       - name: Keep English What's New only
         if: steps.gates.outputs.play_upload == 'true' && steps.gates.outputs.upload_whats_new == 'true'

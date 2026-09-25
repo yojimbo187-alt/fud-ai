@@ -317,7 +317,7 @@ class FoodRepository(
     // -- Restore from Health Connect --------------------------------------
 
     /**
-     * Rebuilds the food log from the NutritionRecords Fud AI itself wrote to
+     * Rebuilds the food log from the NutritionRecords Ruoka + Treeni itself wrote to
      * Health Connect — the restore path after a reinstall or new phone, where
      * Health Connect data survives but app storage doesn't. Only records
      * carrying our fudai_(uuid) clientRecordId are considered; the original

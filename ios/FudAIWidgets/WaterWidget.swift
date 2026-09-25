@@ -32,7 +32,7 @@ struct WaterWidget: Widget {
             WaterWidgetView(entry: entry)
                 .containerBackground(WidgetPalette.background, for: .widget)
         }
-        .configurationDisplayName("Fud AI Water")
+        .configurationDisplayName("Ruoka + Treeni Water")
         .description("See today's water progress at a glance.")
         .supportedFamilies([
             .systemSmall,

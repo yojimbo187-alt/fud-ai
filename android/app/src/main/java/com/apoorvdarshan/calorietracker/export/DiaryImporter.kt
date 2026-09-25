@@ -112,10 +112,13 @@ object DiaryImporter {
         val document = try {
             json.decodeFromString(Document.serializer(), content)
         } catch (_: SerializationException) {
-            throw DiaryImportException("This is not a valid Fud AI food diary JSON file.")
+            throw DiaryImportException("This is not a valid Ruoka + Treeni food diary JSON file.")
         }
-        if (!document.metadata.app.equals("Fud AI", ignoreCase = true)) {
-            throw DiaryImportException("This is not a valid Fud AI food diary JSON file.")
+        if (listOf("Ruoka + Treeni", "Fud AI").none {
+                document.metadata.app.equals(it, ignoreCase = true)
+            }
+        ) {
+            throw DiaryImportException("This is not a valid Ruoka + Treeni food diary JSON file.")
         }
         if (document.metadata.format_version.substringBefore('.').toIntOrNull() != 1) {
             throw DiaryImportException("This food diary format is not supported.")

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Workout preferences embedded directly in Fud AI's main Settings list.
+/// Workout preferences embedded directly in Ruoka + Treeni's main Settings list.
 struct WorkoutLoggingSettingsSection: View {
     @Environment(StrengthWorkoutStore.self) private var workoutStore
     @AppStorage(OutdoorActivitySettings.enabledKey) private var walkRunQuickLogEnabled = false

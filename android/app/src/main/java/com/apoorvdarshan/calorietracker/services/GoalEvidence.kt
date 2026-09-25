@@ -63,7 +63,7 @@ data class SignalPeriodEvidence(
 data class DatedWeightEvidence(val date: LocalDate, val weightKg: Double)
 data class DatedBodyFatEvidence(val date: LocalDate, val percent: Double)
 
-/** Workout evidence deliberately has no calorie-burn field. Fud AI's workout calories are an
+/** Workout evidence deliberately has no calorie-burn field. Ruoka + Treeni's workout calories are an
  *  estimate and feeding them back into the target calculator would create a circular signal. */
 data class DailyWorkoutEvidence(
     val date: LocalDate,
@@ -187,7 +187,7 @@ data class GoalEvidence(
         if (healthEnergyDays.isEmpty()) {
             appendLine("- unavailable or Energy Burn disabled")
         } else {
-            appendLine("- Active energy excludes Fud AI's app-owned estimated workout records; total energy is included only when Health Connect reports it.")
+            appendLine("- Active energy excludes Ruoka + Treeni's app-owned estimated workout records; total energy is included only when Health Connect reports it.")
             healthEnergyDays.forEach {
                 appendLine("- ${it.date}: external_active=${it.externalActiveCalories} kcal, total=${it.totalCalories?.let { value -> "$value kcal" } ?: "unavailable"}")
             }

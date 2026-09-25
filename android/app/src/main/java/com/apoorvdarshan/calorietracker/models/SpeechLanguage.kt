@@ -23,7 +23,8 @@ enum class SpeechLanguage(
     JAPANESE(R.string.speech_language_japanese, "ja"),
     CHINESE(R.string.speech_language_chinese, "zh"),
     KOREAN(R.string.speech_language_korean, "ko"),
-    CZECH(R.string.speech_language_czech, "cs");
+    CZECH(R.string.speech_language_czech, "cs"),
+    FINNISH(R.string.speech_language_finnish, "fi");
 
     fun remoteLanguageCode(): String? = when (this) {
         PROVIDER_AUTO -> null
@@ -62,7 +63,8 @@ enum class SpeechLanguage(
                 JAPANESE,
                 CHINESE,
                 KOREAN,
-                CZECH
+                CZECH,
+                FINNISH
             )
             return when (provider) {
                 SpeechProvider.NATIVE -> listOf(DEVICE) + explicitLanguages

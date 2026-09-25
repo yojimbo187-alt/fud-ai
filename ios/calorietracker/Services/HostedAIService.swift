@@ -158,7 +158,7 @@ enum HostedAIService {
         case "image_too_large", "audio_too_large", "body_too_large", "prompt_too_long":
             return String(localized: "That request is too large for Hosted AI. Try a smaller photo or shorter text.")
         case "invalid_request_body":
-            return String(localized: "Hosted AI rejected this request. Please update Fud AI and try again.")
+            return String(localized: "Hosted AI rejected this request. Please update Ruoka + Treeni and try again.")
         default:
             return String(localized: "Hosted AI request failed (\(status)).")
         }

@@ -116,7 +116,6 @@ struct ContentView: View {
     @Environment(NotificationManager.self) private var notificationManager
     @Environment(\.scenePhase) private var scenePhase
     @AppStorage(AppThemeColor.storageKey) private var appThemeColorRaw = AppThemeColor.defaultColor.rawValue
-    @AppStorage(WorkoutTabMode.storageKey) private var workoutTabModeRaw = WorkoutTabMode.defaultMode.rawValue
     @State private var appUpdateState: AppUpdateState = .idle
     @State private var selectedTab: AppTab = .home
     @State private var quickActionRequest: QuickActionRequest?
@@ -126,10 +125,6 @@ struct ContentView: View {
     @State private var showHostedUpsellPaywall = false
     @State private var showMeetDeveloperPrompt = false
     @State private var showProductHuntLaunchPrompt = false
-
-    private var workoutsTabIcon: String {
-        WorkoutTabMode.mode(for: workoutTabModeRaw).tabIcon
-    }
 
     var body: some View {
         standardTabView
@@ -147,7 +142,7 @@ struct ContentView: View {
                     continueToMeetDeveloperPrompt()
                 }
             } message: {
-                Text("Fud AI is free with your own API keys (BYOK) — and always will be. If juggling keys feels confusing, Plus and Pro plans run the AI for you with no keys to manage. Totally optional, nothing changes unless you switch.")
+                Text("Ruoka + Treeni is free with your own API keys (BYOK) — and always will be. If juggling keys feels confusing, Plus and Pro plans run the AI for you with no keys to manage. Totally optional, nothing changes unless you switch.")
             }
             .sheet(isPresented: $showHostedUpsellPaywall, onDismiss: { continueToMeetDeveloperPrompt() }) {
                 HostedPaywallView()
@@ -241,8 +236,8 @@ struct ContentView: View {
             WorkoutsView()
                 .tag(AppTab.workouts)
                 .tabItem {
-                    Image(systemName: workoutsTabIcon)
-                    Text("Workouts")
+                    Image(systemName: "figure.strengthtraining.traditional")
+                    Text("Programs")
                 }
         }
     }
@@ -360,8 +355,8 @@ enum AboutSettingsCategory: String, CaseIterable, Identifiable, Hashable {
 
     var title: LocalizedStringResource {
         switch self {
-        case .appUpdates: "App & Updates"
-        case .support: "Support Fud AI"
+        case .appUpdates: "About"
+        case .support: "Support Ruoka + Treeni"
         case .helpFeedback: "Help & Feedback"
         case .community: "Community"
         case .joinBeta: "Join Beta"
@@ -384,16 +379,9 @@ enum AboutSettingsCategory: String, CaseIterable, Identifiable, Hashable {
 private struct AboutAppHeaderSection: View {
     var body: some View {
         Section {
-            VStack(spacing: 8) {
-                Image("onboardingLogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 64, height: 64)
-                    .accessibilityHidden(true)
-
-                Text("Fud AI")
-                    .font(.system(.title2, design: .rounded, weight: .bold))
-
+            VStack(spacing: 4) {
+                Text("App Version")
+                    .font(.system(.headline, design: .rounded, weight: .semibold))
                 Text("Version \(AppUpdateChecker.currentVersionDisplay)")
                     .font(.system(.footnote, design: .rounded))
                     .foregroundStyle(.secondary)
@@ -402,24 +390,6 @@ private struct AboutAppHeaderSection: View {
             .padding(.vertical, 8)
         }
         .listRowBackground(AppColors.appCard)
-    }
-}
-
-private struct AboutFooterSection: View {
-    var body: some View {
-        Section {
-            VStack(spacing: 4) {
-                Text("Made by Apoorv Darshan")
-                    .font(.system(.footnote, design: .rounded, weight: .medium))
-                    .foregroundStyle(.secondary)
-                Text("with care, for everyone")
-                    .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.tertiary)
-            }
-            .frame(maxWidth: .infinity)
-            .listRowBackground(Color.clear)
-            .listRowSeparator(.hidden)
-        }
     }
 }
 
@@ -446,7 +416,7 @@ private struct AboutSettingsSections: View {
     }
 
     private var shareMessage: String {
-        String(localized: "I've been tracking my meals with Fud AI — snap a photo, speak it, or type it, and the AI logs the calories. It's free, open source, and your data stays on your device.\n\nDownload: https://fud-ai.app")
+        String(localized: "I've been tracking my meals with Ruoka + Treeni — snap a photo, speak it, or type it, and the AI logs the calories. It's free, open source, and your data stays on your device.\n\nDownload: https://fud-ai.app")
     }
 
     var body: some View {
@@ -650,10 +620,10 @@ private struct AboutSettingsSections: View {
 
             case .joinBeta:
                 Section {
-                    Text("Try new Fud AI changes before they reach the App Store. Beta builds can be unfinished.")
+                    Text("Try new Ruoka + Treeni changes before they reach the App Store. Beta builds can be unfinished.")
                         .font(.system(.subheadline, design: .rounded))
                         .foregroundStyle(.secondary)
-                    Text("Join the Fud AI Discord and open #beta-ios. When a TestFlight link is posted there, install Apple’s TestFlight app and accept the invite. If something breaks, use /bug and include the build number from Settings.")
+                    Text("Join the Ruoka + Treeni Discord and open #beta-ios. When a TestFlight link is posted there, install Apple’s TestFlight app and accept the invite. If something breaks, use /bug and include the build number from Settings.")
                         .font(.system(.subheadline, design: .rounded))
                     Text("TestFlight is not open yet. The invite will be posted in #beta-ios.")
                         .font(.system(.footnote, design: .rounded))
@@ -2710,26 +2680,26 @@ private struct SiriPhrasesSettingsView: View {
             title: "Log Food",
             icon: "fork.knife",
             phrases: [
-                "Log food in Fud AI",
-                "Add food in Fud AI",
-                "Track food in Fud AI",
+                "Log food in Ruoka + Treeni",
+                "Add food in Ruoka + Treeni",
+                "Track food in Ruoka + Treeni",
             ]
         ),
         SiriPhraseGroup(
             title: "Today's Calories",
             icon: "chart.bar.fill",
             phrases: [
-                "Calories today in Fud AI",
-                "How many calories in Fud AI",
-                "Today's nutrition in Fud AI",
+                "Calories today in Ruoka + Treeni",
+                "How many calories in Ruoka + Treeni",
+                "Today's nutrition in Ruoka + Treeni",
             ]
         ),
         SiriPhraseGroup(
             title: "Log Weight",
             icon: "scalemass.fill",
             phrases: [
-                "Log my weight in Fud AI",
-                "Record weight in Fud AI",
+                "Log my weight in Ruoka + Treeni",
+                "Record weight in Ruoka + Treeni",
             ]
         ),
     ]
@@ -2738,7 +2708,7 @@ private struct SiriPhrasesSettingsView: View {
         List {
             Section {
                 Label {
-                    Text("Say these phrases to Siri to use Fud AI hands-free.")
+                    Text("Say these phrases to Siri to use Ruoka + Treeni hands-free.")
                         .foregroundStyle(.secondary)
                 } icon: {
                     Image(systemName: "waveform.circle.fill")
@@ -3275,7 +3245,7 @@ struct MultiPhotoCaptureSheet: View {
             .alert("How Progressive Meal works", isPresented: $showProgressiveInfo) {
                 Button("Done", role: .cancel) {}
             } message: {
-                Text("Use this when every photo shows the same plate after another ingredient is added. Keep the photos in order and make the scale display visible. Fud AI uses the difference between consecutive scale totals to estimate each new ingredient. Leave this off when the photos are only different angles of the same meal.")
+                Text("Use this when every photo shows the same plate after another ingredient is added. Keep the photos in order and make the scale display visible. Ruoka + Treeni uses the difference between consecutive scale totals to estimate each new ingredient. Leave this off when the photos are only different angles of the same meal.")
             }
         }
     }
@@ -4373,12 +4343,7 @@ enum ProfileSettingsCategory: String, CaseIterable, Identifiable, Hashable {
     ]
 
     static let appInfoCases: [Self] = [
-        .appUpdates,
-        .support,
-        .helpFeedback,
-        .community,
-        .joinBeta,
-        .legal
+        .appUpdates
     ]
 
     var id: Self { self }
@@ -4396,8 +4361,8 @@ enum ProfileSettingsCategory: String, CaseIterable, Identifiable, Hashable {
         case .workout: "Workout"
         case .healthData: "Health & Data"
         case .dataManagement: "Data Management"
-        case .appUpdates: "App & Updates"
-        case .support: "Support Fud AI"
+        case .appUpdates: "About"
+        case .support: "Support Ruoka + Treeni"
         case .helpFeedback: "Help & Feedback"
         case .community: "Community"
         case .joinBeta: "Join Beta"
@@ -4678,7 +4643,6 @@ struct ProfileView: View {
             }
             .listRowBackground(AppColors.appCard)
 
-            AboutFooterSection()
 
             Color.clear
                 .frame(height: 72)
@@ -6051,7 +6015,7 @@ struct ProfileView: View {
                     }
 
                 } footer: {
-                    Text("Reads weight, nutrition, energy, and workouts from Apple Health. Apple Watch and iPhone workouts appear read-only in Workouts and Progress. Fud AI’s calculated diary burns are written separately and excluded from Energy Burn goals.")
+                    Text("Reads weight, nutrition, energy, and workouts from Apple Health. Apple Watch and iPhone workouts appear read-only in Workouts and Progress. Ruoka + Treeni’s calculated diary burns are written separately and excluded from Energy Burn goals.")
                 }
                 .listRowBackground(AppColors.appCard)
                 }
@@ -6117,17 +6081,13 @@ struct ProfileView: View {
                 if let aboutCategory = settingsCategory?.aboutCategory {
                     if aboutCategory == .appUpdates {
                         AboutAppHeaderSection()
+                    } else {
+                        AboutSettingsSections(
+                            category: aboutCategory,
+                            updateState: $updateState,
+                            refreshUpdateState: refreshUpdateState
+                        )
                     }
-
-                    if aboutCategory == .support {
-                        TipJarSettingsSection()
-                    }
-
-                    AboutSettingsSections(
-                        category: aboutCategory,
-                        updateState: $updateState,
-                        refreshUpdateState: refreshUpdateState
-                    )
                 }
             }
             .scrollContentBackground(.hidden)
@@ -6301,12 +6261,12 @@ struct ProfileView: View {
             .alert("Adaptive Goals", isPresented: $showAdaptiveGoalsInfo) {
                 Button("OK", role: .cancel) { }
             } message: {
-                Text("About once a week when you open the app, Fud AI automatically re-runs the full goal calculation — the same one the Recalculate button uses — from your profile, recent logged food, and weight trend. If Energy Burn is on, it uses your measured burn as the maintenance anchor. It skips silently if the AI is unavailable. Turning this off restores the targets from before Adaptive Goals first changed them. This is not medical advice.")
+                Text("About once a week when you open the app, Ruoka + Treeni automatically re-runs the full goal calculation — the same one the Recalculate button uses — from your profile, recent logged food, and weight trend. If Energy Burn is on, it uses your measured burn as the maintenance anchor. It skips silently if the AI is unavailable. Turning this off restores the targets from before Adaptive Goals first changed them. This is not medical advice.")
             }
             .alert("Energy Burn", isPresented: $showEnergyBurnInfo) {
                 Button("OK", role: .cancel) { }
             } message: {
-                Text("When on, Fud AI uses Apple Health’s recent measured-energy window as your maintenance anchor when calculating goals instead of the formula estimate: measured total energy when enough days are available; otherwise, average measured active energy + formula BMR. No AI is used to read your burn. Requires Apple Health. Works with the Recalculate button and with Adaptive Goals.")
+                Text("When on, Ruoka + Treeni uses Apple Health’s recent measured-energy window as your maintenance anchor when calculating goals instead of the formula estimate: measured total energy when enough days are available; otherwise, average measured active energy + formula BMR. No AI is used to read your burn. Requires Apple Health. Works with the Recalculate button and with Adaptive Goals.")
             }
             .alert(adaptiveGoalAlertTitle, isPresented: $showAdaptiveGoalAlert) {
                 Button("OK", role: .cancel) { }
@@ -6359,7 +6319,7 @@ struct ProfileView: View {
                         await weeklyChallengeStore.deleteRemoteProfileForFullReset()
 
                         // Apple Health samples remain untouched; users manage those
-                        // from the Health app's Sources > Fud AI screen.
+                        // from the Health app's Sources > Ruoka + Treeni screen.
                         foodStore.replaceAllEntries([])
                         weightStore.replaceAllEntries([])
                         waterStore.clear()
@@ -6887,7 +6847,7 @@ struct ProfileView: View {
     private func showAdaptiveGoalsLockHint() {
         showAdaptiveGoalAlert(
             title: "Adaptive Goals Is On",
-            message: "Turn off Adaptive Goals to lock or set your own calories and macros. While it's on, Fud AI recalculates them for you each week."
+            message: "Turn off Adaptive Goals to lock or set your own calories and macros. While it's on, Ruoka + Treeni recalculates them for you each week."
         )
     }
 
@@ -6997,7 +6957,7 @@ struct ProfileView: View {
             // untouched and tell the user so they can fix their provider/key and retry.
             showAdaptiveGoalAlert(
                 title: "Couldn't Recalculate",
-                message: "Fud AI couldn't reach your AI provider, so your goals are unchanged. Check your AI provider and API key in Settings, then try Recalculate again."
+                message: "Ruoka + Treeni couldn't reach your AI provider, so your goals are unchanged. Check your AI provider and API key in Settings, then try Recalculate again."
             )
             return
         }
@@ -7116,7 +7076,7 @@ struct ProfileView: View {
                 if await healthKitManager.fetchRecentEnergySummary(days: 14) == nil {
                     energyBurnToggleReverting = true
                     energyBurnEnabled = false
-                    showAdaptiveGoalAlert(title: "Not Enough Health Data", message: "Fud AI needs at least 3 recent days of Apple Health energy data before it can use your measured burn.")
+                    showAdaptiveGoalAlert(title: "Not Enough Health Data", message: "Ruoka + Treeni needs at least 3 recent days of Apple Health energy data before it can use your measured burn.")
                     return
                 }
                 await recalculateGoalsWithAI()
@@ -7141,7 +7101,7 @@ struct ProfileView: View {
     }
 
     /// Daily measured energy is only included while Energy Burn and Apple Health are enabled.
-    /// HealthKitManager removes Fud AI's own estimated workout samples before aggregation.
+    /// HealthKitManager removes Ruoka + Treeni's own estimated workout samples before aggregation.
     private func measuredEnergyHistory() async -> [HealthEnergyDay] {
         guard energyBurnEnabled, healthKitEnabled else { return [] }
         let history = await healthKitManager.fetchRecentEnergyHistory(days: 14)

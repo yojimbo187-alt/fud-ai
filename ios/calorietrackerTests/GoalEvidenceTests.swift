@@ -135,11 +135,23 @@ struct GoalEvidenceTests {
 
         #expect(profile.usesBodyFatForBMR)
         #expect(abs(profile.bmr - (370 + 21.6 * 0.50 * 70)) < 0.001)
-        #expect(profile.proteinGoal == 112)
+        #expect(profile.proteinGoal == 122)
 
         profile.bodyFatPercentage = nil
         #expect(!profile.usesBodyFatForBMR)
-        #expect(profile.proteinGoal == 112)
+        #expect(profile.proteinGoal == 122)
+    }
+
+    @Test func selectedTrainingProgramChangesTargetsAndSignature() {
+        var recovery = UserProfile.default
+        recovery.trainingProgramID = TrainingProgram.activeRecovery.rawValue
+        var fiveDay = recovery
+        fiveDay.trainingProgramID = TrainingProgram.pushPullLegsUpperLower.rawValue
+
+        #expect(fiveDay.tdee > recovery.tdee)
+        #expect(fiveDay.dailyCalories > recovery.dailyCalories)
+        #expect(fiveDay.proteinGoal > recovery.proteinGoal)
+        #expect(fiveDay.goalInputSignature != recovery.goalInputSignature)
     }
 
     @Test func totalEnergySignalNeedsThreeTotalDays() throws {

@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI 卡路里</string>
+    <string name="widget_calorie_label">Ruoka + Treeni 卡路里</string>
     <string name="widget_calorie_description">一目了然查看今日的卡路里和宏量营养素。</string>
-    <string name="widget_protein_label">Fud AI 蛋白质</string>
+    <string name="widget_protein_label">Ruoka + Treeni 蛋白质</string>
     <string name="widget_protein_description">一目了然查看今日的蛋白质进度。</string>
     <string name="widget_today">今日</string>
     <string name="widget_protein">蛋白质</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">返回</string>
-    <string name="onboarding_logo_description">Fud AI 标志</string>
+    <string name="onboarding_logo_description">Ruoka + Treeni 标志</string>
     <string name="onboarding_welcome_line1">聪明饮食，</string>
     <string name="onboarding_welcome_line2">活得更好</string>
     <string name="onboarding_welcome_subtitle">只需拍照、记录、享受。\n让你的营养更简单。</string>
@@ -256,7 +256,7 @@
     <string name="onboarding_health_connect">连接</string>
 
     <string name="onboarding_ai_choice_title">设置你的 AI</string>
-    <string name="onboarding_ai_choice_subtitle">选择如何在 Fud AI 中使用 AI。无论哪种方式，应用都保持免费。</string>
+    <string name="onboarding_ai_choice_subtitle">选择如何在 Ruoka + Treeni 中使用 AI。无论哪种方式，应用都保持免费。</string>
     <string name="onboarding_ai_byok_subtitle">添加你自己的 AI 提供商密钥 — 支持 Gemini、OpenAI、Groq 等。</string>
     <string name="onboarding_ai_byok_card_title">自带密钥</string>
     <string name="onboarding_ai_byok_card_subtitle">永久免费 — 使用你的密钥无限制。Gemini、OpenAI、Groq 等。</string>
@@ -526,7 +526,7 @@
     <string name="settings_week_sunday">星期日</string>
     <string name="settings_notifications">通知</string>
     <string name="settings_battery_opt">电池优化</string>
-    <string name="settings_battery_opt_value">将 Fud AI 加入白名单</string>
+    <string name="settings_battery_opt_value">将 Ruoka + Treeni 加入白名单</string>
 
     <string name="settings_ai_provider">提供商</string>
     <string name="settings_ai_model">模型</string>
@@ -558,7 +558,7 @@
     <string name="settings_invalid_goal_gain">增重目标的目标体重需高于当前体重。</string>
     <string name="settings_permission_title">需要权限</string>
 
-    <string name="settings_notifications_denied">通知权限被拒绝。请在“系统设置 → 应用 → Fud AI → 通知”中启用以接收提醒。</string>
+    <string name="settings_notifications_denied">通知权限被拒绝。请在“系统设置 → 应用 → Ruoka + Treeni → 通知”中启用以接收提醒。</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">称重时间到了</string>
@@ -604,9 +604,7 @@
     <string name="about_share">分享应用</string>
     <string name="about_open_source">开源 (MIT)</string>
     <string name="about_star_github">在 GitHub 上加星</string>
-    <string name="about_vote_ph">在 Product Hunt 上投票</string>
-    <string name="about_leave_tip_kofi">在 Ko-fi 上留个小费</string>
-    <string name="about_report_issue">在 GitHub 上报告问题</string>
+    <string name="about_vote_ph">在 Product Hunt 上投票</string>    <string name="about_report_issue">在 GitHub 上报告问题</string>
     <string name="about_report_issue_discord">在 Discord 上报告问题</string>
     <string name="about_request_feature">在 GitHub 上请求功能</string>
     <string name="about_request_feature_discord">在 Discord 上请求功能</string>
@@ -618,18 +616,15 @@
     <string name="about_privacy">隐私政策</string>
     <string name="about_terms">服务条款</string>
     <string name="about_category_app_updates">应用与更新</string>
-    <string name="about_category_support">支持 Fud AI</string>
+    <string name="about_category_support">支持 Ruoka + Treeni</string>
     <string name="about_category_help_feedback">帮助与反馈</string>
     <string name="about_category_community">社区</string>
     <string name="about_category_legal">法律信息</string>
     <string name="about_category_join_beta">加入测试版</string>
-    <string name="about_beta_intro">在上架 Play 商店之前试用 Fud AI 的新变化。测试版可能还不完整。</string>
-    <string name="about_beta_steps">加入 Fud AI 的 Discord 并打开 #beta-android。那里发布 Play 测试链接后，选择加入，再从 Play 商店更新 Fud AI。如果出问题，用 /bug，并写上设置里的版本。</string>
-    <string name="about_beta_not_open">Play 测试尚未开放。链接会发在 #beta-android。</string>
-    <string name="about_made_by">由 Apoorv Darshan 制作</string>
-    <string name="about_with_care">用心为每个人</string>
-    <string name="about_share_message">我用 Fud AI 记录每一餐——拍照、说话或输入，AI 自动记录卡路里。完全免费、开源，所有数据都保存在你的设备上。\n\n下载：https://fud-ai.app</string>
-    <string name="about_share_chooser">分享 Fud AI</string>
+    <string name="about_beta_intro">在上架 Play 商店之前试用 Ruoka + Treeni 的新变化。测试版可能还不完整。</string>
+    <string name="about_beta_steps">加入 Ruoka + Treeni 的 Discord 并打开 #beta-android。那里发布 Play 测试链接后，选择加入，再从 Play 商店更新 Ruoka + Treeni。如果出问题，用 /bug，并写上设置里的版本。</string>
+    <string name="about_beta_not_open">Play 测试尚未开放。链接会发在 #beta-android。</string>    <string name="about_share_message">我用 Ruoka + Treeni 记录每一餐——拍照、说话或输入，AI 自动记录卡路里。完全免费、开源，所有数据都保存在你的设备上。\n\n下载：https://fud-ai.app</string>
+    <string name="about_share_chooser">分享 Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">连续记录提醒</string>
@@ -660,7 +655,7 @@
         <item quantity="other">%1$d 条已计算消耗 · 点按查看或删除</item>
     </plurals>
     <string name="progress_workout_delete_title">删除锻炼消耗？</string>
-    <string name="progress_workout_delete_message">这会从 Fud AI 和 Health Connect 中移除已计算的消耗。你的锻炼日记计划仍会保留。</string>
+    <string name="progress_workout_delete_message">这会从 Ruoka + Treeni 和 Health Connect 中移除已计算的消耗。你的锻炼日记计划仍会保留。</string>
     <string name="progress_workout_section">锻炼活动</string>
     <string name="progress_workout_stat_workouts">锻炼</string>
     <string name="progress_workout_stat_total">总消耗</string>
@@ -684,11 +679,11 @@
     <string name="settings_section_fallback">备用提供商</string>
     <string name="settings_enable_fallback">启用备用</string>
     <string name="settings_fallback_footer">如果主提供商失败（过载、速率限制、网络错误），应用会自动使用此备用提供商重试。允许与主提供商相同——只需选择不同的模型即可。</string>
-    <string name="widget_all_metrics_label">Fud AI 今天</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni 今天</string>
     <string name="widget_all_metrics_description">在一个小部件中查看今天的卡路里、蛋白质、碳水和脂肪。</string>
     <string name="settings_needs_health_connect">需要 Health Connect</string>
-    <string name="settings_energy_goals_info">开启后，Fud AI 会在计算目标时使用 Health Connect 的近期实测能量窗口作为维持热量基准，而不是公式估算：有足够天数时使用实测总能量，否则使用实测活动能量平均值 + 公式 BMR。读取消耗数据不使用 AI。需要 Health Connect。与“重新计算”按钮及 Adaptive Goals 配合使用。</string>
-    <string name="settings_adaptive_goals_info">大约每周一次，当你打开应用时，Fud AI 会根据你的资料、最近记录的饮食和体重趋势，自动重新运行完整的目标计算（与“重新计算”按钮相同）。如果已开启 Energy Burn，则会以实测消耗作为维持热量的基准。若 AI 不可用则静默跳过。关闭后会恢复到该功能首次更改前的目标。这不是医疗建议。</string>
+    <string name="settings_energy_goals_info">开启后，Ruoka + Treeni 会在计算目标时使用 Health Connect 的近期实测能量窗口作为维持热量基准，而不是公式估算：有足够天数时使用实测总能量，否则使用实测活动能量平均值 + 公式 BMR。读取消耗数据不使用 AI。需要 Health Connect。与“重新计算”按钮及 Adaptive Goals 配合使用。</string>
+    <string name="settings_adaptive_goals_info">大约每周一次，当你打开应用时，Ruoka + Treeni 会根据你的资料、最近记录的饮食和体重趋势，自动重新运行完整的目标计算（与“重新计算”按钮相同）。如果已开启 Energy Burn，则会以实测消耗作为维持热量的基准。若 AI 不可用则静默跳过。关闭后会恢复到该功能首次更改前的目标。这不是医疗建议。</string>
     <string name="ad_label">广告</string>
     <string name="onboarding_plan_adaptive_note">你的计划会根据记录每周自动调整 — 想保持不变，可在设置中关闭 Adaptive Goals。</string>
     <string name="onboarding_feature_snap">拍张照片 — AI 帮你记录</string>
@@ -698,7 +693,7 @@
     <string name="whats_new_v30_workouts">全新“锻炼”标签页 — 浏览 873 个动作，配照片、肌群和器械筛选、搜索及详情页。</string>
     <string name="whats_new_v30_home">主页焕新：仪表盘式卡路里表、竖向宏量条、四张营养卡片和悬浮添加按钮。</string>
     <string name="whats_new_v30_coach_voice">用新的内置录音条向教练语音提问。</string>
-    <string name="whats_new_v30_share">把任意一餐分享为链接，在 iPhone 或 Android 上直接打开 Fud AI。</string>
+    <string name="whats_new_v30_share">把任意一餐分享为链接，在 iPhone 或 Android 上直接打开 Ruoka + Treeni。</string>
     <string name="whats_new_v30_export">在设置中将饮食日记导出为 JSON、Markdown 或 CSV。</string>
     <string name="whats_new_v30_reprocess">用 AI 重新处理已记录的餐食 — 调整名称、份量或备注后重新分析。</string>
     <string name="whats_new_v30_camera">相机 + 相机会保留两张照片，并排拼接。</string>
@@ -747,7 +742,7 @@
     <string name="settings_calc_maintenance">维持热量和目标调整</string>
     <string name="settings_calc_macro_split">宏量营养素比例</string>
     <string name="settings_calc_micro_values">微量营养素值</string>
-    <string name="settings_calc_intro">你的每日热量和宏量营养素目标由 AI 设定。当你点按“重新计算目标”时（若开启了自适应目标，则大约每周自动一次），Fud AI 会将你的资料、下方的参考公式、保护隐私的每日营养汇总、带日期的准确体重、体脂和围度测量值、汇总的训练次数、时长、组数和重复次数，以及可选的 Health Connect 能量数据发送给你的 AI 服务商。此计算不会发送食物名称、备注、照片、配料或运动名称。它以这些经同行评审的公式为基础，再根据你的真实数据进行调整，以估算你真正的维持热量和目标。</string>
+    <string name="settings_calc_intro">你的每日热量和宏量营养素目标由 AI 设定。当你点按“重新计算目标”时（若开启了自适应目标，则大约每周自动一次），Ruoka + Treeni 会将你的资料、下方的参考公式、保护隐私的每日营养汇总、带日期的准确体重、体脂和围度测量值、汇总的训练次数、时长、组数和重复次数，以及可选的 Health Connect 能量数据发送给你的 AI 服务商。此计算不会发送食物名称、备注、照片、配料或运动名称。它以这些经同行评审的公式为基础，再根据你的真实数据进行调整，以估算你真正的维持热量和目标。</string>
     <string name="settings_calc_sec_bmr">基础代谢率 (BMR)</string>
     <string name="settings_calc_sec_tdee">每日能量消耗 (TDEE)</string>
     <string name="settings_calc_mifflin_name">Mifflin-St Jeor 方程</string>
@@ -798,7 +793,7 @@
     <string name="about_whisper_notices_load_error">无法加载 Whisper Base 第三方声明。</string>
     <string name="cd_remove_image">移除图片</string>
     <string name="cd_save_photo">保存照片</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">照片已保存</string>
     <string name="photo_save_failed">无法保存照片</string>
     <string name="photo_save_permission_denied">照片访问被拒绝</string>

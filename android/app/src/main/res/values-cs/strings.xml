@@ -1,14 +1,14 @@
 <resources>
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI Kalorie</string>
+    <string name="widget_calorie_label">Ruoka + Treeni Kalorie</string>
     <string name="widget_calorie_description">Přehled dnešních kalorií a maker na první pohled.</string>
-    <string name="widget_protein_label">Fud AI Bílkoviny</string>
+    <string name="widget_protein_label">Ruoka + Treeni Bílkoviny</string>
     <string name="widget_protein_description">Přehled dnešního příjmu bílkovin na první pohled.</string>
-    <string name="widget_water_label">Fud AI Voda</string>
+    <string name="widget_water_label">Ruoka + Treeni Voda</string>
     <string name="widget_water_description">Přehled dnešního pitného režimu na první pohled.</string>
-    <string name="widget_water_disabled">Zapni sledování vody ve Fud AI</string>
+    <string name="widget_water_disabled">Zapni sledování vody ve Ruoka + Treeni</string>
     <string name="widget_open_to_refresh">Otevři aplikaci pro obnovení</string>
-    <string name="widget_refresh_needed_description">Widget Fud AI potřebuje obnovit. Otevři Fud AI.</string>
+    <string name="widget_refresh_needed_description">Widget Ruoka + Treeni potřebuje obnovit. Otevři Ruoka + Treeni.</string>
     <string name="widget_today">Dnes</string>
     <string name="widget_protein">Bílkoviny</string>
     <string name="widget_calories">Kalorie</string>
@@ -137,7 +137,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Zpět</string>
-    <string name="onboarding_logo_description">Logo Fud AI</string>
+    <string name="onboarding_logo_description">Logo Ruoka + Treeni</string>
     <string name="onboarding_welcome_line1">Jez chytře,</string>
     <string name="onboarding_welcome_line2">žij lépe</string>
     <string name="onboarding_welcome_subtitle">Vyfoť, zapisuj a měj se líp.\nTvoje výživa, jednoduše.</string>
@@ -219,7 +219,7 @@
     <string name="onboarding_health_connect">Propojit</string>
 
     <string name="onboarding_ai_choice_title">Nastav si svou AI</string>
-    <string name="onboarding_ai_choice_subtitle">Vyber, jak chceš v Fud AI používat AI. Aplikace zůstane v obou případech zdarma.</string>
+    <string name="onboarding_ai_choice_subtitle">Vyber, jak chceš v Ruoka + Treeni používat AI. Aplikace zůstane v obou případech zdarma.</string>
     <string name="onboarding_ai_byok_subtitle">Přidej klíč svého AI poskytovatele — podporujeme Gemini, OpenAI, Groq a další.</string>
     <string name="onboarding_ai_byok_card_title">Použij vlastní klíč</string>
     <string name="onboarding_ai_byok_card_subtitle">Navždy zdarma — neomezeně na tvém klíči. Gemini, OpenAI, Groq a další.</string>
@@ -529,7 +529,7 @@
     <string name="settings_water_unit_fl_oz">Tekuté unce (fl oz)</string>
     <string name="settings_notif_water_reminder">Připomenutí pití</string>
     <string name="settings_battery_opt">Optimalizace baterie</string>
-    <string name="settings_battery_opt_value">Přidat Fud AI na výjimky</string>
+    <string name="settings_battery_opt_value">Přidat Ruoka + Treeni na výjimky</string>
 
     <string name="settings_ai_provider">Poskytovatel</string>
     <string name="settings_ai_model">Model</string>
@@ -558,9 +558,9 @@
     <string name="settings_permissions">Oprávnění</string>
     <string name="settings_energy_goals">Cíle podle spálené energie</string>
     <string name="settings_needs_health_connect">Vyžaduje Health Connect</string>
-    <string name="settings_energy_goals_info">Když je zapnuto, použije Fud AI při výpočtu cílů jako základ udržovacího příjmu tvoje naměřené spálené kalorie z Health Connect — 14denní průměr aktivní + bazální energie — místo odhadu ze vzorce. Ke čtení spálené energie se nepoužívá žádná AI. Vyžaduje Health Connect. Funguje s tlačítkem Přepočítat i s Adaptivními cíli.</string>
+    <string name="settings_energy_goals_info">Když je zapnuto, použije Ruoka + Treeni při výpočtu cílů jako základ udržovacího příjmu tvoje naměřené spálené kalorie z Health Connect — 14denní průměr aktivní + bazální energie — místo odhadu ze vzorce. Ke čtení spálené energie se nepoužívá žádná AI. Vyžaduje Health Connect. Funguje s tlačítkem Přepočítat i s Adaptivními cíli.</string>
     <string name="settings_adaptive_goals">Adaptivní cíle</string>
-    <string name="settings_adaptive_goals_info">Přibližně jednou týdně při otevření aplikace Fud AI automaticky znovu spustí celý výpočet cílů — stejný, jaký používá tlačítko Přepočítat — z tvého profilu, nedávno zapsaného jídla a trendu váhy. Pokud je zapnutá Spálená energie, použije jako základ udržovacího příjmu naměřený výdej. Když AI není dostupná, kontrola se tiše přeskočí. Vypnutím se obnoví hodnoty z doby, než je Adaptivní cíle poprvé změnily. Nejde o lékařské doporučení.</string>
+    <string name="settings_adaptive_goals_info">Přibližně jednou týdně při otevření aplikace Ruoka + Treeni automaticky znovu spustí celý výpočet cílů — stejný, jaký používá tlačítko Přepočítat — z tvého profilu, nedávno zapsaného jídla a trendu váhy. Pokud je zapnutá Spálená energie, použije jako základ udržovacího příjmu naměřený výdej. Když AI není dostupná, kontrola se tiše přeskočí. Vypnutím se obnoví hodnoty z doby, než je Adaptivní cíle poprvé změnily. Nejde o lékařské doporučení.</string>
     <string name="settings_refresh_energy_goals">Obnovit cíle ze spálené energie</string>
     <string name="settings_clear_food_log">Vymazat deník jídel</string>
     <string name="settings_delete_all_data">Smazat všechna data</string>
@@ -577,7 +577,7 @@
     <string name="settings_rebalance_blocked_title">Nelze dorovnat</string>
     <string name="settings_rebalance_blocked_message">Kalorie jsou zamčené a obě zbylá makra také, takže změnu nemá co vyrovnat. Odemkni kalorie nebo jiné makro a zkus to znovu.</string>
     <string name="settings_adaptive_locks_title">Adaptivní cíle jsou zapnuté</string>
-    <string name="settings_adaptive_locks_message">Pokud chceš zamykat nebo nastavovat vlastní kalorie a makra, vypni Adaptivní cíle. Dokud jsou zapnuté, Fud AI je každý týden přepočítává za tebe.</string>
+    <string name="settings_adaptive_locks_message">Pokud chceš zamykat nebo nastavovat vlastní kalorie a makra, vypni Adaptivní cíle. Dokud jsou zapnuté, Ruoka + Treeni je každý týden přepočítává za tebe.</string>
     <string name="settings_recalc_title">Přepočítat cíle?</string>
     <string name="settings_recalc_message">Vrátí kalorie a makra na výchozí hodnoty ze vzorce podle tvé výšky/váhy/aktivity/cíle. Připnutá makra se zruší.</string>
     <string name="settings_recalc_confirm">Přepočítat</string>
@@ -586,14 +586,14 @@
     <string name="settings_invalid_goal_gain">Cíl Přibrat vyžaduje cílovou váhu vyšší, než je ta současná.</string>
     <string name="settings_permission_title">Je potřeba oprávnění</string>
 
-    <string name="settings_notifications_denied">Oprávnění k oznámením bylo zamítnuto. Zapni ho v Nastavení systému → Aplikace → Fud AI → Oznámení, ať ti chodí připomenutí.</string>
+    <string name="settings_notifications_denied">Oprávnění k oznámením bylo zamítnuto. Zapni ho v Nastavení systému → Aplikace → Ruoka + Treeni → Oznámení, ať ti chodí připomenutí.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Čas na vážení</string>
     <string name="notif_weight_log_text">Zapiš dnešní váhu, ať máš graf pokroku přesný.</string>
     <string name="notif_body_fat_log_title">Kontrola tělesného tuku</string>
     <string name="notif_body_fat_log_text">Zapiš dnešní tělesný tuk a sleduj trend složení těla.</string>
-    <string name="settings_health_denied">Health Connect nepovolil přístup. Otevři Health Connect a povol datové typy, které má Fud AI synchronizovat. Cíle podle spálené energie vyžadují Aktivní i Celkové kalorie.</string>
+    <string name="settings_health_denied">Health Connect nepovolil přístup. Otevři Health Connect a povol datové typy, které má Ruoka + Treeni synchronizovat. Cíle podle spálené energie vyžadují Aktivní i Celkové kalorie.</string>
     <string name="settings_health_unavailable">Health Connect není na tomto zařízení k dispozici. Nainstaluj ho z Play Store a pak přepínač zapni znovu.</string>
 
     <!-- Settings sheets / pickers -->
@@ -663,9 +663,7 @@
     <string name="about_share">Sdílet aplikaci</string>
     <string name="about_open_source">Open source (MIT)</string>
     <string name="about_star_github">Dát hvězdu na GitHubu</string>
-    <string name="about_vote_ph">Hlasovat na Product Huntu</string>
-    <string name="about_leave_tip_kofi">Nechej spropitné na Ko-fi</string>
-    <string name="about_report_issue">Nahlásit chybu na GitHubu</string>
+    <string name="about_vote_ph">Hlasovat na Product Huntu</string>    <string name="about_report_issue">Nahlásit chybu na GitHubu</string>
     <string name="about_report_issue_discord">Nahlásit chybu na Discordu</string>
     <string name="about_request_feature">Navrhnout funkci na GitHubu</string>
     <string name="about_request_feature_discord">Navrhnout funkci na Discordu</string>
@@ -675,11 +673,8 @@
     <string name="about_follow_linkedin">Sledovat na LinkedInu</string>
     <string name="about_follow_instagram">Sledovat na Instagramu</string>
     <string name="about_privacy">Zásady ochrany soukromí</string>
-    <string name="about_terms">Podmínky služby</string>
-    <string name="about_made_by">Vytvořil Apoorv Darshan</string>
-    <string name="about_with_care">s péčí, pro všechny</string>
-    <string name="about_share_message">Sleduju svoje jídlo s Fud AI — vyfotíš, řekneš nebo napíšeš, a AI zapíše kalorie. Je zdarma, open source a data zůstávají v tvém zařízení.\n\nStáhnout: https://fud-ai.app</string>
-    <string name="about_share_chooser">Sdílet Fud AI</string>
+    <string name="about_terms">Podmínky služby</string>    <string name="about_share_message">Sleduju svoje jídlo s Ruoka + Treeni — vyfotíš, řekneš nebo napíšeš, a AI zapíše kalorie. Je zdarma, open source a data zůstávají v tvém zařízení.\n\nStáhnout: https://fud-ai.app</string>
+    <string name="about_share_chooser">Sdílet Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Připomenutí série</string>
@@ -693,7 +688,7 @@
     <string name="notif_summary_title">Dnešní souhrn je připraven</string>
     <string name="notif_summary_text">Klepni a podívej se, jak dnes vyšla makra.</string>
 
-    <string name="widget_all_metrics_label">Fud AI Dnes</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Dnes</string>
     <string name="widget_all_metrics_description">Dnešní kalorie, bílkoviny, sacharidy a tuky v jednom widgetu.</string>
 
     <!-- Workouts tab (exercise library ported from Delts) -->
@@ -733,7 +728,7 @@
     <string name="whats_new_v30_workouts">Nová záložka Tréninky — 873 cviků s fotkami, filtry svalů a vybavení, hledáním a detaily.</string>
     <string name="whats_new_v30_home">Nový design Domů: tachometrový ukazatel kalorií, svislé sloupce maker, čtyři karty živin a plovoucí tlačítko přidání.</string>
     <string name="whats_new_v30_coach_voice">Ptej se kouče hlasem přes nový vestavěný rekordér.</string>
-    <string name="whats_new_v30_share">Sdílej jakékoli jídlo jako odkaz, který se otevře přímo ve Fud AI na iPhonu i Androidu.</string>
+    <string name="whats_new_v30_share">Sdílej jakékoli jídlo jako odkaz, který se otevře přímo ve Ruoka + Treeni na iPhonu i Androidu.</string>
     <string name="whats_new_v30_export">Exportuj deník jídel jako JSON, Markdown nebo CSV z Nastavení.</string>
     <string name="whats_new_v30_reprocess">Zpracuj zapsané jídlo znovu s AI — uprav název, porci nebo poznámku a nech ho přeanalyzovat.</string>
     <string name="whats_new_v30_camera">Fotoaparát + Fotoaparát zachová oba snímky, spojené vedle sebe.</string>
@@ -862,7 +857,7 @@
     <string name="settings_macro_auto_label_format">%1$s (auto)</string>
     <string name="vm_health_connect_needed">Je potřeba Health Connect</string>
     <string name="vm_not_enough_energy">Málo dat o energii</string>
-    <string name="vm_adaptive_on_message">Adaptivní cíle jsou zapnuté. Fud AI provede kontrolu jednou týdně, jakmile bude dost dat o jídle a váze.</string>
+    <string name="vm_adaptive_on_message">Adaptivní cíle jsou zapnuté. Ruoka + Treeni provede kontrolu jednou týdně, jakmile bude dost dat o jídle a váze.</string>
     <string name="vm_goals_recalculated">Cíle přepočítány</string>
     <plurals name="import_add_meals_title">
         <item quantity="one">Přidat sdílené jídlo</item>
@@ -900,11 +895,11 @@
     <string name="notif_channel_body_fat">Připomenutí tělesného tuku</string>
     <string name="notif_channel_body_fat_desc">Denní připomenutí zápisu tělesného tuku.</string>
     <string name="notif_channel_updates">Aktualizace aplikace</string>
-    <string name="notif_channel_updates_desc">Na Play Store je nová verze Fud AI.</string>
+    <string name="notif_channel_updates_desc">Na Play Store je nová verze Ruoka + Treeni.</string>
     <string name="notif_channel_water">Připomenutí pití</string>
     <string name="notif_channel_water_desc">Denní připomenutí, ať se napiješ a zapíšeš vodu.</string>
     <string name="notif_water_title">Čas se napít</string>
-    <string name="notif_water_text">Dej si vodu a zapiš ji do Fud AI.</string>
+    <string name="notif_water_text">Dej si vodu a zapiš ji do Ruoka + Treeni.</string>
     <string name="water">Voda</string>
     <string name="water_log_title">Zapsat vodu</string>
     <string name="water_how_much">Kolik vody?</string>
@@ -917,8 +912,8 @@
     <string name="water_custom_amount">Vlastní množství</string>
     <string name="water_add">Přidat vodu</string>
     <string name="notif_update_title">Aktualizace k dispozici</string>
-    <string name="notif_update_text">Nová verze Fud AI je připravena. Klepni pro aktualizaci.</string>
-    <string name="settings_calc_intro">Tvoje denní kalorické a makro cíle nastavuje AI. Když klepneš na Přepočítat cíle — nebo automaticky zhruba jednou týdně, pokud jsou zapnuté Adaptivní cíle — pošle Fud AI tvému AI poskytovateli tvůj profil, referenční rovnice níže, nedávno zapsané jídlo a trend váhy. Vyjde z těchto recenzovaných vzorců a přizpůsobí je tvým skutečným datům, aby odhadla tvůj skutečný udržovací příjem a cíle.</string>
+    <string name="notif_update_text">Nová verze Ruoka + Treeni je připravena. Klepni pro aktualizaci.</string>
+    <string name="settings_calc_intro">Tvoje denní kalorické a makro cíle nastavuje AI. Když klepneš na Přepočítat cíle — nebo automaticky zhruba jednou týdně, pokud jsou zapnuté Adaptivní cíle — pošle Ruoka + Treeni tvému AI poskytovateli tvůj profil, referenční rovnice níže, nedávno zapsané jídlo a trend váhy. Vyjde z těchto recenzovaných vzorců a přizpůsobí je tvým skutečným datům, aby odhadla tvůj skutečný udržovací příjem a cíle.</string>
     <string name="settings_calc_sec_bmr">Klidový metabolismus (BMR)</string>
     <string name="settings_calc_sec_tdee">Denní energetický výdej (TDEE)</string>
     <string name="settings_calc_mifflin_name">Rovnice Mifflin-St Jeor</string>
@@ -939,7 +934,7 @@
     <string name="settings_calc_micro_name">Odhady pro jednotlivá jídla</string>
     <string name="settings_calc_micro_used">Kalorie, makra, vláknina, cukr, nasycené tuky, cholesterol, sodík, draslík a další mikroživiny u každého jídla jsou odhady generované AI z fotky jídla, hlasového přepisu nebo textového popisu, přes tebou vybraného AI poskytovatele.</string>
     <string name="settings_not_medical_title">Nejde o lékařské doporučení</string>
-    <string name="settings_not_medical_body">Fud AI je odhadovací nástroj, ne klinický přístroj. Predikční rovnice mají přirozenou chybu (u BMR typicky ±10%%). Před zásadními změnami stravy se poraď s nutričním terapeutem, lékařem nebo sportovním lékařem — zvlášť pokud máš zdravotní potíže, čekáš dítě nebo kojíš, je ti méně než 18, nebo řešíš poruchu příjmu potravy.</string>
+    <string name="settings_not_medical_body">Ruoka + Treeni je odhadovací nástroj, ne klinický přístroj. Predikční rovnice mají přirozenou chybu (u BMR typicky ±10%%). Před zásadními změnami stravy se poraď s nutričním terapeutem, lékařem nebo sportovním lékařem — zvlášť pokud máš zdravotní potíže, čekáš dítě nebo kojíš, je ti méně než 18, nebo řešíš poruchu příjmu potravy.</string>
     <string name="settings_waist_cm_format">Pas %1$.0f cm</string>
     <string name="settings_waist_in_format">Pas %1$.0f in</string>
     <string name="export_range_today">Dnes</string>
@@ -947,8 +942,8 @@
     <string name="export_range_month">Tento měsíc</string>
     <string name="export_range_all">Za celou dobu</string>
     <string name="export_range_custom">Vlastní</string>
-    <string name="vm_health_connect_needed_msg">Povol Fud AI číst Aktivní a Celkové kalorie v Health Connect a pak Spálenou energii znovu zapni.</string>
-    <string name="vm_not_enough_energy_msg">Fud AI potřebuje alespoň 3 nedávné dny energetických dat z Health Connect, než může použít naměřený výdej.</string>
+    <string name="vm_health_connect_needed_msg">Povol Ruoka + Treeni číst Aktivní a Celkové kalorie v Health Connect a pak Spálenou energii znovu zapni.</string>
+    <string name="vm_not_enough_energy_msg">Ruoka + Treeni potřebuje alespoň 3 nedávné dny energetických dat z Health Connect, než může použít naměřený výdej.</string>
     <string name="nutrient_short_sat_fat">Nasyc. tuky</string>
     <string name="nutrient_short_vit_a">Vit. A</string>
     <string name="nutrient_short_vit_c">Vit. C</string>
@@ -987,7 +982,7 @@
     <string name="fasting_started">Začátek</string>
     <string name="fasting_ended">Konec</string>
     <string name="fasting_delete">Smazat půst</string>
-    <string name="settings_health_profile_unsupported">Health Connect může Fud AI zobrazovat jako schválenou, ale Android nepovoluje Health Connect z pracovního profilu, Soukromého prostoru ani klonované aplikace. Nainstaluj a otevři Fud AI v hlavním profilu telefonu.</string>
+    <string name="settings_health_profile_unsupported">Health Connect může Ruoka + Treeni zobrazovat jako schválenou, ale Android nepovoluje Health Connect z pracovního profilu, Soukromého prostoru ani klonované aplikace. Nainstaluj a otevři Ruoka + Treeni v hlavním profilu telefonu.</string>
     <string name="settings_health_system_unavailable">Systémová služba Health Connect není dostupná. Vyžaduje Android 9 nebo novější; na novějším telefonu nainstaluj aktualizace Androidu a systému Google Play, restartuj a zkus to znovu.</string>
     <string name="notif_summary_deficit">Snědeno %1$d kcal · spáleno %2$d · odhadovaný deficit %3$d kcal</string>
     <string name="notif_summary_surplus">Snědeno %1$d kcal · spáleno %2$d · odhadovaný přebytek %3$d kcal</string>
@@ -1018,9 +1013,9 @@
     <string name="progressive_meal_title">Postupné jídlo</string>
     <string name="progressive_meal_description">Fotka 1 → 2 → 3 sleduje každou ingredienci přidanou na stejný talíř. Viditelné rozdíly na kuchyňské váze se stanou hmotnostmi ingrediencí.</string>
     <string name="progressive_meal_info_title">Jak Postupné jídlo funguje</string>
-    <string name="progressive_meal_info_body">Použij, když každá fotka ukazuje stejný talíř po přidání další ingredience. Zachovej pořadí fotek a nech displej kuchyňské váhy viditelný. Fud AI použije rozdíl mezi po sobě jdoucími údaji váhy k odhadu každé nové ingredience. Nech vypnuté, pokud jsou fotky jen různé úhly stejného jídla.</string>
+    <string name="progressive_meal_info_body">Použij, když každá fotka ukazuje stejný talíř po přidání další ingredience. Zachovej pořadí fotek a nech displej kuchyňské váhy viditelný. Ruoka + Treeni použije rozdíl mezi po sobě jdoucími údaji váhy k odhadu každé nové ingredience. Nech vypnuté, pokud jsou fotky jen různé úhly stejného jídla.</string>
     <string name="settings_quick_actions">Rychlé akce</string>
     <string name="settings_app_icon_shortcuts">Zkratky ikony aplikace</string>
     <string name="settings_quick_action_number">Rychlá akce %1$d</string>
-    <string name="settings_quick_actions_footer">Podrž ikonu Fud AI a použij tyto zkratky. Každý slot přímo otevře vybranou metodu zapisování.</string>
+    <string name="settings_quick_actions_footer">Podrž ikonu Ruoka + Treeni a použij tyto zkratky. Každý slot přímo otevře vybranou metodu zapisování.</string>
 </resources>

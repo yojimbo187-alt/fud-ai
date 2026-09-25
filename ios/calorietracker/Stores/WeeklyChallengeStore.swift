@@ -302,7 +302,7 @@ final class WeeklyChallengeStore {
             // rankings, so joining performs a single idempotent score PUT.
             await refresh(category: category, score: score)
             if isJoined { return true }
-            errorMessage = WeeklyChallengeL10n.text("Fud AI could not join the challenge. Try again.")
+            errorMessage = WeeklyChallengeL10n.text("Ruoka + Treeni could not join the challenge. Try again.")
             return false
         } catch {
             if WeeklyChallengeSessionPolicy.shouldClearLocalIdentity(after: error) {
@@ -311,7 +311,7 @@ final class WeeklyChallengeStore {
             }
             record(
                 error,
-                fallback: WeeklyChallengeL10n.text("Fud AI could not join the challenge. Try again.")
+                fallback: WeeklyChallengeL10n.text("Ruoka + Treeni could not join the challenge. Try again.")
             )
             return false
         }
@@ -385,7 +385,7 @@ final class WeeklyChallengeStore {
         } catch {
             record(
                 error,
-                fallback: WeeklyChallengeL10n.text("Challenge deletion is pending and will retry automatically when Fud AI is online.")
+                fallback: WeeklyChallengeL10n.text("Challenge deletion is pending and will retry automatically when Ruoka + Treeni is online.")
             )
             return false
         }

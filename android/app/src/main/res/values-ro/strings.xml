@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Calorii Fud AI</string>
+    <string name="widget_calorie_label">Calorii Ruoka + Treeni</string>
     <string name="widget_calorie_description">Vezi caloriile și macros de azi dintr-o privire.</string>
-    <string name="widget_protein_label">Proteine Fud AI</string>
+    <string name="widget_protein_label">Proteine Ruoka + Treeni</string>
     <string name="widget_protein_description">Vezi progresul proteinelor de azi dintr-o privire.</string>
     <string name="widget_today">Astăzi</string>
     <string name="widget_protein">Proteine</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Înapoi</string>
-    <string name="onboarding_logo_description">Logo Fud AI</string>
+    <string name="onboarding_logo_description">Logo Ruoka + Treeni</string>
     <string name="onboarding_welcome_line1">Mănâncă inteligent,</string>
     <string name="onboarding_welcome_line2">Trăiește mai bine</string>
     <string name="onboarding_welcome_subtitle">Doar fă o poză, urmărește și prosperă.\nNutriția ta, simplificată.</string>
@@ -258,7 +258,7 @@
     <string name="onboarding_health_connect">Conectează</string>
 
     <string name="onboarding_ai_choice_title">Configurează-ți AI-ul</string>
-    <string name="onboarding_ai_choice_subtitle">Alege cum vrei să folosești AI în Fud AI. Aplicația rămâne gratuită oricum.</string>
+    <string name="onboarding_ai_choice_subtitle">Alege cum vrei să folosești AI în Ruoka + Treeni. Aplicația rămâne gratuită oricum.</string>
     <string name="onboarding_ai_byok_subtitle">Adaugă propria cheie de furnizor AI — Gemini, OpenAI, Groq și altele sunt suportate.</string>
     <string name="onboarding_ai_byok_card_title">Adu propria cheie</string>
     <string name="onboarding_ai_byok_card_subtitle">Gratuit pentru totdeauna — nelimitat pe cheia ta. Gemini, OpenAI, Groq și altele.</string>
@@ -530,7 +530,7 @@
     <string name="settings_week_sunday">Duminică</string>
     <string name="settings_notifications">Notificări</string>
     <string name="settings_battery_opt">Optimizare baterie</string>
-    <string name="settings_battery_opt_value">Adaugă Fud AI în lista albă</string>
+    <string name="settings_battery_opt_value">Adaugă Ruoka + Treeni în lista albă</string>
 
     <string name="settings_ai_provider">Furnizor</string>
     <string name="settings_ai_model">Model</string>
@@ -562,7 +562,7 @@
     <string name="settings_invalid_goal_gain">Un obiectiv de îngrășare necesită o țintă peste greutatea actuală.</string>
     <string name="settings_permission_title">Este necesară permisiunea</string>
 
-    <string name="settings_notifications_denied">Permisiunea pentru notificări a fost refuzată. Activează-o în Setări sistem → Aplicații → Fud AI → Notificări pentru a primi mementouri.</string>
+    <string name="settings_notifications_denied">Permisiunea pentru notificări a fost refuzată. Activează-o în Setări sistem → Aplicații → Ruoka + Treeni → Notificări pentru a primi mementouri.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Este ora cântăririi</string>
@@ -608,9 +608,7 @@
     <string name="about_share">Distribuie aplicația</string>
     <string name="about_open_source">Sursă deschisă (MIT)</string>
     <string name="about_star_github">Dă stea pe GitHub</string>
-    <string name="about_vote_ph">Votează pe Product Hunt</string>
-    <string name="about_leave_tip_kofi">Lasă un bacșiș pe Ko-fi</string>
-    <string name="about_report_issue">Raportează o problemă pe GitHub</string>
+    <string name="about_vote_ph">Votează pe Product Hunt</string>    <string name="about_report_issue">Raportează o problemă pe GitHub</string>
     <string name="about_report_issue_discord">Raportează o problemă pe Discord</string>
     <string name="about_request_feature">Solicită o funcție pe GitHub</string>
     <string name="about_request_feature_discord">Solicită o funcție pe Discord</string>
@@ -622,18 +620,15 @@
     <string name="about_privacy">Politica de confidențialitate</string>
     <string name="about_terms">Termenii serviciului</string>
     <string name="about_category_app_updates">Aplicație și actualizări</string>
-    <string name="about_category_support">Susține Fud AI</string>
+    <string name="about_category_support">Susține Ruoka + Treeni</string>
     <string name="about_category_help_feedback">Ajutor și feedback</string>
     <string name="about_category_community">Comunitate</string>
     <string name="about_category_legal">Informații juridice</string>
     <string name="about_category_join_beta">Intră în beta</string>
-    <string name="about_beta_intro">Încearcă noutățile Fud AI înainte să ajungă în Play Store. Versiunile beta pot fi neterminate.</string>
-    <string name="about_beta_steps">Intră pe Discordul Fud AI și deschide #beta-android. Când apare un link de test Play, înscrie-te și actualizează Fud AI din Play Store. Dacă ceva se strică, folosește /bug și include versiunea din Setări.</string>
-    <string name="about_beta_not_open">Testul Play nu este încă deschis. Linkul va fi publicat în #beta-android.</string>
-    <string name="about_made_by">Realizat de Apoorv Darshan</string>
-    <string name="about_with_care">cu grijă, pentru toată lumea</string>
-    <string name="about_share_message">Îmi urmăresc mesele cu Fud AI — fă o poză, spune-o sau tasteaz-o, iar AI înregistrează caloriile. E gratuit, open source, iar datele rămân pe dispozitivul tău.\n\nDescarcă: https://fud-ai.app</string>
-    <string name="about_share_chooser">Distribuie Fud AI</string>
+    <string name="about_beta_intro">Încearcă noutățile Ruoka + Treeni înainte să ajungă în Play Store. Versiunile beta pot fi neterminate.</string>
+    <string name="about_beta_steps">Intră pe Discordul Ruoka + Treeni și deschide #beta-android. Când apare un link de test Play, înscrie-te și actualizează Ruoka + Treeni din Play Store. Dacă ceva se strică, folosește /bug și include versiunea din Setări.</string>
+    <string name="about_beta_not_open">Testul Play nu este încă deschis. Linkul va fi publicat în #beta-android.</string>    <string name="about_share_message">Îmi urmăresc mesele cu Ruoka + Treeni — fă o poză, spune-o sau tasteaz-o, iar AI înregistrează caloriile. E gratuit, open source, iar datele rămân pe dispozitivul tău.\n\nDescarcă: https://fud-ai.app</string>
+    <string name="about_share_chooser">Distribuie Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Memento serie</string>
@@ -665,7 +660,7 @@
         <item quantity="other">%1$d de consumuri calculate · atinge pentru a vedea sau șterge</item>
     </plurals>
     <string name="progress_workout_delete_title">Ștergi consumul antrenamentului?</string>
-    <string name="progress_workout_delete_message">Se elimină consumul calculat din Fud AI și Health Connect. Planul din jurnalul de antrenament rămâne salvat.</string>
+    <string name="progress_workout_delete_message">Se elimină consumul calculat din Ruoka + Treeni și Health Connect. Planul din jurnalul de antrenament rămâne salvat.</string>
     <string name="progress_workout_section">Activitate de antrenament</string>
     <string name="progress_workout_stat_workouts">Antrenamente</string>
     <string name="progress_workout_stat_total">Consum total</string>
@@ -689,11 +684,11 @@
     <string name="settings_section_fallback">Furnizor de rezervă</string>
     <string name="settings_enable_fallback">Activează rezerva</string>
     <string name="settings_fallback_footer">Dacă furnizorul principal eșuează (suprasolicitare, limită de rată, eroare de rețea), aplicația reîncearcă automat cu această rezervă. Este permis același furnizor ca cel principal — doar alege un model diferit.</string>
-    <string name="widget_all_metrics_label">Fud AI Astăzi</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Astăzi</string>
     <string name="widget_all_metrics_description">Vezi caloriile, proteinele, carbohidrații și grăsimile de azi într-un singur widget.</string>
     <string name="settings_needs_health_connect">Necesită Health Connect</string>
-    <string name="settings_energy_goals_info">Când este activat, Fud AI folosește intervalul recent de energie măsurată din Health Connect ca bază de menținere la calcularea obiectivelor, în locul estimării prin formulă: energia totală măsurată când sunt disponibile suficiente zile; altfel, media energiei active măsurate + BMR calculat prin formulă. Nu se folosește IA pentru citirea consumului. Necesită Health Connect. Funcționează cu butonul Recalculează și cu Adaptive Goals.</string>
-    <string name="settings_adaptive_goals_info">Aproximativ o dată pe săptămână, la deschiderea aplicației, Fud AI reia automat calculul complet al obiectivelor — același folosit de butonul Recalculează — pe baza profilului tău, a alimentelor înregistrate recent și a tendinței greutății. Dacă Energy Burn este activat, consumul tău măsurat este folosit ca ancoră de întreținere. Dacă IA nu este disponibilă, rularea este omisă silențios. Dezactivarea restaurează obiectivele de dinainte de prima modificare făcută de această funcție. Acesta nu este un sfat medical.</string>
+    <string name="settings_energy_goals_info">Când este activat, Ruoka + Treeni folosește intervalul recent de energie măsurată din Health Connect ca bază de menținere la calcularea obiectivelor, în locul estimării prin formulă: energia totală măsurată când sunt disponibile suficiente zile; altfel, media energiei active măsurate + BMR calculat prin formulă. Nu se folosește IA pentru citirea consumului. Necesită Health Connect. Funcționează cu butonul Recalculează și cu Adaptive Goals.</string>
+    <string name="settings_adaptive_goals_info">Aproximativ o dată pe săptămână, la deschiderea aplicației, Ruoka + Treeni reia automat calculul complet al obiectivelor — același folosit de butonul Recalculează — pe baza profilului tău, a alimentelor înregistrate recent și a tendinței greutății. Dacă Energy Burn este activat, consumul tău măsurat este folosit ca ancoră de întreținere. Dacă IA nu este disponibilă, rularea este omisă silențios. Dezactivarea restaurează obiectivele de dinainte de prima modificare făcută de această funcție. Acesta nu este un sfat medical.</string>
     <string name="ad_label">Reclamă</string>
     <string name="onboarding_plan_adaptive_note">Planul tău se ajustează automat săptămânal pe măsură ce înregistrezi — dezactivează Adaptive Goals din Setări pentru a-l păstra fix.</string>
     <string name="onboarding_feature_snap">Fă o poză — IA o înregistrează</string>
@@ -703,7 +698,7 @@
     <string name="whats_new_v30_workouts">Filă nouă Antrenamente — răsfoiește 873 de exerciții cu fotografii, filtre după mușchi și echipament, căutare și pagini de detalii.</string>
     <string name="whats_new_v30_home">Ecran principal reproiectat: vitezometru pentru calorii, bare verticale de macronutrienți, patru carduri de nutrienți și un buton plutitor de adăugare.</string>
     <string name="whats_new_v30_coach_voice">Întreabă Coach-ul cu vocea, cu noul recorder integrat.</string>
-    <string name="whats_new_v30_share">Trimite orice masă ca link care se deschide direct în Fud AI — pe iPhone sau Android.</string>
+    <string name="whats_new_v30_share">Trimite orice masă ca link care se deschide direct în Ruoka + Treeni — pe iPhone sau Android.</string>
     <string name="whats_new_v30_export">Exportă jurnalul alimentar ca JSON, Markdown sau CSV din Setări.</string>
     <string name="whats_new_v30_reprocess">Reprocesează o masă înregistrată cu AI — ajustează numele, porția sau nota și analizează din nou.</string>
     <string name="whats_new_v30_camera">Cameră + Cameră păstrează ambele cadre, lipite una lângă alta.</string>
@@ -752,7 +747,7 @@
     <string name="settings_calc_maintenance">Menținere și ajustarea obiectivului</string>
     <string name="settings_calc_macro_split">Împărțirea macronutrienților</string>
     <string name="settings_calc_micro_values">Valorile micronutrienților</string>
-    <string name="settings_calc_intro">Obiectivele tale zilnice de calorii și macronutrienți sunt stabilite de AI. Când atingi „Recalculează obiectivele” — sau automat cam o dată pe săptămână dacă Obiectivele adaptive sunt activate — Fud AI trimite furnizorului tău de AI profilul, ecuațiile de referință de mai jos, totalurile nutriționale zilnice agregate care protejează confidențialitatea, măsurători exacte și datate ale greutății, grăsimii corporale și circumferințelor măsurate cu banda, date agregate despre antrenamente — număr, durată, seturi și repetări — și date energetice opționale din Health Connect. Numele alimentelor, notele, fotografiile, ingredientele și numele exercițiilor nu sunt trimise pentru acest calcul. AI pornește de la aceste formule validate științific, apoi le ajustează la datele tale reale pentru a estima menținerea și obiectivele tale reale.</string>
+    <string name="settings_calc_intro">Obiectivele tale zilnice de calorii și macronutrienți sunt stabilite de AI. Când atingi „Recalculează obiectivele” — sau automat cam o dată pe săptămână dacă Obiectivele adaptive sunt activate — Ruoka + Treeni trimite furnizorului tău de AI profilul, ecuațiile de referință de mai jos, totalurile nutriționale zilnice agregate care protejează confidențialitatea, măsurători exacte și datate ale greutății, grăsimii corporale și circumferințelor măsurate cu banda, date agregate despre antrenamente — număr, durată, seturi și repetări — și date energetice opționale din Health Connect. Numele alimentelor, notele, fotografiile, ingredientele și numele exercițiilor nu sunt trimise pentru acest calcul. AI pornește de la aceste formule validate științific, apoi le ajustează la datele tale reale pentru a estima menținerea și obiectivele tale reale.</string>
     <string name="settings_calc_sec_bmr">Metabolismul bazal (BMR)</string>
     <string name="settings_calc_sec_tdee">Consumul energetic zilnic (TDEE)</string>
     <string name="settings_calc_mifflin_name">Ecuația Mifflin-St Jeor</string>
@@ -803,7 +798,7 @@
     <string name="about_whisper_notices_load_error">Notificările terțe Whisper Base nu au putut fi încărcate.</string>
     <string name="cd_remove_image">Elimină imaginea</string>
     <string name="cd_save_photo">Salvează fotografia</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">Fotografie salvată</string>
     <string name="photo_save_failed">Fotografia nu a putut fi salvată</string>
     <string name="photo_save_permission_denied">Acces la fotografii refuzat</string>

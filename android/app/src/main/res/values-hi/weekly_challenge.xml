@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">अभी तक अपडेट नहीं हुआ</string>
     <string name="challenge_intro_title">मिलकर स्वस्थ आदतें बनाएँ</string>
     <string name="challenge_intro_body">साप्ताहिक गतिविधि, पोषण, निरंतरता और जल सेवन के लक्ष्य की तुलना करने के लिए स्वेच्छा से जुड़ें। बिना जुड़े भी आपकी निजी प्रगति स्क्रीन उपलब्ध रहती है।</string>
-    <string name="challenge_privacy_disclosure">Fud AI सभी गणना आपके डिवाइस पर करता है। केवल सप्ताह शुरू होने की तारीख, कुल अंक, योग्य गतिविधि, पोषण, निरंतरता और जल सेवन के दिनों की संख्या तथा गतिविधि की कुल कैलोरी अपलोड होती हैं। भोजन के नाम, मील, वज़न, वर्कआउट का विवरण और Health Connect रिकॉर्ड कभी अपलोड नहीं होते।</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni सभी गणना आपके डिवाइस पर करता है। केवल सप्ताह शुरू होने की तारीख, कुल अंक, योग्य गतिविधि, पोषण, निरंतरता और जल सेवन के दिनों की संख्या तथा गतिविधि की कुल कैलोरी अपलोड होती हैं। भोजन के नाम, मील, वज़न, वर्कआउट का विवरण और Health Connect रिकॉर्ड कभी अपलोड नहीं होते।</string>
     <string name="challenge_public_profile_disclosure">प्रतिभागियों को केवल आपका डिस्प्ले नाम और वैकल्पिक रूप से X या Instagram का कोई एक यूज़रनेम दिखाई देता है। वज़न और वज़न घटाने की कभी रैंकिंग नहीं होती।</string>
     <string name="challenge_points_title">अंक कैसे मिलते हैं</string>
     <string name="challenge_points_explanation" formatted="false">गतिविधि: ऐसा दिन जिसमें वर्कआउट की सकारात्मक कैलोरी दर्ज हो। पोषण: दैनिक कैलोरी आपके लक्ष्य के 85–115% के भीतर हो। निरंतरता: उस दिन कोई भी भोजन दर्ज हो। जल सेवन: ट्रैकिंग चालू होने पर पानी का लक्ष्य पूरा हो। कुल: चारों दिन की गिनती का योग, अधिकतम 28।</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">अगला</string>
     <string name="challenge_join_action">चुनौती में शामिल हों</string>
     <string name="challenge_pending_delete_title">डिलीट करने के लिए कनेक्शन की प्रतीक्षा</string>
-    <string name="challenge_pending_delete_message">इस डिवाइस पर आपकी चुनौती प्रोफ़ाइल छिपा दी गई है। ऑनलाइन होने पर Fud AI रिमोट प्रोफ़ाइल और साप्ताहिक स्कोर डिलीट करने की फिर कोशिश करेगा।</string>
+    <string name="challenge_pending_delete_message">इस डिवाइस पर आपकी चुनौती प्रोफ़ाइल छिपा दी गई है। ऑनलाइन होने पर Ruoka + Treeni रिमोट प्रोफ़ाइल और साप्ताहिक स्कोर डिलीट करने की फिर कोशिश करेगा।</string>
     <string name="challenge_retry_deletion">फिर से डिलीट करने की कोशिश करें</string>
     <string name="challenge_category_overall">कुल</string>
     <string name="challenge_category_activity">गतिविधि</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">1–30 अंग्रेज़ी अक्षर, अंक, बिंदु या अंडरस्कोर इस्तेमाल करें; लगातार या अंत में बिंदु न हो।</string>
     <string name="challenge_rules_consent">मैं कम्युनिटी नियम स्वीकार करता/करती हूँ और किसी की नकल न करने वाली सम्मानजनक प्रोफ़ाइल का उपयोग करूँगा/करूँगी।</string>
     <string name="challenge_read_community_rules">कम्युनिटी नियम पढ़ें</string>
-    <string name="challenge_age_consent">मैं पुष्टि करता/करती हूँ कि मेरी उम्र 18 वर्ष या अधिक है। Fud AI मेरी जन्मतिथि को ऐक्सेस या अपलोड नहीं करता।</string>
+    <string name="challenge_age_consent">मैं पुष्टि करता/करती हूँ कि मेरी उम्र 18 वर्ष या अधिक है। Ruoka + Treeni मेरी जन्मतिथि को ऐक्सेस या अपलोड नहीं करता।</string>
     <string name="challenge_leave_title">चुनौती छोड़ें?</string>
     <string name="challenge_leave_message">इससे आपकी रिमोट चुनौती प्रोफ़ाइल और सभी साप्ताहिक स्कोर डिलीट हो जाते हैं। आपका निजी भोजन, वज़न, वर्कआउट और Health Connect डेटा आपके डिवाइस पर रहता है।</string>
     <string name="challenge_leave_confirm">छोड़ें और डिलीट करें</string>

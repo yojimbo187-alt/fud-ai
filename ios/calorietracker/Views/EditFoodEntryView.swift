@@ -540,7 +540,7 @@ struct EditFoodEntryView: View {
                         }
                         .tint(AppColors.calorie)
                     } footer: {
-                        Text("Send this meal to a friend — they can add it to their Fud AI in one tap.")
+                        Text("Send this meal to a friend — they can add it to their Ruoka + Treeni in one tap.")
                     }
 
                 }

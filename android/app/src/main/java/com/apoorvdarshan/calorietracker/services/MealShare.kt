@@ -23,7 +23,7 @@ import kotlin.math.roundToInt
 
 /**
  * Encodes/decodes a logged meal into a `fudai://add-meal?d=<base64url>` deep link so it can be
- * shared (any app) and imported directly into Fud AI — including cross-platform. The payload
+ * shared (any app) and imported directly into Ruoka + Treeni — including cross-platform. The payload
  * schema is byte-identical to the iOS `MealShare`, so a link produced on one platform imports
  * on the other.
  */
@@ -106,7 +106,7 @@ object MealShare {
             "$prefix${e.name} — ${e.calories} kcal · $macros"
         }.toMutableList()
         lines.add("")
-        lines.add("Open in Fud AI to add:")
+        lines.add("Open in Ruoka + Treeni to add:")
         lines.add(shareLink)
         return lines.joinToString("\n")
     }

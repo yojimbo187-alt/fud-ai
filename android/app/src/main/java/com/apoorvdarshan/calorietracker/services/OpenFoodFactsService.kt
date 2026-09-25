@@ -28,9 +28,9 @@ import kotlin.math.roundToInt
 
 object OpenFoodFactsService {
     private val FIELDS = listOf(
-        "product_name", "generic_name", "brands", "quantity",
+        "product_name", "product_name_fi", "generic_name", "generic_name_fi", "brands", "quantity",
         "product_quantity", "product_quantity_unit", "serving_size", "serving_quantity",
-        "nutriments", "ingredients_text", "allergens_tags", "traces_tags",
+        "nutriments", "ingredients_text", "ingredients_text_fi", "allergens_tags", "traces_tags",
         "nutriscore_grade", "nova_group", "ecoscore_grade", "labels_tags",
         "categories_tags", "image_front_url"
     ).joinToString(",")
@@ -175,10 +175,16 @@ object OpenFoodFactsService {
                 add(ServingUnitOption(unit = "package", gramsPerUnit = it, quantity = 1.0))
             }
         }
+        val prefersFinnish = Locale.getDefault().language.equals("fi", ignoreCase = true)
+        val ingredientsText = if (prefersFinnish) {
+            firstNonEmpty(product.string("ingredients_text_fi"), product.string("ingredients_text"))
+        } else {
+            firstNonEmpty(product.string("ingredients_text"), product.string("ingredients_text_fi"))
+        }
         val metadata = FoodProductMetadata(
             barcode = barcode,
             packageQuantity = product.string("quantity"),
-            ingredientsText = product.string("ingredients_text"),
+            ingredientsText = ingredientsText,
             allergens = displayTags(product.stringList("allergens_tags"), 16),
             traces = displayTags(product.stringList("traces_tags"), 16),
             nutriScore = normalizedScore(product.string("nutriscore_grade")),
@@ -294,9 +300,14 @@ object OpenFoodFactsService {
     }
 
     private fun productName(product: JsonObject, barcode: String): String {
-        val primary = firstNonEmpty(
-            product.string("product_name"),
-            product.string("generic_name")
+        val primary = if (Locale.getDefault().language.equals("fi", ignoreCase = true)) {
+            firstNonEmpty(
+                product.string("product_name_fi"), product.string("generic_name_fi"),
+                product.string("product_name"), product.string("generic_name")
+            )
+        } else firstNonEmpty(
+            product.string("product_name"), product.string("generic_name"),
+            product.string("product_name_fi"), product.string("generic_name_fi")
         )
         val brand = product.string("brands").orEmpty()
             .split(",")

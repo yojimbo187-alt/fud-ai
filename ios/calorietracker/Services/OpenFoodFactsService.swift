@@ -150,9 +150,9 @@ enum OpenFoodFactsService {
     }
 
     private static let fields = [
-        "product_name", "generic_name", "brands", "quantity",
+        "product_name", "product_name_fi", "generic_name", "generic_name_fi", "brands", "quantity",
         "product_quantity", "product_quantity_unit", "serving_size", "serving_quantity",
-        "nutriments", "ingredients_text", "allergens_tags", "traces_tags",
+        "nutriments", "ingredients_text", "ingredients_text_fi", "allergens_tags", "traces_tags",
         "nutriscore_grade", "nova_group", "ecoscore_grade", "labels_tags",
         "categories_tags", "image_front_url",
     ].joined(separator: ",")
@@ -212,10 +212,14 @@ enum OpenFoodFactsService {
         let novaGroup = product.novaGroup
             .map { Int($0.value.rounded()) }
             .flatMap { (1...4).contains($0) ? $0 : nil }
+        let prefersFinnish = Locale.current.language.languageCode?.identifier.lowercased() == "fi"
+        let ingredientsText = prefersFinnish
+            ? firstNonEmpty(product.ingredientsTextFinnish, product.ingredientsText)
+            : firstNonEmpty(product.ingredientsText, product.ingredientsTextFinnish)
         let metadata = FoodProductMetadata(
             barcode: barcode,
             packageQuantity: firstNonEmpty(product.quantity),
-            ingredientsText: firstNonEmpty(product.ingredientsText),
+            ingredientsText: ingredientsText,
             allergens: displayTags(product.allergenTags, limit: 16),
             traces: displayTags(product.traceTags, limit: 16),
             nutriScore: normalizedScore(product.nutriScore),
@@ -283,7 +287,10 @@ enum OpenFoodFactsService {
     }
 
     private static func productName(from product: OpenFoodFactsProduct, barcode: String) -> String {
-        let primary = firstNonEmpty(product.productName, product.genericName)
+        let prefersFinnish = Locale.current.language.languageCode?.identifier.lowercased() == "fi"
+        let primary = prefersFinnish
+            ? firstNonEmpty(product.productNameFinnish, product.genericNameFinnish, product.productName, product.genericName)
+            : firstNonEmpty(product.productName, product.genericName, product.productNameFinnish, product.genericNameFinnish)
         let brand = product.brands?
             .split(separator: ",")
             .first
@@ -428,7 +435,9 @@ enum OpenFoodFactsService {
 
     private struct OpenFoodFactsProduct: Decodable {
         let productName: String?
+        let productNameFinnish: String?
         let genericName: String?
+        let genericNameFinnish: String?
         let brands: String?
         let servingSize: String?
         let servingQuantity: FlexibleDouble?
@@ -437,6 +446,7 @@ enum OpenFoodFactsService {
         let productQuantity: FlexibleDouble?
         let productQuantityUnit: String?
         let ingredientsText: String?
+        let ingredientsTextFinnish: String?
         let allergenTags: [String]?
         let traceTags: [String]?
         let nutriScore: String?
@@ -448,7 +458,9 @@ enum OpenFoodFactsService {
 
         private enum CodingKeys: String, CodingKey {
             case productName = "product_name"
+            case productNameFinnish = "product_name_fi"
             case genericName = "generic_name"
+            case genericNameFinnish = "generic_name_fi"
             case brands
             case servingSize = "serving_size"
             case servingQuantity = "serving_quantity"
@@ -457,6 +469,7 @@ enum OpenFoodFactsService {
             case productQuantity = "product_quantity"
             case productQuantityUnit = "product_quantity_unit"
             case ingredientsText = "ingredients_text"
+            case ingredientsTextFinnish = "ingredients_text_fi"
             case allergenTags = "allergens_tags"
             case traceTags = "traces_tags"
             case nutriScore = "nutriscore_grade"

@@ -159,6 +159,15 @@ struct OnDeviceFoodService {
         let userContext = AIProviderSettings.currentUserContext.map {
             "\n\nUSER-SUPPLIED CONTEXT\n\($0)"
         } ?? ""
+        let finnishContext = Locale.autoupdatingCurrent.language.languageCode?.identifier.lowercased() == "fi"
+            ? """
+
+            FINNISH FOOD AND LABEL CONTEXT
+            - Understand Finnish food names, compound words, grocery brands, dishes, and notes. Keep official Finnish product names and answer with a Finnish food name when appropriate.
+            - Finnish/EU labels commonly use decimal commas and values per 100 g or 100 ml: energia, rasva, josta tyydyttyneitä, hiilihydraatit, josta sokereita, ravintokuitu, proteiini, and suola.
+            - Suola is salt, not sodium. If only salt is listed, sodium = salt × 0.3934. Distinguish annos, pakkaus, kpl, and dl.
+            """
+            : ""
         return """
         You are a precise nutrition database. Given a food description or meal photo(s) in any language, \
         return accurate nutritional values using these rules:
@@ -190,6 +199,7 @@ struct OnDeviceFoodService {
         - Examples: slice for pizza/bread/cake, piece for fruit/cookie/egg, cup for oatmeal/soup, \
           tbsp for peanut butter/sauces.
         - Leave servingUnit empty ("") when grams is the clearest unit.
+        \(finnishContext)
         \(userContext)
         """
     }

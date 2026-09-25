@@ -2276,7 +2276,7 @@ fun BodyMeasurementsScreen(container: AppContainer, onBack: () -> Unit) {
                 Text(stringResource(R.string.body_measurements_title), fontSize = 28.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground)
                 Spacer(Modifier.height(6.dp))
                 Text(
-                    "Optional. Fud AI turns these into waist-to-hip, waist-to-height, body-fat %, and frame size, and reads them when it recalculates your goals and in Coach.",
+                    "Optional. Ruoka + Treeni turns these into waist-to-hip, waist-to-height, body-fat %, and frame size, and reads them when it recalculates your goals and in Coach.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
                 )

@@ -263,7 +263,7 @@ struct GeminiService {
         let bodyFat = profile.bodyFatPercentage.map { "\(Int(($0 * 100).rounded()))%" } ?? "not set"
 
         let prompt = """
-        You are a concise nutrition coach inside Fud AI. The user is reviewing a meal before logging it.
+        You are a concise nutrition coach inside Ruoka + Treeni. The user is reviewing a meal before logging it.
         Analyze this what-if scenario only. Do not say the meal has already been logged. Do not change the user's goals.
 
         Return 2-4 short plain-English sentences, no markdown and no bullets.
@@ -628,7 +628,7 @@ struct GeminiService {
         FORMULAS
         - BMR (Mifflin-St Jeor): base = 10*weightKg + 6.25*heightCm - 5*age - 161; if male add 166; female/other use base.
         - BMR (Katch-McArdle, used automatically when body fat is known): 370 + 21.6 * (1 - bodyFatFraction) * weightKg.
-        - TDEE = BMR * activity multiplier. Multipliers: sedentary 1.2, light 1.375, moderate 1.465, active 1.55, very active 1.725, extra active 1.9.
+        - TDEE = BMR * (activity multiplier + training-program adjustment). Activity multipliers: sedentary 1.2, light 1.375, moderate 1.465, active 1.55, very active 1.725, extra active 1.9. Program adjustments: active recovery 0.0, full body 0.025, upper/lower 0.04, push/pull/legs/upper/lower 0.055.
         - Calorie target = TDEE + adjustment. adjustment = 0 for maintain; lose: -(weeklyChangeKg*7700/7); gain: +(weeklyChangeKg*7700/7).
         - Guarded empirical maintenance: for a matching 14/28/90-day window, maintenance ≈ average likely-complete intake − (weightChangeKg × 7700 ÷ weightSpanDays). Use only when evidence confidence is medium/high, at least half the window is likely-complete, there are at least 2 weigh-ins spanning 14+ days, and the implied trend is physiologically plausible. Never use partial/missing intake, never divide by the nominal window when the reported weight span differs, and ignore this estimate when those guards fail. Priority: measured Energy Burn anchor when available; otherwise a well-supported empirical estimate; otherwise formula TDEE.
         - Protein: aim NEAR the formula protein value shown below — these activity rates are full-bodyweight equivalents (sedentary 0.8, light 1.2, moderate 1.6, active 1.8, very active 2.0, extra active 2.2 g/kg of full bodyweight; +0.2 if losing). You may choose a value within about ±15% of it based on the weight goal and the observed history (lean toward the higher end during a calorie deficit to preserve muscle). Do NOT reinterpret these rates as lean-mass rates or scale protein down merely to fit a lower calorie target.
@@ -644,6 +644,7 @@ struct GeminiService {
         - Weight: \(canonicalWeight) (preferred display: \(weight))
         - Body fat: \(bodyFat)
         - Activity level: \(profile.activityLevel.displayName)
+        - Training program: \(profile.activeTrainingProgram.title) (\(profile.activeTrainingProgram.weeklyTrainingDays) days/week)
         - Weight goal: \(profile.goal.displayName)
         - Weekly change preference: \(weekly)
         - Goal weight: \(goalWeight)
@@ -902,6 +903,7 @@ struct GeminiService {
     }
 
     private static func callAI(prompt: String, images: [UIImage], jsonResponse: Bool = true) async throws -> String {
+        let prompt = finnishAwarePrompt(prompt)
         if AIModeSettings.isHosted {
             let capped = Array(images.prefix(HostedAIConstants.maxHostedImages))
             let imageDataList = try capped.map { try encodedJPEGData(for: $0) }
@@ -968,6 +970,23 @@ struct GeminiService {
                     fallbackName: fallback.provider.displayName, detail: detail)
             }
         }
+    }
+
+    /// One shared Finnish context covers every food entry route because text, voice transcripts,
+    /// camera photos, library photos, multi-photo meals, and label scans all dispatch here.
+    private static func finnishAwarePrompt(_ prompt: String) -> String {
+        guard Locale.autoupdatingCurrent.language.languageCode?.identifier.lowercased() == "fi" else {
+            return prompt
+        }
+        return """
+        Finnish food and label context (apply to this request):
+        - Understand Finnish food names, compound words, grocery brands, dishes, and user notes. Keep a Finnish product's official name; return the food name in Finnish when appropriate.
+        - Finnish/EU labels commonly report values per 100 g or 100 ml and use decimal commas. Read energia (kJ/kcal), rasva, josta tyydyttyneitä, hiilihydraatit, josta sokereita, ravintokuitu, proteiini, and suola.
+        - Do not confuse salt with sodium. When only suola/salt is listed, sodium is salt × 0.3934; keep grams, milligrams, portions (annos), packages (pakkaus), pieces (kpl), and decilitres (dl) distinct.
+        - Parse both Finnish and English text that appear together on packaging.
+
+        \(prompt)
+        """
     }
 
     static func encodedJPEGData(for image: UIImage, maxDimension: CGFloat = 1_600) throws -> Data {
@@ -1170,7 +1189,7 @@ struct GeminiService {
         }
         if provider == .openrouter {
             headers["HTTP-Referer"] = "https://github.com/apoorvdarshan/fud-ai"
-            headers["X-Title"] = "Fud AI"
+            headers["X-Title"] = "Ruoka + Treeni"
         }
 
         func request(_ requestPrompt: String, compactRetry: Bool) async throws -> OpenAITextResponse {

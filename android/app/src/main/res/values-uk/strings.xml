@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Калорії Fud AI</string>
+    <string name="widget_calorie_label">Калорії Ruoka + Treeni</string>
     <string name="widget_calorie_description">Переглядайте сьогоднішні калорії та макроси.</string>
-    <string name="widget_protein_label">Білок Fud AI</string>
+    <string name="widget_protein_label">Білок Ruoka + Treeni</string>
     <string name="widget_protein_description">Переглядайте сьогоднішній прогрес споживання білка.</string>
-    <string name="widget_water_label">Вода Fud AI</string>
+    <string name="widget_water_label">Вода Ruoka + Treeni</string>
     <string name="widget_water_description">Переглядайте сьогоднішній прогрес споживання води.</string>
-    <string name="widget_water_disabled">Увімкніть відстеження води у Fud AI</string>
+    <string name="widget_water_disabled">Увімкніть відстеження води у Ruoka + Treeni</string>
     <string name="widget_open_to_refresh">Відкрийте застосунок, щоб оновити</string>
-    <string name="widget_refresh_needed_description">Віджет Fud AI потребує оновлення. Відкрийте Fud AI.</string>
+    <string name="widget_refresh_needed_description">Віджет Ruoka + Treeni потребує оновлення. Відкрийте Ruoka + Treeni.</string>
     <string name="widget_today">Сьогодні</string>
     <string name="widget_protein">Білок</string>
     <string name="widget_calories">Калорії</string>
@@ -226,7 +226,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Назад</string>
-    <string name="onboarding_logo_description">Логотип Fud AI</string>
+    <string name="onboarding_logo_description">Логотип Ruoka + Treeni</string>
     <string name="onboarding_welcome_line1">Харчуйтеся розумно,</string>
     <string name="onboarding_welcome_line2">живіть краще</string>
     <string name="onboarding_welcome_subtitle">Просто сфотографуйте, відстежуйте й досягайте цілей.\nВідстежувати раціон — тепер простіше.</string>
@@ -310,7 +310,7 @@
     <string name="onboarding_health_connect">Підключитися</string>
 
     <string name="onboarding_ai_choice_title">Налаштуй свій ШІ</string>
-    <string name="onboarding_ai_choice_subtitle">Обери, як використовувати ШІ у Fud AI. Застосунок залишається безкоштовним у будь-якому разі.</string>
+    <string name="onboarding_ai_choice_subtitle">Обери, як використовувати ШІ у Ruoka + Treeni. Застосунок залишається безкоштовним у будь-якому разі.</string>
     <string name="onboarding_ai_byok_subtitle">Додай свій ключ провайдера ШІ — підтримуються Gemini, OpenAI, Groq та інші.</string>
     <string name="onboarding_ai_byok_card_title">Свій ключ</string>
     <string name="onboarding_ai_byok_card_subtitle">Безкоштовно назавжди — без обмежень на твоєму ключі. Gemini, OpenAI, Groq та інші.</string>
@@ -554,7 +554,7 @@
         <item quantity="other">%1$d розрахованих витрат · торкніться, щоб переглянути або видалити</item>
     </plurals>
     <string name="progress_workout_delete_title">Видалити запис тренування?</string>
-    <string name="progress_workout_delete_message">Видаляє дані про спалені калорії з Fud AI і Health Connect. Ваш план щоденника тренування залишається збереженим.</string>
+    <string name="progress_workout_delete_message">Видаляє дані про спалені калорії з Ruoka + Treeni і Health Connect. Ваш план щоденника тренування залишається збереженим.</string>
     <plurals name="progress_history_count_format">
         <item quantity="one">%1$d запис · торкніться, щоб переглянути або видалити</item>
         <item quantity="few">%1$d записи · торкніться, щоб переглянути або видалити</item>
@@ -774,7 +774,7 @@
     <string name="home_menu_reuse_meal">Повторити прийом їжі</string>
     <string name="settings_notif_water_reminder">Нагадування про воду</string>
     <string name="settings_battery_opt">Оптимізація батареї</string>
-    <string name="settings_battery_opt_value">Додати Fud AI до білого списку</string>
+    <string name="settings_battery_opt_value">Додати Ruoka + Treeni до білого списку</string>
 
     <string name="settings_ai_provider">Постачальник</string>
     <string name="settings_ai_model">Модель</string>
@@ -804,9 +804,9 @@
     <string name="settings_permissions">Дозволи</string>
     <string name="settings_energy_goals">Цілі спалювання енергії</string>
     <string name="settings_needs_health_connect">Потрібен Health Connect</string>
-    <string name="settings_energy_goals_info">Якщо ввімкнено, Fud AI використовує виміряні спалені калорії з Health Connect — 14-денне середнє значення активної + базової енергії — як основу для розрахунку цілей замість оцінки за формулою. ШІ не використовується для зчитування ваших спалених калорій. Потрібен Health Connect. Працює з кнопкою «Перерахувати цілі» та з Адаптивними цілями.</string>
+    <string name="settings_energy_goals_info">Якщо ввімкнено, Ruoka + Treeni використовує виміряні спалені калорії з Health Connect — 14-денне середнє значення активної + базової енергії — як основу для розрахунку цілей замість оцінки за формулою. ШІ не використовується для зчитування ваших спалених калорій. Потрібен Health Connect. Працює з кнопкою «Перерахувати цілі» та з Адаптивними цілями.</string>
     <string name="settings_adaptive_goals">Адаптивні цілі</string>
-    <string name="settings_adaptive_goals_info">Приблизно раз на тиждень, коли ви відкриваєте застосунок, Fud AI автоматично повторно запускає повний розрахунок цілей — той самий, що й кнопка «Перерахувати» — на основі вашого профілю, останніх записаних прийомів їжі та динаміки ваги. Якщо ввімкнено «Спалювання енергії», він використовує виміряне спалювання як основу. Процес тихо пропускається, якщо ШІ недоступний. Вимкнення цієї функції відновлює цілі, які були до того, як Адаптивні цілі змінили їх уперше. Це не є медичною порадою.</string>
+    <string name="settings_adaptive_goals_info">Приблизно раз на тиждень, коли ви відкриваєте застосунок, Ruoka + Treeni автоматично повторно запускає повний розрахунок цілей — той самий, що й кнопка «Перерахувати» — на основі вашого профілю, останніх записаних прийомів їжі та динаміки ваги. Якщо ввімкнено «Спалювання енергії», він використовує виміряне спалювання як основу. Процес тихо пропускається, якщо ШІ недоступний. Вимкнення цієї функції відновлює цілі, які були до того, як Адаптивні цілі змінили їх уперше. Це не є медичною порадою.</string>
     <string name="settings_refresh_energy_goals">Оновити цілі спалювання енергії</string>
     <string name="settings_clear_food_log">Очистити журнал їжі</string>
     <string name="settings_delete_all_data">Видалити всі дані</string>
@@ -823,7 +823,7 @@
     <string name="settings_rebalance_blocked_title">Неможливо збалансувати</string>
     <string name="settings_rebalance_blocked_message">Калорії заблоковано, і два інші макроси також заблоковано, тому не залишилося нічого, що могло б компенсувати цю зміну. Розблокуйте калорії або інший макрос, а потім спробуйте ще раз.</string>
     <string name="settings_adaptive_locks_title">Адаптивні цілі ввімкнено</string>
-    <string name="settings_adaptive_locks_message">Вимкніть Адаптивні цілі, щоб заблокувати або встановити власні калорії та макроси. Поки вони ввімкнені, Fud AI щотижня перераховує їх для вас.</string>
+    <string name="settings_adaptive_locks_message">Вимкніть Адаптивні цілі, щоб заблокувати або встановити власні калорії та макроси. Поки вони ввімкнені, Ruoka + Treeni щотижня перераховує їх для вас.</string>
     <string name="settings_recalc_title">Перерахувати цілі?</string>
     <string name="settings_recalc_message">Скидає калорії та макроси до стандартних значень за формулою на основі вашого зросту, ваги, активності та мети. Будь-які закріплені макроси очищаються.</string>
     <string name="settings_recalc_confirm">Перерахувати</string>
@@ -832,16 +832,16 @@
     <string name="settings_invalid_goal_gain">Для мети «Набір маси» ціль має бути вищою за вашу поточну вагу.</string>
     <string name="settings_permission_title">Потрібен дозвіл</string>
 
-    <string name="settings_notifications_denied">Дозвіл на сповіщення відхилено. Увімкніть його в Системних налаштуваннях → Застосунки → Fud AI → Сповіщення, щоб отримувати нагадування.</string>
+    <string name="settings_notifications_denied">Дозвіл на сповіщення відхилено. Увімкніть його в Системних налаштуваннях → Застосунки → Ruoka + Treeni → Сповіщення, щоб отримувати нагадування.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Час зважитися</string>
     <string name="notif_weight_log_text">Запишіть сьогоднішню вагу, щоб графік прогресу залишався точним.</string>
     <string name="notif_body_fat_log_title">Перевірка відсотка жиру</string>
     <string name="notif_body_fat_log_text">Запишіть сьогоднішній % жиру, щоб відстежувати динаміку складу тіла.</string>
-    <string name="settings_health_denied">Health Connect не надав доступу. Відкрийте Health Connect і дозвольте типи даних, які Fud AI має синхронізувати. Цілі на основі енергії потребують як Активних, так і Загальних калорій.</string>
+    <string name="settings_health_denied">Health Connect не надав доступу. Відкрийте Health Connect і дозвольте типи даних, які Ruoka + Treeni має синхронізувати. Цілі на основі енергії потребують як Активних, так і Загальних калорій.</string>
     <string name="settings_health_unavailable">Встановіть або оновіть Health Connect із Play Store, а потім знову натисніть перемикач.</string>
-    <string name="settings_health_profile_unsupported">Health Connect може показувати Fud AI як схвалений, але Android не дозволяє використовувати Health Connect із Робочого профілю, Приватного простору або клонованого профілю застосунку. Встановіть і відкрийте Fud AI в основному профілі телефону.</string>
+    <string name="settings_health_profile_unsupported">Health Connect може показувати Ruoka + Treeni як схвалений, але Android не дозволяє використовувати Health Connect із Робочого профілю, Приватного простору або клонованого профілю застосунку. Встановіть і відкрийте Ruoka + Treeni в основному профілі телефону.</string>
     <string name="settings_health_system_unavailable">Системна служба Health Connect недоступна. Вона вимагає Android 9 або новішої версії; на новішому телефоні встановіть оновлення системи Android та Google Play, перезавантажте пристрій і спробуйте ще раз.</string>
     <string name="settings_get_health_connect">Отримати Health Connect</string>
 
@@ -913,9 +913,7 @@
     <string name="about_share">Поділитися застосунком</string>
     <string name="about_open_source">Відкритий вихідний код (MIT)</string>
     <string name="about_star_github">Поставити зірку на GitHub</string>
-    <string name="about_vote_ph">Проголосувати на Product Hunt</string>
-    <string name="about_leave_tip_kofi">Залишити чайові на Ko-fi</string>
-    <string name="about_report_issue">Повідомити про проблему на GitHub</string>
+    <string name="about_vote_ph">Проголосувати на Product Hunt</string>    <string name="about_report_issue">Повідомити про проблему на GitHub</string>
     <string name="about_report_issue_discord">Повідомити про проблему в Discord</string>
     <string name="about_request_feature">Запропонувати функцію на GitHub</string>
     <string name="about_request_feature_discord">Запропонувати функцію в Discord</string>
@@ -929,18 +927,15 @@
     <string name="about_litert_notices">Сповіщення сторонніх компонентів LiteRT-LM</string>
     <string name="about_litert_notices_load_error">Не вдалося завантажити сповіщення сторонніх компонентів LiteRT-LM.</string>
     <string name="about_category_app_updates">Додаток і оновлення</string>
-    <string name="about_category_support">Підтримати Fud AI</string>
+    <string name="about_category_support">Підтримати Ruoka + Treeni</string>
     <string name="about_category_help_feedback">Допомога та зворотний зв\'язок</string>
     <string name="about_category_community">Спільнота</string>
     <string name="about_category_legal">Правова інформація</string>
     <string name="about_category_join_beta">Приєднатися до бети</string>
-    <string name="about_beta_intro">Спробуйте нові зміни Fud AI до появи в Play Store. Бета-збірки можуть бути незавершеними.</string>
-    <string name="about_beta_steps">Приєднайтеся до Discord Fud AI і відкрийте #beta-android. Коли там з’явиться посилання на тест Play, приєднайтеся й оновіть Fud AI з Play Store. Якщо щось зламається, напишіть /bug і вкажіть версію з налаштувань.</string>
-    <string name="about_beta_not_open">Тест Play ще не відкрито. Посилання з’явиться в #beta-android.</string>
-    <string name="about_made_by">Автор: Apoorv Darshan</string>
-    <string name="about_with_care">з турботою, для кожного</string>
-    <string name="about_share_message">Я відстежую своє харчування з Fud AI — роблю фото, кажу голосом або пишу текст, а ШІ рахує калорії. Це безкоштовно, з відкритим кодом, а ваші дані залишаються на пристрої.\n\nЗавантажити: https://fud-ai.app</string>
-    <string name="about_share_chooser">Поділитися Fud AI</string>
+    <string name="about_beta_intro">Спробуйте нові зміни Ruoka + Treeni до появи в Play Store. Бета-збірки можуть бути незавершеними.</string>
+    <string name="about_beta_steps">Приєднайтеся до Discord Ruoka + Treeni і відкрийте #beta-android. Коли там з’явиться посилання на тест Play, приєднайтеся й оновіть Ruoka + Treeni з Play Store. Якщо щось зламається, напишіть /bug і вкажіть версію з налаштувань.</string>
+    <string name="about_beta_not_open">Тест Play ще не відкрито. Посилання з’явиться в #beta-android.</string>    <string name="about_share_message">Я відстежую своє харчування з Ruoka + Treeni — роблю фото, кажу голосом або пишу текст, а ШІ рахує калорії. Це безкоштовно, з відкритим кодом, а ваші дані залишаються на пристрої.\n\nЗавантажити: https://fud-ai.app</string>
+    <string name="about_share_chooser">Поділитися Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Нагадування про серію</string>
@@ -957,7 +952,7 @@
     <string name="notif_summary_surplus">Спожито %1$d ккал · Спалено %2$d · Розрахунковий профіцит %3$d ккал</string>
     <string name="notif_summary_balanced">Спожито %1$d ккал · Спалено %2$d · Розрахунковий баланс</string>
 
-    <string name="widget_all_metrics_label">Fud AI Сьогодні</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Сьогодні</string>
     <string name="widget_all_metrics_description">Переглядайте сьогоднішні калорії, білки, вуглеводи та жири в одному віджеті.</string>
 
     <!-- Workouts tab (exercise library ported from Delts) -->
@@ -973,7 +968,7 @@
     <string name="hide_details">Сховати деталі</string>
     <string name="instructions">Інструкції</string>
     <string name="watch_on_youtube">Дивитися на YouTube</string>
-    <string name="watch_on_youtube_hint">Відкриває пошук YouTube — це не офіційне відео Fud AI</string>
+    <string name="watch_on_youtube_hint">Відкриває пошук YouTube — це не офіційне відео Ruoka + Treeni</string>
     <string name="label_category">Категорія</string>
     <string name="label_equipment">Обладнання</string>
     <string name="label_force">Зусилля</string>
@@ -1001,7 +996,7 @@
     <string name="whats_new_v30_workouts">Нова вкладка «Тренування» — переглядайте 873 вправи з фотографіями, фільтрами за м\'язами та обладнанням, пошуком і сторінками з деталями.</string>
     <string name="whats_new_v30_home">Редизайн головної сторінки: шкала калорій у вигляді спідометра, вертикальні індикатори макросів, чотири картки нутрієнтів і плаваюча кнопка додавання.</string>
     <string name="whats_new_v30_coach_voice">Запитуйте Тренера голосом за допомогою нового вбудованого диктофона.</string>
-    <string name="whats_new_v30_share">Діліться будь-якою стравою як посиланням, що відкривається прямо у Fud AI на iPhone або Android.</string>
+    <string name="whats_new_v30_share">Діліться будь-якою стравою як посиланням, що відкривається прямо у Ruoka + Treeni на iPhone або Android.</string>
     <string name="whats_new_v30_export">Експортуйте свій щоденник харчування у форматах JSON, Markdown або CSV з Налаштувань.</string>
     <string name="whats_new_v30_reprocess">Повторна обробка записаної страви за допомогою ШІ — налаштуйте назву, порцію або нотатку та проаналізуйте знову.</string>
     <string name="whats_new_v30_camera">Функція «Камера + Камера» зберігає обидва знімки, об\'єднані поруч.</string>
@@ -1021,7 +1016,7 @@
     <string name="cloud_backup_now">Резервне копіювання зараз</string>
     <string name="cloud_backup_restore_now">Відновити зараз</string>
     <string name="cloud_backup_delete">Видалити хмарну резервну копію</string>
-    <string name="cloud_backup_delete_message">Видаляє файл Fud AI з Google Drive. Цей телефон залишається без змін.</string>
+    <string name="cloud_backup_delete_message">Видаляє файл Ruoka + Treeni з Google Drive. Цей телефон залишається без змін.</string>
     <string name="cloud_backup_last">Остання резервна копія: %1$s</string>
     <string name="cloud_backup_signed_in">Увійшли як %1$s</string>
     <string name="cloud_backup_turn_on">Увімкнути</string>
@@ -1081,7 +1076,7 @@
     <string name="cd_open_camera">Відкрити камеру</string>
     <string name="cd_close_camera">Закрити камеру</string>
     <string name="cd_save_photo">Зберегти фото</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">Фото збережено</string>
     <string name="photo_save_failed">Не вдалося зберегти фото</string>
     <string name="photo_save_permission_denied">Доступ до фото заборонено</string>
@@ -1164,7 +1159,7 @@
     <string name="settings_macro_auto_label_format">%1$s (авто)</string>
     <string name="vm_health_connect_needed">Потрібен Health Connect</string>
     <string name="vm_not_enough_energy">Недостатньо даних про енергію</string>
-    <string name="vm_adaptive_on_message">Адаптивні цілі ввімкнено. Fud AI перевірятиме їх раз на тиждень, коли збереться достатньо даних про їжу та вагу.</string>
+    <string name="vm_adaptive_on_message">Адаптивні цілі ввімкнено. Ruoka + Treeni перевірятиме їх раз на тиждень, коли збереться достатньо даних про їжу та вагу.</string>
     <string name="vm_goals_recalculated">Цілі перераховано</string>
     <plurals name="import_add_meals_title">
         <item quantity="one">Додати %1$d спільну страву</item>
@@ -1202,11 +1197,11 @@
     <string name="notif_channel_body_fat">Нагадування про відсоток жиру</string>
     <string name="notif_channel_body_fat_desc">Щоденне нагадування записати показник жиру в організмі.</string>
     <string name="notif_channel_updates">Оновлення застосунку</string>
-    <string name="notif_channel_updates_desc">Нова версія Fud AI доступна в Play Store.</string>
+    <string name="notif_channel_updates_desc">Нова версія Ruoka + Treeni доступна в Play Store.</string>
     <string name="notif_channel_water">Нагадування про воду</string>
     <string name="notif_channel_water_desc">Щоденне нагадування випити і записати воду.</string>
     <string name="notif_water_title">Час пити воду</string>
-    <string name="notif_water_text">Випийте трохи води та запишіть це у Fud AI.</string>
+    <string name="notif_water_text">Випийте трохи води та запишіть це у Ruoka + Treeni.</string>
     <string name="notif_channel_fasting">Голодування</string>
     <string name="notif_channel_fasting_desc">Сповіщає, коли активне голодування досягає своєї цілі.</string>
     <string name="notif_fasting_goal_title">Ціль голодування досягнута</string>
@@ -1229,8 +1224,8 @@
     <string name="water_progress">%1$d / %2$d мл</string>
     <string name="unit_ml">мл</string>
     <string name="notif_update_title">Доступне оновлення</string>
-    <string name="notif_update_text">Нова версія Fud AI готова. Торкніться, щоб оновити.</string>
-    <string name="settings_calc_intro">Ваші щоденні цілі щодо калорій та макросів встановлюються ШІ. Коли ви натискаєте «Перерахувати цілі» (або автоматично приблизно раз на тиждень, якщо ввімкнено «Адаптивні цілі»), Fud AI надсилає ваш профіль, наведені нижче еталонні рівняння, вашу нещодавно записану їжу та динаміку ваги вашому постачальнику ШІ. Він бере за основу ці перевірені наукою формули, а потім коригує їх відповідно до ваших реальних даних, щоб оцінити ваші справжні потреби для підтримки ваги та цілі.</string>
+    <string name="notif_update_text">Нова версія Ruoka + Treeni готова. Торкніться, щоб оновити.</string>
+    <string name="settings_calc_intro">Ваші щоденні цілі щодо калорій та макросів встановлюються ШІ. Коли ви натискаєте «Перерахувати цілі» (або автоматично приблизно раз на тиждень, якщо ввімкнено «Адаптивні цілі»), Ruoka + Treeni надсилає ваш профіль, наведені нижче еталонні рівняння, вашу нещодавно записану їжу та динаміку ваги вашому постачальнику ШІ. Він бере за основу ці перевірені наукою формули, а потім коригує їх відповідно до ваших реальних даних, щоб оцінити ваші справжні потреби для підтримки ваги та цілі.</string>
     <string name="settings_calc_sec_bmr">Базовий метаболізм (BMR)</string>
     <string name="settings_calc_sec_tdee">Щоденні витрати енергії (TDEE)</string>
     <string name="settings_calc_mifflin_name">Рівняння Міффліна-Сан Жеора</string>
@@ -1257,7 +1252,7 @@
     <string name="settings_calc_split_citation">Morton RW, et al. (2018). “A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength.” Br J Sports Med 52(6):376–384.</string>
     <string name="settings_calc_micro_citation">Оцінки базуються на навчальних даних базової моделі ШІ (USDA FoodData Central, етикетки виробників, наукова література). Точність залежить від продукту, видимості розміру порції та моделі провайдера. Завжди звіряйтеся з етикетками продуктів, які часто записуєте.</string>
     <string name="settings_not_medical_title">Не є медичною порадою</string>
-    <string name="settings_not_medical_body">Fud AI — це інструмент для оцінювання, а не клінічний прилад. Прогностичні рівняння мають властиву їм похибку (зазвичай ±10%% для BMR). Проконсультуйтеся з лікарем або дієтологом перед значними змінами в дієті, особливо якщо ви маєте медичні протипоказання, вагітні, годуєте грудьми, вам не виповнилося 18 років або ви маєте розлади харчової поведінки.</string>
+    <string name="settings_not_medical_body">Ruoka + Treeni — це інструмент для оцінювання, а не клінічний прилад. Прогностичні рівняння мають властиву їм похибку (зазвичай ±10%% для BMR). Проконсультуйтеся з лікарем або дієтологом перед значними змінами в дієті, особливо якщо ви маєте медичні протипоказання, вагітні, годуєте грудьми, вам не виповнилося 18 років або ви маєте розлади харчової поведінки.</string>
     <string name="settings_waist_cm_format">Талія %1$.0f см</string>
     <string name="settings_waist_in_format">Талія %1$.0f дюйм.</string>
     <string name="export_range_today">Сьогодні</string>
@@ -1265,8 +1260,8 @@
     <string name="export_range_month">Цього місяця</string>
     <string name="export_range_all">За весь час</string>
     <string name="export_range_custom">Власний</string>
-    <string name="vm_health_connect_needed_msg">Дозвольте Fud AI читати ваші Активні та Загальні калорії в Health Connect, а потім знову ввімкніть «Спалювання енергії».</string>
-    <string name="vm_not_enough_energy_msg">Fud AI потребує даних Health Connect про енергію щонайменше за 3 останні дні, перш ніж зможе використовувати ваше виміряне спалювання.</string>
+    <string name="vm_health_connect_needed_msg">Дозвольте Ruoka + Treeni читати ваші Активні та Загальні калорії в Health Connect, а потім знову ввімкніть «Спалювання енергії».</string>
+    <string name="vm_not_enough_energy_msg">Ruoka + Treeni потребує даних Health Connect про енергію щонайменше за 3 останні дні, перш ніж зможе використовувати ваше виміряне спалювання.</string>
     <string name="nutrient_short_sat_fat">Насич. жири</string>
     <string name="nutrient_short_vit_a">Віт A</string>
     <string name="nutrient_short_vit_c">Віт C</string>
@@ -1292,7 +1287,7 @@
     <string name="progressive_meal_title">Покроковий запис їжі</string>
     <string name="progressive_meal_description">Фото 1 → 2 → 3 супроводжує кожен інгредієнт, доданий на ту саму тарілку. Видима різниця на вагах стає вагою інгредієнта.</string>
     <string name="progressive_meal_info_title">Як працює «Покроковий запис їжі»</string>
-    <string name="progressive_meal_info_body">Використовуйте цю функцію, коли на кожній фотографії зображено одну й ту саму тарілку після додавання наступного інгредієнта. Зберігайте порядок фотографій і стежте, щоб дисплей ваг був видимим. Fud AI використовує різницю між послідовними значеннями на вагах для оцінки кожного нового інгредієнта. Не вмикайте це, якщо фотографії — це просто різні ракурси тієї самої страви.</string>
+    <string name="progressive_meal_info_body">Використовуйте цю функцію, коли на кожній фотографії зображено одну й ту саму тарілку після додавання наступного інгредієнта. Зберігайте порядок фотографій і стежте, щоб дисплей ваг був видимим. Ruoka + Treeni використовує різницю між послідовними значеннями на вагах для оцінки кожного нового інгредієнта. Не вмикайте це, якщо фотографії — це просто різні ракурси тієї самої страви.</string>
     <string name="settings_add_menu_title">Меню «+»</string>
     <string name="settings_add_menu_food_section">Меню додавання їжі</string>
     <string name="settings_add_menu_groups">Групи</string>
@@ -1306,7 +1301,7 @@
     <string name="settings_quick_actions">Швидкі дії</string>
     <string name="settings_app_icon_shortcuts">Ярлики значка застосунку</string>
     <string name="settings_quick_action_number">Швидка дія %1$d</string>
-    <string name="settings_quick_actions_footer">Утримуйте значок застосунку Fud AI, щоб використати ці ярлики. Кожен слот безпосередньо відкриває вибраний метод запису.</string>
+    <string name="settings_quick_actions_footer">Утримуйте значок застосунку Ruoka + Treeni, щоб використати ці ярлики. Кожен слот безпосередньо відкриває вибраний метод запису.</string>
     <string name="about_whisper_notices">Сповіщення сторонніх компонентів Whisper Base</string>
     <string name="about_whisper_notices_load_error">Не вдалося завантажити сповіщення сторонніх компонентів Whisper Base.</string>
     <string name="import_water_entries">Записи води</string>

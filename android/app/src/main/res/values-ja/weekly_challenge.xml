@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">まだ更新されていません</string>
     <string name="challenge_intro_title">一緒に健康的な習慣を作りましょう</string>
     <string name="challenge_intro_body">任意で参加し、運動、栄養、継続、水分補給の週間目標を比較できます。参加しなくても非公開の進捗画面は引き続き利用できます。</string>
-    <string name="challenge_privacy_disclosure">Fud AI はすべて端末上で計算します。アップロードするのは週の開始日、総合ポイント、条件を満たした運動・栄養・継続・水分補給の日数、運動カロリー合計だけです。食品名、食事、体重、ワークアウトの詳細、Health Connect の記録は一切アップロードしません。</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni はすべて端末上で計算します。アップロードするのは週の開始日、総合ポイント、条件を満たした運動・栄養・継続・水分補給の日数、運動カロリー合計だけです。食品名、食事、体重、ワークアウトの詳細、Health Connect の記録は一切アップロードしません。</string>
     <string name="challenge_public_profile_disclosure">参加者に表示されるのは表示名と、任意で選択した X または Instagram のどちらか1つのユーザー名だけです。体重や減量を順位付けすることはありません。</string>
     <string name="challenge_points_title">ポイントの仕組み</string>
     <string name="challenge_points_explanation" formatted="false">運動：消費カロリーが正のワークアウトを記録した日。栄養：1日のカロリーが目標の85～115%以内。継続：その日に食品を1つ以上記録。水分補給：記録が有効なときに水分目標を達成。総合：4つの日数の合計で、最大28です。</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">次へ</string>
     <string name="challenge_join_action">チャレンジに参加</string>
     <string name="challenge_pending_delete_title">接続後に削除します</string>
-    <string name="challenge_pending_delete_message">この端末ではチャレンジプロフィールを非表示にしました。オンラインになったとき、Fud AI がリモートプロフィールと週間スコアの削除を再試行します。</string>
+    <string name="challenge_pending_delete_message">この端末ではチャレンジプロフィールを非表示にしました。オンラインになったとき、Ruoka + Treeni がリモートプロフィールと週間スコアの削除を再試行します。</string>
     <string name="challenge_retry_deletion">削除を再試行</string>
     <string name="challenge_category_overall">総合</string>
     <string name="challenge_category_activity">運動</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">1～30文字の英字、数字、ピリオド、アンダースコアを使用し、ピリオドを連続または末尾に置かないでください。</string>
     <string name="challenge_rules_consent">コミュニティルールに同意し、他人になりすまさない礼儀正しいプロフィールを使用します。</string>
     <string name="challenge_read_community_rules">コミュニティルールを読む</string>
-    <string name="challenge_age_consent">18歳以上であることを確認します。Fud AI は生年月日にアクセスしたりアップロードしたりしません。</string>
+    <string name="challenge_age_consent">18歳以上であることを確認します。Ruoka + Treeni は生年月日にアクセスしたりアップロードしたりしません。</string>
     <string name="challenge_leave_title">チャレンジから退出しますか？</string>
     <string name="challenge_leave_message">リモートのチャレンジプロフィールとすべての週間スコアが削除されます。非公開の食事、体重、ワークアウト、Health Connect データは端末に残ります。</string>
     <string name="challenge_leave_confirm">退出して削除</string>

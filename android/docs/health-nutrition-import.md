@@ -5,7 +5,7 @@ nutrition records on demand. Choose inclusive dates, grant read/history access,
 preview, select one source app, and import. An empty result does not prove that
 Zepp has exported its history: inspect the source records in Health Connect.
 
-Imports are local snapshots, independent of Fud AI's existing one-time restoration
+Imports are local snapshots, independent of Ruoka + Treeni's existing one-time restoration
 of its own records. Repeat imports skip records already imported, including meals
 subsequently deleted locally. Source updates/deletions are not synchronized.
 Uninstalling or clearing app data also clears the import ledger.
@@ -38,7 +38,7 @@ Device checks still required with real source data:
    dates and counts. Import and compare daily calories/macros against the source.
 4. Repeat the import; edit or delete one imported meal and repeat again. No duplicate
    or restored deleted meal should appear.
-5. Edit an imported meal, reconnect Health Connect, and check that Fud AI has not
+5. Edit an imported meal, reconnect Health Connect, and check that Ruoka + Treeni has not
    written a second copy of it. Test combining an imported meal as well.
 6. On a device without history support, confirm recent dates work and older ranges
    explain the access limitation. Revoke access while the preview is open and verify

@@ -99,17 +99,12 @@ fun AboutAppHeader() {
             .fillMaxWidth()
             .padding(vertical = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        verticalArrangement = Arrangement.spacedBy(4.dp)
     ) {
-        Image(
-            painter = painterResource(R.drawable.ic_logo),
-            contentDescription = null,
-            modifier = Modifier.size(64.dp)
-        )
         Text(
-            text = stringResource(R.string.app_name),
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
+            text = stringResource(R.string.about_app_version),
+            fontSize = 17.sp,
+            fontWeight = FontWeight.SemiBold,
             color = MaterialTheme.colorScheme.onSurface
         )
         Text(
@@ -209,10 +204,6 @@ fun AboutSettingsRows(category: AboutSettingsCategory) {
             }
 
             AboutSettingsCategory.SUPPORT -> {
-                AboutRow(Icons.Filled.Favorite, stringResource(R.string.about_leave_tip_kofi)) {
-                    open("https://ko-fi.com/apoorvdarshan")
-                }
-                Hairline()
                 AboutRow(Icons.Filled.Star, stringResource(R.string.about_rate), onClick = ::rate)
                 Hairline()
                 AboutRow(Icons.Filled.Share, stringResource(R.string.about_share), onClick = ::share)
@@ -442,27 +433,6 @@ private fun readNoticeChunks(
 private const val LITERT_NOTICE_ASSET = "THIRD_PARTY_NOTICES_LiteRTLM_v0.16.0.txt"
 private const val WHISPER_NOTICE_ASSET = "THIRD_PARTY_NOTICES_WhisperBase.txt"
 private const val NOTICE_CHUNK_CHARACTERS = 8 * 1024
-
-@Composable
-fun AboutFooter() {
-    Column(
-        Modifier.fillMaxWidth().padding(top = 4.dp, bottom = 8.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(4.dp)
-    ) {
-        Text(
-            stringResource(R.string.about_made_by),
-            fontSize = 13.sp,
-            fontWeight = FontWeight.Medium,
-            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
-        )
-        Text(
-            stringResource(R.string.about_with_care),
-            fontSize = 11.sp,
-            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
-        )
-    }
-}
 
 private fun openPlayStore(context: Context) = AndroidUpdateChecker.openPlayStore(context)
 

@@ -31,7 +31,6 @@ import androidx.compose.material.icons.filled.FitnessCenter
 import androidx.compose.material.icons.filled.Forum
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material.icons.filled.SportsGymnastics
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -66,7 +65,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.apoorvdarshan.calorietracker.ui.theme.AppColors
-import com.apoorvdarshan.calorietracker.models.WorkoutTabMode
 import kotlinx.coroutines.launch
 
 data class BottomTab(val route: String, val icon: ImageVector, @get:StringRes val labelRes: Int)
@@ -103,21 +101,10 @@ val BottomNavDockedControlPadding = 82.dp
 fun FudAIBottomNavBar(
     currentRoute: String?,
     showAboutBadge: Boolean = false,
-    workoutMode: WorkoutTabMode = WorkoutTabMode.Default,
     onTap: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val tabs = remember(workoutMode) {
-        BottomTabs.map { tab ->
-            if (tab.route != FudAIRoutes.WORKOUTS) tab else tab.copy(
-                icon = if (workoutMode == WorkoutTabMode.LOG) {
-                    Icons.Filled.SportsGymnastics
-                } else {
-                    Icons.Filled.FitnessCenter
-                }
-            )
-        }
-    }
+    val tabs = BottomTabs
     val isDark = MaterialTheme.colorScheme.background.let {
         (it.red + it.green + it.blue) / 3f < 0.5f
     }

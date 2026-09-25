@@ -208,7 +208,6 @@ import com.apoorvdarshan.calorietracker.ui.components.FeetInchesWheelPicker
 import com.apoorvdarshan.calorietracker.ui.components.NumericWheelPicker
 import com.apoorvdarshan.calorietracker.ui.components.WheelPicker
 import com.apoorvdarshan.calorietracker.ui.about.AboutAppHeader
-import com.apoorvdarshan.calorietracker.ui.about.AboutFooter
 import com.apoorvdarshan.calorietracker.ui.about.AboutSettingsCategory
 import com.apoorvdarshan.calorietracker.ui.about.AboutSettingsRows
 import com.apoorvdarshan.calorietracker.ui.components.SplitDecimalWheelPicker
@@ -314,7 +313,7 @@ internal enum class SettingsCategory(
 
     companion object {
         val preferenceEntries = entries.filter { it.aboutCategory == null }
-        val appInfoEntries = entries.filter { it.aboutCategory != null }
+        val appInfoEntries = listOf(APP_UPDATES)
     }
 }
 
@@ -1006,7 +1005,7 @@ fun SettingsScreen(
             }
 
             // Workout is permanently available. Keep its live preferences in the
-            // same compact Fud AI settings card.
+            // same compact Ruoka + Treeni settings card.
             if (selectedCategory == SettingsCategory.WORKOUT) {
             SectionCard {
                 SettingRow(
@@ -1615,9 +1614,7 @@ fun SettingsScreen(
             selectedCategory?.aboutCategory?.let { aboutCategory ->
                 if (aboutCategory == AboutSettingsCategory.APP_UPDATES) {
                     SectionCard { AboutAppHeader() }
-                }
-
-                SectionCard {
+                } else SectionCard {
                     AboutSettingsRows(aboutCategory)
                 }
             }
@@ -1999,7 +1996,6 @@ private fun SettingsCategoryHub(onSelect: (SettingsCategory) -> Unit) {
         SectionCard {
             SettingsCategoryRows(SettingsCategory.appInfoEntries, onSelect)
         }
-        AboutFooter()
     }
 }
 
@@ -2382,7 +2378,7 @@ fun QuickActionsScreen(
 }
 
 /**
- * Port of iOS CalculationMethodsView. Documents every formula Fud AI uses as the reference its AI
+ * Port of iOS CalculationMethodsView. Documents every formula Ruoka + Treeni uses as the reference its AI
  * goal calculation starts from (BMR, TDEE, calorie target, macro split) plus per-meal estimates,
  * with peer-reviewed sources. Styled to match the rest of Android Settings (glass cards, back row,
  * 28sp title). Reachable from Settings → Goals & Nutrition → Calculation Methods.

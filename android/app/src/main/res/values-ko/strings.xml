@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI 칼로리</string>
+    <string name="widget_calorie_label">Ruoka + Treeni 칼로리</string>
     <string name="widget_calorie_description">오늘의 칼로리와 매크로를 한눈에 확인하세요.</string>
-    <string name="widget_protein_label">Fud AI 단백질</string>
+    <string name="widget_protein_label">Ruoka + Treeni 단백질</string>
     <string name="widget_protein_description">오늘의 단백질 진행 상황을 한눈에 확인하세요.</string>
     <string name="widget_today">오늘</string>
     <string name="widget_protein">단백질</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">뒤로</string>
-    <string name="onboarding_logo_description">Fud AI 로고</string>
+    <string name="onboarding_logo_description">Ruoka + Treeni 로고</string>
     <string name="onboarding_welcome_line1">똑똑하게 먹고,</string>
     <string name="onboarding_welcome_line2">더 나은 삶을</string>
     <string name="onboarding_welcome_subtitle">사진을 찍고, 기록하고, 활기차게.\n간편해진 영양 관리.</string>
@@ -256,7 +256,7 @@
     <string name="onboarding_health_connect">연결</string>
 
     <string name="onboarding_ai_choice_title">AI 설정하기</string>
-    <string name="onboarding_ai_choice_subtitle">Fud AI에서 AI를 어떻게 사용할지 선택하세요. 두 방법 모두 앱은 무료입니다.</string>
+    <string name="onboarding_ai_choice_subtitle">Ruoka + Treeni에서 AI를 어떻게 사용할지 선택하세요. 두 방법 모두 앱은 무료입니다.</string>
     <string name="onboarding_ai_byok_subtitle">자체 AI 제공업체 키를 추가하세요 — Gemini, OpenAI, Groq 등을 지원합니다.</string>
     <string name="onboarding_ai_byok_card_title">자체 키 사용</string>
     <string name="onboarding_ai_byok_card_subtitle">영원히 무료 — 내 키로 무제한. Gemini, OpenAI, Groq 등.</string>
@@ -526,7 +526,7 @@
     <string name="settings_week_sunday">일요일</string>
     <string name="settings_notifications">알림</string>
     <string name="settings_battery_opt">배터리 최적화</string>
-    <string name="settings_battery_opt_value">Fud AI 화이트리스트 추가</string>
+    <string name="settings_battery_opt_value">Ruoka + Treeni 화이트리스트 추가</string>
 
     <string name="settings_ai_provider">제공자</string>
     <string name="settings_ai_model">모델</string>
@@ -558,7 +558,7 @@
     <string name="settings_invalid_goal_gain">증량 목표는 현재 체중보다 높은 목표가 필요합니다.</string>
     <string name="settings_permission_title">권한 필요</string>
 
-    <string name="settings_notifications_denied">알림 권한이 거부되었습니다. 시스템 설정 → 앱 → Fud AI → 알림에서 활성화하여 알림을 받으세요.</string>
+    <string name="settings_notifications_denied">알림 권한이 거부되었습니다. 시스템 설정 → 앱 → Ruoka + Treeni → 알림에서 활성화하여 알림을 받으세요.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">체중 측정 시간</string>
@@ -604,9 +604,7 @@
     <string name="about_share">앱 공유하기</string>
     <string name="about_open_source">오픈 소스 (MIT)</string>
     <string name="about_star_github">GitHub에 별 주기</string>
-    <string name="about_vote_ph">Product Hunt에서 투표</string>
-    <string name="about_leave_tip_kofi">Ko-fi에서 팁 남기기</string>
-    <string name="about_report_issue">GitHub에 문제 신고</string>
+    <string name="about_vote_ph">Product Hunt에서 투표</string>    <string name="about_report_issue">GitHub에 문제 신고</string>
     <string name="about_report_issue_discord">Discord에 문제 신고</string>
     <string name="about_request_feature">GitHub에 기능 요청</string>
     <string name="about_request_feature_discord">Discord에 기능 요청</string>
@@ -618,18 +616,15 @@
     <string name="about_privacy">개인정보 처리방침</string>
     <string name="about_terms">서비스 약관</string>
     <string name="about_category_app_updates">앱 및 업데이트</string>
-    <string name="about_category_support">Fud AI 지원</string>
+    <string name="about_category_support">Ruoka + Treeni 지원</string>
     <string name="about_category_help_feedback">도움말 및 피드백</string>
     <string name="about_category_community">커뮤니티</string>
     <string name="about_category_legal">법률</string>
     <string name="about_category_join_beta">베타 참여</string>
-    <string name="about_beta_intro">Play 스토어에 나오기 전에 새 Fud AI를 써 보세요. 베타 빌드는 아직 미완성일 수 있습니다.</string>
-    <string name="about_beta_steps">Fud AI Discord에 참여하고 #beta-android를 여세요. Play 테스트 링크가 올라오면 참여한 뒤 Play 스토어에서 Fud AI를 업데이트하세요. 문제가 있으면 /bug를 쓰고 설정의 버전을 적어 주세요.</string>
-    <string name="about_beta_not_open">Play 테스트는 아직 열리지 않았습니다. 링크는 #beta-android에 올라옵니다.</string>
-    <string name="about_made_by">Apoorv Darshan 제작</string>
-    <string name="about_with_care">모두를 위해, 세심하게</string>
-    <string name="about_share_message">Fud AI로 식단을 기록하고 있어요 — 사진을 찍거나 말하거나 입력하면 AI가 칼로리를 기록해 줍니다. 무료에 오픈소스이고, 데이터는 모두 기기 안에만 저장돼요.\n\n다운로드: https://fud-ai.app</string>
-    <string name="about_share_chooser">Fud AI 공유</string>
+    <string name="about_beta_intro">Play 스토어에 나오기 전에 새 Ruoka + Treeni를 써 보세요. 베타 빌드는 아직 미완성일 수 있습니다.</string>
+    <string name="about_beta_steps">Ruoka + Treeni Discord에 참여하고 #beta-android를 여세요. Play 테스트 링크가 올라오면 참여한 뒤 Play 스토어에서 Ruoka + Treeni를 업데이트하세요. 문제가 있으면 /bug를 쓰고 설정의 버전을 적어 주세요.</string>
+    <string name="about_beta_not_open">Play 테스트는 아직 열리지 않았습니다. 링크는 #beta-android에 올라옵니다.</string>    <string name="about_share_message">Ruoka + Treeni로 식단을 기록하고 있어요 — 사진을 찍거나 말하거나 입력하면 AI가 칼로리를 기록해 줍니다. 무료에 오픈소스이고, 데이터는 모두 기기 안에만 저장돼요.\n\n다운로드: https://fud-ai.app</string>
+    <string name="about_share_chooser">Ruoka + Treeni 공유</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">연속 기록 알림</string>
@@ -660,7 +655,7 @@
         <item quantity="other">계산된 소모량 %1$d개 · 탭하여 보기 또는 삭제</item>
     </plurals>
     <string name="progress_workout_delete_title">운동 소모량을 삭제할까요?</string>
-    <string name="progress_workout_delete_message">Fud AI와 Health Connect에서 계산된 소모량을 삭제합니다. 운동 일지 계획은 그대로 저장됩니다.</string>
+    <string name="progress_workout_delete_message">Ruoka + Treeni와 Health Connect에서 계산된 소모량을 삭제합니다. 운동 일지 계획은 그대로 저장됩니다.</string>
     <string name="progress_workout_section">운동 활동</string>
     <string name="progress_workout_stat_workouts">운동</string>
     <string name="progress_workout_stat_total">총 소모량</string>
@@ -684,11 +679,11 @@
     <string name="settings_section_fallback">폴백 제공자</string>
     <string name="settings_enable_fallback">폴백 사용</string>
     <string name="settings_fallback_footer">기본 제공자가 실패할 경우(과부하, 속도 제한, 네트워크 오류) 앱이 이 폴백으로 자동 재시도합니다. 기본과 동일한 제공자도 허용됩니다 — 다른 모델을 선택하세요.</string>
-    <string name="widget_all_metrics_label">Fud AI 오늘</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni 오늘</string>
     <string name="widget_all_metrics_description">오늘의 칼로리, 단백질, 탄수화물, 지방을 위젯 하나로 확인하세요.</string>
     <string name="settings_needs_health_connect">Health Connect 필요</string>
-    <string name="settings_energy_goals_info">켜면 Fud AI가 목표를 계산할 때 공식 추정치 대신 Health Connect의 최근 측정 에너지 구간을 유지 칼로리 기준으로 사용합니다. 충분한 날짜가 있으면 측정된 총에너지를, 그렇지 않으면 측정된 활동 에너지 평균 + 공식 BMR을 사용합니다. 소모 데이터를 읽는 데 AI는 사용되지 않습니다. Health Connect가 필요합니다. 다시 계산 버튼 및 Adaptive Goals와 함께 작동합니다.</string>
-    <string name="settings_adaptive_goals_info">일주일에 한 번 정도 앱을 열 때 Fud AI가 프로필, 최근 기록한 음식, 체중 추세를 바탕으로 전체 목표 계산을 자동으로 다시 실행합니다 — 다시 계산 버튼과 동일한 계산입니다. Energy Burn이 켜져 있으면 측정된 소모 칼로리를 유지 기준으로 사용합니다. AI를 사용할 수 없으면 조용히 건너뜁니다. 끄면 이 기능이 처음 변경하기 전의 목표로 복원됩니다. 이는 의학적 조언이 아닙니다.</string>
+    <string name="settings_energy_goals_info">켜면 Ruoka + Treeni가 목표를 계산할 때 공식 추정치 대신 Health Connect의 최근 측정 에너지 구간을 유지 칼로리 기준으로 사용합니다. 충분한 날짜가 있으면 측정된 총에너지를, 그렇지 않으면 측정된 활동 에너지 평균 + 공식 BMR을 사용합니다. 소모 데이터를 읽는 데 AI는 사용되지 않습니다. Health Connect가 필요합니다. 다시 계산 버튼 및 Adaptive Goals와 함께 작동합니다.</string>
+    <string name="settings_adaptive_goals_info">일주일에 한 번 정도 앱을 열 때 Ruoka + Treeni가 프로필, 최근 기록한 음식, 체중 추세를 바탕으로 전체 목표 계산을 자동으로 다시 실행합니다 — 다시 계산 버튼과 동일한 계산입니다. Energy Burn이 켜져 있으면 측정된 소모 칼로리를 유지 기준으로 사용합니다. AI를 사용할 수 없으면 조용히 건너뜁니다. 끄면 이 기능이 처음 변경하기 전의 목표로 복원됩니다. 이는 의학적 조언이 아닙니다.</string>
     <string name="ad_label">광고</string>
     <string name="onboarding_plan_adaptive_note">플랜은 기록에 따라 매주 자동 조정됩니다 — 고정하려면 설정에서 Adaptive Goals를 끄세요.</string>
     <string name="onboarding_feature_snap">사진만 찍으면 AI가 기록</string>
@@ -698,7 +693,7 @@
     <string name="whats_new_v30_workouts">새로운 운동 탭 — 사진, 근육·장비 필터, 검색, 상세 페이지와 함께 873가지 운동을 둘러보세요.</string>
     <string name="whats_new_v30_home">홈 화면 개편: 속도계형 칼로리 게이지, 세로 매크로 바, 영양소 카드 4개, 플로팅 추가 버튼.</string>
     <string name="whats_new_v30_coach_voice">새 인라인 녹음기로 코치에게 음성으로 질문하세요.</string>
-    <string name="whats_new_v30_share">식사를 링크로 공유 — iPhone과 Android 모두에서 Fud AI가 바로 열립니다.</string>
+    <string name="whats_new_v30_share">식사를 링크로 공유 — iPhone과 Android 모두에서 Ruoka + Treeni가 바로 열립니다.</string>
     <string name="whats_new_v30_export">설정에서 음식 일기를 JSON, Markdown, CSV로 내보내세요.</string>
     <string name="whats_new_v30_reprocess">기록된 식사를 AI로 다시 분석 — 이름, 양, 메모를 조정한 뒤 재분석할 수 있습니다.</string>
     <string name="whats_new_v30_camera">카메라 + 카메라가 두 장의 사진을 나란히 이어 붙여 보관합니다.</string>
@@ -747,7 +742,7 @@
     <string name="settings_calc_maintenance">유지 칼로리 및 목표 조정</string>
     <string name="settings_calc_macro_split">다량영양소 비율</string>
     <string name="settings_calc_micro_values">미량영양소 값</string>
-    <string name="settings_calc_intro">일일 칼로리와 매크로 목표는 AI가 설정합니다. ‘목표 다시 계산’을 탭하면 — 또는 적응형 목표가 켜져 있으면 약 일주일에 한 번 자동으로 — Fud AI가 프로필, 아래의 참조 공식, 개인정보를 보호하도록 집계된 일일 영양 합계, 날짜가 포함된 정확한 체중·체지방·줄자 측정값, 운동 횟수·시간·세트·반복 횟수의 집계값, 선택 사항인 Health Connect 에너지 데이터를 AI 제공자에게 전송합니다. 이 계산에는 음식 이름, 메모, 사진, 재료, 운동 이름이 전송되지 않습니다. 동료 검증을 거친 공식에서 출발해 실제 데이터에 맞게 조정하여 진짜 유지 칼로리와 목표를 추정합니다.</string>
+    <string name="settings_calc_intro">일일 칼로리와 매크로 목표는 AI가 설정합니다. ‘목표 다시 계산’을 탭하면 — 또는 적응형 목표가 켜져 있으면 약 일주일에 한 번 자동으로 — Ruoka + Treeni가 프로필, 아래의 참조 공식, 개인정보를 보호하도록 집계된 일일 영양 합계, 날짜가 포함된 정확한 체중·체지방·줄자 측정값, 운동 횟수·시간·세트·반복 횟수의 집계값, 선택 사항인 Health Connect 에너지 데이터를 AI 제공자에게 전송합니다. 이 계산에는 음식 이름, 메모, 사진, 재료, 운동 이름이 전송되지 않습니다. 동료 검증을 거친 공식에서 출발해 실제 데이터에 맞게 조정하여 진짜 유지 칼로리와 목표를 추정합니다.</string>
     <string name="settings_calc_sec_bmr">기초대사량 (BMR)</string>
     <string name="settings_calc_sec_tdee">일일 에너지 소비량 (TDEE)</string>
     <string name="settings_calc_mifflin_name">Mifflin-St Jeor 방정식</string>
@@ -798,7 +793,7 @@
     <string name="about_whisper_notices_load_error">Whisper Base 타사 고지를 불러올 수 없습니다.</string>
     <string name="cd_remove_image">이미지 제거</string>
     <string name="cd_save_photo">사진 저장</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">사진 저장됨</string>
     <string name="photo_save_failed">사진을 저장할 수 없습니다</string>
     <string name="photo_save_permission_denied">사진 접근이 거부되었습니다</string>

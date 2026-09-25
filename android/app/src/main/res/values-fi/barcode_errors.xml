@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_barcode_invalid">Sitä viivakoodia ei voitu lukea. Yritä skannata se uudelleen.</string>
+    <string name="error_barcode_product_not_found">Tuotetta ei löydy Open Food Factsista. Skannaa sen sijaan ravintoarvomerkintä.</string>
+    <string name="error_barcode_missing_nutrition">Tämä viivakoodi löytyi, mutta ravitsemustiedot ovat epätäydellisiä. Skannaa sen sijaan ravintoarvomerkintä.</string>
+    <string name="error_barcode_rate_limited">Viivakoodihakuja tehtiin liian monta. Odota hetki ja yritä sitten uudelleen.</string>
+    <string name="error_barcode_service_unavailable">Open Food Facts ei ole tilapäisesti käytettävissä. Yritä myöhemmin uudelleen.</string>
+    <string name="error_barcode_unexpected_response">Open Food Facts palautti odottamattoman vastauksen.</string>
+    <string name="error_barcode_network">Ei voitu muodostaa yhteyttä Open Food Factsiin. Tarkista yhteys ja yritä uudelleen.</string>
+    <string name="error_barcode_offline">Näytät olevan offline-tilassa. Tarkista yhteys ja yritä skannata uudelleen.</string>
+    <string name="error_barcode_timeout">Open Food Factsin vastaaminen kesti liian kauan. Yritä skannata uudelleen.</string>
+</resources>

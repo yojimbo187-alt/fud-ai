@@ -84,7 +84,7 @@ object OpenAICompatibleClient {
                     if (!apiKey.isNullOrEmpty()) builder.addHeader("Authorization", "Bearer $apiKey")
                     if (provider == AIProvider.OPENROUTER) {
                         builder.addHeader("HTTP-Referer", "https://github.com/apoorvdarshan/fud-ai")
-                        builder.addHeader("X-Title", "Fud AI")
+                        builder.addHeader("X-Title", "Ruoka + Treeni")
                     }
 
                     client.newCall(builder.build())
@@ -138,7 +138,7 @@ object OpenAICompatibleClient {
         if (!apiKey.isNullOrEmpty()) builder.addHeader("Authorization", "Bearer $apiKey")
         if (provider == AIProvider.OPENROUTER) {
             builder.addHeader("HTTP-Referer", "https://github.com/apoorvdarshan/fud-ai")
-            builder.addHeader("X-Title", "Fud AI")
+            builder.addHeader("X-Title", "Ruoka + Treeni")
         }
 
         val response = OpenAIResponseParser.parse(RetryPolicy.execute { client.newCall(builder.build()) })

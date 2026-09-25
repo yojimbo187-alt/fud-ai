@@ -201,7 +201,7 @@ class AppContainer(app: FudAIApp) {
 
         override suspend fun deleteBurn(sessionId: UUID, diaryDateKey: String): Boolean {
             // Keep deletion best-effort even after the user disables syncing so
-            // an old Fud AI record cannot be restored on the next connection.
+            // an old Ruoka + Treeni record cannot be restored on the next connection.
             if (!health.isAvailable() || !health.hasActiveEnergyWrite()) return false
             return health.deleteWorkoutBurn(sessionId, diaryDateKey)
         }

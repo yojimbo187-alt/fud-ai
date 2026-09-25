@@ -2,7 +2,7 @@
 //  HostedAIConstants.swift
 //  calorietracker
 //
-//  Product IDs, entitlements, and hosted AI limits for Fud AI v7.
+//  Product IDs, entitlements, and hosted AI limits for Ruoka + Treeni v7.
 //
 
 import Foundation
@@ -47,15 +47,6 @@ enum HostedAIConstants {
         default: nil
         }
     }
-
-    // MARK: - Tips (iOS — unchanged; see TipJarView.swift)
-
-    static let tipProductIDs: [String] = [
-        "com.apoorvdarshan.calorietracker.tip.snack",
-        "com.apoorvdarshan.calorietracker.tip.proteinshake",
-        "com.apoorvdarshan.calorietracker.tip.lunch",
-        "com.apoorvdarshan.calorietracker.tip.feast",
-    ]
 
     // MARK: - Daily limits
 

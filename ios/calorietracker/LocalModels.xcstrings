@@ -104,6 +104,12 @@
             "state": "translated",
             "value": "取消"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peruuta"
+          }
         }
       }
     },
@@ -209,6 +215,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "删除"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista"
           }
         }
       }
@@ -316,6 +328,12 @@
             "state": "translated",
             "value": "删除模型"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Model"
+          }
         }
       }
     },
@@ -421,6 +439,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "下载"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lataa"
           }
         }
       }
@@ -528,6 +552,12 @@
             "state": "translated",
             "value": "已下载"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloaded"
+          }
         }
       }
     },
@@ -633,6 +663,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "使用中"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In use"
           }
         }
       }
@@ -740,6 +776,12 @@
             "state": "translated",
             "value": "需要处理"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaatii huomiota"
+          }
         }
       }
     },
@@ -845,6 +887,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "未下载"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not downloaded"
           }
         }
       }
@@ -952,6 +1000,12 @@
             "state": "translated",
             "value": "准备"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepare"
+          }
         }
       }
     },
@@ -1057,6 +1111,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "正在准备"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing"
           }
         }
       }
@@ -1164,6 +1224,12 @@
             "state": "translated",
             "value": "就绪"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready"
+          }
         }
       }
     },
@@ -1270,6 +1336,12 @@
             "state": "translated",
             "value": "正在验证"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifying"
+          }
         }
       }
     },
@@ -1372,6 +1444,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4 E2B"
+          }
+        },
+        "fi": {
           "stringUnit": {
             "state": "translated",
             "value": "Gemma 4 E2B"
@@ -1482,6 +1560,12 @@
             "state": "translated",
             "value": "Gemma 4 E2B（设备端）"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4 E2B (laitteessa)"
+          }
         }
       }
     },
@@ -1587,6 +1671,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gemma 4 下载进度"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4:n latauksen edistyminen"
           }
         }
       }
@@ -1694,6 +1784,12 @@
             "state": "translated",
             "value": "正在验证 Gemma 4 下载内容"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vahvistetaan Gemma 4:n latausta"
+          }
         }
       }
     },
@@ -1799,6 +1895,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "模型来源"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mallin lähde"
           }
         }
       }
@@ -1906,6 +2008,12 @@
             "state": "translated",
             "value": "删除 Gemma 4？"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poistetaanko Gemma 4?"
+          }
         }
       }
     },
@@ -2011,6 +2119,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "下载的模型及其编译缓存将从此 iPhone 中移除。您稍后可以重新下载。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladattu malli ja sen käännetty välimuisti poistetaan tästä iPhonesta. Voit ladata mallin myöhemmin uudelleen."
           }
         }
       }
@@ -2118,6 +2232,12 @@
             "state": "translated",
             "value": "需要 8 GB 内存"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaatii 8 Gt RAM-laitteen"
+          }
         }
       }
     },
@@ -2224,6 +2344,12 @@
             "state": "translated",
             "value": "此设备端图像和文本模型可用于物理内存至少为 8 GB 的 iPhone。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tämä laitteessa toimiva kuva- ja tekstimalli on käytettävissä iPhoneissa, joissa on vähintään 8 Gt fyysistä muistia."
+          }
         }
       }
     },
@@ -2232,103 +2358,109 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "حجم التنزيل 2.59 غيغابايت. يتحقق Fud AI من توفر مساحة إضافية خالية قدرها 1 غيغابايت للتثبيت."
+            "value": "حجم التنزيل 2.59 غيغابايت. يتحقق Ruoka + Treeni من توفر مساحة إضافية خالية قدرها 1 غيغابايت للتثبيت."
           }
         },
         "az": {
           "stringUnit": {
             "state": "translated",
-            "value": "Endirmə ölçüsü 2,59 GB-dır. Fud AI quraşdırma üçün əlavə 1 GB boş yerin olmasını yoxlayır."
+            "value": "Endirmə ölçüsü 2,59 GB-dır. Ruoka + Treeni quraşdırma üçün əlavə 1 GB boş yerin olmasını yoxlayır."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "2,59 GB Download. Fud AI prüft, ob zusätzlich 1 GB freier Speicher für die Installation verfügbar ist."
+            "value": "2,59 GB Download. Ruoka + Treeni prüft, ob zusätzlich 1 GB freier Speicher für die Installation verfügbar ist."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "2.59 GB download. Fud AI checks for an additional 1 GB of free installation headroom."
+            "value": "2.59 GB download. Ruoka + Treeni checks for an additional 1 GB of free installation headroom."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Descarga de 2,59 GB. Fud AI comprueba que haya 1 GB adicional de espacio libre para la instalación."
+            "value": "Descarga de 2,59 GB. Ruoka + Treeni comprueba que haya 1 GB adicional de espacio libre para la instalación."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Téléchargement de 2,59 Go. Fud AI vérifie qu’un espace libre supplémentaire de 1 Go est disponible pour l’installation."
+            "value": "Téléchargement de 2,59 Go. Ruoka + Treeni vérifie qu’un espace libre supplémentaire de 1 Go est disponible pour l’installation."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "2.59 GB का डाउनलोड। Fud AI इंस्टॉलेशन के लिए 1 GB अतिरिक्त खाली जगह की जांच करता है।"
+            "value": "2.59 GB का डाउनलोड। Ruoka + Treeni इंस्टॉलेशन के लिए 1 GB अतिरिक्त खाली जगह की जांच करता है।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Download da 2,59 GB. Fud AI verifica che sia disponibile 1 GB aggiuntivo di spazio libero per l’installazione."
+            "value": "Download da 2,59 GB. Ruoka + Treeni verifica che sia disponibile 1 GB aggiuntivo di spazio libero per l’installazione."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "2.59 GB のダウンロードです。Fud AI はインストール用にさらに 1 GB の空き容量があることを確認します。"
+            "value": "2.59 GB のダウンロードです。Ruoka + Treeni はインストール用にさらに 1 GB の空き容量があることを確認します。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "2.59GB 다운로드입니다. Fud AI는 설치 여유 공간으로 1GB가 추가로 비어 있는지 확인합니다."
+            "value": "2.59GB 다운로드입니다. Ruoka + Treeni는 설치 여유 공간으로 1GB가 추가로 비어 있는지 확인합니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Download van 2,59 GB. Fud AI controleert of er 1 GB extra vrije installatieruimte beschikbaar is."
+            "value": "Download van 2,59 GB. Ruoka + Treeni controleert of er 1 GB extra vrije installatieruimte beschikbaar is."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pobieranie 2,59 GB. Fud AI sprawdza, czy dostępny jest dodatkowy 1 GB wolnego miejsca na instalację."
+            "value": "Pobieranie 2,59 GB. Ruoka + Treeni sprawdza, czy dostępny jest dodatkowy 1 GB wolnego miejsca na instalację."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Download de 2,59 GB. O Fud AI verifica se há mais 1 GB de espaço livre para a instalação."
+            "value": "Download de 2,59 GB. O Ruoka + Treeni verifica se há mais 1 GB de espaço livre para a instalação."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Descărcare de 2,59 GB. Fud AI verifică dacă mai există 1 GB de spațiu liber pentru instalare."
+            "value": "Descărcare de 2,59 GB. Ruoka + Treeni verifică dacă mai există 1 GB de spațiu liber pentru instalare."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Размер загрузки — 2,59 ГБ. Fud AI проверяет наличие ещё 1 ГБ свободного места для установки."
+            "value": "Размер загрузки — 2,59 ГБ. Ruoka + Treeni проверяет наличие ещё 1 ГБ свободного места для установки."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Розмір завантаження — 2,59 ГБ. Fud AI перевірет наличие ещё 1 ГБ вільного місця для установки."
+            "value": "Розмір завантаження — 2,59 ГБ. Ruoka + Treeni перевірет наличие ещё 1 ГБ вільного місця для установки."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "下载大小为 2.59 GB。Fud AI 会检查是否另有 1 GB 可用安装空间。"
+            "value": "下载大小为 2.59 GB。Ruoka + Treeni 会检查是否另有 1 GB 可用安装空间。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Latauksen koko on 2,59 Gt. Ruoka + Treeni tarkistaa lisäksi, että asennusta varten on 1 Gt vapaata tilaa."
           }
         }
       }
@@ -2436,6 +2568,12 @@
             "state": "translated",
             "value": "已验证并存储在本地（%@）。现在轻点“准备”，否则将在首次使用时加载。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vahvistettu ja tallennettu paikallisesti (%@). Napauta Valmistele nyt, tai malli ladataan ensimmäisellä käyttökerralla."
+          }
         }
       }
     },
@@ -2542,6 +2680,12 @@
             "state": "translated",
             "value": "已验证并存储在本地。现在轻点“准备”，否则将在首次使用时加载。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vahvistettu ja tallennettu paikallisesti. Napauta Valmistele nyt, tai malli ladataan ensimmäisellä käyttökerralla."
+          }
         }
       }
     },
@@ -2550,103 +2694,109 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "جارٍ تنزيل نموذج Gemma 4 المثبّت الإصدار… أبقِ Fud AI مفتوحًا حتى يكتمل."
+            "value": "جارٍ تنزيل نموذج Gemma 4 المثبّت الإصدار… أبقِ Ruoka + Treeni مفتوحًا حتى يكتمل."
           }
         },
         "az": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sabitlənmiş Gemma 4 modeli endirilir… Tamamlanana qədər Fud AI-ni açıq saxlayın."
+            "value": "Sabitlənmiş Gemma 4 modeli endirilir… Tamamlanana qədər Ruoka + Treeni-ni açıq saxlayın."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Das festgelegte Gemma-4-Modell wird heruntergeladen… Lass Fud AI geöffnet, bis der Download abgeschlossen ist."
+            "value": "Das festgelegte Gemma-4-Modell wird heruntergeladen… Lass Ruoka + Treeni geöffnet, bis der Download abgeschlossen ist."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Downloading the pinned Gemma 4 model… Keep Fud AI open until it finishes."
+            "value": "Downloading the pinned Gemma 4 model… Keep Ruoka + Treeni open until it finishes."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Descargando el modelo fijado de Gemma 4… Mantén Fud AI abierto hasta que termine."
+            "value": "Descargando el modelo fijado de Gemma 4… Mantén Ruoka + Treeni abierto hasta que termine."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Téléchargement de la version épinglée du modèle Gemma 4… Gardez Fud AI ouvert jusqu’à la fin."
+            "value": "Téléchargement de la version épinglée du modèle Gemma 4… Gardez Ruoka + Treeni ouvert jusqu’à la fin."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "पिन किया गया Gemma 4 मॉडल डाउनलोड हो रहा है… पूरा होने तक Fud AI खुला रखें।"
+            "value": "पिन किया गया Gemma 4 मॉडल डाउनलोड हो रहा है… पूरा होने तक Ruoka + Treeni खुला रखें।"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Download della versione fissata del modello Gemma 4… Mantieni Fud AI aperto fino al termine."
+            "value": "Download della versione fissata del modello Gemma 4… Mantieni Ruoka + Treeni aperto fino al termine."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "固定バージョンの Gemma 4 モデルをダウンロード中… 完了するまで Fud AI を開いたままにしてください。"
+            "value": "固定バージョンの Gemma 4 モデルをダウンロード中… 完了するまで Ruoka + Treeni を開いたままにしてください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "고정된 버전의 Gemma 4 모델을 다운로드하는 중… 완료될 때까지 Fud AI를 열어 두세요."
+            "value": "고정된 버전의 Gemma 4 모델을 다운로드하는 중… 완료될 때까지 Ruoka + Treeni를 열어 두세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "De vastgezette versie van het Gemma 4-model wordt gedownload… Houd Fud AI open totdat dit is voltooid."
+            "value": "De vastgezette versie van het Gemma 4-model wordt gedownload… Houd Ruoka + Treeni open totdat dit is voltooid."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pobieranie przypiętej wersji modelu Gemma 4… Nie zamykaj Fud AI do zakończenia."
+            "value": "Pobieranie przypiętej wersji modelu Gemma 4… Nie zamykaj Ruoka + Treeni do zakończenia."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Baixando a versão fixada do modelo Gemma 4… Mantenha o Fud AI aberto até terminar."
+            "value": "Baixando a versão fixada do modelo Gemma 4… Mantenha o Ruoka + Treeni aberto até terminar."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Se descarcă versiunea fixată a modelului Gemma 4… Mențineți Fud AI deschis până la finalizare."
+            "value": "Se descarcă versiunea fixată a modelului Gemma 4… Mențineți Ruoka + Treeni deschis până la finalizare."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Загрузка закреплённой версии модели Gemma 4… Не закрывайте Fud AI до завершения."
+            "value": "Загрузка закреплённой версии модели Gemma 4… Не закрывайте Ruoka + Treeni до завершения."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Завантаження закріпленої версии модели Gemma 4… Не закривайте Fud AI до завершення."
+            "value": "Завантаження закріпленої версии модели Gemma 4… Не закривайте Ruoka + Treeni до завершення."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "正在下载固定版本的 Gemma 4 模型… 完成前请保持 Fud AI 打开。"
+            "value": "正在下载固定版本的 Gemma 4 模型… 完成前请保持 Ruoka + Treeni 打开。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladataan kiinnitettyä Gemma 4 -mallia… Pidä Ruoka + Treeni avoinna latauksen valmistumiseen asti."
           }
         }
       }
@@ -2754,6 +2904,12 @@
             "state": "translated",
             "value": "安装前正在检查确切的文件大小和 SHA-256…"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarkistetaan tarkka tiedostokoko ja SHA-256 ennen asennusta…"
+          }
         }
       }
     },
@@ -2859,6 +3015,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "正在编译并加载 LiteRT-LM Metal 运行时…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käännetään ja ladataan LiteRT-LM Metal -suoritusympäristöä…"
           }
         }
       }
@@ -2966,6 +3128,12 @@
             "state": "translated",
             "value": "已可私密、离线处理食物图像和文本。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valmis yksityiseen ruokakuvien ja tekstin käsittelyyn ilman verkkoyhteyttä."
+          }
         }
       }
     },
@@ -3071,6 +3239,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "正在此 iPhone 上本地生成…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luodaan paikallisesti tällä iPhonella…"
           }
         }
       }
@@ -3178,6 +3352,12 @@
             "state": "translated",
             "value": "Gemma 4 需要内存至少为 8 GB 的 iPhone。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4 vaatii iPhonen, jossa on vähintään 8 Gt muistia."
+          }
         }
       }
     },
@@ -3283,6 +3463,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gemma 4 尚未下载。请前往“设置”→“AI 提供商”下载。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4:ää ei ole ladattu. Lataa se kohdasta Asetukset → Tekoälypalveluntarjoajat."
           }
         }
       }
@@ -3390,6 +3576,12 @@
             "state": "translated",
             "value": "Gemma 4 正忙。请等待当前操作完成。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4 on jo käytössä. Odota nykyisen toiminnon valmistumista."
+          }
         }
       }
     },
@@ -3495,6 +3687,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gemma 4 需要 %@ 可用空间（包括安装余量）。此 iPhone 当前有 %@ 可用。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4 tarvitsee %@ vapaata tilaa asennusvara mukaan lukien. Tällä iPhonella on nyt käytettävissä %@."
           }
         }
       }
@@ -3602,6 +3800,12 @@
             "state": "translated",
             "value": "无法检查可用存储空间，因此未开始下载大型模型。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käytettävissä olevaa tallennustilaa ei voitu tarkistaa, joten suuren mallin latausta ei aloitettu."
+          }
         }
       }
     },
@@ -3707,6 +3911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "无法验证 Gemma 4 下载内容（%@）。请重试。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4:n latausta ei voitu vahvistaa (%@). Yritä uudelleen."
           }
         }
       }
@@ -3814,6 +4024,12 @@
             "state": "translated",
             "value": "Gemma 4 返回了空响应。请重试。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemma 4 palautti tyhjän vastauksen. Yritä uudelleen."
+          }
         }
       }
     },
@@ -3919,6 +4135,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "预期 %@ 字节，收到 %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "odotettiin %@ tavua, vastaanotettiin %@"
           }
         }
       }
@@ -4026,6 +4248,12 @@
             "state": "translated",
             "value": "SHA-256 不匹配"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SHA-256 mismatch"
+          }
         }
       }
     },
@@ -4131,6 +4359,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "模型服务器返回了无效响应。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mallipalvelin palautti virheellisen vastauksen."
           }
         }
       }
@@ -4238,6 +4472,12 @@
             "state": "translated",
             "value": "模型服务器返回了 HTTP %@。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mallipalvelin palautti HTTP-tilan %@."
+          }
         }
       }
     },
@@ -4344,6 +4584,12 @@
             "state": "translated",
             "value": "模型下载已完成，但没有文件。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mallin lataus valmistui ilman tiedostoa."
+          }
         }
       }
     },
@@ -4446,6 +4692,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whisper Base"
+          }
+        },
+        "fi": {
           "stringUnit": {
             "state": "translated",
             "value": "Whisper Base"
@@ -4556,6 +4808,12 @@
             "state": "translated",
             "value": "Whisper Base（设备端）"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whisper Base (laitteessa)"
+          }
         }
       }
     },
@@ -4661,6 +4919,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "多语言 Whisper Base 完全在此 iPhone 上运行。下载一次即可进行私密的离线转写。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monikielinen Whisper Base toimii kokonaan tällä iPhonella. Lataa se kerran yksityistä offline-litterointia varten."
           }
         }
       }
@@ -4768,6 +5032,12 @@
             "state": "translated",
             "value": "Whisper Base 下载进度"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whisper Basen latauksen edistyminen"
+          }
         }
       }
     },
@@ -4873,6 +5143,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "删除 Whisper Base？"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poistetaanko Whisper Base?"
           }
         }
       }
@@ -4980,6 +5256,12 @@
             "state": "translated",
             "value": "下载的模型将从此 iPhone 中移除。您稍后可以重新下载。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladattu malli poistetaan tästä iPhonesta. Voit ladata sen myöhemmin uudelleen."
+          }
         }
       }
     },
@@ -5085,6 +5367,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "约 147 MB。下载后完全在设备端运行。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noin 147 Mt. Toimii latauksen jälkeen kokonaan laitteessa."
           }
         }
       }
@@ -5192,6 +5480,12 @@
             "state": "translated",
             "value": "已存储在本地（%@）。任何音频都不会离开此 iPhone。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tallennettu paikallisesti (%@). Ääntä ei lähetetä tästä iPhonesta."
+          }
         }
       }
     },
@@ -5297,6 +5591,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "已存储在本地。任何音频都不会离开此 iPhone。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tallennettu paikallisesti. Ääntä ei lähetetä tästä iPhonesta."
           }
         }
       }
@@ -5404,6 +5704,12 @@
             "state": "translated",
             "value": "正在下载多语言 Core ML 模型…"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladataan monikielistä Core ML -mallia…"
+          }
         }
       }
     },
@@ -5509,6 +5815,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "正在为此 iPhone 优化模型…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimoidaan mallia tälle iPhonelle…"
           }
         }
       }
@@ -5616,6 +5928,12 @@
             "state": "translated",
             "value": "正在本地转写…"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Litteroidaan paikallisesti…"
+          }
         }
       }
     },
@@ -5721,6 +6039,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Whisper Base 尚未下载。请前往“设置”→“语音转文本”下载。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whisper Basea ei ole ladattu. Lataa se kohdasta Asetukset → Puhe tekstiksi."
           }
         }
       }
@@ -5828,6 +6152,12 @@
             "state": "translated",
             "value": "Whisper Base 正忙。请等待当前操作完成。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whisper Base on jo käytössä. Odota nykyisen toiminnon valmistumista."
+          }
         }
       }
     },
@@ -5933,6 +6263,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Whisper Base 未在此录音中检测到任何语音。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whisper Base ei havainnut puhetta tässä tallenteessa."
           }
         }
       }
@@ -6040,6 +6376,12 @@
             "state": "translated",
             "value": "正在加载声明…"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ladataan ilmoituksia…"
+          }
         }
       }
     },
@@ -6145,6 +6487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "LiteRT-LM 第三方声明"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LiteRT-LM kolmannen osapuolen ilmoitukset"
           }
         }
       }
@@ -6252,6 +6600,12 @@
             "state": "translated",
             "value": "声明不可用"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ilmoitukset eivät ole saatavilla"
+          }
         }
       }
     },
@@ -6357,6 +6711,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "LiteRT-LM 声明"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LiteRT-LM Notices"
           }
         }
       }
@@ -6464,6 +6824,12 @@
             "state": "translated",
             "value": "找不到内置的声明文件。"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sovellukseen sisältyvää ilmoitustiedostoa ei löytynyt."
+          }
         }
       }
     },
@@ -6569,6 +6935,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "无法打开内置的声明文件。"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sovellukseen sisältyvää ilmoitustiedostoa ei voitu avata."
           }
         }
       }
@@ -6676,6 +7048,12 @@
             "state": "translated",
             "value": "LiteRT-LM 第三方声明"
           }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LiteRT-LM:n kolmansien osapuolten ilmoitukset"
+          }
         }
       }
     },
@@ -6781,6 +7159,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "设备端模型"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laitteessa toimiva malli"
           }
         }
       }

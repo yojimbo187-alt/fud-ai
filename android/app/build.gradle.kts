@@ -49,7 +49,7 @@ android {
         targetSdk = 36
         versionCode = 38
         versionName = "7.1"
-        // Release uses localized @string/app_name; debug overrides to "Fud AI Debug".
+        // Release uses localized @string/app_name; debug adds a distinct label.
         manifestPlaceholders["launcherAppName"] = "@string/app_name"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -99,18 +99,18 @@ android {
         }
         debug {
             // Suffix the package + version so the debug build installs side-by-side
-            // with the production app. Launcher label matches iOS Debug: "Fud AI Debug".
+            // with the production app. Launcher label matches the iOS debug build.
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"
             // Literal placeholder so locale app_name strings can't override the label.
-            manifestPlaceholders["launcherAppName"] = "Fud AI Debug"
+            manifestPlaceholders["launcherAppName"] = "Ruoka + Treeni Debug"
             buildConfigField("String", "WORKOUT_VECTORS_BASE_URL", "\"$debugWorkoutVectorsBaseUrl\"")
         }
         create("debug2") {
             initWith(getByName("debug"))
             applicationIdSuffix = ".debug2"
             versionNameSuffix = "-debug2"
-            manifestPlaceholders["launcherAppName"] = "Fud AI Debug 2"
+            manifestPlaceholders["launcherAppName"] = "Ruoka + Treeni Debug 2"
             buildConfigField("String", "WORKOUT_VECTORS_BASE_URL", "\"$debugWorkoutVectorsBaseUrl\"")
         }
     }

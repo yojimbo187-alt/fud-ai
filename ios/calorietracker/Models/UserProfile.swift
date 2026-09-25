@@ -157,6 +157,72 @@ enum WeightDisplayFormatter {
     }
 }
 
+/// Training-plan metadata shared by the Programs tab and nutrition targets.
+/// The optional profile storage field decodes older profiles cleanly; nil maps to
+/// the priority Push/Pull/Legs/Upper/Lower plan.
+enum TrainingProgram: String, Codable, CaseIterable, Identifiable {
+    case pushPullLegsUpperLower
+    case upperLower
+    case fullBody
+    case activeRecovery
+
+    var id: String { rawValue }
+
+    static let priority: TrainingProgram = .pushPullLegsUpperLower
+
+    var title: String {
+        switch self {
+        case .pushPullLegsUpperLower: String(localized: "Push, Pull, Legs, Upper, Lower")
+        case .upperLower: String(localized: "Upper / Lower")
+        case .fullBody: String(localized: "Full Body")
+        case .activeRecovery: String(localized: "Active Recovery")
+        }
+    }
+
+    var summary: String {
+        switch self {
+        case .pushPullLegsUpperLower: String(localized: "Five training days for balanced strength and hypertrophy.")
+        case .upperLower: String(localized: "Four training days with two upper- and two lower-body sessions.")
+        case .fullBody: String(localized: "Three full-body sessions with recovery days between them.")
+        case .activeRecovery: String(localized: "Two light sessions for mobility, technique, and recovery.")
+        }
+    }
+
+    var dayNames: [String] {
+        switch self {
+        case .pushPullLegsUpperLower:
+            [String(localized: "Push"), String(localized: "Pull"), String(localized: "Legs"), String(localized: "Upper"), String(localized: "Lower")]
+        case .upperLower:
+            [String(localized: "Upper A"), String(localized: "Lower A"), String(localized: "Upper B"), String(localized: "Lower B")]
+        case .fullBody:
+            [String(localized: "Full Body A"), String(localized: "Full Body B"), String(localized: "Full Body C")]
+        case .activeRecovery:
+            [String(localized: "Mobility"), String(localized: "Technique")]
+        }
+    }
+
+    var weeklyTrainingDays: Int { dayNames.count }
+
+    /// Modest activity lift that avoids double-counting the user's baseline activity choice.
+    var activityMultiplierAdjustment: Double {
+        switch self {
+        case .activeRecovery: 0.00
+        case .fullBody: 0.025
+        case .upperLower: 0.04
+        case .pushPullLegsUpperLower: 0.055
+        }
+    }
+
+    var proteinPerKgAdjustment: Double {
+        switch self {
+        case .activeRecovery: 0.0
+        case .fullBody: 0.05
+        case .upperLower: 0.10
+        case .pushPullLegsUpperLower: 0.15
+        }
+    }
+}
+
 // MARK: - User Profile
 
 struct UserProfile: Codable, Equatable {
@@ -166,6 +232,8 @@ struct UserProfile: Codable, Equatable {
     var heightCm: Double
     var weightKg: Double
     var activityLevel: ActivityLevel
+    /// The active training program. Optional for backward-compatible decoding.
+    var trainingProgramID: String? = nil
     var goal: WeightGoal
     var bodyFatPercentage: Double?
     /// Target body-fat fraction (0.0–1.0). Display-only — does NOT participate
@@ -236,8 +304,12 @@ struct UserProfile: Codable, Equatable {
         }
     }
 
+    var activeTrainingProgram: TrainingProgram {
+        trainingProgramID.flatMap(TrainingProgram.init(rawValue:)) ?? .priority
+    }
+
     var tdee: Double {
-        bmr * activityLevel.multiplier
+        bmr * (activityLevel.multiplier + activeTrainingProgram.activityMultiplierAdjustment)
     }
 
     var calorieAdjustment: Int {
@@ -260,7 +332,10 @@ struct UserProfile: Codable, Equatable {
     var proteinGoal: Int {
         // +0.2 g/kg during cutting phase to preserve lean mass (Helms et al 2014).
         let cuttingBoost = goal == .lose ? 0.2 : 0.0
-        let multiplier = activityLevel.proteinRequirementPerKg(bodyFatPercentage: bodyFatPercentage, extra: cuttingBoost)
+        let multiplier = activityLevel.proteinRequirementPerKg(
+            bodyFatPercentage: bodyFatPercentage,
+            extra: cuttingBoost + activeTrainingProgram.proteinPerKgAdjustment
+        )
         return Int(multiplier * weightKg)
     }
 
@@ -348,6 +423,7 @@ struct UserProfile: Codable, Equatable {
             "\(heightCm)",
             "\(weightKg)",
             "\(activityLevel)",
+            activeTrainingProgram.rawValue,
             "\(goal)",
             weeklyChangeKg.map { "\($0)" } ?? "nil",
             goalWeightKg.map { "\($0)" } ?? "nil",

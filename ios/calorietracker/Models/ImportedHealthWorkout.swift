@@ -2,7 +2,7 @@ import Foundation
 import HealthKit
 
 /// A read-only workout session imported from Apple Health (Apple Watch, iPhone,
-/// or third-party apps). Kept separate from Fud AI's strength diary and calculated
+/// or third-party apps). Kept separate from Ruoka + Treeni's strength diary and calculated
 /// burn estimates so Energy Burn / goal math is never double-counted.
 struct ImportedHealthWorkout: Identifiable, Codable, Equatable, Hashable {
     /// Stable HealthKit sample UUID used for deduplication.

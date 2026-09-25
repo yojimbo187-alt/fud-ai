@@ -63,7 +63,7 @@ private struct WorkoutLogCardFramePreferenceKey: PreferenceKey {
 
 /// The optional strength diary. Its information stays in `StrengthWorkoutStore`,
 /// separate from the food diary, while the visual language is bridged through
-/// Fud AI's existing workout theme tokens.
+/// Ruoka + Treeni's existing workout theme tokens.
 struct WorkoutLogView: View {
     @Environment(StrengthWorkoutStore.self) private var workoutStore
     @Environment(ImportedHealthWorkoutStore.self) private var importedHealthWorkoutStore

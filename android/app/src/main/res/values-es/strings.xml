@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI Calorías</string>
+    <string name="widget_calorie_label">Ruoka + Treeni Calorías</string>
     <string name="widget_calorie_description">Consulta las calorías y macros de hoy de un vistazo.</string>
-    <string name="widget_protein_label">Fud AI Proteína</string>
+    <string name="widget_protein_label">Ruoka + Treeni Proteína</string>
     <string name="widget_protein_description">Consulta tu progreso de proteína de hoy de un vistazo.</string>
     <string name="widget_today">Hoy</string>
     <string name="widget_protein">Proteína</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Atrás</string>
-    <string name="onboarding_logo_description">Logo de Fud AI</string>
+    <string name="onboarding_logo_description">Logo de Ruoka + Treeni</string>
     <string name="onboarding_welcome_line1">Come inteligente,</string>
     <string name="onboarding_welcome_line2">Vive mejor</string>
     <string name="onboarding_welcome_subtitle">Solo haz una foto, registra y prospera.\nTu nutrición, simplificada.</string>
@@ -258,7 +258,7 @@
     <string name="onboarding_health_connect">Conectar</string>
 
     <string name="onboarding_ai_choice_title">Configura tu IA</string>
-    <string name="onboarding_ai_choice_subtitle">Elige cómo quieres usar la IA en Fud AI. La app sigue siendo gratis de cualquier forma.</string>
+    <string name="onboarding_ai_choice_subtitle">Elige cómo quieres usar la IA en Ruoka + Treeni. La app sigue siendo gratis de cualquier forma.</string>
     <string name="onboarding_ai_byok_subtitle">Añade tu propia clave de proveedor de IA — se admiten Gemini, OpenAI, Groq y más.</string>
     <string name="onboarding_ai_byok_card_title">Trae tu propia clave</string>
     <string name="onboarding_ai_byok_card_subtitle">Gratis para siempre — ilimitado con tu clave. Gemini, OpenAI, Groq y más.</string>
@@ -528,7 +528,7 @@
     <string name="settings_week_sunday">Domingo</string>
     <string name="settings_notifications">Notificaciones</string>
     <string name="settings_battery_opt">Optimización de batería</string>
-    <string name="settings_battery_opt_value">Añadir Fud AI a la lista blanca</string>
+    <string name="settings_battery_opt_value">Añadir Ruoka + Treeni a la lista blanca</string>
 
     <string name="settings_ai_provider">Proveedor</string>
     <string name="settings_ai_model">Modelo</string>
@@ -560,7 +560,7 @@
     <string name="settings_invalid_goal_gain">Un objetivo de ganancia necesita una meta por encima de tu peso actual.</string>
     <string name="settings_permission_title">Se necesita permiso</string>
 
-    <string name="settings_notifications_denied">Permiso de notificaciones denegado. Actívalo en Ajustes del sistema → Apps → Fud AI → Notificaciones para recibir recordatorios.</string>
+    <string name="settings_notifications_denied">Permiso de notificaciones denegado. Actívalo en Ajustes del sistema → Apps → Ruoka + Treeni → Notificaciones para recibir recordatorios.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Hora de pesarte</string>
@@ -606,9 +606,7 @@
     <string name="about_share">Compartir la app</string>
     <string name="about_open_source">Código abierto (MIT)</string>
     <string name="about_star_github">Destacar en GitHub</string>
-    <string name="about_vote_ph">Votar en Product Hunt</string>
-    <string name="about_leave_tip_kofi">Dejar una propina en Ko-fi</string>
-    <string name="about_report_issue">Informar de un problema en GitHub</string>
+    <string name="about_vote_ph">Votar en Product Hunt</string>    <string name="about_report_issue">Informar de un problema en GitHub</string>
     <string name="about_report_issue_discord">Informar de un problema en Discord</string>
     <string name="about_request_feature">Solicitar una función en GitHub</string>
     <string name="about_request_feature_discord">Solicitar una función en Discord</string>
@@ -620,18 +618,15 @@
     <string name="about_privacy">Política de privacidad</string>
     <string name="about_terms">Términos del servicio</string>
     <string name="about_category_app_updates">Aplicación y actualizaciones</string>
-    <string name="about_category_support">Apoya Fud AI</string>
+    <string name="about_category_support">Apoya Ruoka + Treeni</string>
     <string name="about_category_help_feedback">Ayuda y comentarios</string>
     <string name="about_category_community">Comunidad</string>
     <string name="about_category_legal">Legal</string>
     <string name="about_category_join_beta">Unirse a la beta</string>
-    <string name="about_beta_intro">Prueba los cambios de Fud AI antes de que lleguen a Play Store. Las betas pueden estar inacabadas.</string>
-    <string name="about_beta_steps">Únete al Discord de Fud AI y abre #beta-android. Cuando publiquen un enlace de prueba de Play, acepta y actualiza Fud AI desde Play Store. Si algo falla, usa /bug e incluye la versión de Ajustes.</string>
-    <string name="about_beta_not_open">La prueba de Play aún no está abierta. El enlace se publicará en #beta-android.</string>
-    <string name="about_made_by">Hecho por Apoorv Darshan</string>
-    <string name="about_with_care">con cuidado, para todos</string>
-    <string name="about_share_message">Llevo el control de mis comidas con Fud AI — haz una foto, dícela o escríbela, y la IA registra las calorías. Es gratis, de código abierto, y tus datos se quedan en tu dispositivo.\n\nDescargar: https://fud-ai.app</string>
-    <string name="about_share_chooser">Compartir Fud AI</string>
+    <string name="about_beta_intro">Prueba los cambios de Ruoka + Treeni antes de que lleguen a Play Store. Las betas pueden estar inacabadas.</string>
+    <string name="about_beta_steps">Únete al Discord de Ruoka + Treeni y abre #beta-android. Cuando publiquen un enlace de prueba de Play, acepta y actualiza Ruoka + Treeni desde Play Store. Si algo falla, usa /bug e incluye la versión de Ajustes.</string>
+    <string name="about_beta_not_open">La prueba de Play aún no está abierta. El enlace se publicará en #beta-android.</string>    <string name="about_share_message">Llevo el control de mis comidas con Ruoka + Treeni — haz una foto, dícela o escríbela, y la IA registra las calorías. Es gratis, de código abierto, y tus datos se quedan en tu dispositivo.\n\nDescargar: https://fud-ai.app</string>
+    <string name="about_share_chooser">Compartir Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Recordatorio de racha</string>
@@ -662,7 +657,7 @@
         <item quantity="other">%1$d gastos calculados · toca para ver o eliminar</item>
     </plurals>
     <string name="progress_workout_delete_title">¿Eliminar gasto del entreno?</string>
-    <string name="progress_workout_delete_message">Esto elimina el gasto calculado de Fud AI y Health Connect. Tu plan del diario de entrenos seguirá guardado.</string>
+    <string name="progress_workout_delete_message">Esto elimina el gasto calculado de Ruoka + Treeni y Health Connect. Tu plan del diario de entrenos seguirá guardado.</string>
     <string name="progress_workout_section">Actividad de entrenamiento</string>
     <string name="progress_workout_stat_workouts">Entrenos</string>
     <string name="progress_workout_stat_total">Gasto total</string>
@@ -686,11 +681,11 @@
     <string name="settings_section_fallback">Proveedor de respaldo</string>
     <string name="settings_enable_fallback">Activar respaldo</string>
     <string name="settings_fallback_footer">Si tu proveedor principal falla (sobrecarga, límite de tasa, error de red), la app reintenta automáticamente con este respaldo. Se permite el mismo proveedor que el principal — solo elige un modelo diferente.</string>
-    <string name="widget_all_metrics_label">Fud AI Hoy</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Hoy</string>
     <string name="widget_all_metrics_description">Mira las calorías, proteínas, carbohidratos y grasas de hoy en un widget.</string>
     <string name="settings_needs_health_connect">Requiere Health Connect</string>
-    <string name="settings_energy_goals_info">Cuando está activado, Fud AI usa la ventana reciente de energía medida de Health Connect como referencia de mantenimiento al calcular objetivos, en lugar de la estimación de la fórmula: energía total medida cuando hay suficientes días; de lo contrario, energía activa medida promedio + BMR de la fórmula. No se usa IA para leer tu gasto. Requiere Health Connect. Funciona con el botón Recalcular y con Adaptive Goals.</string>
-    <string name="settings_adaptive_goals_info">Aproximadamente una vez a la semana, al abrir la app, Fud AI vuelve a ejecutar automáticamente el cálculo completo de objetivos — el mismo que usa el botón Recalcular — a partir de tu perfil, tus comidas registradas recientes y tu tendencia de peso. Si Energy Burn está activado, usa tu gasto medido como ancla de mantenimiento. Si la IA no está disponible, se omite silenciosamente. Al desactivarlo se restauran los objetivos previos al primer cambio hecho por esta función. Esto no es un consejo médico.</string>
+    <string name="settings_energy_goals_info">Cuando está activado, Ruoka + Treeni usa la ventana reciente de energía medida de Health Connect como referencia de mantenimiento al calcular objetivos, en lugar de la estimación de la fórmula: energía total medida cuando hay suficientes días; de lo contrario, energía activa medida promedio + BMR de la fórmula. No se usa IA para leer tu gasto. Requiere Health Connect. Funciona con el botón Recalcular y con Adaptive Goals.</string>
+    <string name="settings_adaptive_goals_info">Aproximadamente una vez a la semana, al abrir la app, Ruoka + Treeni vuelve a ejecutar automáticamente el cálculo completo de objetivos — el mismo que usa el botón Recalcular — a partir de tu perfil, tus comidas registradas recientes y tu tendencia de peso. Si Energy Burn está activado, usa tu gasto medido como ancla de mantenimiento. Si la IA no está disponible, se omite silenciosamente. Al desactivarlo se restauran los objetivos previos al primer cambio hecho por esta función. Esto no es un consejo médico.</string>
     <string name="ad_label">Anuncio</string>
     <string name="onboarding_plan_adaptive_note">Tu plan se ajusta automáticamente cada semana según lo que registras — desactiva Adaptive Goals en Ajustes para mantenerlo fijo.</string>
     <string name="onboarding_feature_snap">Haz una foto — la IA la registra</string>
@@ -700,7 +695,7 @@
     <string name="whats_new_v30_workouts">Nueva pestaña Entrenamientos: explora 873 ejercicios con fotos, filtros de músculo y equipamiento, búsqueda y páginas de detalle.</string>
     <string name="whats_new_v30_home">Rediseño de Inicio: velocímetro de calorías, barras verticales de macros, cuatro tarjetas de nutrientes y un botón flotante para añadir.</string>
     <string name="whats_new_v30_coach_voice">Pregunta al Coach por voz con la nueva grabadora integrada.</string>
-    <string name="whats_new_v30_share">Comparte cualquier comida como un enlace que abre directamente Fud AI, en iPhone o Android.</string>
+    <string name="whats_new_v30_share">Comparte cualquier comida como un enlace que abre directamente Ruoka + Treeni, en iPhone o Android.</string>
     <string name="whats_new_v30_export">Exporta tu diario de comidas como JSON, Markdown o CSV desde Ajustes.</string>
     <string name="whats_new_v30_reprocess">Reprocesa una comida registrada con IA: ajusta el nombre, la porción o la nota y vuelve a analizarla.</string>
     <string name="whats_new_v30_camera">Cámara + Cámara conserva ambas capturas, unidas lado a lado.</string>
@@ -749,7 +744,7 @@
     <string name="settings_calc_maintenance">Mantenimiento y ajuste del objetivo</string>
     <string name="settings_calc_macro_split">Reparto de macronutrientes</string>
     <string name="settings_calc_micro_values">Valores de micronutrientes</string>
-    <string name="settings_calc_intro">Tus objetivos diarios de calorías y macros los establece la IA. Cuando tocas «Recalcular objetivos» — o automáticamente una vez a la semana si los Objetivos adaptativos están activados — Fud AI envía a tu proveedor de IA tu perfil, las ecuaciones de referencia de abajo, totales nutricionales diarios agregados que protegen tu privacidad, mediciones exactas y fechadas de peso, grasa corporal y perímetros corporales, datos agregados de entrenamientos —cantidad, duración, series y repeticiones— y datos opcionales de energía de Health Connect. Para este cálculo no se envían nombres de alimentos, notas, fotos, ingredientes ni nombres de ejercicios. La IA parte de estas fórmulas revisadas por pares y luego las ajusta a tus datos reales para estimar tu mantenimiento y objetivos verdaderos.</string>
+    <string name="settings_calc_intro">Tus objetivos diarios de calorías y macros los establece la IA. Cuando tocas «Recalcular objetivos» — o automáticamente una vez a la semana si los Objetivos adaptativos están activados — Ruoka + Treeni envía a tu proveedor de IA tu perfil, las ecuaciones de referencia de abajo, totales nutricionales diarios agregados que protegen tu privacidad, mediciones exactas y fechadas de peso, grasa corporal y perímetros corporales, datos agregados de entrenamientos —cantidad, duración, series y repeticiones— y datos opcionales de energía de Health Connect. Para este cálculo no se envían nombres de alimentos, notas, fotos, ingredientes ni nombres de ejercicios. La IA parte de estas fórmulas revisadas por pares y luego las ajusta a tus datos reales para estimar tu mantenimiento y objetivos verdaderos.</string>
     <string name="settings_calc_sec_bmr">Metabolismo basal (BMR)</string>
     <string name="settings_calc_sec_tdee">Gasto energético diario (TDEE)</string>
     <string name="settings_calc_mifflin_name">Ecuación de Mifflin-St Jeor</string>
@@ -800,7 +795,7 @@
     <string name="about_whisper_notices_load_error">No se pudieron cargar los avisos de terceros de Whisper Base.</string>
     <string name="cd_remove_image">Quitar imagen</string>
     <string name="cd_save_photo">Guardar foto</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">Foto guardada</string>
     <string name="photo_save_failed">No se pudo guardar la foto</string>
     <string name="photo_save_permission_denied">Acceso a fotos denegado</string>

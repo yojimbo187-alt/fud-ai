@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI Kalorie</string>
+    <string name="widget_calorie_label">Ruoka + Treeni Kalorie</string>
     <string name="widget_calorie_description">Zobacz dzisiejsze kalorie i makroskładniki w skrócie.</string>
-    <string name="widget_protein_label">Fud AI Białko</string>
+    <string name="widget_protein_label">Ruoka + Treeni Białko</string>
     <string name="widget_protein_description">Zobacz dzisiejszy postęp białka w skrócie.</string>
     <string name="widget_today">Dziś</string>
     <string name="widget_protein">Białko</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">Wstecz</string>
-    <string name="onboarding_logo_description">Logo Fud AI</string>
+    <string name="onboarding_logo_description">Logo Ruoka + Treeni</string>
     <string name="onboarding_welcome_line1">Jedz mądrze,</string>
     <string name="onboarding_welcome_line2">Żyj lepiej</string>
     <string name="onboarding_welcome_subtitle">Po prostu zrób zdjęcie, śledź i rozwijaj się.\nTwoje odżywianie, uproszczone.</string>
@@ -259,7 +259,7 @@
     <string name="onboarding_health_connect">Połącz</string>
 
     <string name="onboarding_ai_choice_title">Skonfiguruj swoje AI</string>
-    <string name="onboarding_ai_choice_subtitle">Wybierz, jak chcesz korzystać z AI w Fud AI. Aplikacja pozostaje darmowa w obu przypadkach.</string>
+    <string name="onboarding_ai_choice_subtitle">Wybierz, jak chcesz korzystać z AI w Ruoka + Treeni. Aplikacja pozostaje darmowa w obu przypadkach.</string>
     <string name="onboarding_ai_byok_subtitle">Dodaj własny klucz dostawcy AI — obsługujemy Gemini, OpenAI, Groq i inne.</string>
     <string name="onboarding_ai_byok_card_title">Użyj własnego klucza</string>
     <string name="onboarding_ai_byok_card_subtitle">Za darmo na zawsze — bez limitu na twoim kluczu. Gemini, OpenAI, Groq i inne.</string>
@@ -533,7 +533,7 @@
     <string name="settings_week_sunday">Niedziela</string>
     <string name="settings_notifications">Powiadomienia</string>
     <string name="settings_battery_opt">Optymalizacja baterii</string>
-    <string name="settings_battery_opt_value">Dodaj Fud AI do wyjątków</string>
+    <string name="settings_battery_opt_value">Dodaj Ruoka + Treeni do wyjątków</string>
 
     <string name="settings_ai_provider">Dostawca</string>
     <string name="settings_ai_model">Model</string>
@@ -565,7 +565,7 @@
     <string name="settings_invalid_goal_gain">Cel „Przybrać” wymaga wagi powyżej obecnej.</string>
     <string name="settings_permission_title">Potrzebne uprawnienie</string>
 
-    <string name="settings_notifications_denied">Odmowa powiadomień. Włącz je w Ustawieniach systemu → Aplikacje → Fud AI → Powiadomienia, aby otrzymywać przypomnienia.</string>
+    <string name="settings_notifications_denied">Odmowa powiadomień. Włącz je w Ustawieniach systemu → Aplikacje → Ruoka + Treeni → Powiadomienia, aby otrzymywać przypomnienia.</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">Czas się zważyć</string>
@@ -611,9 +611,7 @@
     <string name="about_share">Udostępnij aplikację</string>
     <string name="about_open_source">Open Source (MIT)</string>
     <string name="about_star_github">Dodaj gwiazdkę na GitHubie</string>
-    <string name="about_vote_ph">Zagłosuj na Product Hunt</string>
-    <string name="about_leave_tip_kofi">Zostaw napiwek na Ko-fi</string>
-    <string name="about_report_issue">Zgłoś problem na GitHubie</string>
+    <string name="about_vote_ph">Zagłosuj na Product Hunt</string>    <string name="about_report_issue">Zgłoś problem na GitHubie</string>
     <string name="about_report_issue_discord">Zgłoś problem na Discordzie</string>
     <string name="about_request_feature">Poproś o funkcję na GitHubie</string>
     <string name="about_request_feature_discord">Poproś o funkcję na Discordzie</string>
@@ -625,18 +623,15 @@
     <string name="about_privacy">Polityka prywatności</string>
     <string name="about_terms">Warunki korzystania</string>
     <string name="about_category_app_updates">Aplikacja i aktualizacje</string>
-    <string name="about_category_support">Wesprzyj Fud AI</string>
+    <string name="about_category_support">Wesprzyj Ruoka + Treeni</string>
     <string name="about_category_help_feedback">Pomoc i opinie</string>
     <string name="about_category_community">Społeczność</string>
     <string name="about_category_legal">Informacje prawne</string>
     <string name="about_category_join_beta">Dołącz do bety</string>
-    <string name="about_beta_intro">Wypróbuj nowości Fud AI, zanim trafią do Sklepu Play. Wersje beta mogą być niedokończone.</string>
-    <string name="about_beta_steps">Dołącz do Discorda Fud AI i otwórz #beta-android. Gdy pojawi się tam link do testu Play, dołącz i zaktualizuj Fud AI ze Sklepu Play. Jeśli coś się zepsuje, użyj /bug i podaj wersję z Ustawień.</string>
-    <string name="about_beta_not_open">Test Play nie jest jeszcze otwarty. Link pojawi się w #beta-android.</string>
-    <string name="about_made_by">Autor: Apoorv Darshan</string>
-    <string name="about_with_care">z troską, dla wszystkich</string>
-    <string name="about_share_message">Śledzę posiłki z Fud AI — zrób zdjęcie, powiedz albo wpisz posiłek, a AI zapisze kalorie. To darmowa aplikacja open source, a Twoje dane zostają na urządzeniu.\n\nPobierz: https://fud-ai.app</string>
-    <string name="about_share_chooser">Udostępnij Fud AI</string>
+    <string name="about_beta_intro">Wypróbuj nowości Ruoka + Treeni, zanim trafią do Sklepu Play. Wersje beta mogą być niedokończone.</string>
+    <string name="about_beta_steps">Dołącz do Discorda Ruoka + Treeni i otwórz #beta-android. Gdy pojawi się tam link do testu Play, dołącz i zaktualizuj Ruoka + Treeni ze Sklepu Play. Jeśli coś się zepsuje, użyj /bug i podaj wersję z Ustawień.</string>
+    <string name="about_beta_not_open">Test Play nie jest jeszcze otwarty. Link pojawi się w #beta-android.</string>    <string name="about_share_message">Śledzę posiłki z Ruoka + Treeni — zrób zdjęcie, powiedz albo wpisz posiłek, a AI zapisze kalorie. To darmowa aplikacja open source, a Twoje dane zostają na urządzeniu.\n\nPobierz: https://fud-ai.app</string>
+    <string name="about_share_chooser">Udostępnij Ruoka + Treeni</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">Przypomnienie o serii</string>
@@ -669,7 +664,7 @@
         <item quantity="other">%1$d obliczonych wydatków energii · dotknij, aby wyświetlić lub usunąć</item>
     </plurals>
     <string name="progress_workout_delete_title">Usunąć spalanie z treningu?</string>
-    <string name="progress_workout_delete_message">To usuwa obliczone spalanie z Fud AI i Health Connect. Plan treningu w dzienniku zostaje.</string>
+    <string name="progress_workout_delete_message">To usuwa obliczone spalanie z Ruoka + Treeni i Health Connect. Plan treningu w dzienniku zostaje.</string>
     <string name="progress_workout_section">Aktywność treningowa</string>
     <string name="progress_workout_stat_workouts">Treningi</string>
     <string name="progress_workout_stat_total">Całkowite spalanie</string>
@@ -693,11 +688,11 @@
     <string name="settings_section_fallback">Zapasowe AI do zdjęć</string>
     <string name="settings_enable_fallback">Włącz dostawcę zapasowego</string>
     <string name="settings_fallback_footer">Używane tylko, gdy żądanie AI zawiera zdjęcie. Ten sam dostawca co główny jest dozwolony — wybierz po prostu inny model.</string>
-    <string name="widget_all_metrics_label">Fud AI Dziś</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni Dziś</string>
     <string name="widget_all_metrics_description">Zobacz dzisiejsze kalorie, białko, węglowodany i tłuszcz w jednym widżecie.</string>
     <string name="settings_needs_health_connect">Wymaga Health Connect</string>
-    <string name="settings_energy_goals_info">Gdy włączone, Fud AI używa niedawnego okna zmierzonej energii z Health Connect jako kotwicy utrzymania przy obliczaniu celów zamiast szacunku ze wzoru: zmierzona całkowita energia, gdy jest wystarczająco dni; w przeciwnym razie średnia zmierzona energia aktywna + BMR ze wzoru. AI nie odczytuje Twojego spalania. Wymaga Health Connect. Działa z przyciskiem Przelicz oraz z Celami adaptacyjnymi.</string>
-    <string name="settings_adaptive_goals_info">Mniej więcej raz w tygodniu, po otwarciu aplikacji, Fud AI automatycznie ponawia pełne obliczanie celów — to samo, którego używa przycisk Przelicz — na podstawie Twojego profilu, ostatnio zapisanych posiłków i trendu wagi. Jeśli Energy Burn jest włączone, zmierzone spalanie służy jako punkt odniesienia podtrzymania. Gdy AI jest niedostępne, uruchomienie jest pomijane po cichu. Wyłączenie przywraca cele sprzed pierwszej zmiany dokonanej przez tę funkcję. To nie jest porada medyczna.</string>
+    <string name="settings_energy_goals_info">Gdy włączone, Ruoka + Treeni używa niedawnego okna zmierzonej energii z Health Connect jako kotwicy utrzymania przy obliczaniu celów zamiast szacunku ze wzoru: zmierzona całkowita energia, gdy jest wystarczająco dni; w przeciwnym razie średnia zmierzona energia aktywna + BMR ze wzoru. AI nie odczytuje Twojego spalania. Wymaga Health Connect. Działa z przyciskiem Przelicz oraz z Celami adaptacyjnymi.</string>
+    <string name="settings_adaptive_goals_info">Mniej więcej raz w tygodniu, po otwarciu aplikacji, Ruoka + Treeni automatycznie ponawia pełne obliczanie celów — to samo, którego używa przycisk Przelicz — na podstawie Twojego profilu, ostatnio zapisanych posiłków i trendu wagi. Jeśli Energy Burn jest włączone, zmierzone spalanie służy jako punkt odniesienia podtrzymania. Gdy AI jest niedostępne, uruchomienie jest pomijane po cichu. Wyłączenie przywraca cele sprzed pierwszej zmiany dokonanej przez tę funkcję. To nie jest porada medyczna.</string>
     <string name="ad_label">Reklama</string>
     <string name="onboarding_plan_adaptive_note">Twój plan dostosowuje się co tydzień na podstawie wpisów — wyłącz Cele adaptacyjne w Ustawieniach, aby pozostał stały.</string>
     <string name="onboarding_feature_snap">Zrób zdjęcie — AI je zapisze</string>
@@ -707,7 +702,7 @@
     <string name="whats_new_v30_workouts">Nowa karta Treningi — przeglądaj 873 ćwiczenia ze zdjęciami, filtrami mięśni i sprzętu, wyszukiwaniem i stronami szczegółów.</string>
     <string name="whats_new_v30_home">Nowy ekran główny: prędkościomierz kalorii, pionowe paski makro, cztery karty składników i pływający przycisk dodawania.</string>
     <string name="whats_new_v30_coach_voice">Zapytaj Trenera głosowo dzięki nowemu wbudowanemu rejestratorowi.</string>
-    <string name="whats_new_v30_share">Udostępnij dowolny posiłek jako link, który otwiera się od razu w Fud AI na iPhonie lub Androidzie.</string>
+    <string name="whats_new_v30_share">Udostępnij dowolny posiłek jako link, który otwiera się od razu w Ruoka + Treeni na iPhonie lub Androidzie.</string>
     <string name="whats_new_v30_export">Eksportuj dziennik żywieniowy jako JSON, Markdown lub CSV w Ustawieniach.</string>
     <string name="whats_new_v30_reprocess">Przetwórz ponownie zapisany posiłek z AI — zmień nazwę, porcję lub notatkę i przeanalizuj od nowa.</string>
     <string name="whats_new_v30_camera">Aparat + Aparat zachowuje oba ujęcia, połączone obok siebie.</string>
@@ -756,7 +751,7 @@
     <string name="settings_calc_maintenance">Utrzymanie i korekta celu</string>
     <string name="settings_calc_macro_split">Podział makroskładników</string>
     <string name="settings_calc_micro_values">Wartości mikroelementów</string>
-    <string name="settings_calc_intro">Twoje dzienne cele kalorii i makro ustawia AI. Gdy stukniesz Przelicz cele — albo automatycznie co ok. tydzień, jeśli Cele adaptacyjne są włączone — Fud AI wysyła do dostawcy AI Twój profil, poniższe równania referencyjne, bezpieczne pod względem prywatności dzienne sumy żywieniowe, dokładne datowane pomiary wagi, tkanki tłuszczowej i obwodów, zagregowane liczby treningów, czas, serie i powtórzenia oraz opcjonalną energię z Health Connect. Nazwy posiłków, notatki, zdjęcia, składniki i nazwy ćwiczeń nie są wysyłane do tej kalkulacji. Zaczyna od tych recenzowanych wzorów, a potem dopasowuje je do Twoich danych, aby oszacować prawdziwe utrzymanie i cele.</string>
+    <string name="settings_calc_intro">Twoje dzienne cele kalorii i makro ustawia AI. Gdy stukniesz Przelicz cele — albo automatycznie co ok. tydzień, jeśli Cele adaptacyjne są włączone — Ruoka + Treeni wysyła do dostawcy AI Twój profil, poniższe równania referencyjne, bezpieczne pod względem prywatności dzienne sumy żywieniowe, dokładne datowane pomiary wagi, tkanki tłuszczowej i obwodów, zagregowane liczby treningów, czas, serie i powtórzenia oraz opcjonalną energię z Health Connect. Nazwy posiłków, notatki, zdjęcia, składniki i nazwy ćwiczeń nie są wysyłane do tej kalkulacji. Zaczyna od tych recenzowanych wzorów, a potem dopasowuje je do Twoich danych, aby oszacować prawdziwe utrzymanie i cele.</string>
     <string name="settings_calc_sec_bmr">Metabolizm spoczynkowy (BMR)</string>
     <string name="settings_calc_sec_tdee">Dzienne wydatkowanie energii (TDEE)</string>
     <string name="settings_calc_mifflin_name">Równanie Mifflina–St Jeora</string>
@@ -807,7 +802,7 @@
     <string name="about_whisper_notices_load_error">Nie udało się wczytać informacji zewnętrznych Whisper Base.</string>
     <string name="cd_remove_image">Usuń obraz</string>
     <string name="cd_save_photo">Zapisz zdjęcie</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">Zdjęcie zapisane</string>
     <string name="photo_save_failed">Nie udało się zapisać zdjęcia</string>
     <string name="photo_save_permission_denied">Odmowa dostępu do zdjęć</string>

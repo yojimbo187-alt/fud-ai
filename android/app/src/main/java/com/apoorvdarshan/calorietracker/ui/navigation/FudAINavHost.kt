@@ -47,7 +47,6 @@ import com.apoorvdarshan.calorietracker.ui.settings.OptionalNutrientGoalsScreen
 import com.apoorvdarshan.calorietracker.ui.settings.SettingsScreen
 import com.apoorvdarshan.calorietracker.ui.settings.SettingsViewModel
 import com.apoorvdarshan.calorietracker.ui.workouts.WorkoutsScreen
-import com.apoorvdarshan.calorietracker.models.WorkoutTabMode
 import com.apoorvdarshan.calorietracker.models.QuickActionRequest
 import com.apoorvdarshan.calorietracker.ui.settings.AddMenuSettingsScreen
 import com.apoorvdarshan.calorietracker.ui.settings.QuickActionsScreen
@@ -59,9 +58,6 @@ import com.apoorvdarshan.calorietracker.ui.settings.QuickActionsScreen
  * NavHost, so tab switches (which recompose Home) never change it.
  */
 val LocalLaunchFillEpoch = compositionLocalOf { 1 }
-
-private const val WORKOUT_UI_PREFS = "fudai_workouts"
-private const val WORKOUT_MODE_V2_DEFAULT_KEY = "mode.diary_default.v2"
 
 @Composable
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -85,16 +81,6 @@ fun FudAINavHost(
     // covers the tab bar.
     val context = LocalContext.current
     val analyzing by container.analyzingFood.collectAsState()
-    val persistedWorkoutMode by container.workoutRepository.mode.collectAsState(initial = WorkoutTabMode.Default)
-    val workoutUiPrefs = remember(context) {
-        context.getSharedPreferences(WORKOUT_UI_PREFS, android.content.Context.MODE_PRIVATE)
-    }
-    var workoutModeV2Initialized by remember(context) {
-        mutableStateOf(workoutUiPrefs.getBoolean(WORKOUT_MODE_V2_DEFAULT_KEY, false))
-    }
-    // Match iOS's versioned AppStorage key: reset the former library-first
-    // default once, then keep every user switch persistent after that.
-    val workoutMode = if (workoutModeV2Initialized) persistedWorkoutMode else WorkoutTabMode.LOG
     // Nested settings/* screens keep the tab bar visible and highlight Settings,
     // so re-tapping the Settings icon can return to the hub (iOS parity).
     val selectedTabRoute = FudAIRoutes.selectedBottomTab(currentRoute)
@@ -124,14 +110,6 @@ fun FudAINavHost(
                 popUpTo(FudAIRoutes.HOME) { inclusive = false }
                 launchSingleTop = true
             }
-        }
-    }
-
-    LaunchedEffect(container.workoutRepository, workoutModeV2Initialized) {
-        if (!workoutModeV2Initialized) {
-            container.workoutRepository.setMode(WorkoutTabMode.LOG)
-            workoutUiPrefs.edit().putBoolean(WORKOUT_MODE_V2_DEFAULT_KEY, true).apply()
-            workoutModeV2Initialized = true
         }
     }
 
@@ -175,7 +153,6 @@ fun FudAINavHost(
                 FudAIBottomNavBar(
                     currentRoute = selectedTabRoute,
                     showAboutBadge = updateAvailable,
-                    workoutMode = workoutMode,
                     onTap = { target ->
                         // Re-tapping Settings while already in Settings (hub category or a
                         // nested settings/* destination) returns to the Settings hub — same

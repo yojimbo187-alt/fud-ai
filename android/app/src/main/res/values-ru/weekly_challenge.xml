@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">Ещё не обновлено</string>
     <string name="challenge_intro_title">Формируйте полезные привычки вместе</string>
     <string name="challenge_intro_body">По желанию присоединитесь, чтобы сравнивать еженедельные достижения в активности, питании, регулярности и питьевом режиме. Личный экран прогресса доступен и без участия.</string>
-    <string name="challenge_privacy_disclosure">Fud AI выполняет все расчёты на устройстве. Отправляются только дата начала недели, общие баллы, количество зачётных дней активности, питания, регулярности и питьевого режима, а также суммарные калории активности. Названия продуктов, приёмы пищи, вес, сведения о тренировках и записи Health Connect никогда не отправляются.</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni выполняет все расчёты на устройстве. Отправляются только дата начала недели, общие баллы, количество зачётных дней активности, питания, регулярности и питьевого режима, а также суммарные калории активности. Названия продуктов, приёмы пищи, вес, сведения о тренировках и записи Health Connect никогда не отправляются.</string>
     <string name="challenge_public_profile_disclosure">Участникам видны только ваше отображаемое имя и, по желанию, одна ссылка на X или Instagram. Вес и снижение веса никогда не оцениваются.</string>
     <string name="challenge_points_title">Как начисляются баллы</string>
     <string name="challenge_points_explanation" formatted="false">Активность: день с положительным записанным расходом калорий на тренировке. Питание: суточные калории в пределах 85–115% цели. Регулярность: в этот день записана любая еда. Питьевой режим: цель по воде достигнута при включённом учёте. Общий зачёт: сумма четырёх количеств дней, максимум 28.</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">Далее</string>
     <string name="challenge_join_action">Присоединиться</string>
     <string name="challenge_pending_delete_title">Удаление ожидает подключения</string>
-    <string name="challenge_pending_delete_message">Профиль соревнования скрыт на этом устройстве. Fud AI повторит удаление удалённого профиля и еженедельных результатов, когда появится интернет.</string>
+    <string name="challenge_pending_delete_message">Профиль соревнования скрыт на этом устройстве. Ruoka + Treeni повторит удаление удалённого профиля и еженедельных результатов, когда появится интернет.</string>
     <string name="challenge_retry_deletion">Повторить удаление</string>
     <string name="challenge_category_overall">Общий зачёт</string>
     <string name="challenge_category_activity">Активность</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">Используйте 1–30 букв, цифр, точек или знаков подчёркивания; без точек подряд или в конце.</string>
     <string name="challenge_rules_consent">Я принимаю Правила сообщества и буду использовать уважительный профиль, не выдавая себя за других.</string>
     <string name="challenge_read_community_rules">Прочитать Правила сообщества</string>
-    <string name="challenge_age_consent">Я подтверждаю, что мне не менее 18 лет. Fud AI не получает и не отправляет мою дату рождения.</string>
+    <string name="challenge_age_consent">Я подтверждаю, что мне не менее 18 лет. Ruoka + Treeni не получает и не отправляет мою дату рождения.</string>
     <string name="challenge_leave_title">Выйти из соревнования?</string>
     <string name="challenge_leave_message">Удалённый профиль соревнования и все еженедельные результаты будут удалены. Личные данные о еде, весе, тренировках и Health Connect останутся на устройстве.</string>
     <string name="challenge_leave_confirm">Выйти и удалить</string>

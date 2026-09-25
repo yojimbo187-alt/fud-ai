@@ -73,7 +73,7 @@ class BodyFatRepository(
      * Merge externally-sourced body-fat readings (e.g. a smart scale via Health
      * Connect) into local history. Idempotent: each external record maps to a
      * deterministic id so repeated imports upsert in place instead of duplicating,
-     * and the user's own manual entries are preserved. Fud AI's own records restore
+     * and the user's own manual entries are preserved. Ruoka + Treeni's own records restore
      * under their original UUID (reinstall recovery); the same-id upsert is a no-op
      * when the entry still exists locally. The change-token path filters own records
      * at the manager level, so live echo-imports stay suppressed — see

@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fud AI</string>
+    <string name="app_name">Ruoka + Treeni</string>
 
     <!-- Widgets -->
-    <string name="widget_calorie_label">Fud AI कैलोरी</string>
+    <string name="widget_calorie_label">Ruoka + Treeni कैलोरी</string>
     <string name="widget_calorie_description">आज की कैलोरी और मैक्रो एक नज़र में देखें।</string>
-    <string name="widget_protein_label">Fud AI प्रोटीन</string>
+    <string name="widget_protein_label">Ruoka + Treeni प्रोटीन</string>
     <string name="widget_protein_description">आज की प्रोटीन प्रगति एक नज़र में देखें।</string>
     <string name="widget_today">आज</string>
     <string name="widget_protein">प्रोटीन</string>
@@ -185,7 +185,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_back">वापस</string>
-    <string name="onboarding_logo_description">Fud AI लोगो</string>
+    <string name="onboarding_logo_description">Ruoka + Treeni लोगो</string>
     <string name="onboarding_welcome_line1">समझदारी से खाएँ,</string>
     <string name="onboarding_welcome_line2">बेहतर जिएँ</string>
     <string name="onboarding_welcome_subtitle">बस स्नैप करें, ट्रैक करें और फलें-फूलें।\nआपका पोषण, सरल बनाया गया।</string>
@@ -257,7 +257,7 @@
     <string name="onboarding_health_connect">कनेक्ट करें</string>
 
     <string name="onboarding_ai_choice_title">अपना AI सेट अप करें</string>
-    <string name="onboarding_ai_choice_subtitle">चुनें कि Fud AI में AI कैसे चलाना है। दोनों तरीकों में ऐप मुफ़्त रहता है।</string>
+    <string name="onboarding_ai_choice_subtitle">चुनें कि Ruoka + Treeni में AI कैसे चलाना है। दोनों तरीकों में ऐप मुफ़्त रहता है।</string>
     <string name="onboarding_ai_byok_subtitle">अपनी AI प्रोवाइडर कुंजी जोड़ें — Gemini, OpenAI, Groq और अन्य समर्थित हैं।</string>
     <string name="onboarding_ai_byok_card_title">अपनी कुंजी लाएँ</string>
     <string name="onboarding_ai_byok_card_subtitle">हमेशा मुफ़्त — आपकी कुंजी पर असीमित। Gemini, OpenAI, Groq और अन्य।</string>
@@ -527,7 +527,7 @@
     <string name="settings_week_sunday">रविवार</string>
     <string name="settings_notifications">सूचनाएँ</string>
     <string name="settings_battery_opt">बैटरी ऑप्टिमाइज़ेशन</string>
-    <string name="settings_battery_opt_value">Fud AI को व्हाइटलिस्ट करें</string>
+    <string name="settings_battery_opt_value">Ruoka + Treeni को व्हाइटलिस्ट करें</string>
 
     <string name="settings_ai_provider">प्रदाता</string>
     <string name="settings_ai_model">मॉडल</string>
@@ -559,7 +559,7 @@
     <string name="settings_invalid_goal_gain">बढ़ाने के लक्ष्य के लिए आपके वर्तमान वज़न से अधिक टार्गेट चाहिए।</string>
     <string name="settings_permission_title">अनुमति आवश्यक</string>
 
-    <string name="settings_notifications_denied">सूचनाओं की अनुमति अस्वीकृत। रिमाइंडर पाने के लिए सिस्टम सेटिंग्स → ऐप्स → Fud AI → सूचनाएँ में सक्षम करें।</string>
+    <string name="settings_notifications_denied">सूचनाओं की अनुमति अस्वीकृत। रिमाइंडर पाने के लिए सिस्टम सेटिंग्स → ऐप्स → Ruoka + Treeni → सूचनाएँ में सक्षम करें।</string>
 
     <!-- Notification copy -->
     <string name="notif_weight_log_title">वज़न मापने का समय</string>
@@ -605,9 +605,7 @@
     <string name="about_share">ऐप शेयर करें</string>
     <string name="about_open_source">ओपन सोर्स (MIT)</string>
     <string name="about_star_github">GitHub पर स्टार करें</string>
-    <string name="about_vote_ph">Product Hunt पर वोट करें</string>
-    <string name="about_leave_tip_kofi">Ko-fi पर टिप दें</string>
-    <string name="about_report_issue">GitHub पर समस्या रिपोर्ट करें</string>
+    <string name="about_vote_ph">Product Hunt पर वोट करें</string>    <string name="about_report_issue">GitHub पर समस्या रिपोर्ट करें</string>
     <string name="about_report_issue_discord">Discord पर समस्या रिपोर्ट करें</string>
     <string name="about_request_feature">GitHub पर फीचर का अनुरोध करें</string>
     <string name="about_request_feature_discord">Discord पर फीचर का अनुरोध करें</string>
@@ -619,18 +617,15 @@
     <string name="about_privacy">गोपनीयता नीति</string>
     <string name="about_terms">सेवा की शर्तें</string>
     <string name="about_category_app_updates">ऐप और अपडेट</string>
-    <string name="about_category_support">Fud AI का समर्थन करें</string>
+    <string name="about_category_support">Ruoka + Treeni का समर्थन करें</string>
     <string name="about_category_help_feedback">सहायता और प्रतिक्रिया</string>
     <string name="about_category_community">समुदाय</string>
     <string name="about_category_legal">कानूनी</string>
     <string name="about_category_join_beta">बीटा में शामिल हों</string>
-    <string name="about_beta_intro">Play Store पर आने से पहले Fud AI के नए बदलाव आज़माएँ। बीटा बिल्ड अधूरे हो सकते हैं।</string>
-    <string name="about_beta_steps">Fud AI Discord में शामिल हों और #beta-android खोलें। जब वहाँ Play परीक्षण लिंक आए, शामिल हों और Play Store से Fud AI अपडेट करें। कुछ टूटे तो /bug लिखें और सेटिंग्स वाला संस्करण बताएँ।</string>
-    <string name="about_beta_not_open">Play परीक्षण अभी खुला नहीं है। लिंक #beta-android में आएगा।</string>
-    <string name="about_made_by">Apoorv Darshan द्वारा निर्मित</string>
-    <string name="about_with_care">देखभाल के साथ, सभी के लिए</string>
-    <string name="about_share_message">मैं Fud AI से अपने भोजन ट्रैक कर रहा हूँ — एक तस्वीर खींचें, बोलें, या टाइप करें, और AI कैलोरी लॉग कर देता है। यह मुफ़्त है, ओपन सोर्स है, और आपका डेटा आपके डिवाइस पर ही रहता है।\n\nडाउनलोड: https://fud-ai.app</string>
-    <string name="about_share_chooser">Fud AI शेयर करें</string>
+    <string name="about_beta_intro">Play Store पर आने से पहले Ruoka + Treeni के नए बदलाव आज़माएँ। बीटा बिल्ड अधूरे हो सकते हैं।</string>
+    <string name="about_beta_steps">Ruoka + Treeni Discord में शामिल हों और #beta-android खोलें। जब वहाँ Play परीक्षण लिंक आए, शामिल हों और Play Store से Ruoka + Treeni अपडेट करें। कुछ टूटे तो /bug लिखें और सेटिंग्स वाला संस्करण बताएँ।</string>
+    <string name="about_beta_not_open">Play परीक्षण अभी खुला नहीं है। लिंक #beta-android में आएगा।</string>    <string name="about_share_message">मैं Ruoka + Treeni से अपने भोजन ट्रैक कर रहा हूँ — एक तस्वीर खींचें, बोलें, या टाइप करें, और AI कैलोरी लॉग कर देता है। यह मुफ़्त है, ओपन सोर्स है, और आपका डेटा आपके डिवाइस पर ही रहता है।\n\nडाउनलोड: https://fud-ai.app</string>
+    <string name="about_share_chooser">Ruoka + Treeni शेयर करें</string>
 
     <!-- Notifications -->
     <string name="notif_channel_streak">स्ट्रीक रिमाइंडर</string>
@@ -661,7 +656,7 @@
         <item quantity="other">%1$d गणना किए गए बर्न · देखने या हटाने के लिए टैप करें</item>
     </plurals>
     <string name="progress_workout_delete_title">वर्कआउट बर्न हटाएँ?</string>
-    <string name="progress_workout_delete_message">यह Fud AI और Health Connect से गणना किया गया बर्न हटाता है। आपकी वर्कआउट डायरी योजना सहेजी रहेगी।</string>
+    <string name="progress_workout_delete_message">यह Ruoka + Treeni और Health Connect से गणना किया गया बर्न हटाता है। आपकी वर्कआउट डायरी योजना सहेजी रहेगी।</string>
     <string name="progress_workout_section">वर्कआउट गतिविधि</string>
     <string name="progress_workout_stat_workouts">वर्कआउट</string>
     <string name="progress_workout_stat_total">कुल बर्न</string>
@@ -685,11 +680,11 @@
     <string name="settings_section_fallback">फ़ॉलबैक प्रदाता</string>
     <string name="settings_enable_fallback">फ़ॉलबैक चालू करें</string>
     <string name="settings_fallback_footer">यदि आपका प्राथमिक प्रदाता विफल हो जाता है (ओवरलोड, रेट लिमिट, नेटवर्क त्रुटि), तो ऐप स्वचालित रूप से इस फ़ॉलबैक के साथ पुनः प्रयास करता है। प्राथमिक के समान प्रदाता की अनुमति है — बस एक अलग मॉडल चुनें।</string>
-    <string name="widget_all_metrics_label">Fud AI आज</string>
+    <string name="widget_all_metrics_label">Ruoka + Treeni आज</string>
     <string name="widget_all_metrics_description">आज की कैलोरी, प्रोटीन, कार्ब्स और फैट एक ही विजेट में देखें।</string>
     <string name="settings_needs_health_connect">Health Connect ज़रूरी है</string>
-    <string name="settings_energy_goals_info">चालू होने पर, Fud AI लक्ष्य कैलकुलेट करते समय फ़ॉर्मूला अनुमान की जगह Health Connect के हाल में मापे गए ऊर्जा डेटा की अवधि को मेंटेनेंस आधार के रूप में इस्तेमाल करता है: पर्याप्त दिनों का डेटा होने पर मापी गई कुल ऊर्जा; अन्यथा, मापी गई सक्रिय ऊर्जा का औसत + फ़ॉर्मूला BMR। बर्न पढ़ने के लिए कोई AI इस्तेमाल नहीं होता। Health Connect ज़रूरी है। पुनः गणना करें बटन और Adaptive Goals के साथ काम करता है।</string>
-    <string name="settings_adaptive_goals_info">हफ़्ते में लगभग एक बार, ऐप खोलने पर Fud AI आपकी प्रोफ़ाइल, हाल में लॉग किए गए खाने और वज़न के ट्रेंड के आधार पर पूरा लक्ष्य कैलकुलेशन अपने आप दोबारा चलाता है — वही जो पुनः गणना करें बटन चलाता है। अगर Energy Burn चालू है, तो आपकी मापी गई बर्न को मेंटेनेंस का आधार बनाया जाता है। AI उपलब्ध न होने पर यह चुपचाप छूट जाता है। इसे बंद करने पर वे लक्ष्य वापस आ जाते हैं जो इस फ़ीचर के पहले बदलाव से पहले थे। यह चिकित्सा सलाह नहीं है।</string>
+    <string name="settings_energy_goals_info">चालू होने पर, Ruoka + Treeni लक्ष्य कैलकुलेट करते समय फ़ॉर्मूला अनुमान की जगह Health Connect के हाल में मापे गए ऊर्जा डेटा की अवधि को मेंटेनेंस आधार के रूप में इस्तेमाल करता है: पर्याप्त दिनों का डेटा होने पर मापी गई कुल ऊर्जा; अन्यथा, मापी गई सक्रिय ऊर्जा का औसत + फ़ॉर्मूला BMR। बर्न पढ़ने के लिए कोई AI इस्तेमाल नहीं होता। Health Connect ज़रूरी है। पुनः गणना करें बटन और Adaptive Goals के साथ काम करता है।</string>
+    <string name="settings_adaptive_goals_info">हफ़्ते में लगभग एक बार, ऐप खोलने पर Ruoka + Treeni आपकी प्रोफ़ाइल, हाल में लॉग किए गए खाने और वज़न के ट्रेंड के आधार पर पूरा लक्ष्य कैलकुलेशन अपने आप दोबारा चलाता है — वही जो पुनः गणना करें बटन चलाता है। अगर Energy Burn चालू है, तो आपकी मापी गई बर्न को मेंटेनेंस का आधार बनाया जाता है। AI उपलब्ध न होने पर यह चुपचाप छूट जाता है। इसे बंद करने पर वे लक्ष्य वापस आ जाते हैं जो इस फ़ीचर के पहले बदलाव से पहले थे। यह चिकित्सा सलाह नहीं है।</string>
     <string name="ad_label">विज्ञापन</string>
     <string name="onboarding_plan_adaptive_note">आपका प्लान आपकी लॉगिंग के अनुसार हर हफ़्ते अपने आप एडजस्ट होता है — इसे स्थिर रखने के लिए सेटिंग्स में Adaptive Goals बंद करें।</string>
     <string name="onboarding_feature_snap">फोटो खींचें — AI लॉग कर देगा</string>
@@ -699,7 +694,7 @@
     <string name="whats_new_v30_workouts">नया Workouts टैब — फ़ोटो, मांसपेशी और उपकरण फ़िल्टर, खोज और विवरण पेजों के साथ 873 व्यायाम ब्राउज़ करें।</string>
     <string name="whats_new_v30_home">नया होम: स्पीडोमीटर कैलोरी गेज, खड़ी मैक्रो बार, चार पोषक कार्ड और फ़्लोटिंग जोड़ें बटन।</string>
     <string name="whats_new_v30_coach_voice">नए इनलाइन रिकॉर्डर से कोच से आवाज़ में पूछें।</string>
-    <string name="whats_new_v30_share">किसी भी भोजन को लिंक के रूप में साझा करें — iPhone या Android पर सीधे Fud AI में खुलता है।</string>
+    <string name="whats_new_v30_share">किसी भी भोजन को लिंक के रूप में साझा करें — iPhone या Android पर सीधे Ruoka + Treeni में खुलता है।</string>
     <string name="whats_new_v30_export">सेटिंग्स से अपनी फ़ूड डायरी JSON, Markdown या CSV में निर्यात करें।</string>
     <string name="whats_new_v30_reprocess">लॉग किए भोजन को AI से दोबारा प्रोसेस करें — नाम, मात्रा या नोट बदलकर फिर से विश्लेषण करें।</string>
     <string name="whats_new_v30_camera">कैमरा + कैमरा दोनों फ़ोटो साथ-साथ जोड़कर रखता है।</string>
@@ -748,7 +743,7 @@
     <string name="settings_calc_maintenance">मेंटेनेंस और लक्ष्य समायोजन</string>
     <string name="settings_calc_macro_split">मैक्रोन्यूट्रिएंट विभाजन</string>
     <string name="settings_calc_micro_values">सूक्ष्म पोषक तत्व मान</string>
-    <string name="settings_calc_intro">आपके दैनिक कैलोरी और मैक्रो लक्ष्य AI तय करता है। जब आप ‘लक्ष्य दोबारा कैलकुलेट करें’ पर टैप करते हैं — या अडैप्टिव लक्ष्य चालू होने पर हफ़्ते में लगभग एक बार अपने आप — Fud AI आपके AI प्रोवाइडर को आपकी प्रोफ़ाइल, नीचे दिए संदर्भ समीकरण, गोपनीयता-सुरक्षित समेकित दैनिक पोषण कुल, तारीख सहित सटीक वज़न, बॉडी-फैट और टेप से लिए गए माप, वर्कआउट की समेकित संख्या, अवधि, सेट और रेप्स, और वैकल्पिक Health Connect ऊर्जा डेटा भेजता है। इस गणना के लिए भोजन के नाम, नोट्स, फ़ोटो, सामग्री और व्यायाम के नाम नहीं भेजे जाते। AI इन समीक्षित फ़ॉर्मूलों से शुरू करता है, फिर आपके वास्तविक डेटा के अनुसार उन्हें समायोजित करके आपकी असली मेंटेनेंस और लक्ष्यों का अनुमान लगाता है।</string>
+    <string name="settings_calc_intro">आपके दैनिक कैलोरी और मैक्रो लक्ष्य AI तय करता है। जब आप ‘लक्ष्य दोबारा कैलकुलेट करें’ पर टैप करते हैं — या अडैप्टिव लक्ष्य चालू होने पर हफ़्ते में लगभग एक बार अपने आप — Ruoka + Treeni आपके AI प्रोवाइडर को आपकी प्रोफ़ाइल, नीचे दिए संदर्भ समीकरण, गोपनीयता-सुरक्षित समेकित दैनिक पोषण कुल, तारीख सहित सटीक वज़न, बॉडी-फैट और टेप से लिए गए माप, वर्कआउट की समेकित संख्या, अवधि, सेट और रेप्स, और वैकल्पिक Health Connect ऊर्जा डेटा भेजता है। इस गणना के लिए भोजन के नाम, नोट्स, फ़ोटो, सामग्री और व्यायाम के नाम नहीं भेजे जाते। AI इन समीक्षित फ़ॉर्मूलों से शुरू करता है, फिर आपके वास्तविक डेटा के अनुसार उन्हें समायोजित करके आपकी असली मेंटेनेंस और लक्ष्यों का अनुमान लगाता है।</string>
     <string name="settings_calc_sec_bmr">विश्राम चयापचय (BMR)</string>
     <string name="settings_calc_sec_tdee">दैनिक ऊर्जा व्यय (TDEE)</string>
     <string name="settings_calc_mifflin_name">मिफ्लिन-सेंट जियोर समीकरण</string>
@@ -799,7 +794,7 @@
     <string name="about_whisper_notices_load_error">Whisper Base के तृतीय-पक्ष नोटिस लोड नहीं किए जा सके।</string>
     <string name="cd_remove_image">चित्र हटाएँ</string>
     <string name="cd_save_photo">फ़ोटो सहेजें</string>
-    <string name="gallery_folder_name">Fud AI</string>
+    <string name="gallery_folder_name">Ruoka + Treeni</string>
     <string name="photo_saved_to_gallery">फ़ोटो सहेजी गई</string>
     <string name="photo_save_failed">फ़ोटो सहेजी नहीं जा सकी</string>
     <string name="photo_save_permission_denied">फ़ोटो एक्सेस अस्वीकृत</string>

@@ -90,7 +90,7 @@ class NotificationManager {
 
         let content = UNMutableNotificationContent()
         content.title = "Time to Hydrate"
-        content.body = "Have some water and log it in Fud AI."
+        content.body = "Have some water and log it in Ruoka + Treeni."
         content.sound = .default
 
         var dateComponents = DateComponents()
@@ -319,7 +319,7 @@ class NotificationManager {
 
         let content = UNMutableNotificationContent()
         content.title = "Update Available"
-        content.body = "Fud AI \(version) is ready. Tap to update."
+        content.body = "Ruoka + Treeni \(version) is ready. Tap to update."
         content.sound = .default
         content.userInfo = ["updateURL": url.absoluteString]
 
@@ -340,7 +340,7 @@ class NotificationManager {
     static let productHuntLaunchScheduledKey = "productHuntLaunchNotificationScheduled.2026-09-29"
     nonisolated static let productHuntLaunchTimeZone = TimeZone(identifier: "America/Los_Angeles")!
 
-    /// Fud AI goes live on Product Hunt on Sept 29, 2026 at 12:01 AM Pacific.
+    /// Ruoka + Treeni goes live on Product Hunt on Sept 29, 2026 at 12:01 AM Pacific.
     nonisolated static var productHuntLaunchDate: Date {
         var components = DateComponents()
         components.year = 2026
@@ -399,8 +399,8 @@ class NotificationManager {
         }
 
         let content = UNMutableNotificationContent()
-        content.title = "Fud AI is live on Product Hunt 🚀"
-        content.body = "We just launched! Tap to vote and help more people find Fud AI."
+        content.title = "Ruoka + Treeni is live on Product Hunt 🚀"
+        content.body = "We just launched! Tap to vote and help more people find Ruoka + Treeni."
         content.sound = .default
         content.userInfo = ["openURL": FudAILinks.productHunt.absoluteString]
 

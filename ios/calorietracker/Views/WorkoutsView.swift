@@ -2,45 +2,270 @@ import SwiftUI
 import UIKit
 
 struct WorkoutsView: View {
-    @AppStorage(WorkoutTabMode.storageKey) private var selectedModeRaw = WorkoutTabMode.defaultMode.rawValue
+    @Environment(ProfileStore.self) private var profileStore
     @AppStorage(AppThemeColor.storageKey) private var appThemeColorRaw = AppThemeColor.defaultColor.rawValue
-    @State private var workoutLogSession = WorkoutLogSessionState()
 
-    private var selectedMode: WorkoutTabMode {
-        WorkoutTabMode.mode(for: selectedModeRaw)
-    }
+    private var activeProgram: TrainingProgram { profileStore.profile.activeTrainingProgram }
 
     var body: some View {
         NavigationStack {
-            Group {
-                if selectedMode == .log {
-                    WorkoutLogView(
-                        session: workoutLogSession,
-                        embedsInNavigationStack: false,
-                        onShowLibrary: { showMode(.library) }
-                    )
-                    .transition(.opacity)
-                } else {
-                    ExerciseLibraryBrowserView(
-                        onShowWorkoutLog: { showMode(.log) }
-                    )
-                    .background(WorkoutsScreenBackground())
-                    .navigationTitle("Workouts")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar(.hidden, for: .navigationBar)
-                    .transition(.opacity)
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 18) {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Training Programs")
+                            .font(.system(.largeTitle, design: .rounded, weight: .bold))
+                        Text("Choose a plan that fits your week. Your calorie and macro targets adapt automatically.")
+                            .font(.system(.subheadline, design: .rounded))
+                            .foregroundStyle(.secondary)
+                    }
+
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("PROGRAMS")
+                            .font(.system(.caption, design: .rounded, weight: .semibold))
+                            .foregroundStyle(.secondary)
+
+                        ForEach(TrainingProgram.allCases) { program in
+                            programCard(program)
+                        }
+                    }
+
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text("Active program")
+                                    .font(.system(.caption, design: .rounded, weight: .semibold))
+                                    .foregroundStyle(.secondary)
+                                Text(activeProgram.title)
+                                    .font(.system(.title3, design: .rounded, weight: .bold))
+                            }
+                            Spacer()
+                            Text("\(activeProgram.weeklyTrainingDays) days/week")
+                                .font(.system(.caption, design: .rounded, weight: .semibold))
+                                .foregroundStyle(Color.workoutAccent)
+                        }
+
+                        Text(activeProgram.summary)
+                            .font(.system(.subheadline, design: .rounded))
+                            .foregroundStyle(.secondary)
+
+                        ForEach(Array(activeProgram.dayNames.enumerated()), id: \.offset) { index, day in
+                            NavigationLink {
+                                TrainingProgramDayView(program: activeProgram, dayIndex: index)
+                            } label: {
+                                HStack(spacing: 14) {
+                                    Text("\(index + 1)")
+                                        .font(.system(.headline, design: .rounded, weight: .bold))
+                                        .foregroundStyle(.white)
+                                        .frame(width: 34, height: 34)
+                                        .background(Color.workoutAccent, in: Circle())
+                                    Text(day)
+                                        .font(.system(.body, design: .rounded, weight: .semibold))
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .font(.caption.weight(.bold))
+                                        .foregroundStyle(.tertiary)
+                                }
+                                .padding(.vertical, 7)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                    .padding(18)
+                    .workoutLiquidBarSurface(cornerRadius: 24)
                 }
+                .padding(.horizontal, 20)
+                .padding(.top, 18)
+                .padding(.bottom, 110)
             }
+            .workoutScreen()
+            .navigationBarHidden(true)
         }
-        // Refresh static workout theme tokens without replacing this stack or
-        // discarding its route and session-only timer state.
         .animation(.easeInOut(duration: 0.2), value: appThemeColorRaw)
     }
 
-    private func showMode(_ mode: WorkoutTabMode) {
-        withAnimation(.easeInOut(duration: 0.2)) {
-            selectedModeRaw = mode.rawValue
+    @ViewBuilder
+    private func programCard(_ program: TrainingProgram) -> some View {
+        let isActive = program == activeProgram
+        Button {
+            guard !isActive else { return }
+            var updated = profileStore.profile
+            updated.trainingProgramID = program.rawValue
+            updated.customCalories = nil
+            updated.customProtein = nil
+            updated.customCarbs = nil
+            updated.customFat = nil
+            updated.autoBalanceMacro = nil
+            updated.clearLocks()
+            updated.save()
+        } label: {
+            HStack(spacing: 14) {
+                Image(systemName: isActive ? "checkmark.circle.fill" : "circle")
+                    .font(.title2)
+                    .foregroundStyle(isActive ? Color.workoutAccent : .secondary)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(program.title)
+                        .font(.system(.body, design: .rounded, weight: .semibold))
+                    Text("\(program.weeklyTrainingDays) training days")
+                        .font(.system(.caption, design: .rounded))
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                if program == .priority {
+                    Text("Recommended")
+                        .font(.system(.caption2, design: .rounded, weight: .bold))
+                        .foregroundStyle(Color.workoutAccent)
+                }
+            }
+            .padding(16)
+            .workoutLiquidBarSurface(cornerRadius: 20)
         }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(isActive ? .isSelected : [])
+    }
+}
+
+private struct TrainingProgramDayView: View {
+    let program: TrainingProgram
+    let dayIndex: Int
+    @AppStorage("trainingProgram.currentWeek") private var week = 1
+    @State private var selectedRanks: [String: Int] = [:]
+
+    private var definition: TrainingDayDefinition? {
+        TrainingProgramCatalog.day(for: program, index: dayIndex)
+    }
+
+    private var sets: Int { TrainingProgramCatalog.workingSets(forWeek: week) }
+    private var rir: Int { TrainingProgramCatalog.targetRIR(forWeek: week) }
+
+    var body: some View {
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: 14) {
+                HStack {
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text(TrainingText(english: "16-week advanced block", finnish: "16 viikon edistyneiden harjoitusjakso").localized)
+                            .font(.system(.caption, design: .rounded, weight: .semibold))
+                            .foregroundStyle(.secondary)
+                        Text(week.isMultiple(of: 4)
+                            ? TrainingText(english: "Deload · 2 sets · 4 RIR", finnish: "Kevennys · 2 sarjaa · 4 RIR").localized
+                            : "\(sets) × \(TrainingText(english: "working sets", finnish: "työsarjaa").localized) · \(rir) RIR")
+                            .font(.system(.headline, design: .rounded, weight: .bold))
+                    }
+                    Spacer()
+                    Picker(TrainingText(english: "Week", finnish: "Viikko").localized, selection: $week) {
+                        ForEach(1...TrainingProgramCatalog.blockLength, id: \.self) { value in
+                            Text("\(TrainingText(english: "Week", finnish: "Viikko").localized) \(value)").tag(value)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    .tint(Color.workoutAccent)
+                }
+                .padding(16)
+                .workoutLiquidBarSurface(cornerRadius: 20)
+
+                Text(TrainingProgramCatalog.scienceNote.localized)
+                    .font(.system(.footnote, design: .rounded))
+                    .foregroundStyle(.secondary)
+                    .padding(16)
+                    .workoutLiquidBarSurface(cornerRadius: 20)
+
+                if let definition {
+                    ForEach(Array(definition.exercises.enumerated()), id: \.element.id) { index, exercise in
+                        exerciseCard(exercise, position: index + 1, dayID: definition.id)
+                    }
+                }
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 16)
+            .padding(.bottom, 90)
+        }
+        .workoutScreen()
+        .navigationTitle(definition?.name.localized ?? program.dayNames[dayIndex])
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear(perform: loadRanks)
+    }
+
+    @ViewBuilder
+    private func exerciseCard(_ exercise: TrainingExerciseSlot, position: Int, dayID: String) -> some View {
+        let rank = min(max(selectedRanks[exercise.id] ?? storedRank(dayID: dayID, exerciseID: exercise.id), 0), exercise.options.count - 1)
+        let choice = exercise.options[rank]
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(alignment: .top, spacing: 12) {
+                Text("\(position)")
+                    .font(.system(.headline, design: .rounded, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 34, height: 34)
+                    .background(Color.workoutAccent, in: Circle())
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(choice.name.localized)
+                        .font(.system(.headline, design: .rounded, weight: .bold))
+                    Text(exercise.role.localized)
+                        .font(.system(.caption, design: .rounded))
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                Text("#\(rank + 1)")
+                    .font(.system(.caption, design: .rounded, weight: .bold))
+                    .foregroundStyle(Color.workoutAccent)
+            }
+
+            HStack(spacing: 8) {
+                metric("\(sets) × \(exercise.minimumReps)–\(exercise.maximumReps)")
+                metric("\(rir) RIR")
+                metric(restLabel(exercise.recommendedRestSeconds))
+            }
+
+            Menu {
+                ForEach(Array(exercise.options.enumerated()), id: \.element.id) { optionRank, option in
+                    Button {
+                        selectedRanks[exercise.id] = optionRank
+                        UserDefaults.standard.set(optionRank, forKey: rankKey(dayID: dayID, exerciseID: exercise.id))
+                    } label: {
+                        Label("#\(optionRank + 1)  \(option.name.localized)", systemImage: optionRank == rank ? "checkmark" : "circle")
+                    }
+                }
+            } label: {
+                Label(
+                    TrainingText(english: "Ranked alternatives", finnish: "Järjestetyt vaihtoehdot").localized,
+                    systemImage: "list.number"
+                )
+                .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                .foregroundStyle(Color.workoutAccent)
+            }
+        }
+        .padding(16)
+        .workoutLiquidBarSurface(cornerRadius: 20)
+    }
+
+    private func metric(_ text: String) -> some View {
+        Text(text)
+            .font(.system(.caption2, design: .rounded, weight: .semibold))
+            .foregroundStyle(.secondary)
+            .padding(.horizontal, 9)
+            .padding(.vertical, 6)
+            .background(AppColors.appCard.opacity(0.7), in: Capsule())
+    }
+
+    private func restLabel(_ seconds: Int) -> String {
+        switch seconds {
+        case 210: TrainingText(english: "3–4 min rest", finnish: "3–4 min lepo").localized
+        case 105: TrainingText(english: "1.5–2 min rest", finnish: "1,5–2 min lepo").localized
+        default: "\(seconds / 60) min \(TrainingText(english: "rest", finnish: "lepo").localized)"
+        }
+    }
+
+    private func rankKey(dayID: String, exerciseID: String) -> String {
+        "trainingProgram.rank.\(program.rawValue).\(dayID).\(exerciseID)"
+    }
+
+    private func storedRank(dayID: String, exerciseID: String) -> Int {
+        UserDefaults.standard.integer(forKey: rankKey(dayID: dayID, exerciseID: exerciseID))
+    }
+
+    private func loadRanks() {
+        guard let definition else { return }
+        selectedRanks = Dictionary(uniqueKeysWithValues: definition.exercises.map {
+            ($0.id, storedRank(dayID: definition.id, exerciseID: $0.id))
+        })
     }
 }
 
@@ -1116,7 +1341,7 @@ private struct DetailInstructionSection: View {
                         Text("Watch on YouTube")
                             .font(.callout.weight(.bold))
                             .foregroundStyle(Color.workoutCharcoal)
-                        Text("Opens YouTube search — not an official Fud AI video")
+                        Text("Opens YouTube search — not an official Ruoka + Treeni video")
                             .font(.caption)
                             .foregroundStyle(Color.workoutMutedText)
                             .fixedSize(horizontal: false, vertical: true)
@@ -1137,7 +1362,7 @@ private struct DetailInstructionSection: View {
             }
             .buttonStyle(.plain)
             .workoutPressable()
-            .accessibilityHint(String(localized: "Opens YouTube search — not an official Fud AI video"))
+            .accessibilityHint(String(localized: "Opens YouTube search — not an official Ruoka + Treeni video"))
 
             VStack(alignment: .leading, spacing: 10) {
                 ForEach(Array(instructions.enumerated()), id: \.offset) { index, instruction in

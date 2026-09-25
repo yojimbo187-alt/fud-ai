@@ -372,7 +372,7 @@ class ChatService(
                 if (!apiKey.isNullOrEmpty()) builder.addHeader("Authorization", "Bearer $apiKey")
                 if (provider == AIProvider.OPENROUTER) {
                     builder.addHeader("HTTP-Referer", "https://github.com/apoorvdarshan/fud-ai")
-                    builder.addHeader("X-Title", "Fud AI")
+                    builder.addHeader("X-Title", "Ruoka + Treeni")
                 }
                 val raw = RetryPolicy.execute { requestClient.newCall(builder.build()) }
                 val json = runCatching { JSONObject(raw) }.getOrNull() ?: throw AiError.InvalidResponse

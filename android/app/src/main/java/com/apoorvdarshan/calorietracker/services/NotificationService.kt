@@ -404,7 +404,7 @@ class NotificationService(private val context: Context) {
 }
 
 /**
- * When to remind users that Fud AI is live on Product Hunt: at the launch moment
+ * When to remind users that Ruoka + Treeni is live on Product Hunt: at the launch moment
  * (Sept 29, 2026, 12:01 AM Pacific), immediately if the user updates during launch
  * day, and never once that day has passed. Pure so the window logic is testable.
  */

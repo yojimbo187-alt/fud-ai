@@ -10,7 +10,7 @@ struct HealthEnergySummary {
 }
 
 /// One calendar day's measured Health energy. Active energy explicitly excludes
-/// samples tagged as Fud AI's own workout-burn estimates, preventing feedback.
+/// samples tagged as Ruoka + Treeni's own workout-burn estimates, preventing feedback.
 struct HealthEnergyDay: Equatable {
     let date: Date
     let activeCalories: Int
@@ -128,7 +128,7 @@ class HealthKitManager {
     /// stay synchronized with Apple Health.
     /// v8: stepCount joined the read set for daily steps on Home.
     /// v9: workout samples joined the read set so Apple Watch / Health workouts
-    /// can be imported into Fud AI without a Watch companion app.
+    /// can be imported into Ruoka + Treeni without a Watch companion app.
     private let typesVersion = 9
     private let typesVersionKey = "healthKitTypesVersion"
 
@@ -385,7 +385,7 @@ class HealthKitManager {
         }
     }
 
-    /// Removes only the active-energy sample tagged with this Fud AI session.
+    /// Removes only the active-energy sample tagged with this Ruoka + Treeni session.
     /// The sync toggle is intentionally ignored so deleting local history also
     /// cleans up a sample exported before the user switched Health sync off.
     func deleteWorkoutBurn(sessionID: UUID) {
@@ -1067,7 +1067,7 @@ class HealthKitManager {
     }
 
     /// Daily step total for one local calendar day. Read-only — watches and phones
-    /// write steps to HealthKit; Fud AI surfaces the aggregate on Home.
+    /// write steps to HealthKit; Ruoka + Treeni surfaces the aggregate on Home.
     func fetchStepsForDay(_ date: Date) async -> Int? {
         guard UserDefaults.standard.bool(forKey: "healthKitEnabled") else { return nil }
         let calendar = Calendar.current
@@ -1184,7 +1184,7 @@ class HealthKitManager {
         let datePredicate = HKQuery.predicateForSamples(withStart: start, end: end, options: .strictStartDate)
         let predicate: NSPredicate
         if identifier == .activeEnergyBurned {
-            // Workout calories are estimates calculated by Fud AI. Keep them in
+            // Workout calories are estimates calculated by Ruoka + Treeni. Keep them in
             // Health for the user's history, but never feed those estimates back
             // into measured TDEE/adaptive-goal calculations.
             let taggedWorkoutBurn = HKQuery.predicateForObjects(withMetadataKey: workoutBurnSessionIDKey)
@@ -1442,7 +1442,7 @@ class HealthKitManager {
 
     // MARK: - Imported Workouts
 
-    /// Pulls recent HKWorkout samples into Fud AI. Imported rows are read-only,
+    /// Pulls recent HKWorkout samples into Ruoka + Treeni. Imported rows are read-only,
     /// deduped by HealthKit UUID, and never written back to Health.
     func synchronizeImportedWorkoutsWithHealthKit(
         reconcileBatch: @escaping ([ImportedHealthWorkout], Date) -> Void

@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an idea or enhancement for Fud AI
+description: Suggest an idea or enhancement for Ruoka + Treeni
 title: "Feature: "
 labels: ["enhancement"]
 body:
@@ -12,7 +12,7 @@ body:
     id: platforms
     attributes:
       label: Platforms this should cover
-      description: Fud AI aims for iOS/Android parity when practical.
+      description: Ruoka + Treeni aims for iOS/Android parity when practical.
       multiple: true
       options:
         - iOS
@@ -35,7 +35,7 @@ body:
     id: proposal
     attributes:
       label: Proposed solution
-      description: What would you like Fud AI to do?
+      description: What would you like Ruoka + Treeni to do?
     validations:
       required: true
   - type: textarea

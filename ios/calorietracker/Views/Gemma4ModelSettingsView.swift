@@ -146,7 +146,7 @@ struct Gemma4ModelSettingsView: View {
         case .notDownloaded:
             return localized(
                 "gemma.downloadDescription",
-                "2.59 GB download. Fud AI checks for an additional 1 GB of free installation headroom."
+                "2.59 GB download. Ruoka + Treeni checks for an additional 1 GB of free installation headroom."
             )
         case .downloaded:
             if let size = modelManager.installedSizeDescription {
@@ -163,7 +163,7 @@ struct Gemma4ModelSettingsView: View {
         case .downloading:
             return localized(
                 "gemma.downloading",
-                "Downloading the pinned Gemma 4 model… Keep Fud AI open until it finishes."
+                "Downloading the pinned Gemma 4 model… Keep Ruoka + Treeni open until it finishes."
             )
         case .verifying:
             return localized(

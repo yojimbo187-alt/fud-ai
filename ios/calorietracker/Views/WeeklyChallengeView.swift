@@ -164,7 +164,7 @@ struct WeeklyChallengeView: View {
         } message: {
             Text(
                 WeeklyChallengeL10n.text(
-                    "Your public profile, weekly scores, and challenge reports will be deleted from Fud AI. Your private food, water, and workout history stays on this device."
+                    "Your public profile, weekly scores, and challenge reports will be deleted from Ruoka + Treeni. Your private food, water, and workout history stays on this device."
                 )
             )
         }
@@ -256,7 +256,7 @@ struct WeeklyChallengeView: View {
         } description: {
             Text(
                 WeeklyChallengeL10n.text(
-                    "Fud AI kept only the secure deletion credential and will retry removing your remote challenge data when you are online."
+                    "Ruoka + Treeni kept only the secure deletion credential and will retry removing your remote challenge data when you are online."
                 )
             )
         } actions: {
@@ -569,7 +569,7 @@ struct WeeklyChallengeView: View {
 
             Text(
                 WeeklyChallengeL10n.text(
-                    "Fud AI calculates these totals on this device. It never uploads food names, meals, timestamps, water entries, workout details, Health records, body weight, or weight loss."
+                    "Ruoka + Treeni calculates these totals on this device. It never uploads food names, meals, timestamps, water entries, workout details, Health records, body weight, or weight loss."
                 )
             )
             .font(.system(.footnote, design: .rounded))
@@ -1217,7 +1217,7 @@ private struct WeeklyChallengeProfileSheet: View {
                         )
                         Text(
                             WeeklyChallengeL10n.text(
-                                "Fud AI does not read or upload your date of birth for this confirmation."
+                                "Ruoka + Treeni does not read or upload your date of birth for this confirmation."
                             )
                         )
                         .font(.footnote)

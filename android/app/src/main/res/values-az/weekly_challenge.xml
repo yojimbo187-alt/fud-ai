@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">Hələ yenilənməyib</string>
     <string name="challenge_intro_title">Sağlam vərdişləri birlikdə yaradın</string>
     <string name="challenge_intro_body">Həftəlik fəaliyyət, qidalanma, ardıcıllıq və su qəbulu nailiyyətlərini müqayisə etmək üçün istəyə bağlı qoşulun. Şəxsi İrəliləyiş ekranınız qoşulmadan da əlçatan qalır.</string>
-    <string name="challenge_privacy_disclosure">Fud AI hər şeyi cihazınızda hesablayır. Yalnız həftənin başlanğıcı, ümumi xallar, uyğun fəaliyyət, qidalanma, ardıcıllıq və su qəbulu günlərinin sayı və ümumi fəaliyyət kaloriləri göndərilir. Qida adları, yeməklər, çəki, məşq təfərrüatları və Health Connect qeydləri heç vaxt göndərilmir.</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni hər şeyi cihazınızda hesablayır. Yalnız həftənin başlanğıcı, ümumi xallar, uyğun fəaliyyət, qidalanma, ardıcıllıq və su qəbulu günlərinin sayı və ümumi fəaliyyət kaloriləri göndərilir. Qida adları, yeməklər, çəki, məşq təfərrüatları və Health Connect qeydləri heç vaxt göndərilmir.</string>
     <string name="challenge_public_profile_disclosure">İştirakçılara yalnız ekran adınız və istəyə bağlı bir X və ya Instagram istifadəçi adı görünür. Çəki və çəki itkisi heç vaxt sıralanmır.</string>
     <string name="challenge_points_title">Xallar necə hesablanır</string>
     <string name="challenge_points_explanation" formatted="false">Fəaliyyət: müsbət məşq kalorisi qeydə alınan gün. Qidalanma: gündəlik kalorilər hədəfin 85–115%-i arasındadır. Ardıcıllıq: həmin gün hər hansı qida qeydə alınıb. Su qəbulu: izləmə aktiv olduqda su hədəfinə çatılıb. Ümumi: dörd gün sayının cəmi, maksimum 28.</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">Növbəti</string>
     <string name="challenge_join_action">Çağırışa qoşul</string>
     <string name="challenge_pending_delete_title">Silmə bağlantını gözləyir</string>
-    <string name="challenge_pending_delete_message">Çağırış profiliniz bu cihazda gizlədilib. Onlayn olduqda Fud AI uzaq profili və həftəlik xalları yenidən silməyə çalışacaq.</string>
+    <string name="challenge_pending_delete_message">Çağırış profiliniz bu cihazda gizlədilib. Onlayn olduqda Ruoka + Treeni uzaq profili və həftəlik xalları yenidən silməyə çalışacaq.</string>
     <string name="challenge_retry_deletion">Silməni yenidən sına</string>
     <string name="challenge_category_overall">Ümumi</string>
     <string name="challenge_category_activity">Fəaliyyət</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">1–30 hərf, rəqəm, nöqtə və ya alt xətt istifadə edin; ardıcıl və ya sonda nöqtə olmasın.</string>
     <string name="challenge_rules_consent">İcma Qaydalarını qəbul edirəm və heç kimi təqlid etməyən hörmətli profil istifadə edəcəyəm.</string>
     <string name="challenge_read_community_rules">İcma Qaydalarını oxu</string>
-    <string name="challenge_age_consent">18 və ya daha böyük yaşda olduğumu təsdiq edirəm. Fud AI doğum tariximə daxil olmur və onu göndərmir.</string>
+    <string name="challenge_age_consent">18 və ya daha böyük yaşda olduğumu təsdiq edirəm. Ruoka + Treeni doğum tariximə daxil olmur və onu göndərmir.</string>
     <string name="challenge_leave_title">Çağırışdan ayrılmaq?</string>
     <string name="challenge_leave_message">Uzaq çağırış profiliniz və bütün həftəlik xallar silinəcək. Şəxsi qida, çəki, məşq və Health Connect məlumatlarınız cihazınızda qalır.</string>
     <string name="challenge_leave_confirm">Ayrıl və sil</string>

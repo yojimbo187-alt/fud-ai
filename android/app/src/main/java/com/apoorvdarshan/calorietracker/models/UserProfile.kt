@@ -12,6 +12,24 @@ object GoalEnergyMath {
 }
 
 @Serializable
+enum class TrainingProgram(
+    val weeklyTrainingDays: Int,
+    val activityMultiplierAdjustment: Double,
+    val proteinPerKgAdjustment: Double
+) {
+    PUSH_PULL_LEGS_UPPER_LOWER(5, 0.055, 0.15),
+    UPPER_LOWER(4, 0.04, 0.10),
+    FULL_BODY(3, 0.025, 0.05),
+    ACTIVE_RECOVERY(2, 0.0, 0.0);
+
+    companion object {
+        val PRIORITY = PUSH_PULL_LEGS_UPPER_LOWER
+        fun fromStorage(value: String?): TrainingProgram =
+            values().firstOrNull { it.name == value } ?: PRIORITY
+    }
+}
+
+@Serializable
 data class UserProfile(
     val name: String? = null,
     val gender: Gender = Gender.MALE,
@@ -20,6 +38,8 @@ data class UserProfile(
     val heightCm: Double = 175.0,
     val weightKg: Double = 70.0,
     val activityLevel: ActivityLevel = ActivityLevel.MODERATE,
+    /** Active program; nullable so profiles saved before Programs were introduced still decode. */
+    val trainingProgramId: String? = null,
     val goal: WeightGoal = WeightGoal.MAINTAIN,
     val bodyFatPercentage: Double? = null,
     /** Display-only goal — explicitly NOT used in BMR/TDEE/macro math. */
@@ -75,7 +95,11 @@ data class UserProfile(
         if (gender == Gender.MALE) base + 166.0 else base
     }
 
-    val tdee: Double get() = bmr * activityLevel.multiplier
+    val activeTrainingProgram: TrainingProgram
+        get() = TrainingProgram.fromStorage(trainingProgramId)
+
+    val tdee: Double
+        get() = bmr * (activityLevel.multiplier + activeTrainingProgram.activityMultiplierAdjustment)
 
     val calorieAdjustment: Int get() = when (goal) {
         WeightGoal.MAINTAIN -> 0
@@ -94,7 +118,9 @@ data class UserProfile(
     val proteinGoal: Int get() {
         // +0.2 g/kg during cutting phase to preserve lean mass (Helms et al 2014).
         val cuttingBoost = if (goal == WeightGoal.LOSE) 0.2 else 0.0
-        val multiplier = activityLevel.proteinRequirementPerKg(cuttingBoost)
+        val multiplier = activityLevel.proteinRequirementPerKg(
+            cuttingBoost + activeTrainingProgram.proteinPerKgAdjustment
+        )
         return (multiplier * weightKg).toInt()
     }
 
@@ -151,7 +177,7 @@ data class UserProfile(
      * actually consume (see [dailyCalories], [bmr], [proteinGoal]).
      */
     val goalInputSignature: String get() = listOf(
-        gender, birthday.epochSecond, heightCm, weightKg, activityLevel, goal,
+        gender, birthday.epochSecond, heightCm, weightKg, activityLevel, activeTrainingProgram, goal,
         weeklyChangeKg, goalWeightKg, bodyFatPercentage, useBodyFatInBMR
     ).joinToString("|")
 

@@ -9,7 +9,7 @@
     <string name="challenge_not_updated">Încă neactualizat</string>
     <string name="challenge_intro_title">Construiți împreună obiceiuri sănătoase</string>
     <string name="challenge_intro_body">Participă opțional pentru a compara obiectivele săptămânale de activitate, nutriție, consecvență și hidratare. Ecranul privat Progres rămâne disponibil fără participare.</string>
-    <string name="challenge_privacy_disclosure">Fud AI calculează totul pe dispozitiv. Încarcă doar începutul săptămânii, punctele totale, numărul de zile eligibile de activitate, nutriție, consecvență și hidratare și totalul caloriilor de activitate. Numele alimentelor, mesele, greutatea, detaliile antrenamentelor și datele Health Connect nu sunt încărcate niciodată.</string>
+    <string name="challenge_privacy_disclosure">Ruoka + Treeni calculează totul pe dispozitiv. Încarcă doar începutul săptămânii, punctele totale, numărul de zile eligibile de activitate, nutriție, consecvență și hidratare și totalul caloriilor de activitate. Numele alimentelor, mesele, greutatea, detaliile antrenamentelor și datele Health Connect nu sunt încărcate niciodată.</string>
     <string name="challenge_public_profile_disclosure">Doar numele afișat și, opțional, un singur identificator X sau Instagram sunt vizibile participanților. Greutatea și scăderea în greutate nu sunt clasificate niciodată.</string>
     <string name="challenge_points_title">Cum funcționează punctele</string>
     <string name="challenge_points_explanation" formatted="false">Activitate: o zi cu calorii pozitive de antrenament înregistrate. Nutriție: caloriile zilnice între 85 și 115% din obiectiv. Consecvență: orice aliment înregistrat în ziua respectivă. Hidratare: obiectivul de apă atins când urmărirea este activă. General: suma celor patru numere de zile, până la 28.</string>
@@ -18,7 +18,7 @@
     <string name="challenge_page_next">Înainte</string>
     <string name="challenge_join_action">Participă la provocare</string>
     <string name="challenge_pending_delete_title">Ștergerea așteaptă conexiunea</string>
-    <string name="challenge_pending_delete_message">Profilul provocării este ascuns pe acest dispozitiv. Fud AI va încerca din nou să șteargă profilul la distanță și scorurile săptămânale când ești online.</string>
+    <string name="challenge_pending_delete_message">Profilul provocării este ascuns pe acest dispozitiv. Ruoka + Treeni va încerca din nou să șteargă profilul la distanță și scorurile săptămânale când ești online.</string>
     <string name="challenge_retry_deletion">Reîncearcă ștergerea</string>
     <string name="challenge_category_overall">General</string>
     <string name="challenge_category_activity">Activitate</string>
@@ -58,7 +58,7 @@
     <string name="challenge_instagram_handle_error">Folosește 1–30 de litere, cifre, puncte sau linii de subliniere; fără puncte consecutive sau finale.</string>
     <string name="challenge_rules_consent">Accept Regulile comunității și voi folosi un profil respectuos, fără uzurparea identității.</string>
     <string name="challenge_read_community_rules">Citește Regulile comunității</string>
-    <string name="challenge_age_consent">Confirm că am cel puțin 18 ani. Fud AI nu accesează și nu încarcă data mea de naștere.</string>
+    <string name="challenge_age_consent">Confirm că am cel puțin 18 ani. Ruoka + Treeni nu accesează și nu încarcă data mea de naștere.</string>
     <string name="challenge_leave_title">Ieși din provocare?</string>
     <string name="challenge_leave_message">Aceasta șterge profilul la distanță al provocării și toate scorurile săptămânale. Datele private despre alimente, greutate, antrenamente și Health Connect rămân pe dispozitiv.</string>
     <string name="challenge_leave_confirm">Ieși și șterge</string>
