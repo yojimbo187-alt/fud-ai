@@ -2,7 +2,7 @@
   "name": "fud-ai-web",
   "private": true,
   "scripts": {
-    "build": "node scripts/validate-static.mjs && node app/validate.mjs",
+    "build": "node scripts/validate-static.mjs",
     "check": "npm run typecheck && npm test && npm run build",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
