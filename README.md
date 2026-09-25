@@ -37,6 +37,12 @@ Normal updates preserve existing local and Health data.
 
 [Android release APK](https://github.com/yojimbo187-alt/fud-ai/releases/latest/download/ruoka-treeni-android.apk) · [Report an Issue](https://github.com/yojimbo187-alt/fud-ai/issues/new?template=bug_report.yml) · [Request a Feature](https://github.com/yojimbo187-alt/fud-ai/issues/new?template=feature_request.yml)
 
+### Free iPhone web app
+
+The installable Ruoka + Treeni PWA is available at **[yojimbo187-alt.github.io/fud-ai/app/](https://yojimbo187-alt.github.io/fud-ai/app/)**. On iPhone, open that address in Safari, tap Share, choose **Add to Home Screen**, enable **Open as Web App**, and tap Add.
+
+The PWA keeps its diary, profile, program choices, API key, and imported health summary in that browser. It can import Apple's local `export.zip` or extracted `export.xml`; the file is parsed on-device and is never uploaded. Safari web apps cannot receive the signed native HealthKit entitlement, so this manual import replaces live HealthKit synchronization.
+
 ---
 
 ## Features

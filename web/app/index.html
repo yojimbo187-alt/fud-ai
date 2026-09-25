@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ff375f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ruoka + Treeni">
+  <meta name="description" content="Private, local-first food and training tracker with Finnish support.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="../assets/calorie%20logo%20transparent.png">
+  <link rel="apple-touch-icon" href="../assets/calorie%20logo%20transparent.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ruoka + Treeni</title>
+</head>
+<body>
+  <div id="offline-banner" class="offline-banner" hidden>Offline — your saved data is still available</div>
+  <header class="topbar">
+    <div class="brand"><img src="../assets/calorie%20logo%20transparent.png" alt=""><span>Ruoka + Treeni</span></div>
+    <button id="language-button" class="icon-button" type="button" aria-label="Change language">FI</button>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <section id="home-view" class="view active" data-view="home">
+      <div class="hero-row"><div><p class="eyebrow" data-i18n="today">Today</p><h1 data-i18n="homeTitle">Your daily plan</h1></div><div id="date-pill" class="date-pill"></div></div>
+      <article class="card calorie-card">
+        <div class="ring" id="calorie-ring"><div><strong id="calorie-left">0</strong><span data-i18n="kcalLeft">kcal left</span></div></div>
+        <div class="calorie-copy"><span data-i18n="calories">Calories</span><strong><span id="calorie-eaten">0</span> / <span id="calorie-goal">0</span></strong><small id="program-target-note"></small></div>
+      </article>
+      <div class="macro-grid" id="macro-grid"></div>
+      <div class="section-heading"><h2 data-i18n="todaysFood">Today's food</h2><button class="text-button" data-action="open-log" data-i18n="add">Add</button></div>
+      <div id="food-list" class="stack"></div>
+    </section>
+
+    <section id="log-view" class="view" data-view="log">
+      <p class="eyebrow" data-i18n="foodLog">Food log</p><h1 data-i18n="addFood">Add food</h1>
+      <div class="segmented" role="tablist">
+        <button class="active" data-log-mode="manual" data-i18n="manual">Manual</button>
+        <button data-log-mode="ai" data-i18n="aiDescribe">AI describe</button>
+        <button data-log-mode="barcode" data-i18n="barcode">Barcode</button>
+      </div>
+      <form id="manual-food-form" class="card form-grid">
+        <label><span data-i18n="foodName">Food name</span><input id="food-name" required autocomplete="off"></label>
+        <label><span data-i18n="calories">Calories</span><input id="food-kcal" type="number" inputmode="decimal" min="0" required></label>
+        <div class="three-cols">
+          <label><span data-i18n="protein">Protein</span><input id="food-protein" type="number" inputmode="decimal" min="0" value="0"></label>
+          <label><span data-i18n="carbs">Carbs</span><input id="food-carbs" type="number" inputmode="decimal" min="0" value="0"></label>
+          <label><span data-i18n="fat">Fat</span><input id="food-fat" type="number" inputmode="decimal" min="0" value="0"></label>
+        </div>
+        <button class="primary-button" type="submit" data-i18n="saveFood">Save food</button>
+      </form>
+      <form id="ai-food-form" class="card form-grid" hidden>
+        <label><span data-i18n="mealDescription">Describe your meal in English or Finnish</span><textarea id="ai-description" rows="4" placeholder="Esim. lohikeitto ja kaksi palaa ruisleipää"></textarea></label>
+        <label><span data-i18n="optionalPhoto">Optional photo</span><input id="ai-photo" type="file" accept="image/*" capture="environment"></label>
+        <button class="primary-button" type="submit" data-i18n="analyze">Analyze</button>
+        <p id="ai-result" class="status" aria-live="polite"></p>
+      </form>
+      <form id="barcode-form" class="card form-grid" hidden>
+        <label><span data-i18n="barcodeNumber">Barcode number</span><input id="barcode-value" inputmode="numeric" pattern="[0-9 ]+"></label>
+        <label><span data-i18n="barcodePhoto">Or choose a barcode photo</span><input id="barcode-photo" type="file" accept="image/*" capture="environment"></label>
+        <button class="primary-button" type="submit" data-i18n="lookup">Look up product</button>
+        <p id="barcode-result" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="training-view" class="view" data-view="training">
+      <p class="eyebrow" data-i18n="training">Training</p><h1 data-i18n="programs">Training Programs</h1>
+      <div id="program-picker" class="program-picker"></div>
+      <article class="card program-summary"><div><span data-i18n="activeProgram">Active program</span><h2 id="active-program-name"></h2><p id="active-program-detail"></p></div><label class="week-field"><span data-i18n="week">Week</span><input id="program-week" type="number" min="1" max="16" value="1"></label></article>
+      <p id="science-note" class="note"></p>
+      <div id="training-days" class="stack"></div>
+    </section>
+
+    <section id="progress-view" class="view" data-view="progress">
+      <p class="eyebrow" data-i18n="progress">Progress</p><h1 data-i18n="healthData">Health data</h1>
+      <article class="card health-import">
+        <div><h2 data-i18n="appleHealthImport">Import Apple Health export</h2><p data-i18n="healthImportHelp">Select export.zip or export.xml from the Health app export. Parsing happens only on this device.</p></div>
+        <label class="file-button"><span data-i18n="chooseHealthFile">Choose Health export</span><input id="health-file" type="file" accept=".zip,.xml,text/xml,application/zip" hidden></label>
+        <progress id="health-progress" max="100" value="0" hidden></progress>
+        <p id="health-status" class="status" aria-live="polite"></p>
+      </article>
+      <div id="health-summary" class="stats-grid"></div>
+      <div class="section-heading"><h2 data-i18n="recentHealth">Recent imported days</h2><button id="clear-health" class="text-button danger" data-i18n="clear">Clear</button></div>
+      <div id="health-days" class="stack"></div>
+    </section>
+
+    <section id="settings-view" class="view" data-view="settings">
+      <p class="eyebrow" data-i18n="settings">Settings</p><h1 data-i18n="personalTargets">Personal targets</h1>
+      <form id="profile-form" class="card form-grid">
+        <div class="two-cols"><label><span data-i18n="weightKg">Weight (kg)</span><input id="profile-weight" type="number" min="30" max="350" step="0.1"></label><label><span data-i18n="heightCm">Height (cm)</span><input id="profile-height" type="number" min="100" max="250"></label></div>
+        <div class="two-cols"><label><span data-i18n="age">Age</span><input id="profile-age" type="number" min="14" max="100"></label><label><span data-i18n="sex">Sex used for BMR</span><select id="profile-sex"><option value="male" data-i18n="male">Male</option><option value="female" data-i18n="female">Female</option></select></label></div>
+        <label><span data-i18n="activity">Activity level</span><select id="profile-activity"><option value="sedentary" data-i18n="sedentary">Sedentary</option><option value="light" data-i18n="light">Light</option><option value="moderate" data-i18n="moderate">Moderate</option><option value="active" data-i18n="active">Active</option><option value="veryActive" data-i18n="veryActive">Very active</option><option value="extraActive" data-i18n="extraActive">Extra active</option></select></label>
+        <label><span data-i18n="goal">Goal</span><select id="profile-goal"><option value="lose" data-i18n="lose">Lose weight</option><option value="maintain" data-i18n="maintain">Maintain</option><option value="gain" data-i18n="gain">Gain weight</option></select></label>
+        <button class="primary-button" type="submit" data-i18n="recalculate">Save and recalculate</button>
+      </form>
+      <h2 data-i18n="aiAccess">AI Access (BYOK)</h2>
+      <form id="ai-settings-form" class="card form-grid">
+        <label><span data-i18n="provider">Provider</span><select id="ai-provider"><option value="gemini">Google Gemini</option><option value="openai">OpenAI</option><option value="custom" data-i18n="custom">Custom OpenAI-compatible</option></select></label>
+        <label><span data-i18n="apiKey">API key</span><input id="ai-key" type="password" autocomplete="off"></label>
+        <label><span data-i18n="model">Model</span><input id="ai-model" autocomplete="off"></label>
+        <label id="ai-base-label"><span data-i18n="baseUrl">Base URL</span><input id="ai-base" type="url"></label>
+        <p class="privacy-note" data-i18n="keyPrivacy">The key stays in this browser. Requests go directly to your selected provider.</p>
+        <button class="primary-button" type="submit" data-i18n="saveAi">Save AI settings</button>
+      </form>
+      <article class="card about-card"><span data-i18n="appVersion">App version</span><strong>Web 1.0.0</strong></article>
+      <button id="export-data" class="secondary-button" data-i18n="exportBackup">Export local backup</button>
+      <label class="secondary-button import-backup"><span data-i18n="importBackup">Import local backup</span><input id="import-data" type="file" accept="application/json" hidden></label>
+      <button id="delete-data" class="secondary-button danger" data-i18n="deleteData">Delete all local data</button>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Primary">
+    <button class="active" data-target="home"><span>⌂</span><small data-i18n="home">Home</small></button>
+    <button data-target="log"><span>＋</span><small data-i18n="log">Log</small></button>
+    <button data-target="training"><span>◆</span><small data-i18n="training">Training</small></button>
+    <button data-target="progress"><span>↗</span><small data-i18n="progress">Progress</small></button>
+    <button data-target="settings"><span>⚙</span><small data-i18n="settings">Settings</small></button>
+  </nav>
+
+  <dialog id="exercise-dialog"><form method="dialog"><button class="dialog-close" value="cancel" aria-label="Close">×</button><div id="exercise-dialog-content"></div></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="programs.js"></script>
+  <script src="health-import.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
