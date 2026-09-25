@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="web/assets/calorie%20logo%20transparent.png" width="120" height="120" alt="Fud AI Logo">
+  <img src="web/assets/calorie%20logo%20transparent.png" width="120" height="120" alt="Ruoka + Treeni Logo">
 </p>
 
-<h1 align="center">Fud AI</h1>
+<h1 align="center">Ruoka + Treeni</h1>
 
 <p align="center">
   <strong>Eat Smart, Live Better</strong><br>
@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/kotlin-2.2-7F52FF?logo=kotlin" alt="Kotlin">
   <img src="https://img.shields.io/badge/UI-SwiftUI%20%2F%20Compose-purple" alt="UI">
   <img src="https://img.shields.io/badge/privacy-local--first-brightgreen" alt="Local-first privacy">
-  <img src="https://img.shields.io/badge/languages-iOS%2018%20%2F%20Android%2018-blue" alt="iOS 18 languages / Android 18 languages">
+  <img src="https://img.shields.io/badge/languages-iOS%2019%20%2F%20Android%2019-blue" alt="iOS 19 languages / Android 19 languages">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
   <a href="#credits"><img src="docs/assets/code-reviews.svg" alt="Code reviews by Qodo, GitHub Copilot, CodeRabbit, and Greptile"></a>
   <a href="https://www.bestpractices.dev/projects/14553"><img src="https://www.bestpractices.dev/projects/14553/badge" alt="OpenSSF Best Practices Passing"></a>
@@ -31,17 +31,13 @@
 
 Open-source, privacy-first calorie tracker for iOS and Android. Bring your own AI provider — 13 supported including Gemini, OpenAI, Claude, Grok, Groq, Hugging Face, Fireworks AI, DeepInfra, Mistral, and any custom OpenAI-compatible endpoint — or, on iPhone, optionally use Plus/Pro hosted AI. Capture or import up to 10 food photos with an optional note, scan a barcode, ask your AI coach how to hit your goal, speak your lunch, or use Siri Shortcuts on iOS to log food and weight. On supported iPhones, food-description analysis for text, voice-transcribed, and Siri food logs can use Apple Intelligence on-device as the final fallback after BYOK provider/fallback attempts fail. On iOS 27, Apple Intelligence can also analyze food photos on-device when you select it. The core tracker has no required account, general cloud sync, tracking, or ads. Its sole first-party sync exception for scores and profiles is an optional 18+ Weekly Challenge that shares only a pseudonymous display profile and weekly aggregate scores with other enrolled participants — never raw logs.
 
-iOS and Android 7.1 (build/versionCode 38) add Weekly Challenge places with a podium and 20 places per page, Help & Feedback on GitHub or Discord, a Join Beta page in Settings, an Android in-app language picker, and on-device food-photo analysis with Apple Intelligence on iOS 27. 7.0 remains the release that added optional Plus/Pro hosted AI on iPhone, daily steps, Walk/Run logging, custom exercises, meal date/time, the Log Food widget, pinch-zoom photos, and Czech and Ukrainian.
+This fork adds matching iOS and Android Training Programs, Finnish localization and food recognition, and program-aware calorie and macro targets while preserving local-first BYOK AI access.
 
 Normal updates preserve existing local and Health data.
 
-[App Store](https://apps.apple.com/us/app/fud-ai-calorie-tracker/id6758935726) · [Google Play](https://play.google.com/store/apps/details?id=com.apoorvdarshan.calorietracker) · [Website](https://fud-ai.app) · [Discord `/ask`](https://discord.gg/Py4VrFctP3) · [Report an Issue](https://github.com/apoorvdarshan/fud-ai/issues/new?template=bug_report.yml) · [Request a Feature](https://github.com/apoorvdarshan/fud-ai/issues/new?template=feature_request.yml)
+[Android release APK](https://github.com/yojimbo187-alt/fud-ai/releases/latest/download/ruoka-treeni-android.apk) · [Report an Issue](https://github.com/yojimbo187-alt/fud-ai/issues/new?template=bug_report.yml) · [Request a Feature](https://github.com/yojimbo187-alt/fud-ai/issues/new?template=feature_request.yml)
 
 ---
-
-## Business Registration
-
-Fud AI is a Udyam-registered micro enterprise in India, operating as a sole proprietorship in Services. Registration number: **UDYAM-DL-06-0225072**, registered on **9 September 2026**.
 
 ## Features
 
@@ -88,11 +84,11 @@ Fud AI is a Udyam-registered micro enterprise in India, operating as a sole prop
 - **Optional fasting tracking** — off by default; choose a 1–168 hour goal, start/end/cancel from the Home + menu, keep an active timer through app restarts, optionally receive a local goal alert, and edit or delete completed sessions without changing nutrition totals
 
 ### Workouts
-- **Workout diary & logger** — plan exercises by day, swipe between weeks, and log sets, reps, weight, and RPE without starting a timer
-- **Gender-aware exercise illustrations** — selected exercise detail views use matched four-phase male/female v2 sequences in one consistent hand-drawn visual system, with the original exercise photos retained as the fallback for entries that do not yet have authored artwork
-- **Calculated workout burn** — estimate a day's calorie burn from the logged work, review or delete burn history in Progress, and optionally sync those records with Apple Health / Health Connect
-- **Exercise library** — switch in place to 877 exercises with photos, primary/secondary muscle and equipment filters, search, sort, and per-exercise detail pages; the last diary/library view persists
-- **Coach workout context** — Coach can retrieve workout plans, preferences, completed sessions, sets, reps, RPE, and calculated burn when answering training questions
+- **Training Programs** — switch between several saved programs; Push, Pull, Legs, Upper, Lower is the priority five-day program
+- **Science-ranked substitutions** — every slot has five ranked alternatives based on stable loading, progression, comfortable full or lengthened range of motion, and target-muscle loading
+- **16-week progression** — three escalating RIR weeks followed by a two-set deload every fourth week, with per-exercise rep ranges and rest guidance
+- **Program-aware nutrition** — the selected program's weekly frequency and volume automatically adjust calorie and protein targets
+- **Finnish parity** — exercise names, roles, alternatives, coaching notes, and program controls are available in English and Finnish on both platforms
 
 ### Health & platform
 - **Apple Health** — bidirectional sync for body measurements, meal nutrition, and calculated workout calories; Siri food/weight logs use the same HealthKit paths, and Energy Burn Goals can estimate calorie targets from active/total energy while macros stay editable
@@ -101,11 +97,9 @@ Fud AI is a Udyam-registered micro enterprise in India, operating as a sole prop
 - **Restore after a reinstall** — on a fresh install or new phone, food, weight, body-fat, and calculated workout-burn records previously written by Fud AI can restore from Apple Health / Health Connect; local workout plans and set details require an OS backup/device transfer
 - **Optional iCloud / Google Drive Backup** — off until you turn it on in Settings → Data Management; iPhone uses iCloud, Android uses Google Drive after sign-in at that toggle only; restore keeps original Health IDs so samples are not duplicated
 - **Apple Watch** — watchOS app and complications show calories, macros, and compact water progress when water tracking is enabled
-- **Widgets** — iOS offers Fud AI in Small, Medium, and Large, small Protein, and a separate small/Lock Screen Water widget; Android offers Calorie, Protein, Today, and Water Glance widgets that update from local snapshots
-- **Share the App** — native iOS share sheet from About → forwards App Store URL plus a personalized message and `fud-ai.app` link; message body localized into all 18 iOS languages
-- **Update check** — About shows the installed app version, opens the App Store / Play Store when a newer version is available, and shows a tab dot for pending updates
+- **Widgets** — iOS offers Ruoka + Treeni in Small, Medium, and Large, small Protein, and a separate small/Lock Screen Water widget; Android offers Calorie, Protein, Today, and Water Glance widgets that update from local snapshots
 - **Theme color** — iOS and Android Settings let users change the app accent, with matching home screen / launcher icons
-- **Languages** — iOS and Android support 18 languages: Arabic, Azerbaijani, Czech, Dutch, English, French, German, Hindi, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Romanian, Russian, Simplified Chinese, Spanish, Ukrainian. The app auto-selects by the phone's Language setting.
+- **Languages** — iOS and Android support 19 languages: Arabic, Azerbaijani, Czech, Dutch, English, Finnish, French, German, Hindi, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Romanian, Russian, Simplified Chinese, Spanish, Ukrainian. The app auto-selects by the phone's Language setting.
 - **Meal reminders** — customizable breakfast, lunch, dinner notifications
 - **Dark mode** — system, light, or dark
 - **Metric & imperial** units
@@ -232,11 +226,11 @@ An eight-screen walkthrough of the current app flow — from the dashboard and g
       <sub>Weight trend with goal line, calorie history (intake vs. goal), and macro averages. Time ranges span 1 week to all time.</sub>
     </td>
     <td align="center" width="33%">
-      <img src="web/assets/screenshots/workouts.png" width="230" alt="Workout exercise library">
+      <img src="web/assets/screenshots/workouts.png" width="230" alt="Training Programs">
       <br><br>
-      <b>08 · Workouts · Library</b>
+      <b>08 · Training Programs</b>
       <br>
-      <sub>Browse 877 exercises with photos, filterable by primary/secondary muscle and equipment, with search, sort, and per-exercise detail pages.</sub>
+      <sub>Select a program, open a training day, and choose from five science-ranked alternatives for every exercise slot.</sub>
     </td>
   </tr>
 </table>
@@ -294,7 +288,7 @@ ios/
 └── calorietracker/
     ├── calorietrackerApp.swift       # Entry point, environment setup
     ├── ContentView.swift             # 5-tab layout (Home, Progress, Coach, Settings, Workouts)
-    ├── Localizable.xcstrings         # String Catalog, 18 languages
+    ├── Localizable.xcstrings         # String Catalog, 19 languages
     ├── Models/
     │   ├── AIProvider.swift          # 13 LLM providers, model lists, settings
     │   ├── SpeechProvider.swift      # 6 STT options + Keychain settings
@@ -391,12 +385,7 @@ MIT License. See [LICENSE](LICENSE).
 - **Report an Issue:** [github.com/apoorvdarshan/fud-ai/issues/new?template=bug_report.yml](https://github.com/apoorvdarshan/fud-ai/issues/new?template=bug_report.yml)
 - **Request a Feature:** [github.com/apoorvdarshan/fud-ai/issues/new?template=feature_request.yml](https://github.com/apoorvdarshan/fud-ai/issues/new?template=feature_request.yml)
 
-## Support the Project
-
-Fud AI is fully free, open source, and privacy-first — no ads, no subscription. If it helps you, consider supporting development (on iOS there's an in-app Tip Jar under Settings → About) — every bit keeps this project alive.
-
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-ff5e5b?logo=kofi)](https://ko-fi.com/apoorvdarshan)
-[![Discord](https://img.shields.io/badge/Discord-%2Fask-5865F2?logo=discord&logoColor=white)](https://discord.gg/Py4VrFctP3)
+Ruoka + Treeni is fully free, open source, privacy-first, and uses each person's own AI provider key — no shared API-key backend.
 [![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Vote-orange?logo=producthunt)](https://www.producthunt.com/products/fud-ai)
 
 You can also help by [joining the Fud AI Discord](https://discord.gg/Py4VrFctP3) and using **`/ask`**, [voting on Product Hunt](https://www.producthunt.com/products/fud-ai), [starring the repo](https://github.com/apoorvdarshan/fud-ai), [filing bugs](https://github.com/apoorvdarshan/fud-ai/issues/new?template=bug_report.yml), or [requesting features](https://github.com/apoorvdarshan/fud-ai/issues/new?template=feature_request.yml).
