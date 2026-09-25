@@ -1,0 +1,42 @@
+name: Distribution Page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "distribution-site/**"
+      - "web/assets/calorie logo transparent.png"
+      - ".github/workflows/distribution-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Stage site
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          cp distribution-site/* "$RUNNER_TEMP/site/"
+          cp "web/assets/calorie logo transparent.png" "$RUNNER_TEMP/site/logo.png"
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v4.0.0
+        with:
+          path: ${{ runner.temp }}/site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

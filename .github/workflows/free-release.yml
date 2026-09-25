@@ -1,0 +1,110 @@
+name: Free Native Release
+
+on:
+  push:
+    tags:
+      - "free-v*"
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6.3.0
+      - name: Materialize release key
+        working-directory: android
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          test -n "$ANDROID_KEYSTORE_BASE64"
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/ruoka-treeni-release.jks"
+          cat > keystore.properties <<EOF
+          storeFile=$RUNNER_TEMP/ruoka-treeni-release.jks
+          storePassword=$ANDROID_KEYSTORE_PASSWORD
+          keyAlias=$ANDROID_KEY_ALIAS
+          keyPassword=$ANDROID_KEY_PASSWORD
+          EOF
+      - name: Build signed Android APK
+        working-directory: android
+        run: ./gradlew :app:assembleRelease
+      - name: Verify APK signature
+        run: |
+          BUILD_TOOLS_VERSION="$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          "$ANDROID_HOME/build-tools/$BUILD_TOOLS_VERSION/apksigner" verify --verbose android/app/build/outputs/apk/release/app-release.apk
+      - name: Stage Android artifact
+        run: cp android/app/build/outputs/apk/release/app-release.apk ruoka-treeni-android.apk
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: android-release
+          path: ruoka-treeni-android.apk
+
+  iphone-personal:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Build unsigned native archive
+        run: |
+          xcodebuild archive \
+            -project ios/calorietracker.xcodeproj \
+            -scheme calorietracker \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/RuokaTreeni.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            DEVELOPMENT_TEAM=""
+      - name: Create personal sideload IPA
+        run: |
+          mkdir -p "$RUNNER_TEMP/ipa/Payload"
+          cp -R "$RUNNER_TEMP/RuokaTreeni.xcarchive/Products/Applications/calorietracker.app" "$RUNNER_TEMP/ipa/Payload/RuokaTreeni.app"
+          rm -rf "$RUNNER_TEMP/ipa/Payload/RuokaTreeni.app/PlugIns" "$RUNNER_TEMP/ipa/Payload/RuokaTreeni.app/Watch"
+          rm -rf "$RUNNER_TEMP/ipa/Payload/RuokaTreeni.app/_CodeSignature"
+          rm -f "$RUNNER_TEMP/ipa/Payload/RuokaTreeni.app/embedded.mobileprovision"
+          codesign --force --sign - --entitlements ios/PersonalSideload.entitlements "$RUNNER_TEMP/ipa/Payload/RuokaTreeni.app"
+          ditto -c -k --sequesterRsrc --keepParent "$RUNNER_TEMP/ipa/Payload" ruoka-treeni-ios-personal.ipa
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: iphone-personal-release
+          path: ruoka-treeni-ios-personal.ipa
+
+  release:
+    needs: [android, iphone-personal]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
+        with:
+          merge-multiple: true
+      - name: Publish free native downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat > release-notes.md <<'EOF'
+          Ruoka + Treeni native downloads.
+
+          - Android: signed release APK for direct installation.
+          - iPhone: personal AltStore IPA. A free Apple Account must re-sign it every seven days. The Watch, widget, Share and iCloud extensions are removed because Apple does not authorize them for free personal signing.
+
+          See the installation page for current instructions and limitations.
+          EOF
+          gh release create "$GITHUB_REF_NAME" \
+            --title "Ruoka + Treeni ${GITHUB_REF_NAME#free-v}" \
+            --notes-file release-notes.md \
+            --latest \
+            ruoka-treeni-android.apk \
+            ruoka-treeni-ios-personal.ipa
